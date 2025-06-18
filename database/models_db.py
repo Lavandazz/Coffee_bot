@@ -39,3 +39,7 @@ class Review(Model):
     class Meta:
         table = 'review'
 
+
+class Horoscope(Model):
+
+    pass

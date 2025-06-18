@@ -9,6 +9,7 @@ from .settings_env import env_file
 # Переменные окружения
 token = os.getenv("BOT_TOKEN")
 admin_id = os.getenv("ADMIN")
+API_KEY = os.getenv("OPENROUTER_API_KEY")
 
 # Объекты бота
 bot = Bot(

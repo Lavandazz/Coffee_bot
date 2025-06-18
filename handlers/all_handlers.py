@@ -8,6 +8,7 @@ from datetime import datetime, timezone
 
 from database.models_db import Review, User
 from keyboards.admin_keyboards import get_review_keyboard
+from keyboards.horoscope_keyboard import zodiac_kb
 from keyboards.menu_keyboard import inline_menu_kb
 from utils.ai_generator import generate_ai_greeting, generate_day_or_night
 from utils.config import get_admin_id
@@ -26,16 +27,13 @@ async def get_start(message: Message, bot: Bot):
     time_message = message.date
     # Преобразуем часовой пояс (+3 часа для Москвы)
     local_time = time_message.replace(tzinfo=timezone.utc).astimezone(tz=None)  # Автоматически определит локальный пояс
-    exists = await User.filter(telegram_id=message.from_user.id).exists()
-    print(exists)
-    if not exists:
+    user_id = await User.filter(telegram_id=message.from_user.id).exists()  # проверка айди в базе
+    if not user_id:
         await User.create(
             username=message.from_user.username,
             first_name=message.from_user.first_name,
             telegram_id=message.from_user.id,
             is_admin=False)
-    print(message.from_user.id)
-    print(message.from_user.is_premium)
     await bot.send_message(message.from_user.id,
                            f"{generate_day_or_night(local_time.hour)}",
                            reply_markup=inline_menu_kb())
@@ -116,3 +114,8 @@ async def handle_review_text(message: Message, state: FSMContext, bot: Bot):
 
     await message.answer("Спасибо за отзыв! Бариста его рассмотрит ☕")
     await state.clear()
+
+
+async def show_horoscope(callback: CallbackQuery):
+    """ Отображение кофейного гороскопа """
+    await callback.message.answer('Выбери свой знак', reply_markup=zodiac_kb())
