@@ -1,4 +1,10 @@
 import random
+from openai import OpenAI
+from utils.config import API_KEY
+from utils.logging_config import horo_logger
+
+MISTRAL_MODEL = "mistralai/mistral-small-24b-instruct-2501:free"
+DEEP_MODEL = "deepseek/deepseek-r1-0528:free"
 
 
 async def generate_ai_greeting():
@@ -105,6 +111,7 @@ coffee_greetings = {
     ]
 }
 
+
 def generate_day_or_night(now_time: int):
     if 5 < now_time < 13:
         return random.choice(coffee_greetings["morning"])
@@ -112,3 +119,67 @@ def generate_day_or_night(now_time: int):
         return random.choice(coffee_greetings["day"])
     else:
         return random.choice(coffee_greetings["evening"])
+
+
+class Prompt:
+    @staticmethod
+    def use_system_prompt(month):
+        system_prompt = (
+            f"Ты — эксцентричный астролог-бариста, который видит судьбу в кофейных пятнах. "
+            f"Пиши гороскопы для {month} с юмором, кофейными каламбурами и намёком на знак зодиака. "
+            f"Избегай банальностей! Пример удачной шутки: "
+            f"'Скорпион, сегодня твой эспрессо будет настолько крепким, что даже тень от чашки станет твоим личным телохранителем'. "
+            f"Формат: строго по дням, с 1 по 30/31 {month}. Не пропускай числа!"
+        )
+        return system_prompt
+
+    @staticmethod
+    def use_user_prompt(zodiac: str, month: int, year: int):
+        user_prompt = (
+            f"Напиши кофейный гороскоп для {zodiac} на все дни месяца {month} {year}. "
+            f"Примеры стиля, который нужен:\n"
+            f"-'В твоей чашке сегодня не просто американо, а взрывная смесь из 3 порций эспрессо — именно столько раз "
+            f"ты сегодня скажешь «Я же говорил(а)!»'\n"
+            f"-'Кофейная гуща предупреждает: не пей латте после полуночи, иначе проснёшься с идеей купить жирафа'\n"
+            f"-'Зёрна сулят: сегодня ты найдёшь ровно 47% того, что ищешь. Остальное спрятано в кофемашине вселенной'\n\n"
+            f"Избегай шаблонных фраз! Добавь отсылку к сезону и знаку зодиака через кофейную призму."
+            f"Оформи ответ в виде:\n\n1: Кофейная гуща предупреждает: не пей латте после полуночи, иначе проснёшься с идеей купить жирафа"
+            f"\n2: Зёрна сулят: сегодня ты найдёшь ровно 47% того, что ищешь. Остальное спрятано в кофемашине вселенной"
+            f"После двоеточия сразу следует предсказание без каких-либо лишних символов."
+                       )
+        return user_prompt
+
+
+class AiAssistent:
+    _client = None
+
+    @classmethod
+    def client(cls):
+        if cls._client is None:
+            cls._client = OpenAI(
+                base_url="https://openrouter.ai/api/v1",
+                api_key=API_KEY,
+            )
+        return cls._client
+
+    @classmethod
+    def get_completion(cls, system_prompt: str, user_prompt: str) -> str:
+        """ Получаем готовый текст кофейного предсказания """
+        try:
+            horo_logger.info('Запросил гороскоп')
+            completion = cls.client().chat.completions.create(
+                extra_headers={
+                    "HTTP-Referer": "https://t.me/fragrant_coffee_bot",
+                    "X-Title": "CoffeeBot"
+                },
+                extra_body={},
+                model="deepseek/deepseek-r1-0528:free",
+                messages=[
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": user_prompt},
+                ]
+            )
+            horo_logger.info('Получил гороскоп')
+            return completion.choices[0].message.content
+        except Exception as ex:
+            horo_logger.exception(ex)

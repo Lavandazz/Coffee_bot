@@ -6,8 +6,7 @@ from aiogram.fsm.context import FSMContext
 from aiogram.types import Message, ReplyKeyboardRemove
 
 from keyboards.menu_keyboard import inline_menu_kb
-
-main_logger = logging.getLogger('main')
+from utils.logging_config import bot_logger
 
 
 async def cancel_handler(message: Message, bot: Bot, state: FSMContext):
@@ -16,7 +15,7 @@ async def cancel_handler(message: Message, bot: Bot, state: FSMContext):
     if current_state is None:
         return
     await state.clear()
-    main_logger.info(f"Состояние ожидания: {current_state} - отменено")
+    bot_logger.info(f"Состояние ожидания: {current_state} - отменено")
     await asyncio.sleep(0.3)
     await message.answer(f"Действие отменено.\n"
                          f"Возврат в меню",
@@ -39,7 +38,7 @@ async def cancel_state_handler(user_id: int, bot: Bot, state: FSMContext):
             await bot.send_message(user_id, 'Ожидание превышено. Отмена сохранения данных.',
                                    reply_markup=inline_menu_kb())
             await state.clear()
-            main_logger.info(f'Состояние сброшено: {current_state} ')
+            bot_logger.info(f'Состояние сброшено: {current_state} ')
 
     except Exception as e:
-        main_logger.warning(f"Ошибка в cancel_state_handler: {e}")
+        bot_logger.warning(f"Ошибка в cancel_state_handler: {e}")

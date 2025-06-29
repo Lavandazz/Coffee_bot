@@ -1,38 +1,100 @@
 import logging
 import os
-
-log_folder = "logs"
-os.makedirs(log_folder, exist_ok=True)
+from colorlog import ColoredFormatter
 
 
-def setup_logging():
-    """ Main logger """
-    log_file_path = os.path.join(log_folder, "py_log.log")  # путь к файлу
+class BaseLogger:
+    """ Базовый класс логгера """
 
-    # Убираем вызов basicConfig, чтобы настройки выполнялись через обработчики
-    main_logger = logging.getLogger('main')  # Получаем глобальный логгер
-    main_logger.setLevel(logging.INFO)  # Устанавливаем уровень логирования
+    def __init__(self, name: str, log_file: str, logging_level=logging.INFO):
+        self.name = name
+        self.log_file = log_file
+        self.logger = logging.getLogger(name)
+        self.logger.setLevel(logging_level)  # настройка уровня логирования
 
-    if not main_logger.hasHandlers():
-        # Консольный обработчик главного логера
+        if not self.logger.handlers:
+            self._setup_handlers()
+
+    def _setup_handlers(self):
+        """ Настройка обработчиков """
+        # 1. Цветной вывод в консоль
         console_handler = logging.StreamHandler()
-        console_handler.setLevel(logging.INFO)
+        console_formatter = ColoredFormatter(
+            '%(log_color)s%(levelname)-8s%(reset)s %(asctime)s [%(name)s] '
+            '(%(filename)s).%(funcName)s(%(lineno)d) %(message)s',
+            datefmt='%Y-%m-%d %H:%M:%S',
+            log_colors={
+                'DEBUG': 'cyan',
+                'INFO': 'green',
+                'WARNING': 'yellow',
+                'ERROR': 'red',
+                'CRITICAL': 'red,bg_white',
+            }
+        )
+        console_handler.setFormatter(console_formatter)
 
-        # Файловый обработчик
-        main_file_handler = logging.FileHandler(log_file_path, mode='w')
-        main_file_handler.setLevel(logging.INFO)
+        # 2. Простой вывод в файл (без цветов)
+        file_handler = logging.FileHandler(self.log_file, mode='w')
+        file_formatter = logging.Formatter(
+            '%(levelname)-8s %(asctime)s [%(name)s] '
+            '(%(filename)s).%(funcName)s(%(lineno)d) %(message)s'
+        )
+        file_handler.setFormatter(file_formatter)
 
-        # Формат для логов
-        main_formatter = logging.Formatter('%(levelname)s - %(asctime)s - [%(name)s] - '
-                                           '(%(filename)s).%(funcName)s(%(lineno)d) - %(message)s')
-        console_handler.setFormatter(main_formatter)
-        main_file_handler.setFormatter(main_formatter)
+        # Добавляем обработчики
+        self.logger.addHandler(console_handler)
+        self.logger.addHandler(file_handler)
 
-        # Добавляем обработчики к логгеру
-        main_logger.addHandler(console_handler)
-        main_logger.addHandler(main_file_handler)
+        # Логируем успешную настройку
+        self.logger.info(f"Логирование для '{self.name}' настроено успешно.")
 
-        # Логирование в самом конце, чтобы отобразить сообщение
-        main_logger.info("Логирование настроено успешно.")
+    def get_logger(self):
+        """Возвращает настроенный логгер"""
+        return self.logger
 
-    return main_logger
+
+class BotLogger(BaseLogger):
+    """Логгер для бота"""
+
+    def __init__(self):
+        log_folder = "logs"
+        os.makedirs(log_folder, exist_ok=True)
+        log_file = os.path.join(log_folder, "bot_logs.log")
+        super().__init__(name="bot", log_file=log_file)
+
+
+class HoroscopeLogger(BaseLogger):
+    """ Логгер для гороскопа"""
+
+    def __init__(self):
+        log_folder = "logs"
+        os.makedirs(log_folder, exist_ok=True)
+        log_file = os.path.join(log_folder, "horo_logs.log")
+        super().__init__(name="horoscope", log_file=log_file, logging_level=logging.DEBUG)
+
+
+class DatabaseLogger(BaseLogger):
+    """ Логгер для базы """
+
+    def __init__(self):
+        log_folder = "logs"
+        os.makedirs(log_folder, exist_ok=True)
+        log_file = os.path.join(log_folder, "db_logs.log")
+        super().__init__(name="db", log_file=log_file)
+
+
+class SchedulerLogger(BaseLogger):
+    """ Логгер для шедулера """
+
+    def __init__(self):
+        log_folder = "logs"
+        os.makedirs(log_folder, exist_ok=True)
+        log_file = os.path.join(log_folder, "scheduler_logs.log")
+        super().__init__(name="scheduler", log_file=log_file)
+
+
+# Инициализация логгеров
+bot_logger = BotLogger().get_logger()
+horo_logger = HoroscopeLogger().get_logger()
+db_logger = DatabaseLogger().get_logger()
+scheduler_logger = SchedulerLogger().get_logger()

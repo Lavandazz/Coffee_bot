@@ -41,5 +41,11 @@ class Review(Model):
 
 
 class Horoscope(Model):
+    id = fields.IntField(pk=True)
+    zodiac = fields.CharField(max_length=20)
+    date = fields.DateField()
+    text = fields.TextField()
 
-    pass
+    class Meta:
+        table = "horoscopes"
+        unique_together = ("zodiac", "date")  # Чтобы не было дублей

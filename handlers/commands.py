@@ -12,8 +12,14 @@ async def set_commands(bot: Bot):
         BotCommand(command='help',
                    description='Помощь')
     ]
+
     admin_commands = commands + [
-        BotCommand(command="moderate", description="Отзывы")]
+        BotCommand(command="moderate",
+                   description="Отзывы"),
+        BotCommand(command="admin",
+                   description="Админ-панель")
+    ]
+
 
     # Устанавливаем команды по умолчанию
     await bot.set_my_commands(commands, BotCommandScopeDefault())

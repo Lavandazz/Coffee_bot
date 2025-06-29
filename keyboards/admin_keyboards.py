@@ -11,7 +11,7 @@ def get_review_keyboard(review_id: int) -> InlineKeyboardMarkup:
     ])
 
 
-async def get_back_button_to_calendar():
+async def get_back(back_state):
     """ Кнопка Назад """
     return InlineKeyboardMarkup(inline_keyboard=[
         [InlineKeyboardButton(text="🔙 Назад", callback_data="back_to_admin_menu")]

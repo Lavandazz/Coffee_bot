@@ -1,17 +1,12 @@
 import asyncio
-import datetime
-import logging
 
 from handlers.commands import set_commands
 from handlers.dispatcher import setup_dispatcher
-from utils.config import token, dp, bot
+from utils.config import dp, bot
 from database.create_db import init_db, close_db
-from utils.logging_config import setup_logging
+from utils.schedulers import scheduler_horoscope
 
-logging.basicConfig(level=logging.INFO)
-main_logger = logging.getLogger('main')
-
-setup_logging()
+from utils.logging_config import bot_logger
 
 
 async def start_bot():
@@ -19,10 +14,11 @@ async def start_bot():
     await set_commands(bot)
     # Регистрация хэндлеров
     setup_dispatcher(dp)
+    asyncio.create_task(scheduler_horoscope())
     try:
         await dp.start_polling(bot, skip_updates=True)
     finally:
-        main_logger.warning('Бот закрыт')
+        bot_logger.warning('Бот закрыт')
         await bot.close()
 
 
@@ -34,8 +30,7 @@ async def main():
 
 
 if __name__ == '__main__':
-    main_logger = logging.getLogger('main')
     try:
         asyncio.run(main())
     except KeyboardInterrupt:
-        main_logger.warning('Помощник завершены')
+        bot_logger.warning('Помощник завершены')
