@@ -1,20 +1,24 @@
 import asyncio
 
+from aiogram.types import CallbackQuery
+
 from handlers.commands import set_commands
 from handlers.dispatcher import setup_dispatcher
 from utils.config import dp, bot
 from database.create_db import init_db, close_db
-from utils.schedulers import scheduler_horoscope
+from utils.shedulers.cleane_base_scheduler import scheduler_clean_horoscope
+from utils.shedulers.horo_scheduler import scheduler_horoscope
 
 from utils.logging_config import bot_logger
 
 
-async def start_bot():
+async def start_bot(user_id: int = None):
     """ Запуск бота, при неудаче бот закроется """
-    await set_commands(bot)
+    await set_commands(bot, user_id)
     # Регистрация хэндлеров
     setup_dispatcher(dp)
     asyncio.create_task(scheduler_horoscope())
+    asyncio.create_task(scheduler_clean_horoscope(bot))
     try:
         await dp.start_polling(bot, skip_updates=True)
     finally:

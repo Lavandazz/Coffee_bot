@@ -2,9 +2,10 @@ from aiogram import Bot
 from aiogram.types import BotCommand, BotCommandScopeDefault, BotCommandScopeChat
 
 from utils.config import get_admin_id
+from utils.if_admin import is_admin
 
 
-async def set_commands(bot: Bot):
+async def set_commands(bot: Bot, user_id: int = None):
     """ Создание кнопок """
     commands = [
         BotCommand(command='start',
@@ -14,8 +15,6 @@ async def set_commands(bot: Bot):
     ]
 
     admin_commands = commands + [
-        BotCommand(command="moderate",
-                   description="Отзывы"),
         BotCommand(command="admin",
                    description="Админ-панель")
     ]
@@ -24,10 +23,12 @@ async def set_commands(bot: Bot):
     # Устанавливаем команды по умолчанию
     await bot.set_my_commands(commands, BotCommandScopeDefault())
 
-    admins = get_admin_id()
+    admin = await is_admin(user_id)
+    # admins = get_admin_id()
     # Дополнительно устанавливаем для админов
-    for admin_id in admins:
+    if admin:
+    # for admin_id in admins:
         await bot.set_my_commands(
             commands=admin_commands,
-            scope=BotCommandScopeChat(chat_id=admin_id)
+            scope=BotCommandScopeChat(chat_id=admin)
         )

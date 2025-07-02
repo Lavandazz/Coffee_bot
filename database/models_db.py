@@ -7,7 +7,7 @@ class User(Model):
     username = fields.CharField(max_length=100)
     first_name = fields.CharField(max_length=100)
     telegram_id = fields.IntField(unique=True)
-    is_admin = fields.BooleanField(default=False)
+    role = fields.CharField(max_length=20, default='user')
 
     class Meta:
         table = 'users'
@@ -16,7 +16,9 @@ class User(Model):
 class AdminPost(Model):
     id = fields.IntField(pk=True)
     # models берется из config
-    user_id = fields.ForeignKeyField('models.User', related_name='posts', source_field="user_id")
+    user_id: fields.ForeignKeyRelation[User] = fields.ForeignKeyField('models.User',
+                                                                      related_name='posts',
+                                                                      source_field="user_id")
     photo_file_id = fields.CharField(max_length=255)
     text = fields.TextField()
     date = fields.DatetimeField(auto_now_add=True)
@@ -28,7 +30,13 @@ class AdminPost(Model):
 
 class Review(Model):
     id = fields.IntField(pk=True)
-    user_id = fields.BigIntField()
+    # user: fields.ForeignKeyRelation[User] = fields.ForeignKeyField('models.User',
+    #                                                                related_name='reviews',
+    #                                                                source_field="user_id")
+    user: fields.ForeignKeyRelation[User] = fields.ForeignKeyField(
+        'models.User',
+        related_name='reviews',
+        db_column='user_id')
     username = fields.CharField(max_length=255, null=True)
     first_name = fields.CharField(max_length=255, null=True)
     photo_file_id = fields.CharField(max_length=255, null=True)
@@ -45,6 +53,7 @@ class Horoscope(Model):
     zodiac = fields.CharField(max_length=20)
     date = fields.DateField()
     text = fields.TextField()
+    test_text = fields.TextField(null=True)
 
     class Meta:
         table = "horoscopes"

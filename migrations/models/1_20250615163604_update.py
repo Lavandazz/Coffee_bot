@@ -13,7 +13,7 @@ async def upgrade(db: BaseDBAsyncClient) -> str:
 );
         CREATE TABLE IF NOT EXISTS "review" (
     "id" SERIAL NOT NULL PRIMARY KEY,
-    "user_id" BIGINT NOT NULL,
+
     "username" VARCHAR(255),
     "first_name" VARCHAR(255),
     "photo_file_id" VARCHAR(255),

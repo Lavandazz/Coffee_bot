@@ -6,3 +6,10 @@ class MenuState(StatesGroup):
     horoscope_menu = State()
     zodiac_menu = State()
     admin_menu = State()
+    review_menu = State()
+    approve_menu = State()
+
+
+class ReviewStates(StatesGroup):
+    waiting_for_photo = State()
+    waiting_for_text = State()

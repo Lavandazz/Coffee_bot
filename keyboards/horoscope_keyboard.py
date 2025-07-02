@@ -12,10 +12,3 @@ def zodiac_kb():
     kb.button(text='⬅️ Назад', callback_data='back_to_menu')
     kb.adjust(1, 4)
     return kb.as_markup()
-
-def back_button():
-    kb = InlineKeyboardBuilder()
-    kb.button(text='⬅️ Назад', callback_data='back')
-    kb.adjust(1)
-    return kb.as_markup()
-
