@@ -28,4 +28,4 @@ async def get_start(message: Message, bot: Bot):
         bot_logger.info(f'Зарегистрирован новый пользователь {message.from_user.id}')
     await bot.send_message(message.from_user.id,
                            f"{generate_day_or_night(local_time.hour)}",
-                           reply_markup=inline_menu_kb())
+                           reply_markup=await inline_menu_kb(message.from_user.id))

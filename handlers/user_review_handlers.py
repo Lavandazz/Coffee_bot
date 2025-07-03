@@ -4,7 +4,7 @@ from aiogram.fsm.context import FSMContext
 from aiogram.types import Message, CallbackQuery
 
 from database.models_db import Review, User
-from keyboards.admin_keyboards import get_review_keyboard
+from keyboards.barista_keyboard import get_review_keyboard
 from keyboards.back_keyboard import back_button
 from keyboards.menu_keyboard import inline_menu_kb
 
@@ -65,7 +65,8 @@ async def handle_review_photo(message: Message, state: FSMContext, bot: Bot):
     except Exception as e:
         bot_logger.exception(f"💥 Ошибка при отправке сообщения админу : {e}")
 
-    await message.answer("Спасибо за отзыв с фото! Бариста его рассмотрит ☕", reply_markup=inline_menu_kb())
+    await message.answer(text="Спасибо за отзыв с фото! Бариста его рассмотрит ☕",
+                         reply_markup=await inline_menu_kb(message.from_user.id))
     await state.clear()
 
 
@@ -96,5 +97,6 @@ async def handle_review_text(message: Message, state: FSMContext, bot: Bot):
     except Exception as e:
         bot_logger.exception(f"💥 Ошибка при отправке сообщения админу : {e}")
 
-    await message.answer("Спасибо за отзыв! Бариста его рассмотрит ☕", reply_markup=inline_menu_kb())
+    await message.answer(text="Спасибо за отзыв! Бариста его рассмотрит ☕",
+                         reply_markup=await inline_menu_kb(message.from_user.id))
     await state.clear()

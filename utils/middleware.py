@@ -4,6 +4,8 @@ from typing import Callable, Dict, Any
 
 from aiohttp.typedefs import Middleware
 
+from database.models_db import User
+
 
 class RoleMiddleware(BaseMiddleware):
     async def __call__(self,
@@ -11,4 +13,7 @@ class RoleMiddleware(BaseMiddleware):
         event: TelegramObject,
         data: Dict[str, Any]
     ) -> Any:
-        user_id = event['event_from_user'].id
+        user_id = event.from_user.id
+        user = await User.get(telegram_id=user_id)
+        data["role"] = user.role if user else "user"
+        return await handler(event, data)

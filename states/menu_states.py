@@ -5,7 +5,12 @@ class MenuState(StatesGroup):
     main_menu = State()
     horoscope_menu = State()
     zodiac_menu = State()
+
+
+class AdminMenuState(StatesGroup):
     admin_menu = State()
+    admin = State()
+    barista = State()
     review_menu = State()
     approve_menu = State()
 

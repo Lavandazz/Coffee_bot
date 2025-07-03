@@ -19,7 +19,7 @@ async def cancel_handler(message: Message, bot: Bot, state: FSMContext):
     await asyncio.sleep(0.3)
     await message.answer(f"Действие отменено.\n"
                          f"Возврат в меню",
-                         reply_markup=inline_menu_kb())
+                         reply_markup=await inline_menu_kb(message.from_user.id))
     # await bot.send_message(message.from_user.id, 'Возврат в меню',
     #                        reply_markup=inline_menu_kb())
 
@@ -36,7 +36,7 @@ async def cancel_state_handler(user_id: int, bot: Bot, state: FSMContext):
         if current_state == new_current_state:
             # user_id = user_id
             await bot.send_message(user_id, 'Ожидание превышено. Отмена сохранения данных.',
-                                   reply_markup=inline_menu_kb())
+                                   reply_markup=await inline_menu_kb(user_id))
             await state.clear()
             bot_logger.info(f'Состояние сброшено: {current_state} ')
 

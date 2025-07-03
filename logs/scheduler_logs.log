@@ -1,2 +1,2 @@
-INFO     2025-07-02 14:35:52,816 [scheduler] (logging_config.py)._setup_handlers(49) Логирование для 'scheduler' настроено успешно.
-INFO     2025-07-02 14:35:53,717 [scheduler] (cleane_base_scheduler.py).scheduler_clean_horoscope(42) Шедулер очистки дат запущен в 2025-07-02 14:35:53.717728
+INFO     2025-07-03 22:39:03,665 [scheduler] (logging_config.py)._setup_handlers(49) Логирование для 'scheduler' настроено успешно.
+INFO     2025-07-03 22:39:04,315 [scheduler] (cleane_base_scheduler.py).scheduler_clean_horoscope(47) Шедулер очистки дат запущен в 2025-07-03 22:39:04.315240

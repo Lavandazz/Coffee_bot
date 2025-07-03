@@ -4,14 +4,14 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-
 async def init_db():
     await Tortoise.init(
         config=TORTOISE_ORM,  # передаем конфиг
         modules={
             'users': ['users.models_db'],
             'review': ['review.models_db'],
-            'admin_posts': ['admin_posts.models_db']
+            'admin_posts': ['admin_posts.models_db'],
+            'horoscopes': ['horoscopes.models_db'],
         }
     )
 
