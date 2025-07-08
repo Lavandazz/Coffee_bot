@@ -8,7 +8,7 @@ from keyboards.menu_keyboard import inline_menu_kb
 from states.menu_states import MenuState, AdminMenuState
 from database.models_db import AdminPost, Review
 from utils.ai_generator import generate_ai_greeting
-from utils.if_admin import is_admin
+from utils.get_user import is_admin
 from utils.logging_config import bot_logger
 
 

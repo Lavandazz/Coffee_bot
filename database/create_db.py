@@ -14,7 +14,7 @@ async def init_db():
             'horoscopes': ['horoscopes.models_db'],
         }
     )
-
+    await Tortoise.generate_schemas()  # создание таблиц, если их нет
 
 async def close_db():
     await Tortoise.close_connections()

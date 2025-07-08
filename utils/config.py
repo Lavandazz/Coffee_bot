@@ -3,6 +3,8 @@ from aiogram.client.default import DefaultBotProperties
 from aiogram.client.session.aiohttp import AiohttpSession
 from dotenv import load_dotenv
 from aiogram import Bot, Dispatcher
+
+from database.models_db import User
 from .settings_env import env_file
 
 
@@ -10,6 +12,7 @@ from .settings_env import env_file
 token = os.getenv("BOT_TOKEN")
 admin_id = os.getenv("ADMIN")
 API_KEY = os.getenv("OPENROUTER_API_KEY")
+SUPERADMIN = int(admin_id.replace(',', ''))
 
 # Объекты бота
 bot = Bot(

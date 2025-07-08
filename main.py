@@ -1,14 +1,12 @@
 import asyncio
-
-from aiogram.types import CallbackQuery
-
+from database.models_db import User
 from handlers.commands import set_commands
 from handlers.dispatcher import setup_dispatcher
+from handlers.start_handlers import seed_admin
 from utils.config import dp, bot
 from database.create_db import init_db, close_db
 from utils.shedulers.cleane_base_scheduler import scheduler_clean_horoscope
 from utils.shedulers.horo_scheduler import scheduler_horoscope
-
 from utils.logging_config import bot_logger
 
 
@@ -17,6 +15,7 @@ async def start_bot(user_id: int = None):
     await set_commands(bot, user_id)
     # Регистрация хэндлеров
     setup_dispatcher(dp)
+
     asyncio.create_task(scheduler_horoscope())
     asyncio.create_task(scheduler_clean_horoscope(bot))
     try:
@@ -29,6 +28,9 @@ async def start_bot(user_id: int = None):
 async def main():
     # Подключаем БД ОДИН РАЗ
     await init_db()
+    # запись админа в бд
+    await seed_admin()
+
     await start_bot()
     await close_db()  # Закроем БД после завершения всех задач
 
@@ -36,5 +38,6 @@ async def main():
 if __name__ == '__main__':
     try:
         asyncio.run(main())
+        bot_logger.info('>>> Бот запускается — main.py загружен!')
     except KeyboardInterrupt:
         bot_logger.warning('Помощник завершены')

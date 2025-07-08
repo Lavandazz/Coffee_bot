@@ -6,7 +6,8 @@ from database.models_db import Horoscope
 from keyboards.back_keyboard import back_button
 from keyboards.horoscope_keyboard import zodiac_kb
 from states.menu_states import MenuState
-from utils.shedulers.horo_scheduler import generate_horo
+from utils.logging_config import bot_logger
+from utils.shedulers.horo_scheduler import generate_call_horo
 
 
 async def show_horoscope(call: CallbackQuery, state: FSMContext):
@@ -21,17 +22,29 @@ async def send_horoscope(call: CallbackQuery, state: FSMContext):
     zodiac = call.data.replace('zodiac_', '')
     await state.set_state(MenuState.zodiac_menu)
     # получаем гороскоп их псевдобазы
-    horoscope = await Horoscope.get_or_none(zodiac=zodiac, date=call_date)
-    if horoscope:
-        await call.message.edit_text(f'Гороскоп на сегодня: {horoscope.text}',
-                                     reply_markup=back_button())
+    try:
+        horoscope = await Horoscope.get_or_none(zodiac=zodiac, date=call_date)
 
-    else:
-        horoscope = await MockHoroscope.get_or_none(zodiac, call_date.month)
-        await call.message.edit_text(f'Гороскоп на сегодня: {horoscope.get("text")}',
-                                     reply_markup=back_button())
+        if horoscope:
+            if call_date == horoscope.date:
+                await call.message.edit_text(f'Гороскоп на сегодня:\n{horoscope.text}',
+                                             reply_markup=back_button())
+            else:
+                horoscope = await MockHoroscope.get_or_none(zodiac)
+                await call.message.edit_text(f'Гороскоп на сегодня:\n{horoscope.get("text")}',
+                                             reply_markup=back_button())
+                bot_logger.warning(f'Дата гороскопа не совпадает {zodiac}, {call_date}')
+        else:
+            horoscope = await MockHoroscope.get_or_none(zodiac)
+            await call.message.edit_text(f'Гороскоп на сегодня:\n{horoscope.get("text")}',
+                                         reply_markup=back_button())
+            bot_logger.warning(f'Гороскопа для {zodiac} нет в базе {call_date}. Использована мокбаза')
+    except Exception as e:
+        await call.message.answer("Произошла ошибка, попробуйте позже")
+        bot_logger.info(f'Ощибка в отправке гороскопа для {zodiac}, error: {e}')
 
 
 async def start_schedule_horo(call: CallbackQuery):
+    """ Ручной запуск парсинга гороскопа """
     await call.answer('Запускаю гороскоп')
-    await generate_horo()
+    await generate_call_horo(call)

@@ -1,1 +1,1 @@
-INFO     2025-07-03 22:39:03,665 [db] (logging_config.py)._setup_handlers(49) Логирование для 'db' настроено успешно.
+INFO     2025-07-08 22:47:49,574 [db] (logging_config.py)._setup_handlers(49) Логирование для 'db' настроено успешно.

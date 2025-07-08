@@ -30,9 +30,6 @@ class AdminPost(Model):
 
 class Review(Model):
     id = fields.IntField(pk=True)
-    # user: fields.ForeignKeyRelation[User] = fields.ForeignKeyField('models.User',
-    #                                                                related_name='reviews',
-    #                                                                source_field="user_id")
     user: fields.ForeignKeyRelation[User] = fields.ForeignKeyField(
         'models.User',
         related_name='reviews',

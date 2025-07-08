@@ -9,9 +9,10 @@ from keyboards.back_keyboard import back_button
 from keyboards.menu_keyboard import inline_menu_kb
 
 from states.menu_states import ReviewStates
+from utils.get_user import get_users_from_db
 
-from utils.config import get_admin_id
 from utils.logging_config import bot_logger
+from utils.send_messages import SendMessage
 
 
 async def ask_for_photo(call: CallbackQuery, state: FSMContext):
@@ -35,9 +36,28 @@ async def ask_for_text(call: CallbackQuery, state: FSMContext):
     await state.set_state(ReviewStates.waiting_for_text)
 
 
+# async def send_message(bot, user, review_id, username, caption=None, file_id=None):
+#     baristas = await get_users_from_db('barista')
+#
+#     try:
+#         for barista in baristas:
+#             await asyncio.sleep(0.5)
+#             bot_logger.info(f"Попытка отправки баристе {barista.get('id')}")
+#             await bot.send_message(
+#                 barista.get('telegram_id'),
+#                 f"🆘 Новый фотоотзыв #{review_id}\n"
+#                 f"От: @{username}\n"
+#                 f"Сообщение: {caption}\n",
+#                 # f"Сообщение: {message.photo}",
+#                 reply_markup=get_review_keyboard(review_id)
+#             )
+#     except Exception as e:
+#         bot_logger.exception(f"💥 Ошибка при отправке сообщения админу : {e}")
+
+
 async def handle_review_photo(message: Message, state: FSMContext, bot: Bot):
     """ Загрузка отзыва с фото от пользователя """
-    data = await state.get_state()
+    await state.get_state()
     file_id = message.photo[-1].file_id
     caption = message.caption
     user = await User.get(telegram_id=message.from_user.id)
@@ -48,22 +68,8 @@ async def handle_review_photo(message: Message, state: FSMContext, bot: Bot):
         photo_file_id=file_id,
         text=caption
     )
-    admin_ids = get_admin_id()
-
-    try:
-        for admin in admin_ids:
-            bot_logger.info(f"Попытка отправки фото админу {admin} ({type(admin)})")
-            await bot.send_message(
-                admin,
-                f"🆘 Новый фотоотзыв #{review.id}\n"
-                f"От: @{message.from_user.username}\n"
-                f"Сообщение: {caption}\n",
-                # f"Сообщение: {message.photo}",
-                reply_markup=get_review_keyboard(review.id)
-            )
-
-    except Exception as e:
-        bot_logger.exception(f"💥 Ошибка при отправке сообщения админу : {e}")
+    sender = SendMessage(user_role='barista', user=user, bot=bot, review_id=review.id, text=caption, file_id=file_id)
+    await sender.send_message()
 
     await message.answer(text="Спасибо за отзыв с фото! Бариста его рассмотрит ☕",
                          reply_markup=await inline_menu_kb(message.from_user.id))
@@ -80,23 +86,8 @@ async def handle_review_text(message: Message, state: FSMContext, bot: Bot):
         text=message.text
     )
 
-    admin_ids = get_admin_id()
-
-    try:
-        for admin in admin_ids:
-            await asyncio.sleep(0.5)
-            bot_logger.info(f"Попытка отправки админу {admin} ({type(admin)})")
-            await bot.send_message(
-                admin,
-                f"🆘 Новый текстовый отзыв #{review.id}\n"
-                f"От: @{message.from_user.username}\n"
-                f"Сообщение: {message.text}",
-                reply_markup=get_review_keyboard(review.id)
-            )
-
-    except Exception as e:
-        bot_logger.exception(f"💥 Ошибка при отправке сообщения админу : {e}")
-
+    sender = SendMessage(user_role='barista', user=user, bot=bot, review_id=review.id, text=message.text)
+    await sender.send_message()
     await message.answer(text="Спасибо за отзыв! Бариста его рассмотрит ☕",
                          reply_markup=await inline_menu_kb(message.from_user.id))
     await state.clear()

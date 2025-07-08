@@ -13,6 +13,12 @@ async def is_admin(user_id) -> bool:
         return admin
 
 
+async def get_users_from_db(user_role) -> list[dict]:
+    """ Список словарей юзеров по ролям """
+    users = await User.filter(role=user_role).values('id', 'username', 'telegram_id', 'role')
+    return users
+
+
 async def get_role_user(user_id) -> str | None:
     try:
         user = await User.get(telegram_id=user_id)  # telegram_id=484385628

@@ -1,6 +1,6 @@
 from aiogram.types import InlineKeyboardButton
 from aiogram.utils.keyboard import InlineKeyboardBuilder
-from utils.if_admin import get_role_user
+from utils.get_user import get_role_user
 
 
 async def inline_menu_kb(user_id):

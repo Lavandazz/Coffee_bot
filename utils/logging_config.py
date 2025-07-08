@@ -60,12 +60,11 @@ class BotLogger(BaseLogger):
         log_folder = "logs"
         os.makedirs(log_folder, exist_ok=True)
         log_file = os.path.join(log_folder, "bot_logs.log")
-        super().__init__(name="bot", log_file=log_file)
+        super().__init__(name="bot", log_file=log_file, logging_level=logging.DEBUG)
 
 
 class HoroscopeLogger(BaseLogger):
     """ Логгер для гороскопа"""
-
     def __init__(self):
         log_folder = "logs"
         os.makedirs(log_folder, exist_ok=True)
@@ -73,9 +72,17 @@ class HoroscopeLogger(BaseLogger):
         super().__init__(name="horoscope", log_file=log_file, logging_level=logging.DEBUG)
 
 
+class HelpAiLogger(BaseLogger):
+    """ Логгер для аи генератора"""
+    def __init__(self):
+        log_folder = "logs"
+        os.makedirs(log_folder, exist_ok=True)
+        log_file = os.path.join(log_folder, "phrase_logs.log")
+        super().__init__(name="horoscope", log_file=log_file, logging_level=logging.DEBUG)
+
+
 class DatabaseLogger(BaseLogger):
     """ Логгер для базы """
-
     def __init__(self):
         log_folder = "logs"
         os.makedirs(log_folder, exist_ok=True)
@@ -85,7 +92,6 @@ class DatabaseLogger(BaseLogger):
 
 class SchedulerLogger(BaseLogger):
     """ Логгер для шедулера """
-
     def __init__(self):
         log_folder = "logs"
         os.makedirs(log_folder, exist_ok=True)
@@ -98,3 +104,4 @@ bot_logger = BotLogger().get_logger()
 horo_logger = HoroscopeLogger().get_logger()
 db_logger = DatabaseLogger().get_logger()
 scheduler_logger = SchedulerLogger().get_logger()
+help_ai_logger = HelpAiLogger().get_logger()

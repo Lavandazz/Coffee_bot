@@ -1,0 +1,52 @@
+import asyncio
+from typing import Optional
+
+from aiogram import Bot
+
+from database.models_db import User
+from keyboards.barista_keyboard import get_review_keyboard
+from utils.get_user import get_users_from_db
+from utils.logging_config import bot_logger
+from dataclasses import dataclass
+
+
+@dataclass
+class SendMessage:
+    """Класс для отправки уведомлений о новых отзывах"""
+    user_role: str
+    user: User
+    bot: Bot
+    review_id: Optional[int] = None
+    text: Optional[str] = None
+    file_id: Optional[str] = None
+
+    async def send_message(self):
+        """Отправляет уведомление баристам о новом отзыве"""
+        try:
+            baristas = await get_users_from_db(self.user_role)
+            for barista in baristas:
+                await asyncio.sleep(0.5)
+                await self._send_notification(barista)
+        except Exception as e:
+            bot_logger.exception(f"Ошибка при отправке уведомления: {e}")
+
+    async def _send_notification(self, barista):
+        bot_logger.info(f"Попытка отправки бариста {barista.get('id')}")
+
+        message_text = f"🆘 Новый отзыв #{self.review_id}\n"\
+                       f"От: @{self.user.username}\n"\
+                       f"Сообщение: {self.text}\n"
+
+        if self.file_id:
+            bot_logger.debug(f'Отправляю сообщение с фоткой')
+            await self.bot.send_photo(chat_id=barista.get('telegram_id'),
+                                      photo=self.file_id,
+                                      caption=message_text,
+                                      reply_markup=get_review_keyboard(self.review_id))
+
+        else:
+            await self.bot.send_message(
+                barista.get('telegram_id'), message_text, reply_markup=get_review_keyboard(self.review_id))
+
+
+

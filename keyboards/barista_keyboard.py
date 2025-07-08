@@ -1,7 +1,7 @@
 from aiogram.types import InlineKeyboardButton
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 
-from database.models_db import Review
+from database.models_db import Review, AdminPost
 from utils.logging_config import bot_logger
 
 
@@ -19,13 +19,23 @@ def barista_keyboard():
     return kb.as_markup()
 
 
-async def review_kb():
+async def barista_posts_kb():
+    """ Отображение постов бариста как кнопок """
+    kb = InlineKeyboardBuilder()
+    posts = await AdminPost.all()
+    if not posts:
+        kb.row(InlineKeyboardButton(text='⬅️ Назад', callback_data='back'))
+    for post in posts:
+        kb.button(text=post.text[:30]+'...', callback_data='post_')
+
+    kb.adjust(1)
+    kb.row(InlineKeyboardButton(text='⬅️ Назад', callback_data='back'))
+    return kb.as_markup()
+
+
+async def review_kb(reviews: list):
     """ Кнопки с отзывами от клиентов """
     kb = InlineKeyboardBuilder()
-    reviews = await Review.filter(approved=False).only("id", "created_at")
-    if not reviews:
-        kb.button(text="Нет отзывов", callback_data="no_reviews")
-        return kb.as_markup()
 
     for review in reviews:
         date = review.created_at.strftime("%d.%m.%Y")
@@ -46,3 +56,21 @@ def get_review_keyboard(review_id: int):
     kb.button(text='⬅️ Назад', callback_data='back')
     kb.adjust(3)
     return kb.as_markup()
+
+
+def get_post_keyboard():
+    kb = InlineKeyboardBuilder()
+    kb.button(text="Да, сгенерируй!", callback_data="generate_text")
+    kb.button(text="Нет, введу вручную", callback_data="enter_text")
+
+    kb.adjust(2)
+    return kb.as_markup()
+
+
+def edit_text_keyboard():
+    kb = InlineKeyboardBuilder()
+    kb.button(text="Опубликовать", callback_data="save_post")
+    kb.button(text="Отредактировать текст", callback_data="change_text")
+    kb.adjust(2)
+    return kb.as_markup()
+

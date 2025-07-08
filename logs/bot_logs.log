@@ -1,10 +1,5 @@
-INFO     2025-07-03 22:39:03,664 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
-INFO     2025-07-03 22:39:04,274 [bot] (commands.py).set_commands(44) Установил команды
-INFO     2025-07-03 22:39:31,519 [bot] (barista_handlers.py).show_barista_btn(16) Вход в панель бариста
-INFO     2025-07-03 22:39:33,155 [bot] (barista_handlers.py).show_reviews(45) отправлю клаву
-INFO     2025-07-03 22:39:33,158 [bot] (barista_keyboard.py).review_kb(37) отправлена клавиатура с отзывами
-INFO     2025-07-03 22:39:34,347 [bot] (if_admin.py).is_admin(12) Админ True
-INFO     2025-07-03 22:39:35,295 [bot] (barista_keyboard.py).review_kb(37) отправлена клавиатура с отзывами
-INFO     2025-07-03 22:39:37,621 [bot] (back_handler.py).back(26) Состояние AdminMenuState:admin_menu сброшено
-WARNING  2025-07-03 22:56:00,743 [bot] (main.py).start_bot(25) Бот закрыт
-WARNING  2025-07-03 22:56:00,905 [bot] (main.py).<module>(40) Помощник завершены
+INFO     2025-07-08 22:47:49,574 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+INFO     2025-07-08 22:47:50,247 [bot] (start_handlers.py).seed_admin(21) Проверка: seed_admin вызвана
+INFO     2025-07-08 22:47:50,533 [bot] (commands.py).set_commands(44) Установил команды
+INFO     2025-07-08 22:48:12,226 [bot] (send_messages.py)._send_notification(34) Попытка отправки бариста 9
+DEBUG    2025-07-08 22:48:12,227 [bot] (send_messages.py)._send_notification(41) Отправляю сообщение с фоткой

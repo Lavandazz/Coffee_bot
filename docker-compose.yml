@@ -1,0 +1,51 @@
+# Updated 14.12.2024
+# version: "3.8"  # Версия Compose
+
+services:  # Определяем контейнеры
+  coffee_bot:  # Контейнер для бота
+    image: "coffee_bot_image"
+    build:
+      context: .  # Указываем, что Dockerfile находится в текущей директории
+    container_name: coffee_bot_container  # Название контейнера
+    env_file:  # Файл с переменными окружения
+      - .env  # .env для сервера, .env.local - локальная
+    networks:
+      - coffee_bot_network
+    volumes:
+      - .:/app  # Монтируем весь проект
+      - ./logs:/app/logs  # Логи сохраняем вне контейнера
+    depends_on:  # Указываем, что база данных должна запуститься раньше бота
+      coffee_db:
+        condition: service_healthy
+    restart: always
+    command: ["python", "main.py"]
+
+#    environment: # Добавляем переопределение переменных (для локального контейнера)
+#      - DATABASE_HOST=host.docker.internal  # ← Магия Docker для localhost
+#      - DATABASE_PORT=5432  # Порт БД на вашей машине
+
+# для работы локально, закомментить все db
+
+  coffee_db:
+    image: postgres:15
+    container_name: postgres_container_coffee
+    env_file:  # Файл с переменными окружения
+      - .env
+    ports:
+      - "5431:5432"  # порт хоста:порт внутри контейнера
+    networks:
+      - coffee_bot_network
+    volumes: # Сохраняем данные вне контейнера
+      - postgres_data_coffee:/var/lib/postgresql/data
+    restart: always
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U postgres" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+networks:
+  coffee_bot_network:
+    driver: bridge
+volumes:
+  postgres_data_coffee:  # Определяем volume для хранения данных PostgreSQL

@@ -1,22 +1,30 @@
 import asyncio
 import datetime
+
+from aiogram import Bot
+from aiogram.types import Message
+from tortoise.exceptions import IntegrityError
+
 from database.models_db import Horoscope
 from database.zodiac_signs import zodiac_signs
 from utils.ai_generator import Prompt, AiAssistent
+from utils.config import SUPERADMIN
 from utils.logging_config import horo_logger
 
 
-async def start_generate_all_horoscopes(date: datetime):
+async def start_generate_all_horoscopes(bot: Bot, date: datetime):
     """ Генерация всех гороскопов """
     for zodiac in zodiac_signs:
-        await generate_horoscope(zodiac, int(date.month), int(date.year))
+        await generate_horoscope(zodiac, int(date.month), int(date.year), bot)
+        await bot.send_message(chat_id=SUPERADMIN, text=f'Генерирую гороскоп для знака {zodiac}')
+        horo_logger.debug(f'SUPERADMIN: {SUPERADMIN}, Генерирую гороскоп для знака {zodiac}')
         await asyncio.sleep(60)
 
 
-async def generate_horoscope(zodiac: str, month: int, year: int):
-    """ Гороскоп на все дни месяца для одного знака """
-    """ 
-    # Получаем строку со всеми датами за месяц.
+async def generate_horoscope(zodiac: str, month: int, year: int, bot: Bot):
+    """
+    Гороскоп на все дни месяца для одного знака.
+    # Гороскоп имеет вид строки:
     # 1: Утро начнётся с эспрессо такой концентрации, что твоё расписание выстроится в идеальные столбцы
         # через ровно 47 секунд – не трогай планировщик, пока не допьешь!
     # 2: Крепость твоего американо сегодня = количество нервных раздражителей × 0.5 — ожидай поправку на летнее КПД и
@@ -35,15 +43,13 @@ async def generate_horoscope(zodiac: str, month: int, year: int):
         if not horoscope:
             raise ValueError("Пустой ответ от API")
 
-        print('сплю 10 сек')
-        print(f'Получен horoscope для знака {zodiac}: {horoscope[:70]}')
         await asyncio.sleep(10)
-        await horoscope_transformation_text(zodiac, horoscope, month, year)
+        await horoscope_transformation_text(zodiac, horoscope, month, year, bot)
     except Exception as ex:
         horo_logger.exception(f'Ошибка получения гороскопа для {zodiac} - {ex}')
 
 
-async def horoscope_transformation_text(zodiac: str, monthly_horoscope: str, month: int, year: int):
+async def horoscope_transformation_text(zodiac: str, monthly_horoscope: str, month: int, year: int, bot: Bot):
     """ Преобразование полного гороскопа в отдельный ежедневный формат """
     horoscopes = {}
     horo_logger.info(f'Перехожу к тексту знака - {zodiac}')
@@ -61,7 +67,7 @@ async def horoscope_transformation_text(zodiac: str, monthly_horoscope: str, mon
                 horo_logger.debug(f'day {zodiac} - {day} ')
                 try:
                     horo_logger.info(f'Сохраняю гороскоп знака - {zodiac}')
-                    await save_horoscope(zodiac, day, daily_horoscope.strip())
+                    await save_horoscope(zodiac, day, daily_horoscope.strip(), bot)
 
                     horoscopes[day] = daily_horoscope.strip()
                 except ValueError:
@@ -69,15 +75,22 @@ async def horoscope_transformation_text(zodiac: str, monthly_horoscope: str, mon
                     continue
 
 
-async def save_horoscope(zodiac: str, date: datetime, horoscope: str):
+async def save_horoscope(zodiac: str, date: datetime, horoscope: str, bot: Bot):
     """ Сохранение гороскопа построчно (по датам) """
     try:
-        await Horoscope.create(
+        await Horoscope.update_or_create(
             zodiac=zodiac,
             text=horoscope,
             date=date
         )
         horo_logger.info(f'Сохранил гороскоп знака - {zodiac}')
 
+    except IntegrityError as e:
+        # Обработка ошибки уникальности (дубликат записи)
+        horo_logger.warning(f'Гороскоп для {zodiac} на {date} уже существует: {e}')
+        await bot.send_message(chat_id=SUPERADMIN, text=f'Дата дублируется {zodiac}: {e}')
+
     except Exception as e:
-        print(f'не удалось сохранить гороскоп для {zodiac}', e)
+        horo_logger.exception(f'Ошибка сохранения гороскопа {zodiac}: {e}')
+        await bot.send_message(chat_id=SUPERADMIN, text=f'Не удалось сохранить гороскоп для {zodiac}: {e}')
+

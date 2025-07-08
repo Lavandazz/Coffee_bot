@@ -2,7 +2,7 @@ from aiogram import Bot
 from aiogram.types import BotCommand, BotCommandScopeDefault, BotCommandScopeChat
 
 from utils.config import get_admin_id
-from utils.if_admin import is_admin, get_role_user
+from utils.get_user import is_admin, get_role_user
 from utils.logging_config import bot_logger
 
 

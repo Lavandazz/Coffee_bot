@@ -1,7 +1,8 @@
+import asyncio
 import random
 from openai import OpenAI
 from utils.config import API_KEY
-from utils.logging_config import horo_logger
+from utils.logging_config import horo_logger, help_ai_logger
 
 MISTRAL_MODEL = "mistralai/mistral-small-24b-instruct-2501:free"
 DEEP_MODEL = "deepseek/deepseek-r1-0528:free"
@@ -9,7 +10,21 @@ DEEP_MODEL = "deepseek/deepseek-r1-0528:free"
 
 async def generate_ai_greeting():
     # Тут потом можно будет подключить OpenAI, Gemini, Mistral и т.д.
-    return "Доброе утро! Ваш кофе готов ☕"
+    # return "Доброе утро! Ваш кофе готов ☕"
+    system_prompt = BaristaPrompt.use_system_prompt()
+    user_prompt = BaristaPrompt.use_user_prompt()
+    help_ai_logger.info('Генерирую фразу для бариста')
+    try:
+        phrase = await asyncio.to_thread(
+            AiAssistent.get_completion,
+            system_prompt,
+            user_prompt
+        )
+        print('Получен ответ от ИИ', phrase)
+        return phrase
+
+    except Exception as ex:
+        help_ai_logger.exception(f'Ошибка получения фразы для бариста - {ex}')
 
 
 coffee_greetings = {
@@ -150,6 +165,25 @@ class Prompt:
         return user_prompt
 
 
+class BaristaPrompt:
+    @staticmethod
+    def use_system_prompt():
+        system_prompt = (
+            f"Ты лучший в мире бариста, у тебя отличный добрый юмор, ты дружелюбен и со всеми клиентами на Ты. "
+            f"Своим существованием и улыбкой ты поднимаешь всем настроение даже в плохие дни."
+        )
+        return system_prompt
+
+    @staticmethod
+    def use_user_prompt():
+        system_prompt = (
+            f"Напиши хорошее пожелание своему клиенту. Избегай указания по принадлежности к полу."
+            f"Клиент должен уйти от тебя чтобы еще вернуться за чашечкой хорошего кофе и отличного настроения."
+            f"Пожелания пиши на русском и без ошибок, всего 1-2 предложения."
+        )
+        return system_prompt
+
+
 class AiAssistent:
     _client = None
 
@@ -166,7 +200,7 @@ class AiAssistent:
     def get_completion(cls, system_prompt: str, user_prompt: str) -> str:
         """ Получаем готовый текст кофейного предсказания """
         try:
-            horo_logger.info('Запросил гороскоп')
+            help_ai_logger.info('Генерирую ответ')
             completion = cls.client().chat.completions.create(
                 extra_headers={
                     "HTTP-Referer": "https://t.me/fragrant_coffee_bot",
@@ -179,7 +213,7 @@ class AiAssistent:
                     {"role": "user", "content": user_prompt},
                 ]
             )
-            horo_logger.info('Получил гороскоп')
+            help_ai_logger.info('Получил ответ')
             return completion.choices[0].message.content
         except Exception as ex:
-            horo_logger.exception(ex)
+            help_ai_logger.exception(ex)
