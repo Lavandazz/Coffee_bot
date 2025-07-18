@@ -1,4 +1,4 @@
-from aiogram.types import InlineKeyboardButton
+from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 from utils.get_user import get_role_user
 
@@ -15,4 +15,13 @@ async def inline_menu_kb(user_id):
     if role == 'admin' or role == 'barista':
         kb.row(InlineKeyboardButton(text='Админ-панель', callback_data='admin_panel'))
 
+    return kb.as_markup()
+
+
+def start_for_channel():
+    kb = InlineKeyboardMarkup(
+        inline_keyboard=[
+            [InlineKeyboardButton(text="📢 Подписаться на канал", url="https://t.me/coffee_v_zernah")]
+        ]
+    )
     return kb.as_markup()

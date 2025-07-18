@@ -1,13 +1,14 @@
 from aiogram import Bot
+from aiogram.exceptions import TelegramBadRequest
 from aiogram.types import Message
 from datetime import timezone
-
+from aiogram.types import ChatMemberLeft
 from tortoise.exceptions import IntegrityError
 
 from database.models_db import User
-from keyboards.menu_keyboard import inline_menu_kb
+from keyboards.menu_keyboard import inline_menu_kb, start_for_channel
 from utils.ai_generator import generate_day_or_night
-from utils.config import admin_id, SUPERADMIN
+from utils.config import SUPERADMIN, CHANNEL, CHANNEL_ID
 from utils.logging_config import bot_logger
 
 
@@ -43,16 +44,58 @@ async def get_start(message: Message, bot: Bot):
     # Преобразуем часовой пояс (+3 часа для Москвы)
     local_time = time_message.replace(tzinfo=timezone.utc).astimezone(tz=None)  # определяет локальный пояс
     try:
-        user_id = await User.filter(telegram_id=message.from_user.id).exists()  # проверка айди в базе
-        if not user_id:
-            await User.create(
-                username=message.from_user.username,
-                first_name=message.from_user.first_name,
-                telegram_id=message.from_user.id,
-                is_admin=False)
-            bot_logger.info(f'Зарегистрирован новый пользователь {message.from_user.id}')
+        await create_user(message.from_user.username, message.from_user.first_name,
+                          message.from_user.id )
+
         await bot.send_message(message.from_user.id,
                                f"{generate_day_or_night(local_time.hour)}",
                                reply_markup=await inline_menu_kb(message.from_user.id))
+        #
+        await start_handler(message.from_user.id, bot)
     except Exception as e:
         bot_logger.exception(f'Ошибка при создании админа {e}')
+
+
+async def create_user(username: str, first_name: str, telegram_id: int):
+    """ Регистрация нового пользователя """
+    try:
+        user_id = await User.filter(telegram_id=telegram_id).exists()  # проверка айди в базе
+        if not user_id:
+            await User.create(
+                username=username,
+                first_name=first_name,
+                telegram_id=telegram_id,
+                is_admin=False)
+            bot_logger.info(f'Зарегистрирован новый пользователь {telegram_id}')
+
+    except Exception as e:
+        bot_logger.error(f'Ошибка регистрации нового пользователя, {e}')
+
+
+async def is_user_in_channel(user_id: int, channel_id: int, bot: Bot) -> bool:
+    """ Проверка, есть ли пользователь в чате"""
+    try:
+        member = await bot.get_chat_member(chat_id=channel_id, user_id=user_id)
+        # сравниваем со строкой: 	The member's status in the chat, always “left”
+        return member.status != 'left'
+
+    # если ошибка, то пользователя в чате нет
+    except TelegramBadRequest as e:
+        bot_logger.warning(f'Пользователя {user_id} нет в канале')
+        return False
+
+
+async def start_handler(user_id, bot: Bot):
+    """ Уведомление о канале если пользователь не в нем """
+    try:
+        invite_link = await bot.create_chat_invite_link(chat_id=CHANNEL_ID, name="Наш канал ☕")
+        if not await is_user_in_channel(user_id, CHANNEL_ID, bot):
+            await bot.send_message(
+                chat_id=user_id,
+                text=f"☕ Добро пожаловать! Подпишись на наш канал: {invite_link.invite_link}"
+            )
+            bot_logger.info(f'Отправил ссылку на канал: {invite_link.invite_link}')
+    except Exception as e:
+        bot_logger.exception(f'Не получилось отправить ссылку {e}')
+
+

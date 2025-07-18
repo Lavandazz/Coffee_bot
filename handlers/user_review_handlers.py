@@ -36,25 +36,6 @@ async def ask_for_text(call: CallbackQuery, state: FSMContext):
     await state.set_state(ReviewStates.waiting_for_text)
 
 
-# async def send_message(bot, user, review_id, username, caption=None, file_id=None):
-#     baristas = await get_users_from_db('barista')
-#
-#     try:
-#         for barista in baristas:
-#             await asyncio.sleep(0.5)
-#             bot_logger.info(f"Попытка отправки баристе {barista.get('id')}")
-#             await bot.send_message(
-#                 barista.get('telegram_id'),
-#                 f"🆘 Новый фотоотзыв #{review_id}\n"
-#                 f"От: @{username}\n"
-#                 f"Сообщение: {caption}\n",
-#                 # f"Сообщение: {message.photo}",
-#                 reply_markup=get_review_keyboard(review_id)
-#             )
-#     except Exception as e:
-#         bot_logger.exception(f"💥 Ошибка при отправке сообщения админу : {e}")
-
-
 async def handle_review_photo(message: Message, state: FSMContext, bot: Bot):
     """ Загрузка отзыва с фото от пользователя """
     await state.get_state()

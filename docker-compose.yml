@@ -22,7 +22,7 @@ services:  # Определяем контейнеры
 
 #    environment: # Добавляем переопределение переменных (для локального контейнера)
 #      - DATABASE_HOST=host.docker.internal  # ← Магия Docker для localhost
-#      - DATABASE_PORT=5432  # Порт БД на вашей машине
+#      - DATABASE_PORT=5432  # Порт БД на локальной машине
 
 # для работы локально, закомментить все db
 
@@ -43,6 +43,18 @@ services:  # Определяем контейнеры
       interval: 10s
       timeout: 5s
       retries: 5
+
+  redis:
+    image: redis:alpine
+    container_name: redis_container
+    ports:
+      - "6379:6379"
+    networks:
+      - coffee_bot_network
+    restart: always
+    command: redis-server --requirepass ${REDIS_PASSWORD}
+    env_file:
+      - .env.local
 
 networks:
   coffee_bot_network:

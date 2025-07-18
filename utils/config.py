@@ -1,10 +1,10 @@
 import os
+from redis.asyncio import Redis
 from aiogram.client.default import DefaultBotProperties
 from aiogram.client.session.aiohttp import AiohttpSession
 from dotenv import load_dotenv
 from aiogram import Bot, Dispatcher
 
-from database.models_db import User
 from .settings_env import env_file
 
 
@@ -13,6 +13,15 @@ token = os.getenv("BOT_TOKEN")
 admin_id = os.getenv("ADMIN")
 API_KEY = os.getenv("OPENROUTER_API_KEY")
 SUPERADMIN = int(admin_id.replace(',', ''))
+CHANNEL = os.getenv("CHANNEL_NAME")
+CHANNEL_ID = os.getenv("CHANNEL_ID")
+
+
+redis_client = Redis(host=os.getenv("REDIS_HOST"),
+                     port=int(os.getenv("REDIS_PORT")),
+                     db=int(os.getenv("REDIS_DB")),
+                     password=os.getenv("REDIS_PASSWORD"),
+                     decode_responses=True)  # чтобы строки были не в байтах
 
 # Объекты бота
 bot = Bot(

@@ -1,4 +1,5 @@
-from keyboards.admin_keyboards import admin_btn
+from keyboards.admin_keyboards import admin_btn, admin_kb
+from keyboards.barista_keyboard import barista_kb
 from keyboards.horoscope_keyboard import zodiac_kb
 from keyboards.menu_keyboard import inline_menu_kb
 from .menu_states import MenuState, AdminMenuState, BaristaState, PostState, ReviewStates
@@ -23,18 +24,19 @@ TRANSITION_MAP = {
         },
         'target_state': AdminMenuState.admin_menu,
         'text': 'Админ-панель',
-        'get_keyboard': lambda role: admin_btn(role=role),
+        'keyboard': admin_kb(),
         'clear_state': False
     },
     'barista': {
         'states': {
             BaristaState.review_menu.state,
             BaristaState.approve_menu.state,
-            PostState.save_post.state
+            BaristaState.posts.state,
+            BaristaState.post.state
         },
         'target_state': AdminMenuState.admin_menu,
-        'text': 'Админ-панель',
-        'get_keyboard': lambda role: admin_btn(role=role),
+        'text': 'Панель бариста',
+        'keyboard':  barista_kb(),
         'clear_state': False
     },
     'zodiac': {
@@ -43,7 +45,19 @@ TRANSITION_MAP = {
         },
         'target_state': MenuState.horoscope_menu,
         'text': 'Админ-панель',
-        'get_keyboard': zodiac_kb(),
+        'keyboard': zodiac_kb(),
+        'clear_state': False
+    },
+    'post': {
+        'states': {
+            PostState.add_post.state,
+            PostState.register_text,
+            PostState.generated_text,
+            PostState.editing_text,
+            PostState.save_post
+        },
+        'text': 'Панель бариста',
+        'keyboard': lambda role: barista_kb(),
         'clear_state': False
     }
 

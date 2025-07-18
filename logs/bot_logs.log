@@ -1,5 +1,90 @@
-INFO     2025-07-08 22:47:49,574 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
-INFO     2025-07-08 22:47:50,247 [bot] (start_handlers.py).seed_admin(21) Проверка: seed_admin вызвана
-INFO     2025-07-08 22:47:50,533 [bot] (commands.py).set_commands(44) Установил команды
-INFO     2025-07-08 22:48:12,226 [bot] (send_messages.py)._send_notification(34) Попытка отправки бариста 9
-DEBUG    2025-07-08 22:48:12,227 [bot] (send_messages.py)._send_notification(41) Отправляю сообщение с фоткой
+INFO     2025-07-18 23:40:53,747 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+DEBUG    2025-07-18 23:40:54,399 [bot] (horoscope_keyboard.py).zodiac_kb(18) передаю клавы <generator object KeyboardBuilder.buttons at 0x00000177B6F59E50>
+INFO     2025-07-18 23:40:54,586 [bot] (start_handlers.py).seed_admin(22) Проверка: seed_admin вызвана
+INFO     2025-07-18 23:40:54,768 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-07-18 23:42:02,909 [bot] (middleware.py).__call__(40) event_date: 2025-07-18
+redis_key: user484385628:visit
+DEBUG    2025-07-18 23:42:02,949 [bot] (middleware.py).__call__(45) already_seen: 1
+
+DEBUG    2025-07-18 23:42:04,191 [bot] (middleware.py).__call__(40) event_date: 2025-07-18
+redis_key: user484385628:visit
+DEBUG    2025-07-18 23:42:04,193 [bot] (middleware.py).__call__(45) already_seen: 1
+
+INFO     2025-07-18 23:42:04,198 [bot] (barista_handlers.py).show_barista_btn(20) Вход в панель бариста
+DEBUG    2025-07-18 23:42:07,655 [bot] (middleware.py).__call__(40) event_date: 2025-07-18
+redis_key: user484385628:visit
+DEBUG    2025-07-18 23:42:07,657 [bot] (middleware.py).__call__(45) already_seen: 1
+
+INFO     2025-07-18 23:42:07,662 [bot] (barista_handlers.py).show_reviews(149) отправлю клаву
+INFO     2025-07-18 23:42:07,668 [bot] (barista_keyboard.py).review_kb(74) отправлена клавиатура с отзывами
+DEBUG    2025-07-18 23:42:09,360 [bot] (middleware.py).__call__(40) event_date: 2025-07-18
+redis_key: user484385628:visit
+DEBUG    2025-07-18 23:42:09,361 [bot] (middleware.py).__call__(45) already_seen: 1
+
+DEBUG    2025-07-18 23:42:09,370 [bot] (barista_handlers.py).moderate_review(171) BaristaState:approve_menu
+DEBUG    2025-07-18 23:42:11,947 [bot] (middleware.py).__call__(40) event_date: 2025-07-18
+redis_key: user484385628:visit
+DEBUG    2025-07-18 23:42:11,948 [bot] (middleware.py).__call__(45) already_seen: 1
+
+DEBUG    2025-07-18 23:42:12,067 [bot] (barista_handlers.py).approve_review(205) Проверка статуса BaristaState:approve_menu
+INFO     2025-07-18 23:42:12,326 [bot] (channel_handlers.py).forward_review_to_channel(25) Отзыв переслан в канал
+DEBUG    2025-07-18 23:42:24,367 [bot] (middleware.py).__call__(40) event_date: 2025-07-18
+redis_key: user484385628:visit
+DEBUG    2025-07-18 23:42:24,368 [bot] (middleware.py).__call__(45) already_seen: 1
+
+INFO     2025-07-18 23:42:24,374 [bot] (barista_keyboard.py).review_kb(74) отправлена клавиатура с отзывами
+INFO     2025-07-18 23:42:24,435 [bot] (back_handler.py).back(86) Состояние BaristaState:approve_menu.
+DEBUG    2025-07-18 23:42:25,464 [bot] (middleware.py).__call__(40) event_date: 2025-07-18
+redis_key: user484385628:visit
+DEBUG    2025-07-18 23:42:25,465 [bot] (middleware.py).__call__(45) already_seen: 1
+
+DEBUG    2025-07-18 23:42:25,469 [bot] (back_handler.py).back(54) Текущее состояние BaristaState:review_menu
+DEBUG    2025-07-18 23:42:25,676 [bot] (back_handler.py).back(67) Перешел назад к состоянию AdminMenuState:barista
+DEBUG    2025-07-18 23:42:27,648 [bot] (middleware.py).__call__(40) event_date: 2025-07-18
+redis_key: user484385628:visit
+DEBUG    2025-07-18 23:42:27,650 [bot] (middleware.py).__call__(45) already_seen: 1
+
+DEBUG    2025-07-18 23:42:27,725 [bot] (back_handler.py).back(44) Состояние AdminMenuState:barista сброшено
+DEBUG    2025-07-18 23:42:28,620 [bot] (middleware.py).__call__(40) event_date: 2025-07-18
+redis_key: user484385628:visit
+DEBUG    2025-07-18 23:42:28,621 [bot] (middleware.py).__call__(45) already_seen: 1
+
+DEBUG    2025-07-18 23:42:28,690 [bot] (back_handler.py).back(29) Состояние AdminMenuState:admin_menu сброшено
+DEBUG    2025-07-18 23:42:30,170 [bot] (middleware.py).__call__(40) event_date: 2025-07-18
+redis_key: user484385628:visit
+DEBUG    2025-07-18 23:42:30,171 [bot] (middleware.py).__call__(45) already_seen: 1
+
+DEBUG    2025-07-18 23:42:56,664 [bot] (middleware.py).__call__(40) event_date: 2025-07-18
+redis_key: user484385628:visit
+DEBUG    2025-07-18 23:42:56,665 [bot] (middleware.py).__call__(45) already_seen: 1
+
+INFO     2025-07-18 23:42:57,182 [bot] (send_messages.py)._send_notification(34) Попытка отправки бариста 9
+DEBUG    2025-07-18 23:42:57,183 [bot] (send_messages.py)._send_notification(40) Отправляю сообщение с фоткой
+DEBUG    2025-07-18 23:43:06,509 [bot] (middleware.py).__call__(40) event_date: 2025-07-18
+redis_key: user484385628:visit
+DEBUG    2025-07-18 23:43:06,510 [bot] (middleware.py).__call__(45) already_seen: 1
+
+DEBUG    2025-07-18 23:43:07,627 [bot] (middleware.py).__call__(40) event_date: 2025-07-18
+redis_key: user484385628:visit
+DEBUG    2025-07-18 23:43:07,628 [bot] (middleware.py).__call__(45) already_seen: 1
+
+INFO     2025-07-18 23:43:07,630 [bot] (barista_handlers.py).show_barista_btn(20) Вход в панель бариста
+DEBUG    2025-07-18 23:43:09,450 [bot] (middleware.py).__call__(40) event_date: 2025-07-18
+redis_key: user484385628:visit
+DEBUG    2025-07-18 23:43:09,451 [bot] (middleware.py).__call__(45) already_seen: 1
+
+INFO     2025-07-18 23:43:09,455 [bot] (barista_handlers.py).show_reviews(149) отправлю клаву
+INFO     2025-07-18 23:43:09,457 [bot] (barista_keyboard.py).review_kb(74) отправлена клавиатура с отзывами
+DEBUG    2025-07-18 23:43:10,957 [bot] (middleware.py).__call__(40) event_date: 2025-07-18
+redis_key: user484385628:visit
+DEBUG    2025-07-18 23:43:10,959 [bot] (middleware.py).__call__(45) already_seen: 1
+
+DEBUG    2025-07-18 23:43:10,965 [bot] (barista_handlers.py).moderate_review(171) BaristaState:approve_menu
+INFO     2025-07-18 23:43:11,021 [bot] (barista_handlers.py).moderate_review(176) Новый отзыв с фото
+DEBUG    2025-07-18 23:43:14,564 [bot] (middleware.py).__call__(40) event_date: 2025-07-18
+redis_key: user484385628:visit
+DEBUG    2025-07-18 23:43:14,566 [bot] (middleware.py).__call__(45) already_seen: 1
+
+DEBUG    2025-07-18 23:43:14,756 [bot] (barista_handlers.py).approve_review(205) Проверка статуса BaristaState:approve_menu
+INFO     2025-07-18 23:43:14,937 [bot] (channel_handlers.py).forward_review_to_channel(25) Отзыв переслан в канал
+WARNING  2025-07-18 23:44:03,724 [bot] (main.py).start_bot(23) Бот закрыт

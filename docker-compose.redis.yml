@@ -1,0 +1,33 @@
+#version: "3.8"
+#
+#services:
+#  redis:
+#    image: redis:alpine
+#    container_name: redis_container
+#    ports:
+#      - "6379:6379"
+#    networks:
+#      - coffee_bot_network
+#    restart: always
+#
+#networks:
+#  coffee_bot_network:
+#    driver: bridge
+
+version: "3.8"
+
+services:
+  redis:
+    image: redis:alpine
+    container_name: redis_container_1
+    ports:
+      - "6379:6379"
+    restart: always
+    volumes:
+      - redis_data:/data
+    env_file:
+      - .env.local
+    command: redis-server --requirepass Aprilia89 # ${REDIS_PASSWORD}
+
+volumes:
+  redis_data:

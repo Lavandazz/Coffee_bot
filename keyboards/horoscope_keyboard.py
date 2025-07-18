@@ -2,6 +2,7 @@ from aiogram.types import InlineKeyboardButton
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 from database.zodiac_signs import zodiac_signs
 from utils.config import SUPERADMIN
+from utils.logging_config import bot_logger
 
 
 def zodiac_kb():
@@ -14,5 +15,5 @@ def zodiac_kb():
     kb.row(InlineKeyboardButton(text='⬅️ Назад', callback_data='back'))
     if SUPERADMIN:
         kb.row(InlineKeyboardButton(text='Запуск гороскопа', callback_data='start_horo'))
-
+    bot_logger.debug(f'передаю клавы {kb.buttons}')
     return kb.as_markup()

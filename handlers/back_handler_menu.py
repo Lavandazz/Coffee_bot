@@ -13,9 +13,24 @@ class BackHandler:
 
     async def handle(self):
         """ Обработка кнопки 'Назад' """
-        current_state = self.state.get_state()
+        current_state = await self.state.get_state()
         bot_logger.debug(f'Текущее состояние: {current_state}')
-        for now_state in TRANSITION_MAP.values():
-            if current_state in now_state.get('states'):
-                pass
+        try:
+            for now_state in TRANSITION_MAP.values():
+                if current_state in now_state.get('states'):
+                    await self.state.set_state(now_state.get('target_state'))
+                    cur = await self.state.get_state()
+                    mess, kb = await self.get_message(now_state)
+                    print('mess, kb:', mess, kb)
+                    await self.call.message.edit_text(text=mess,
+                                                      reply_markup=kb)
+                    bot_logger.debug(f'Новое состояние: {cur}')
 
+        except Exception as e:
+            bot_logger.exception(f'Ошибка state: {current_state}, {e}')
+
+    @staticmethod
+    async def get_message(now_state):
+        text_state = now_state.get('text')
+        kb = now_state.get('keyboard')
+        return text_state, kb

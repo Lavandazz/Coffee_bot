@@ -18,7 +18,7 @@ def admin_btn(role: str):
     return kb.as_markup()
 
 
-def admin_keyboard():
+def admin_kb():
     """ Кнопки в отделе администрирования """
     kb = InlineKeyboardBuilder()
     kb.button(text="Статистика за день",

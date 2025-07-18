@@ -1,5 +1,4 @@
 import asyncio
-from database.models_db import User
 from handlers.commands import set_commands
 from handlers.dispatcher import setup_dispatcher
 from handlers.start_handlers import seed_admin

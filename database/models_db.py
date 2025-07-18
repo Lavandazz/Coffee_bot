@@ -55,3 +55,14 @@ class Horoscope(Model):
     class Meta:
         table = "horoscopes"
         unique_together = ("zodiac", "date")  # Чтобы не было дублей
+
+
+class Statistic(Model):
+    id = fields.IntField(pk=True)
+    day = fields.DateField()
+    new_user = fields.IntField(default=0)
+    event = fields.IntField(default=0)
+
+    class Meta:
+        table = 'statistic'
+

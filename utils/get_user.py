@@ -6,11 +6,16 @@ from utils.logging_config import bot_logger
 
 async def is_admin(user_id) -> bool:
     """ Проверка администратора """
-    admin = await User.filter(telegram_id=user_id, role='admin').exists()
-    # barista = await User.filter(telegram_id=user_id, role='barista').exists()
-    if admin:
-        bot_logger.info(f'Админ {admin}')
-        return admin
+    # admin = await User.filter(telegram_id=user_id, role='admin').exists()
+    # # barista = await User.filter(telegram_id=user_id, role='barista').exists()
+    # if admin:
+    #     bot_logger.info(f'Админ {admin}')
+    #     return admin
+    try:
+        user = await User.get(telegram_id=user_id)
+        return user.role in ['admin', 'barista']
+    except DoesNotExist:
+        return False
 
 
 async def get_users_from_db(user_role) -> list[dict]:

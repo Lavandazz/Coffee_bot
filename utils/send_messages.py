@@ -4,7 +4,7 @@ from typing import Optional
 from aiogram import Bot
 
 from database.models_db import User
-from keyboards.barista_keyboard import get_review_keyboard
+from keyboards.barista_keyboard import get_review_keyboard, show_review_message
 from utils.get_user import get_users_from_db
 from utils.logging_config import bot_logger
 from dataclasses import dataclass
@@ -34,19 +34,20 @@ class SendMessage:
         bot_logger.info(f"Попытка отправки бариста {barista.get('id')}")
 
         message_text = f"🆘 Новый отзыв #{self.review_id}\n"\
-                       f"От: @{self.user.username}\n"\
-                       f"Сообщение: {self.text}\n"
+                       f"От: @{self.user.username}\n" + (f"\n{self.text}" if self.text else "")
 
         if self.file_id:
             bot_logger.debug(f'Отправляю сообщение с фоткой')
             await self.bot.send_photo(chat_id=barista.get('telegram_id'),
                                       photo=self.file_id,
                                       caption=message_text,
-                                      reply_markup=get_review_keyboard(self.review_id))
+                                      reply_markup=show_review_message(self.review_id))
 
         else:
             await self.bot.send_message(
-                barista.get('telegram_id'), message_text, reply_markup=get_review_keyboard(self.review_id))
+                barista.get('telegram_id'), message_text, reply_markup=show_review_message(self.review_id))
 
 
-
+@classmethod
+class BotMessage:
+    bot: Bot
