@@ -75,13 +75,12 @@ async def back(call: CallbackQuery, state: FSMContext, bot: Bot, role: str):
             bot_logger.info(f'Состояние {current_state} сброшено')
 
     elif current_state == BaristaState.approve_menu.state:
-        """
-        НЕОБХОДИМО РЕШИТЬ ПРОБЛЕМУ С ОТПРАВЛЕНИЕМ КЛАВИАТУРЫ С ОТЗЫВАМИ КЛИЕНТОВ """
+
         await state.set_state(BaristaState.review_menu)
         try:
             await call.message.edit_text(
-                "Вы находитесь в меню бариста...",
-                reply_markup=await review_kb()
+                "Вы находитесь в меню бариста!..",
+                reply_markup=barista_kb()
             )
             bot_logger.info(f'Состояние {current_state}.')
         except TelegramBadRequest:

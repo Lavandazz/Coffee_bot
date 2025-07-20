@@ -31,11 +31,11 @@ async def cancel_state_handler(user_id: int, bot: Bot, state: FSMContext):
         if not current_state:
             # Если состояния нет, ничего не делаем
             return
-        await asyncio.sleep(45)
+        await asyncio.sleep(300)
         new_current_state = await state.get_state()
         if current_state == new_current_state:
             # user_id = user_id
-            await bot.send_message(user_id, 'Ожидание превышено. Отмена сохранения данных.',
+            await bot.send_message(user_id, 'Ожидание ввода превышено. Отмена сохранения данных.',
                                    reply_markup=await inline_menu_kb(user_id))
             await state.clear()
             bot_logger.info(f'Состояние сброшено: {current_state} ')

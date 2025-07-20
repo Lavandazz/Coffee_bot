@@ -11,22 +11,24 @@ from states.menu_states import AdminMenuState, BaristaState, PostState
 from database.models_db import Review, AdminPost, User
 from utils.ai_generator import generate_ai_greeting
 
-from utils.get_user import get_users_from_db, is_admin
+from utils.get_user import get_users_from_db, is_admin, staff_only
 from utils.logging_config import bot_logger
 
 
+@staff_only
 async def show_barista_btn(call: CallbackQuery, state: FSMContext, role: str):
     """ Вход в админ клавиатуру """
     bot_logger.info('Вход в панель бариста')
     await state.set_state(AdminMenuState.barista)
-    if role == 'admin' or role == 'barista':
-        await call.message.edit_text(text='Вы находитесь в меню бариста.',
-                                     reply_markup=barista_kb())
-    else:
-        await call.message.edit_text(text='У вас нет прав для этого действия.',
-                                     reply_markup=await inline_menu_kb(call.from_user.id))
+    # if role == 'admin' or role == 'barista':
+    await call.message.edit_text(text='Вы находитесь в меню бариста.',
+                                 reply_markup=barista_kb())
+    # else:
+    #     await call.message.edit_text(text='У вас нет прав для этого действия.',
+    #                                  reply_markup=await inline_menu_kb(call.from_user.id))
 
 
+@staff_only
 async def add_post(call: CallbackQuery, state: FSMContext, role: str):
     """ Загрузка файла и текста от бариста """
     await state.set_state(PostState.add_post)
@@ -57,17 +59,19 @@ async def add_photo(message: Message, state: FSMContext, role: str):
         await message.answer('Выберите действие', reply_markup=edit_text_keyboard())
 
 
-async def generate_phrase(call: CallbackQuery, state: FSMContext):
+@staff_only
+async def generate_phrase(call: CallbackQuery, state: FSMContext, role: str):
     """ Обработка кнопки для генерации текста поста """
     await call.message.edit_text('Ждите, генерирую фразу...')
-    # ai_text = await generate_ai_greeting()
-    ai_text = "Хорошего дня тебя, кофейный человек"
+    ai_text = await generate_ai_greeting()  # генерируем текст
+    # ai_text = "Хорошего дня тебя, кофейный человек"
     await state.update_data(text=ai_text)
     print(ai_text)
     await call.message.edit_text(f'✨ Вот что я придумал:\n\n {ai_text}',
                                  reply_markup=edit_text_keyboard())
 
 
+@staff_only
 async def change_post(call: CallbackQuery, state: FSMContext, role: str):
     """ Обработка кнопки для редактирования текста сгенерированного ии """
     data = await state.get_data()
@@ -81,7 +85,8 @@ async def change_post(call: CallbackQuery, state: FSMContext, role: str):
     await state.set_state(PostState.editing_text)  # Ждём новый текст
 
 
-async def save_edited_text(message: Message, bot: Bot, state: FSMContext):
+@staff_only
+async def save_edited_text(message: Message, bot: Bot, state: FSMContext, role: str):
     # Сохраняем новый текст в состоянии
     # await state.set_state(PostState.save_post)
     await state.update_data(text=message.text)
@@ -102,7 +107,8 @@ async def save_edited_text(message: Message, bot: Bot, state: FSMContext):
     await state.set_state(PostState.generated_text)  # Возвращаемся к состоянию подтверждения
 
 
-async def save_post(call: CallbackQuery, state: FSMContext, bot: Bot):
+@staff_only
+async def save_post(call: CallbackQuery, state: FSMContext, bot: Bot, role: str):
     """ Загрузка файла и текста от бариста """
     post_data = await state.get_data()
     photo = post_data.get('photo')
@@ -144,6 +150,7 @@ async def to_save(photo: str, text: str, user_id: int):
         bot_logger.error(f'Ошибка сохранения поста, {e}')
 
 
+@staff_only
 async def show_reviews(call: CallbackQuery, state: FSMContext, role: str):
     """ Обработка кнопки Отзывы пользователей """
     bot_logger.info('отправлю клаву')
@@ -152,6 +159,7 @@ async def show_reviews(call: CallbackQuery, state: FSMContext, role: str):
                                  reply_markup=await review_kb())
 
 
+@staff_only
 async def moderate_review(call: CallbackQuery, bot: Bot, state: FSMContext, role: str):
     """ Обработка отзыва пользователя """
     await state.set_state(BaristaState.approve_menu)
@@ -183,6 +191,7 @@ async def moderate_review(call: CallbackQuery, bot: Bot, state: FSMContext, role
         bot_logger.error(f'Ошибка в просмотре отзыва: {e}')
 
 
+@staff_only
 async def save_review(call: CallbackQuery, status: bool, role: str):
     """ Сохранение отзыва"""
     review_id = int(call.data.split("_")[1])
@@ -194,6 +203,7 @@ async def save_review(call: CallbackQuery, status: bool, role: str):
     return telegram_id
 
 
+@staff_only
 async def approve_review(call: CallbackQuery, bot: Bot, role: str, state: FSMContext):
     """ Одобрение отзыва """
     telegram_id = await save_review(call, True, role)  # получаем телеграм пользователя
@@ -201,13 +211,13 @@ async def approve_review(call: CallbackQuery, bot: Bot, role: str, state: FSMCon
     print(f'Статус при одобрении {current_state}')
     await call.answer("Одобрено!")
 
-    if await state.get_state() == BaristaState.approve_menu:  # если отзыв отображается через меню бариста
-        bot_logger.debug(f'Проверка статуса {current_state}')
-
-        await bot.send_message(chat_id=call.from_user.id,
-                               text="Вы находитесь в меню бариста...",
-                               reply_markup=barista_kb()
-        )
+    # if await state.get_state() == BaristaState.approve_menu:  # если отзыв отображается через меню бариста
+    #     bot_logger.debug(f'Проверка статуса {current_state}')
+    await state.set_state(BaristaState.review_menu)
+    await bot.send_message(chat_id=call.from_user.id,
+                           text="Вы находитесь в меню с отзывами клиентов",
+                           reply_markup=await review_kb()
+    )
     # пересылаем сообщение в канал
     await forward_review_to_channel(bot, call.from_user.id, call.message.message_id)
 
@@ -215,21 +225,25 @@ async def approve_review(call: CallbackQuery, bot: Bot, role: str, state: FSMCon
     await bot.send_message(chat_id=telegram_id, text='Ваш отзыв одобрен')
 
 
+@staff_only
 async def reject_review(call: CallbackQuery, bot: Bot, role: str, state: FSMContext):
     """ Отклонение отзыва """
+    current_state = await state.get_state()
     telegram_id = await save_review(call, True, role)
     await call.answer("Отклонено!")
 
-    if await state.get_state() == BaristaState.approve_menu:
-        await bot.send_message(chat_id=call.from_user.id,
-                               text="Вы находитесь в меню бариста...",
-                               reply_markup=barista_kb()
-                               )
+    await state.set_state(BaristaState.review_menu)
+    # if await state.get_state() == BaristaState.approve_menu:
+    await bot.send_message(chat_id=call.from_user.id,
+                           text="Вы находитесь в меню с отзывами клиентов",
+                           reply_markup=await review_kb()
+                           )
     await call.message.delete()
-
+    bot_logger.debug(f'новый статус после отклонения отзыва {await state.get_state()}')
     await bot.send_message(chat_id=telegram_id, text='Ваш отзыв отклонен')
 
 
+@staff_only
 async def show_barista_posts(call: CallbackQuery, state: FSMContext, role: str):
     """ Отображение всех постов бариста как кнопки """
     await state.set_state(BaristaState.posts)
@@ -237,6 +251,7 @@ async def show_barista_posts(call: CallbackQuery, state: FSMContext, role: str):
     await call.message.edit_text(text=f'Выберите пост', reply_markup=await barista_posts_kb())
 
 
+@staff_only
 async def barista_post(call: CallbackQuery, state: FSMContext, bot: Bot, role: str):
     """ Отображение конкретного поста бариста """
     await state.set_state(BaristaState.post)
