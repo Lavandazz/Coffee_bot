@@ -1,1 +1,92 @@
-INFO     2025-07-20 11:14:16,927 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-07-20 13:03:46,785 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-07-20 15:22:00,012 [horoscope] (generator_horoscope.py).generate_horoscope(35) Начинаю генерацию гороскопа для Овен
+INFO     2025-07-20 15:22:00,015 [horoscope] (ai_generator.py).get_completion(204) Генерирую ответ
+INFO     2025-07-20 15:23:07,436 [horoscope] (ai_generator.py).get_completion(217) Получил ответ
+DEBUG    2025-07-20 15:23:07,437 [horoscope] (generator_horoscope.py).generate_horoscope(42) получен гороскоп длинной : 3764
+INFO     2025-07-20 15:23:17,450 [horoscope] (generator_horoscope.py).horoscope_transformation_text(55) Перехожу к тексту знака - Овен
+DEBUG    2025-07-20 15:23:17,450 [horoscope] (generator_horoscope.py).horoscope_transformation_text(56) Длинна гороскопа - 3764
+DEBUG    2025-07-20 15:23:17,450 [horoscope] (generator_horoscope.py).horoscope_transformation_text(58) Строка гороскопа - Вот твой кофейный гороскоп на июль 2025, огнедышащий Овен! Зёрна шепчут о твоём пылком лете:
+DEBUG    2025-07-20 15:23:17,450 [horoscope] (generator_horoscope.py).horoscope_transformation_text(60) строка: Вот твой кофейный гороскоп на июль 2025, огнедышащий Овен! Зёрна шепчут о твоём пылком лете:
+DEBUG    2025-07-20 15:23:17,450 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) daily_horoscope для Овен - Вот твой кофейный гороскоп на июль 2025, огнедышащий Овен! Зёрна шепчут о твоём пылком лете - 0
+DEBUG    2025-07-20 15:23:17,450 [horoscope] (generator_horoscope.py).horoscope_transformation_text(58) Строка гороскопа - 
+DEBUG    2025-07-20 15:23:17,450 [horoscope] (generator_horoscope.py).horoscope_transformation_text(58) Строка гороскопа - 1: **Кофейные Зёрна обещают:** Сегодняшний эспрессо выстрелит идеей для спонтанного пляжного вояжа - пакуй купальник вместо ноутбука!
+DEBUG    2025-07-20 15:23:17,450 [horoscope] (generator_horoscope.py).horoscope_transformation_text(60) строка: 1: **Кофейные Зёрна обещают:** Сегодняшний эспрессо выстрелит идеей для спонтанного пляжного вояжа - пакуй купальник вместо ноутбука!
+DEBUG    2025-07-20 15:23:17,450 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) daily_horoscope для Овен - 1 - 131
+DEBUG    2025-07-20 15:23:17,450 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) day Овен - 2025-07-01 
+INFO     2025-07-20 15:23:17,451 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) Сохраняю гороскоп знака - Овен
+WARNING  2025-07-20 15:23:18,005 [horoscope] (generator_horoscope.py).save_horoscope(90) Гороскоп для Овен на 2025-07-01 уже существует: повторяющееся значение ключа нарушает ограничение уникальности "uid_horoscopes_zodiac_ad23b6"
+DETAIL:  Ключ "(zodiac, date)=(Овен, 2025-07-01)" уже существует.
+ERROR    2025-07-20 15:23:18,005 [horoscope] (generator_horoscope.py).generate_horoscope(49) Ошибка получения гороскопа для Овен - module 'aiogram.client.bot' has no attribute 'send_message'
+Traceback (most recent call last):
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\tortoise\backends\asyncpg\client.py", line 89, in _translate_exceptions
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\tortoise\backends\asyncpg\client.py", line 112, in execute_insert
+    return await connection.fetchrow(query, *values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\asyncpg\connection.py", line 748, in fetchrow
+    data = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\asyncpg\connection.py", line 1864, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\asyncpg\connection.py", line 1961, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\asyncpg\connection.py", line 2024, in _do_execute
+    result = await executor(stmt, None)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg\\protocol\\protocol.pyx", line 206, in bind_execute
+asyncpg.exceptions.UniqueViolationError: повторяющееся значение ключа нарушает ограничение уникальности "uid_horoscopes_zodiac_ad23b6"
+DETAIL:  Ключ "(zodiac, date)=(Овен, 2025-07-01)" уже существует.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\python\bots\cafe_bot\utils\generator_horoscope.py", line 81, in save_horoscope
+    await Horoscope.update_or_create(
+    ...<3 lines>...
+    )
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\tortoise\models.py", line 1184, in update_or_create
+    return await cls._create_or_get(db, defaults, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\tortoise\models.py", line 1134, in _create_or_get
+    raise exc
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\tortoise\models.py", line 1128, in _create_or_get
+    return await cls.create(using_db=connection, **merged_defaults), True
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\tortoise\models.py", line 1210, in create
+    await instance.save(using_db=db, force_create=True)
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\tortoise\models.py", line 996, in save
+    await executor.execute_insert(self)
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\tortoise\backends\base\executor.py", line 188, in execute_insert
+    insert_result = await self.db.execute_insert(self.insert_query, values)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\tortoise\backends\base_postgres\client.py", line 33, in _translate_exceptions
+    return await self._translate_exceptions(func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\tortoise\backends\asyncpg\client.py", line 93, in _translate_exceptions
+    raise IntegrityError(exc)
+tortoise.exceptions.IntegrityError: повторяющееся значение ключа нарушает ограничение уникальности "uid_horoscopes_zodiac_ad23b6"
+DETAIL:  Ключ "(zodiac, date)=(Овен, 2025-07-01)" уже существует.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\python\bots\cafe_bot\utils\generator_horoscope.py", line 47, in generate_horoscope
+    await horoscope_transformation_text(zodiac, horoscope, month, year, bot)
+  File "E:\python\bots\cafe_bot\utils\generator_horoscope.py", line 70, in horoscope_transformation_text
+    await save_horoscope(zodiac, day, daily_horoscope.strip(), bot)
+  File "E:\python\bots\cafe_bot\utils\generator_horoscope.py", line 91, in save_horoscope
+    await bot.send_message(chat_id=SUPERADMIN, text=f'Дата дублируется {zodiac}: {e}')
+          ^^^^^^^^^^^^^^^^
+AttributeError: module 'aiogram.client.bot' has no attribute 'send_message'. Did you mean: 'SendMessage'?

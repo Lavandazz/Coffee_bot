@@ -191,7 +191,6 @@ async def moderate_review(call: CallbackQuery, bot: Bot, state: FSMContext, role
         bot_logger.error(f'Ошибка в просмотре отзыва: {e}')
 
 
-@staff_only
 async def save_review(call: CallbackQuery, status: bool, role: str):
     """ Сохранение отзыва"""
     review_id = int(call.data.split("_")[1])
@@ -203,7 +202,7 @@ async def save_review(call: CallbackQuery, status: bool, role: str):
     return telegram_id
 
 
-@staff_only
+# @staff_only
 async def approve_review(call: CallbackQuery, bot: Bot, role: str, state: FSMContext):
     """ Одобрение отзыва """
     telegram_id = await save_review(call, True, role)  # получаем телеграм пользователя
@@ -225,7 +224,8 @@ async def approve_review(call: CallbackQuery, bot: Bot, role: str, state: FSMCon
     await bot.send_message(chat_id=telegram_id, text='Ваш отзыв одобрен')
 
 
-@staff_only
+
+# @staff_only
 async def reject_review(call: CallbackQuery, bot: Bot, role: str, state: FSMContext):
     """ Отклонение отзыва """
     current_state = await state.get_state()
@@ -240,7 +240,9 @@ async def reject_review(call: CallbackQuery, bot: Bot, role: str, state: FSMCont
                            )
     await call.message.delete()
     bot_logger.debug(f'новый статус после отклонения отзыва {await state.get_state()}')
+    chat_id = telegram_id
     await bot.send_message(chat_id=telegram_id, text='Ваш отзыв отклонен')
+    print('чат:', chat_id)
 
 
 @staff_only

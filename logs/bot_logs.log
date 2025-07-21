@@ -1,4 +1,21 @@
-INFO     2025-07-20 11:14:16,927 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
-DEBUG    2025-07-20 11:14:19,178 [bot] (horoscope_keyboard.py).zodiac_kb(18) передаю клавы <generator object KeyboardBuilder.buttons at 0x0000028B69839E50>
-INFO     2025-07-20 11:14:20,228 [bot] (start_handlers.py).seed_admin(22) Проверка: seed_admin вызвана
-INFO     2025-07-20 11:14:20,698 [bot] (commands.py).set_commands(20) Установил команды
+INFO     2025-07-20 13:03:46,785 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+DEBUG    2025-07-20 13:03:48,460 [bot] (horoscope_keyboard.py).zodiac_kb(18) передаю клавы <generator object KeyboardBuilder.buttons at 0x000001BA07DF9E50>
+INFO     2025-07-20 13:03:49,081 [bot] (start_handlers.py).seed_admin(22) Проверка: seed_admin вызвана
+INFO     2025-07-20 13:03:49,258 [bot] (commands.py).set_commands(20) Установил команды
+INFO     2025-07-20 13:04:07,565 [bot] (send_messages.py)._send_notification(34) Попытка отправки бариста 9
+DEBUG    2025-07-20 13:04:07,565 [bot] (send_messages.py)._send_notification(40) Отправляю сообщение с фоткой
+INFO     2025-07-20 13:04:11,452 [bot] (barista_handlers.py).show_barista_btn(21) Вход в панель бариста
+DEBUG    2025-07-20 13:04:15,051 [bot] (back_handler.py).back(44) Состояние AdminMenuState:barista сброшено
+DEBUG    2025-07-20 13:04:15,878 [bot] (back_handler.py).clear_message(104) Удалил сообщение
+DEBUG    2025-07-20 13:04:31,095 [bot] (back_handler.py).back(29) Состояние AdminMenuState:admin_menu сброшено
+INFO     2025-07-20 13:04:32,453 [bot] (admin_handlers.py).admin_menu_handler(27) Вход в панель админа
+DEBUG    2025-07-20 13:04:33,583 [bot] (back_handler.py).back(44) Состояние AdminMenuState:admin сброшено
+INFO     2025-07-20 13:04:34,231 [bot] (barista_handlers.py).show_barista_btn(21) Вход в панель бариста
+INFO     2025-07-20 13:04:36,200 [bot] (barista_handlers.py).show_reviews(156) отправлю клаву
+INFO     2025-07-20 13:04:36,202 [bot] (barista_keyboard.py).review_kb(74) отправлена клавиатура с отзывами
+DEBUG    2025-07-20 13:04:37,627 [bot] (barista_handlers.py).moderate_review(179) BaristaState:approve_menu
+INFO     2025-07-20 13:04:37,717 [bot] (barista_handlers.py).moderate_review(184) Новый отзыв с фото
+INFO     2025-07-20 13:04:39,428 [bot] (barista_keyboard.py).review_kb(74) отправлена клавиатура с отзывами
+INFO     2025-07-20 13:04:39,689 [bot] (channel_handlers.py).forward_review_to_channel(25) Отзыв переслан в канал
+WARNING  2025-07-20 23:10:08,023 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-07-20 23:10:08,185 [bot] (main.py).<module>(42) Помощник завершены

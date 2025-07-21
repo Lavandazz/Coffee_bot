@@ -8,13 +8,6 @@
       <jdbc-url>jdbc:postgresql://localhost:5432/cafe_db</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="postgre@postges_container_coffee" uuid="7c260fdd-565c-4699-9be5-0f3adf380270">
-      <driver-ref>postgresql</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://postges_container_coffee:5432/postgre</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
     <data-source source="LOCAL" name="cafe_db@localhost" uuid="54085115-6aec-4b15-8300-064adb3d2850">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
