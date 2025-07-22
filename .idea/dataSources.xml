@@ -15,5 +15,12 @@
       <jdbc-url>jdbc:postgresql://localhost:5431/cafe_db</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="cooffee_db_server" uuid="ff94a84f-33b6-4fd5-b71a-6f739e52d389">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://185.239.50.102:5431/cafe_db</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

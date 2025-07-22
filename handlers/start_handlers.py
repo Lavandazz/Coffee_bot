@@ -44,9 +44,9 @@ async def get_start(message: Message, bot: Bot):
     # Преобразуем часовой пояс (+3 часа для Москвы)
     local_time = time_message.replace(tzinfo=timezone.utc).astimezone(tz=None)  # определяет локальный пояс
     try:
+        bot_logger.debug(f'Передаю нового пользователя для сохранения{message.from_user.id}')
         await create_user(message.from_user.username, message.from_user.first_name,
-                          message.from_user.id )
-
+                          message.from_user.id)
         await bot.send_message(message.from_user.id,
                                f"{generate_day_or_night(local_time.hour)}",
                                reply_markup=await inline_menu_kb(message.from_user.id))
@@ -58,6 +58,7 @@ async def get_start(message: Message, bot: Bot):
 
 async def create_user(username: str, first_name: str, telegram_id: int):
     """ Регистрация нового пользователя """
+    bot_logger.debug(f'Регистрирую нового пользователя {telegram_id}')
     try:
         user_id = await User.filter(telegram_id=telegram_id).exists()  # проверка айди в базе
         if not user_id:

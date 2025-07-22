@@ -34,7 +34,7 @@ class BaseLogger:
         console_handler.setFormatter(console_formatter)
 
         # 2. Простой вывод в файл (без цветов)
-        file_handler = logging.FileHandler(self.log_file, mode='w')
+        file_handler = logging.FileHandler(self.log_file, mode='a')
         file_formatter = logging.Formatter(
             '%(levelname)-8s %(asctime)s [%(name)s] '
             '(%(filename)s).%(funcName)s(%(lineno)d) %(message)s'
