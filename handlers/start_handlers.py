@@ -45,8 +45,12 @@ async def get_start(message: Message, bot: Bot):
     local_time = time_message.replace(tzinfo=timezone.utc).astimezone(tz=None)  # определяет локальный пояс
     try:
         bot_logger.debug(f'Передаю нового пользователя для сохранения{message.from_user.id}')
+        await bot.send_message(chat_id=SUPERADMIN, text=f'Регистрирую нового участника {message.from_user.id}')
+
+
         await create_user(message.from_user.username, message.from_user.first_name,
                           message.from_user.id)
+
         await bot.send_message(message.from_user.id,
                                f"{generate_day_or_night(local_time.hour)}",
                                reply_markup=await inline_menu_kb(message.from_user.id))

@@ -23,13 +23,19 @@ async def get_users_from_db(user_role) -> list[dict]:
     return users
 
 
-async def get_role_user(user_id) -> str | None:
+async def get_role_user(user_id: int) -> str | None:
     try:
         user = await User.get(telegram_id=user_id)  # telegram_id=484385628
         if user:
+            bot_logger.debug(f'Юзер зарегистрирован: {user_id}')
             return user.role
-    except DoesNotExist:
+        else:
+            bot_logger.debug(f'Юзер не зарегистрирован: {user_id}')
             return None
+
+    except DoesNotExist:
+        bot_logger.debug(f'Ошибка, Юзер не зарегистрирован: {user_id}')
+        return None
 
 
 def role_required(*roles):  # передача ролей

@@ -6,7 +6,7 @@ class User(Model):
     id = fields.IntField(pk=True)
     username = fields.CharField(max_length=100)
     first_name = fields.CharField(max_length=100)
-    telegram_id = fields.IntField(unique=True)
+    telegram_id = fields.BigIntField(unique=True)
     role = fields.CharField(max_length=20, default='user')
 
     class Meta:

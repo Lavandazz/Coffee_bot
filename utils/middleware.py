@@ -11,8 +11,11 @@ from utils.logging_config import bot_logger
 class RoleMiddleware(BaseMiddleware):
     async def __call__(self, handler, event, data):
         try:
-            user_id = event.from_user.id
+            user_id = event.from_user.id  # 7599073638
+            bot_logger.debug(f'Новый пользователь {event.from_user.id}')
             user = await User.get(telegram_id=user_id)
+            bot_logger.debug(f'Узер {user.id, user.first_name, user.role}')
+
             data["role"] = user.role if user else "user"
 
         except Exception as e:
