@@ -18,7 +18,12 @@ services:  # Определяем контейнеры
       coffee_db:
         condition: service_healthy
     restart: always
-    command: ["python", "main.py"]
+    command:
+      - sh  # запускаем оболочку shell
+      - -c  # указывает, что далее следуют команды для выполнения
+      - |   # указывает многострочность строки
+        aerich upgrade  
+        python main.py
 
 #    environment: # Добавляем переопределение переменных (для локального контейнера)
 #      - DATABASE_HOST=host.docker.internal  # ← Магия Docker для localhost

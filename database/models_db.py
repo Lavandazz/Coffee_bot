@@ -4,10 +4,11 @@ from tortoise.models import Model
 
 class User(Model):
     id = fields.IntField(pk=True)
-    username = fields.CharField(max_length=100)
-    first_name = fields.CharField(max_length=100)
+    username = fields.CharField(max_length=100, null=True)
+    first_name = fields.CharField(max_length=100, null=True)
     telegram_id = fields.BigIntField(unique=True)
     role = fields.CharField(max_length=20, default='user')
+    registration_date = fields.DatetimeField(auto_now_add=True)
 
     class Meta:
         table = 'users'

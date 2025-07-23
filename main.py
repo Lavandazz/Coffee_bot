@@ -30,8 +30,11 @@ async def main():
     # запись админа в бд
     await seed_admin()
 
-    await start_bot()
-    await close_db()  # Закроем БД после завершения всех задач
+    try:
+        await start_bot()
+    finally:
+        await close_db()  # Закроем БД после завершения всех задач
+
 
 
 if __name__ == '__main__':

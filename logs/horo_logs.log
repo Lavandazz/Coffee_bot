@@ -90,3 +90,7 @@ Traceback (most recent call last):
     await bot.send_message(chat_id=SUPERADMIN, text=f'Дата дублируется {zodiac}: {e}')
           ^^^^^^^^^^^^^^^^
 AttributeError: module 'aiogram.client.bot' has no attribute 'send_message'. Did you mean: 'SendMessage'?
+INFO     2025-07-23 13:02:28,454 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-07-23 14:23:58,600 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-07-23 14:33:45,912 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-07-23 14:33:57,480 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.

@@ -19,3 +19,74 @@ INFO     2025-07-20 13:04:39,428 [bot] (barista_keyboard.py).review_kb(74) от�
 INFO     2025-07-20 13:04:39,689 [bot] (channel_handlers.py).forward_review_to_channel(25) Отзыв переслан в канал
 WARNING  2025-07-20 23:10:08,023 [bot] (main.py).start_bot(23) Бот закрыт
 WARNING  2025-07-20 23:10:08,185 [bot] (main.py).<module>(42) Помощник завершены
+INFO     2025-07-23 13:02:28,450 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+DEBUG    2025-07-23 13:02:30,081 [bot] (horoscope_keyboard.py).zodiac_kb(18) передаю клавы <generator object KeyboardBuilder.buttons at 0x000001ED4B19A0C0>
+INFO     2025-07-23 13:02:31,013 [bot] (start_handlers.py).seed_admin(22) Проверка: seed_admin вызвана
+INFO     2025-07-23 13:02:31,173 [bot] (start_handlers.py).seed_admin(32) Администратор зарегистрирован
+INFO     2025-07-23 13:02:31,367 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-07-23 13:03:03,332 [bot] (middleware.py).__call__(15) Новый пользователь 484385628
+DEBUG    2025-07-23 13:03:03,337 [bot] (middleware.py).__call__(17) Узер (1, 'Админ', 'admin')
+ERROR    2025-07-23 13:03:07,420 [bot] (middleware.py).__call__(82) [StatisticMiddleware] Ошибка статистики: Error 22 connecting to localhost:6379. Удаленный компьютер отклонил это сетевое подключение.
+DEBUG    2025-07-23 13:03:07,421 [bot] (start_handlers.py).get_start(47) Передаю нового пользователя для сохранения484385628
+DEBUG    2025-07-23 13:03:07,582 [bot] (start_handlers.py).create_user(65) Регистрирую нового пользователя 484385628
+DEBUG    2025-07-23 13:03:07,584 [bot] (get_user.py).get_role_user(30) Юзер зарегистрирован: 484385628
+DEBUG    2025-07-23 13:03:07,584 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю клаву. Роль юзера: 484385628
+DEBUG    2025-07-23 13:03:41,229 [bot] (middleware.py).__call__(15) Новый пользователь 484385628
+DEBUG    2025-07-23 13:03:41,230 [bot] (middleware.py).__call__(17) Узер (1, 'Админ', 'admin')
+ERROR    2025-07-23 13:03:45,327 [bot] (middleware.py).__call__(82) [StatisticMiddleware] Ошибка статистики: Error 22 connecting to localhost:6379. Удаленный компьютер отклонил это сетевое подключение.
+DEBUG    2025-07-23 13:03:45,329 [bot] (horoscope_keyboard.py).zodiac_kb(18) передаю клавы <generator object KeyboardBuilder.buttons at 0x000001ED4C21EB50>
+DEBUG    2025-07-23 13:03:54,907 [bot] (middleware.py).__call__(15) Новый пользователь 484385628
+DEBUG    2025-07-23 13:03:54,908 [bot] (middleware.py).__call__(17) Узер (1, 'Админ', 'admin')
+ERROR    2025-07-23 13:03:59,005 [bot] (middleware.py).__call__(82) [StatisticMiddleware] Ошибка статистики: Error 22 connecting to localhost:6379. Удаленный компьютер отклонил это сетевое подключение.
+WARNING  2025-07-23 13:03:59,082 [bot] (horoscope_handkers.py).send_horoscope(41) Гороскопа для Дева нет в базе 2025-07-23. Использована мокбаза
+DEBUG    2025-07-23 13:04:05,299 [bot] (middleware.py).__call__(15) Новый пользователь 484385628
+DEBUG    2025-07-23 13:04:05,299 [bot] (middleware.py).__call__(17) Узер (1, 'Админ', 'admin')
+ERROR    2025-07-23 13:04:09,377 [bot] (middleware.py).__call__(82) [StatisticMiddleware] Ошибка статистики: Error 22 connecting to localhost:6379. Удаленный компьютер отклонил это сетевое подключение.
+DEBUG    2025-07-23 13:04:09,378 [bot] (horoscope_keyboard.py).zodiac_kb(18) передаю клавы <generator object KeyboardBuilder.buttons at 0x000001ED4C21EB50>
+DEBUG    2025-07-23 13:24:45,273 [bot] (middleware.py).__call__(15) Новый пользователь 484385628
+DEBUG    2025-07-23 13:24:47,356 [bot] (middleware.py).__call__(17) Узер (1, 'Админ', 'admin')
+WARNING  2025-07-23 13:24:48,590 [bot] (horoscope_handkers.py).send_horoscope(41) Гороскопа для Весы нет в базе 2025-07-23. Использована мокбаза
+DEBUG    2025-07-23 13:24:56,704 [bot] (middleware.py).__call__(15) Новый пользователь 484385628
+DEBUG    2025-07-23 13:24:56,705 [bot] (middleware.py).__call__(17) Узер (1, 'Админ', 'admin')
+DEBUG    2025-07-23 13:24:56,714 [bot] (horoscope_keyboard.py).zodiac_kb(18) передаю клавы <generator object KeyboardBuilder.buttons at 0x000001ED4C21E260>
+DEBUG    2025-07-23 13:24:58,270 [bot] (middleware.py).__call__(15) Новый пользователь 484385628
+DEBUG    2025-07-23 13:24:58,271 [bot] (middleware.py).__call__(17) Узер (1, 'Админ', 'admin')
+WARNING  2025-07-23 13:24:58,382 [bot] (horoscope_handkers.py).send_horoscope(41) Гороскопа для Лев нет в базе 2025-07-23. Использована мокбаза
+WARNING  2025-07-23 14:23:43,354 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-07-23 14:23:44,091 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-07-23 14:23:58,599 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+DEBUG    2025-07-23 14:24:10,312 [bot] (horoscope_keyboard.py).zodiac_kb(18) передаю клавы <generator object KeyboardBuilder.buttons at 0x000001606FDB9E50>
+INFO     2025-07-23 14:24:11,872 [bot] (start_handlers.py).seed_admin(22) Проверка: seed_admin вызвана
+INFO     2025-07-23 14:24:28,102 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-07-23 14:25:04,561 [bot] (middleware.py).__call__(17) Пользователь 484385628
+DEBUG    2025-07-23 14:25:04,593 [bot] (middleware.py).__call__(19) Юзер (1, 'Админ', 'admin')
+DEBUG    2025-07-23 14:25:04,803 [bot] (start_handlers.py).get_start(47) Передаю нового пользователя для сохранения484385628
+DEBUG    2025-07-23 14:25:05,055 [bot] (start_handlers.py).create_user(65) Регистрирую нового пользователя 484385628
+DEBUG    2025-07-23 14:25:05,062 [bot] (get_user.py).get_role_user(30) Юзер зарегистрирован: 484385628
+DEBUG    2025-07-23 14:25:05,063 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю клаву. Роль юзера: 484385628
+DEBUG    2025-07-23 14:27:09,219 [bot] (middleware.py).__call__(17) Пользователь 484385628
+DEBUG    2025-07-23 14:27:09,221 [bot] (middleware.py).__call__(19) Юзер (1, 'Админ', 'admin')
+DEBUG    2025-07-23 14:27:10,856 [bot] (middleware.py).__call__(17) Пользователь 484385628
+DEBUG    2025-07-23 14:27:10,857 [bot] (middleware.py).__call__(19) Юзер (1, 'Админ', 'admin')
+INFO     2025-07-23 14:27:10,946 [bot] (barista_handlers.py).show_barista_btn(21) Вход в панель бариста
+DEBUG    2025-07-23 14:27:12,731 [bot] (middleware.py).__call__(17) Пользователь 484385628
+DEBUG    2025-07-23 14:27:12,732 [bot] (middleware.py).__call__(19) Юзер (1, 'Админ', 'admin')
+DEBUG    2025-07-23 14:27:12,799 [bot] (back_handler.py).back(44) Состояние AdminMenuState:barista сброшено
+DEBUG    2025-07-23 14:27:14,491 [bot] (middleware.py).__call__(17) Пользователь 484385628
+DEBUG    2025-07-23 14:27:14,493 [bot] (middleware.py).__call__(19) Юзер (1, 'Админ', 'admin')
+DEBUG    2025-07-23 14:27:14,500 [bot] (get_user.py).get_role_user(30) Юзер зарегистрирован: 484385628
+DEBUG    2025-07-23 14:27:14,500 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю клаву. Роль юзера: 484385628
+DEBUG    2025-07-23 14:27:14,569 [bot] (back_handler.py).back(29) Состояние AdminMenuState:admin_menu сброшено
+WARNING  2025-07-23 14:33:42,201 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-07-23 14:33:45,912 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+DEBUG    2025-07-23 14:33:47,540 [bot] (horoscope_keyboard.py).zodiac_kb(18) передаю клавы <generator object KeyboardBuilder.buttons at 0x00000113DF2D9E50>
+INFO     2025-07-23 14:33:48,073 [bot] (start_handlers.py).seed_admin(22) Проверка: seed_admin вызвана
+INFO     2025-07-23 14:33:48,223 [bot] (commands.py).set_commands(20) Установил команды
+WARNING  2025-07-23 14:33:55,220 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-07-23 14:33:57,480 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+DEBUG    2025-07-23 14:33:58,197 [bot] (horoscope_keyboard.py).zodiac_kb(18) передаю клавы <generator object KeyboardBuilder.buttons at 0x00000200F1819E50>
+INFO     2025-07-23 14:33:58,356 [bot] (start_handlers.py).seed_admin(22) Проверка: seed_admin вызвана
+INFO     2025-07-23 14:33:58,376 [bot] (start_handlers.py).seed_admin(32) Администратор зарегистрирован
+INFO     2025-07-23 14:33:58,631 [bot] (commands.py).set_commands(20) Установил команды
+WARNING  2025-07-23 14:53:28,326 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-07-23 14:53:28,476 [bot] (main.py).<module>(45) Помощник завершены

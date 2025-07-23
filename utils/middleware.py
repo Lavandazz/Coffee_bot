@@ -4,6 +4,8 @@ from aiogram import BaseMiddleware
 from typing import Callable, Dict, Any
 from datetime import date
 
+from tortoise.exceptions import DoesNotExist
+
 from database.models_db import User, Statistic
 from utils.logging_config import bot_logger
 
@@ -12,12 +14,13 @@ class RoleMiddleware(BaseMiddleware):
     async def __call__(self, handler, event, data):
         try:
             user_id = event.from_user.id  # 7599073638
-            bot_logger.debug(f'Новый пользователь {event.from_user.id}')
-            user = await User.get(telegram_id=user_id)
-            bot_logger.debug(f'Узер {user.id, user.first_name, user.role}')
+            user = await User.get_or_none(telegram_id=user_id)
+            bot_logger.debug(f'Пользователь взаимодействует с ботом {user.id, user.first_name, user.role}')
 
             data["role"] = user.role if user else "user"
-
+        except DoesNotExist:  # Конкретное исключение для отсутствия пользователя
+            data["role"] = "user"
+            bot_logger.debug(f"Юзера {event.from_user.id} нет в базе, присваиваем роль по умолчанию")
         except Exception as e:
             bot_logger.error(f"DB error in middleware: {e}")
             data["role"] = "user"

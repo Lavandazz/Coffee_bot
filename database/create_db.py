@@ -4,6 +4,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+
 async def init_db():
     await Tortoise.init(
         config=TORTOISE_ORM,  # передаем конфиг
@@ -15,6 +16,7 @@ async def init_db():
         }
     )
     await Tortoise.generate_schemas()  # создание таблиц, если их нет
+
 
 async def close_db():
     await Tortoise.close_connections()
