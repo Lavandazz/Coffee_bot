@@ -3,7 +3,9 @@ from aiogram.filters import Command, StateFilter
 
 from handlers.help_handlers import help_menu
 from handlers.start_handlers import get_start, on_start, start_handler
-from handlers.admin_handlers import admin_menu_handler, admin_menu
+from handlers.admin_handlers import (admin_menu_handler, admin_menu, get_statistic,
+                                     get_day_statistic, get_period_statistic, process_first_date, process_second_date,
+                                     process_single_date)
 from handlers.barista_handlers import approve_review, reject_review, moderate_review, show_barista_btn, show_reviews, \
     add_post, add_photo, save_post, generate_phrase, change_post, save_edited_text, show_barista_posts, barista_post
 from handlers.user_review_handlers import (handle_review_photo, ask_for_photo, ask_for_text,
@@ -12,7 +14,7 @@ from handlers.back_handler import back, clear_message
 from handlers.cancel_state_handler import cancel_handler
 from handlers.horoscope_handkers import show_horoscope, send_horoscope, start_schedule_horo
 
-from states.menu_states import ReviewStates, PostState
+from states.menu_states import ReviewStates, PostState, StatsState
 from utils.middleware import RoleMiddleware, StatisticMiddleware
 from utils.shedulers.cleane_base_scheduler import horo_to_clean
 from utils.config import redis_client
@@ -33,6 +35,14 @@ def setup_dispatcher(dp: Dispatcher):
     # панель администратора
     dp.callback_query.register(admin_menu, F.data == "admin_panel")
     dp.callback_query.register(admin_menu_handler, F.data == "admin")
+
+    dp.callback_query.register(get_statistic, F.data == 'statistic')
+    dp.callback_query.register(get_day_statistic, F.data == 'stat_day')
+    dp.callback_query.register(get_period_statistic, F.data == 'stat_period')
+    dp.message.register(process_first_date, StatsState.waiting_first_date)
+    dp.message.register(process_second_date, StatsState.waiting_second_date)
+    dp.message.register(process_single_date, StatsState.waiting_date)
+
     # панель бариста
     dp.callback_query.register(show_barista_btn, F.data == "barista")
     dp.callback_query.register(show_barista_posts, F.data == "barista_posts")

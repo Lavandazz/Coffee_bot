@@ -6,11 +6,11 @@ from aiogram.fsm.context import FSMContext
 from aiogram.types import CallbackQuery
 
 from handlers.back_handler_menu import BackHandler
-from keyboards.admin_keyboards import admin_btn
+from keyboards.admin_keyboards import admin_btn, admin_kb, admin_stat_kb
 from keyboards.barista_keyboard import review_kb, edit_text_keyboard, barista_posts_kb, barista_kb
 from keyboards.horoscope_keyboard import zodiac_kb
 from keyboards.menu_keyboard import inline_menu_kb
-from states.menu_states import MenuState, ReviewStates, AdminMenuState, BaristaState, PostState
+from states.menu_states import MenuState, ReviewStates, AdminMenuState, BaristaState, PostState, StatsState
 from utils.get_user import get_role_user
 from utils.logging_config import bot_logger
 
@@ -95,6 +95,16 @@ async def back(call: CallbackQuery, state: FSMContext, bot: Bot, role: str):
         await call.message.edit_text(text=ai_text,
                                      reply_markup=edit_text_keyboard())
         bot_logger.debug(f'Состояние {current_state} Ожидание ввода текста для поста бариста')
+
+    if current_state in (StatsState.waiting_date,
+                         StatsState.waiting_first_date,
+                         StatsState.waiting_second_date):
+        await state.set_state(AdminMenuState.statistic_menu)
+        await call.message.edit_text(text='Возврат в статистику', reply_markup=admin_stat_kb())
+
+    if current_state == AdminMenuState.statistic_menu:
+        await state.set_state(AdminMenuState.admin)
+        await call.message.edit_text(text='Возврат в статистику', reply_markup=admin_kb())
 
 
 async def clear_message(call: CallbackQuery, bot: Bot, role: str):

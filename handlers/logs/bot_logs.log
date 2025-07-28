@@ -1,0 +1,2 @@
+INFO     2025-07-26 14:17:16,090 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+DEBUG    2025-07-26 14:17:16,700 [bot] (horoscope_keyboard.py).zodiac_kb(18) передаю клавы <generator object KeyboardBuilder.buttons at 0x000001F574A81F20>

@@ -9,6 +9,7 @@ class User(Model):
     telegram_id = fields.BigIntField(unique=True)
     role = fields.CharField(max_length=20, default='user')
     registration_date = fields.DatetimeField(auto_now_add=True)
+    last_activity = fields.DatetimeField(null=True)
 
     class Meta:
         table = 'users'

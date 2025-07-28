@@ -90,3 +90,297 @@ INFO     2025-07-23 14:33:58,376 [bot] (start_handlers.py).seed_admin(32) Адм
 INFO     2025-07-23 14:33:58,631 [bot] (commands.py).set_commands(20) Установил команды
 WARNING  2025-07-23 14:53:28,326 [bot] (main.py).start_bot(23) Бот закрыт
 WARNING  2025-07-23 14:53:28,476 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-07-23 15:42:47,888 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+DEBUG    2025-07-23 15:42:50,817 [bot] (horoscope_keyboard.py).zodiac_kb(18) передаю клавы <generator object KeyboardBuilder.buttons at 0x00000273C9D59E50>
+INFO     2025-07-23 15:42:51,364 [bot] (start_handlers.py).seed_admin(22) Проверка: seed_admin вызвана
+INFO     2025-07-23 15:42:51,706 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-07-23 15:43:00,231 [bot] (middleware.py).__call__(18) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-23 15:43:00,750 [bot] (start_handlers.py).get_start(47) Передаю нового пользователя для сохранения484385628
+DEBUG    2025-07-23 15:43:00,959 [bot] (start_handlers.py).create_user(65) Регистрирую нового пользователя 484385628
+DEBUG    2025-07-23 15:43:00,964 [bot] (get_user.py).get_role_user(30) Юзер зарегистрирован: 484385628
+DEBUG    2025-07-23 15:43:00,965 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю клаву. Роль юзера: 484385628
+WARNING  2025-07-23 15:45:52,708 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-07-23 15:45:56,601 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+DEBUG    2025-07-23 15:45:57,672 [bot] (horoscope_keyboard.py).zodiac_kb(18) передаю клавы <generator object KeyboardBuilder.buttons at 0x000001A98BD69E50>
+INFO     2025-07-23 15:45:57,989 [bot] (start_handlers.py).seed_admin(22) Проверка: seed_admin вызвана
+INFO     2025-07-23 15:45:58,176 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-07-23 15:46:03,910 [bot] (middleware.py).__call__(18) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-23 15:46:04,042 [bot] (start_handlers.py).get_start(47) Передаю нового пользователя для сохранения484385628
+DEBUG    2025-07-23 15:46:04,043 [bot] (start_handlers.py).create_user(64) Регистрирую нового пользователя 484385628
+DEBUG    2025-07-23 15:46:04,046 [bot] (get_user.py).get_role_user(30) Юзер зарегистрирован: 484385628
+DEBUG    2025-07-23 15:46:04,046 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю клаву. Роль юзера: 484385628
+DEBUG    2025-07-23 15:46:09,591 [bot] (middleware.py).__call__(18) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-23 15:46:09,634 [bot] (start_handlers.py).get_start(47) Передаю нового пользователя для сохранения484385628
+DEBUG    2025-07-23 15:46:09,634 [bot] (start_handlers.py).create_user(64) Регистрирую нового пользователя 484385628
+DEBUG    2025-07-23 15:46:09,636 [bot] (get_user.py).get_role_user(30) Юзер зарегистрирован: 484385628
+DEBUG    2025-07-23 15:46:09,637 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю клаву. Роль юзера: 484385628
+DEBUG    2025-07-23 15:46:14,805 [bot] (middleware.py).__call__(18) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-23 15:46:14,814 [bot] (horoscope_keyboard.py).zodiac_kb(18) передаю клавы <generator object KeyboardBuilder.buttons at 0x000001A98CDB1F20>
+DEBUG    2025-07-23 15:46:15,861 [bot] (middleware.py).__call__(18) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+WARNING  2025-07-23 15:46:16,016 [bot] (horoscope_handkers.py).send_horoscope(41) Гороскопа для Дева нет в базе 2025-07-23. Использована мокбаза
+DEBUG    2025-07-23 15:46:17,442 [bot] (middleware.py).__call__(18) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-23 15:46:17,451 [bot] (horoscope_keyboard.py).zodiac_kb(18) передаю клавы <generator object KeyboardBuilder.buttons at 0x000001A98CD136B0>
+DEBUG    2025-07-23 15:46:18,190 [bot] (middleware.py).__call__(18) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-23 16:01:31,414 [bot] (middleware.py).__call__(18) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-23 16:01:31,471 [bot] (start_handlers.py).get_start(47) Передаю нового пользователя для сохранения484385628
+DEBUG    2025-07-23 16:01:31,472 [bot] (start_handlers.py).create_user(64) Регистрирую нового пользователя 484385628
+DEBUG    2025-07-23 16:01:31,476 [bot] (get_user.py).get_role_user(30) Юзер зарегистрирован: 484385628
+DEBUG    2025-07-23 16:01:31,476 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю клаву. Роль юзера: 484385628
+WARNING  2025-07-23 18:01:51,249 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-07-23 18:01:51,829 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-07-24 15:08:53,058 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+DEBUG    2025-07-24 15:08:54,991 [bot] (horoscope_keyboard.py).zodiac_kb(18) передаю клавы <generator object KeyboardBuilder.buttons at 0x0000027E47199F20>
+INFO     2025-07-24 15:08:55,604 [bot] (start_handlers.py).seed_admin(24) Проверка: seed_admin вызвана
+INFO     2025-07-24 15:08:56,033 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-07-24 15:09:08,254 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+ERROR    2025-07-24 15:09:12,385 [bot] (middleware.py).__call__(92) [StatisticMiddleware] Ошибка статистики: Error 22 connecting to localhost:6379. Удаленный компьютер отклонил это сетевое подключение.
+DEBUG    2025-07-24 15:09:12,386 [bot] (start_handlers.py).get_start(53) Передаю нового пользователя для сохранения484385628
+DEBUG    2025-07-24 15:09:12,390 [bot] (get_user.py).get_role_user(30) Юзер зарегистрирован: 484385628
+DEBUG    2025-07-24 15:09:12,390 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю клаву. Роль юзера: 484385628
+DEBUG    2025-07-24 15:09:16,848 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+ERROR    2025-07-24 15:09:20,938 [bot] (middleware.py).__call__(92) [StatisticMiddleware] Ошибка статистики: Error 22 connecting to localhost:6379. Удаленный компьютер отклонил это сетевое подключение.
+DEBUG    2025-07-24 15:09:20,943 [bot] (horoscope_keyboard.py).zodiac_kb(18) передаю клавы <generator object KeyboardBuilder.buttons at 0x0000027E482028E0>
+DEBUG    2025-07-24 15:10:48,529 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+INFO     2025-07-24 15:27:45,795 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+DEBUG    2025-07-24 15:27:46,253 [bot] (horoscope_keyboard.py).zodiac_kb(18) передаю клавы <generator object KeyboardBuilder.buttons at 0x00000221B0173AC0>
+DEBUG    2025-07-24 15:33:03,747 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-24 15:33:03,768 [bot] (horoscope_keyboard.py).zodiac_kb(18) передаю клавы <generator object KeyboardBuilder.buttons at 0x0000027E49725150>
+DEBUG    2025-07-24 15:33:06,022 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-24 15:33:06,027 [bot] (get_user.py).get_role_user(30) Юзер зарегистрирован: 484385628
+DEBUG    2025-07-24 15:33:06,027 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю клаву. Роль юзера: 484385628
+DEBUG    2025-07-24 15:33:06,109 [bot] (back_handler.py).back(29) Состояние MenuState:horoscope_menu сброшено
+DEBUG    2025-07-24 15:33:07,603 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-24 15:33:08,506 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+INFO     2025-07-24 15:33:08,508 [bot] (admin_handlers.py).admin_menu_handler(31) Вход в панель админа
+DEBUG    2025-07-24 15:33:10,218 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+WARNING  2025-07-24 18:04:40,422 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-07-24 18:04:41,502 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-07-24 18:04:54,474 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+DEBUG    2025-07-24 18:04:58,023 [bot] (horoscope_keyboard.py).zodiac_kb(18) передаю клавы <generator object KeyboardBuilder.buttons at 0x000002D3A81EDF20>
+INFO     2025-07-24 18:04:59,394 [bot] (start_handlers.py).seed_admin(24) Проверка: seed_admin вызвана
+INFO     2025-07-24 18:04:59,780 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-07-24 18:05:04,889 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-24 18:05:05,947 [bot] (start_handlers.py).get_start(53) Передаю нового пользователя для сохранения484385628
+DEBUG    2025-07-24 18:05:05,949 [bot] (get_user.py).get_role_user(30) Юзер зарегистрирован: 484385628
+DEBUG    2025-07-24 18:05:05,949 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю клаву. Роль юзера: 484385628
+DEBUG    2025-07-24 18:05:12,030 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-24 18:05:13,525 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+INFO     2025-07-24 18:05:13,530 [bot] (admin_handlers.py).admin_menu_handler(28) Вход в панель админа
+DEBUG    2025-07-24 18:05:14,654 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+WARNING  2025-07-24 18:06:34,624 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-07-24 18:06:37,479 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+DEBUG    2025-07-24 18:06:38,137 [bot] (horoscope_keyboard.py).zodiac_kb(18) передаю клавы <generator object KeyboardBuilder.buttons at 0x000002731135DF20>
+INFO     2025-07-24 18:06:38,440 [bot] (start_handlers.py).seed_admin(24) Проверка: seed_admin вызвана
+INFO     2025-07-24 18:06:38,689 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-07-24 18:06:46,370 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-24 18:06:46,525 [bot] (start_handlers.py).get_start(53) Передаю нового пользователя для сохранения484385628
+DEBUG    2025-07-24 18:06:46,531 [bot] (get_user.py).get_role_user(30) Юзер зарегистрирован: 484385628
+DEBUG    2025-07-24 18:06:46,532 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю клаву. Роль юзера: 484385628
+DEBUG    2025-07-24 18:06:47,974 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-24 18:06:49,147 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+INFO     2025-07-24 18:06:49,151 [bot] (admin_handlers.py).admin_menu_handler(28) Вход в панель админа
+DEBUG    2025-07-24 18:06:49,795 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+WARNING  2025-07-24 18:10:53,917 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-07-24 19:05:20,251 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+DEBUG    2025-07-24 19:05:20,987 [bot] (horoscope_keyboard.py).zodiac_kb(18) передаю клавы <generator object KeyboardBuilder.buttons at 0x0000020B1C15DF20>
+INFO     2025-07-24 19:05:21,254 [bot] (start_handlers.py).seed_admin(24) Проверка: seed_admin вызвана
+INFO     2025-07-24 19:05:21,450 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-07-24 19:05:24,652 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-24 19:05:24,772 [bot] (start_handlers.py).get_start(53) Передаю нового пользователя для сохранения484385628
+DEBUG    2025-07-24 19:05:24,773 [bot] (get_user.py).get_role_user(30) Юзер зарегистрирован: 484385628
+DEBUG    2025-07-24 19:05:24,773 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю клаву. Роль юзера: 484385628
+DEBUG    2025-07-24 19:05:26,964 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-24 19:05:27,547 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+INFO     2025-07-24 19:05:27,554 [bot] (admin_handlers.py).admin_menu_handler(28) Вход в панель админа
+DEBUG    2025-07-24 19:05:28,411 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+WARNING  2025-07-24 19:17:09,688 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-07-24 19:17:09,908 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-07-24 19:17:12,520 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+DEBUG    2025-07-24 19:17:13,168 [bot] (horoscope_keyboard.py).zodiac_kb(18) передаю клавы <generator object KeyboardBuilder.buttons at 0x00000225255A9F20>
+INFO     2025-07-24 19:17:13,459 [bot] (start_handlers.py).seed_admin(24) Проверка: seed_admin вызвана
+INFO     2025-07-24 19:17:13,679 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-07-24 19:17:16,845 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-24 19:17:17,015 [bot] (start_handlers.py).get_start(53) Передаю нового пользователя для сохранения484385628
+DEBUG    2025-07-24 19:17:17,017 [bot] (get_user.py).get_role_user(30) Юзер зарегистрирован: 484385628
+DEBUG    2025-07-24 19:17:17,017 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю клаву. Роль юзера: 484385628
+DEBUG    2025-07-24 19:17:19,786 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-24 19:17:20,516 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+INFO     2025-07-24 19:17:20,522 [bot] (admin_handlers.py).admin_menu_handler(28) Вход в панель админа
+WARNING  2025-07-24 19:18:13,099 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-07-24 19:18:15,946 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+DEBUG    2025-07-24 19:18:16,611 [bot] (horoscope_keyboard.py).zodiac_kb(18) передаю клавы <generator object KeyboardBuilder.buttons at 0x0000015498FF9F20>
+INFO     2025-07-24 19:18:16,794 [bot] (start_handlers.py).seed_admin(24) Проверка: seed_admin вызвана
+INFO     2025-07-24 19:18:17,031 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-07-24 19:18:18,326 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-24 19:18:18,416 [bot] (start_handlers.py).get_start(53) Передаю нового пользователя для сохранения484385628
+DEBUG    2025-07-24 19:18:18,418 [bot] (get_user.py).get_role_user(30) Юзер зарегистрирован: 484385628
+DEBUG    2025-07-24 19:18:18,418 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю клаву. Роль юзера: 484385628
+DEBUG    2025-07-24 19:18:19,516 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-24 19:18:20,482 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+INFO     2025-07-24 19:18:20,490 [bot] (barista_handlers.py).show_barista_btn(21) Вход в панель бариста
+DEBUG    2025-07-24 19:18:21,348 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-24 19:18:21,465 [bot] (back_handler.py).back(44) Состояние AdminMenuState:barista сброшено
+DEBUG    2025-07-24 19:18:22,132 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+INFO     2025-07-24 19:18:22,134 [bot] (admin_handlers.py).admin_menu_handler(28) Вход в панель админа
+DEBUG    2025-07-24 19:18:23,258 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-24 19:18:24,708 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-24 19:18:40,445 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-24 19:18:49,832 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-24 19:18:53,080 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-24 19:18:53,119 [bot] (start_handlers.py).get_start(53) Передаю нового пользователя для сохранения484385628
+DEBUG    2025-07-24 19:18:53,121 [bot] (get_user.py).get_role_user(30) Юзер зарегистрирован: 484385628
+DEBUG    2025-07-24 19:18:53,121 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю клаву. Роль юзера: 484385628
+DEBUG    2025-07-24 19:18:54,628 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-24 19:18:55,671 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+INFO     2025-07-24 19:18:55,676 [bot] (admin_handlers.py).admin_menu_handler(28) Вход в панель админа
+DEBUG    2025-07-24 19:18:56,280 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-24 19:19:01,956 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-24 19:19:18,688 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-24 19:19:29,892 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-24 19:19:29,934 [bot] (start_handlers.py).get_start(53) Передаю нового пользователя для сохранения484385628
+DEBUG    2025-07-24 19:19:29,935 [bot] (get_user.py).get_role_user(30) Юзер зарегистрирован: 484385628
+DEBUG    2025-07-24 19:19:29,935 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю клаву. Роль юзера: 484385628
+DEBUG    2025-07-24 19:19:31,380 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-24 19:19:32,799 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+INFO     2025-07-24 19:19:32,803 [bot] (admin_handlers.py).admin_menu_handler(28) Вход в панель админа
+DEBUG    2025-07-24 19:19:33,407 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-24 19:19:34,161 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-24 19:19:43,678 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+WARNING  2025-07-24 19:52:26,975 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-07-24 19:52:27,987 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-07-26 15:11:05,100 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+DEBUG    2025-07-26 15:11:08,277 [bot] (horoscope_keyboard.py).zodiac_kb(18) передаю клавы <generator object KeyboardBuilder.buttons at 0x000001D043659F20>
+INFO     2025-07-26 15:11:10,473 [bot] (start_handlers.py).seed_admin(24) Проверка: seed_admin вызвана
+INFO     2025-07-26 15:11:10,848 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-07-26 15:11:33,359 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+ERROR    2025-07-26 15:11:37,589 [bot] (middleware.py).__call__(92) [StatisticMiddleware] Ошибка статистики: Error 22 connecting to localhost:6379. Удаленный компьютер отклонил это сетевое подключение.
+DEBUG    2025-07-26 15:11:37,590 [bot] (start_handlers.py).get_start(53) Передаю нового пользователя для сохранения484385628
+DEBUG    2025-07-26 15:11:37,592 [bot] (get_user.py).get_role_user(30) Юзер зарегистрирован: 484385628
+DEBUG    2025-07-26 15:11:37,592 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю клаву. Роль юзера: 484385628
+DEBUG    2025-07-26 15:14:39,164 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-26 15:14:40,812 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+INFO     2025-07-26 15:14:40,841 [bot] (admin_handlers.py).admin_menu_handler(28) Вход в панель админа
+DEBUG    2025-07-26 15:14:42,144 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-26 15:14:42,147 [bot] (admin_handlers.py).get_statistic(38) State AdminMenuState:statistic_menu
+DEBUG    2025-07-26 15:14:43,725 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-26 15:14:43,807 [bot] (admin_handlers.py).get_day_statistic(50) State StatsState:waiting_date
+DEBUG    2025-07-26 15:26:21,673 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-26 15:26:21,812 [bot] (admin_handlers.py).process_single_date(117) State AdminMenuState:statistic
+WARNING  2025-07-26 15:26:42,916 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-07-26 15:26:43,287 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-07-26 15:27:10,699 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+DEBUG    2025-07-26 15:27:15,402 [bot] (horoscope_keyboard.py).zodiac_kb(18) передаю клавы <generator object KeyboardBuilder.buttons at 0x00000258CB929F20>
+INFO     2025-07-26 15:27:16,306 [bot] (start_handlers.py).seed_admin(24) Проверка: seed_admin вызвана
+INFO     2025-07-26 15:27:16,755 [bot] (commands.py).set_commands(20) Установил команды
+WARNING  2025-07-26 16:41:36,667 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-07-26 16:41:36,980 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-07-28 12:10:31,006 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+DEBUG    2025-07-28 12:10:33,235 [bot] (horoscope_keyboard.py).zodiac_kb(18) передаю клавы <generator object KeyboardBuilder.buttons at 0x0000015EC3029F20>
+INFO     2025-07-28 12:10:34,719 [bot] (start_handlers.py).seed_admin(24) Проверка: seed_admin вызвана
+INFO     2025-07-28 12:10:35,247 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-07-28 12:10:39,477 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+ERROR    2025-07-28 12:10:43,661 [bot] (middleware.py).__call__(92) [StatisticMiddleware] Ошибка статистики: Error 22 connecting to localhost:6379. Удаленный компьютер отклонил это сетевое подключение.
+DEBUG    2025-07-28 12:10:43,661 [bot] (start_handlers.py).get_start(53) Передаю нового пользователя для сохранения484385628
+DEBUG    2025-07-28 12:10:43,664 [bot] (get_user.py).get_role_user(30) Юзер зарегистрирован: 484385628
+DEBUG    2025-07-28 12:10:43,664 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю клаву. Роль юзера: 484385628
+DEBUG    2025-07-28 12:11:24,510 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-28 12:11:25,810 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+INFO     2025-07-28 12:11:25,997 [bot] (admin_handlers.py).admin_menu_handler(28) Вход в панель админа
+DEBUG    2025-07-28 12:11:27,781 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-28 12:11:27,784 [bot] (admin_handlers.py).get_statistic(38) State AdminMenuState:statistic_menu
+WARNING  2025-07-28 12:12:45,678 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-07-28 12:12:50,017 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+DEBUG    2025-07-28 12:12:51,393 [bot] (horoscope_keyboard.py).zodiac_kb(18) передаю клавы <generator object KeyboardBuilder.buttons at 0x000001D043199F20>
+INFO     2025-07-28 12:12:51,965 [bot] (start_handlers.py).seed_admin(24) Проверка: seed_admin вызвана
+INFO     2025-07-28 12:12:52,119 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-07-28 12:12:56,004 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-28 12:12:56,052 [bot] (start_handlers.py).get_start(53) Передаю нового пользователя для сохранения484385628
+DEBUG    2025-07-28 12:12:56,054 [bot] (get_user.py).get_role_user(30) Юзер зарегистрирован: 484385628
+DEBUG    2025-07-28 12:12:56,054 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю клаву. Роль юзера: 484385628
+DEBUG    2025-07-28 12:12:57,421 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-28 12:12:59,433 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+INFO     2025-07-28 12:12:59,436 [bot] (admin_handlers.py).admin_menu_handler(28) Вход в панель админа
+DEBUG    2025-07-28 12:13:00,349 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-28 12:13:00,354 [bot] (admin_handlers.py).get_statistic(38) State AdminMenuState:statistic_menu
+DEBUG    2025-07-28 12:13:01,760 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-28 12:13:01,836 [bot] (admin_handlers.py).get_day_statistic(50) State StatsState:waiting_date
+DEBUG    2025-07-28 12:13:22,033 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-28 12:13:22,039 [bot] (start_handlers.py).get_start(53) Передаю нового пользователя для сохранения484385628
+DEBUG    2025-07-28 12:13:22,040 [bot] (get_user.py).get_role_user(30) Юзер зарегистрирован: 484385628
+DEBUG    2025-07-28 12:13:22,040 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю клаву. Роль юзера: 484385628
+DEBUG    2025-07-28 12:13:23,324 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-28 12:13:25,254 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+INFO     2025-07-28 12:13:25,258 [bot] (admin_handlers.py).admin_menu_handler(28) Вход в панель админа
+DEBUG    2025-07-28 12:13:26,159 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-28 12:13:26,194 [bot] (admin_handlers.py).get_statistic(38) State AdminMenuState:statistic_menu
+DEBUG    2025-07-28 12:13:26,934 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-28 12:13:32,608 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-28 12:13:32,624 [bot] (start_handlers.py).get_start(53) Передаю нового пользователя для сохранения484385628
+DEBUG    2025-07-28 12:13:32,625 [bot] (get_user.py).get_role_user(30) Юзер зарегистрирован: 484385628
+DEBUG    2025-07-28 12:13:32,626 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю клаву. Роль юзера: 484385628
+DEBUG    2025-07-28 12:13:33,510 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-28 12:13:35,024 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+INFO     2025-07-28 12:13:35,028 [bot] (admin_handlers.py).admin_menu_handler(28) Вход в панель админа
+DEBUG    2025-07-28 12:13:35,773 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-28 12:13:35,776 [bot] (admin_handlers.py).get_statistic(38) State AdminMenuState:statistic_menu
+DEBUG    2025-07-28 12:13:40,653 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-28 12:13:40,658 [bot] (start_handlers.py).get_start(53) Передаю нового пользователя для сохранения484385628
+DEBUG    2025-07-28 12:13:40,659 [bot] (get_user.py).get_role_user(30) Юзер зарегистрирован: 484385628
+DEBUG    2025-07-28 12:13:40,660 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю клаву. Роль юзера: 484385628
+DEBUG    2025-07-28 12:13:41,667 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-28 12:13:43,403 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+INFO     2025-07-28 12:13:43,407 [bot] (admin_handlers.py).admin_menu_handler(28) Вход в панель админа
+DEBUG    2025-07-28 12:16:48,871 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-28 12:16:48,974 [bot] (back_handler.py).back(44) Состояние AdminMenuState:admin сброшено
+DEBUG    2025-07-28 12:16:49,670 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+INFO     2025-07-28 12:16:49,675 [bot] (admin_handlers.py).admin_menu_handler(28) Вход в панель админа
+WARNING  2025-07-28 12:17:44,064 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-07-28 12:17:47,945 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+DEBUG    2025-07-28 12:17:49,402 [bot] (horoscope_keyboard.py).zodiac_kb(18) передаю клавы <generator object KeyboardBuilder.buttons at 0x0000020A19019F20>
+INFO     2025-07-28 12:17:49,846 [bot] (start_handlers.py).seed_admin(24) Проверка: seed_admin вызвана
+INFO     2025-07-28 12:17:50,002 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-07-28 12:17:51,532 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-28 12:17:51,599 [bot] (start_handlers.py).get_start(53) Передаю нового пользователя для сохранения484385628
+DEBUG    2025-07-28 12:17:51,605 [bot] (get_user.py).get_role_user(30) Юзер зарегистрирован: 484385628
+DEBUG    2025-07-28 12:17:51,605 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю клаву. Роль юзера: 484385628
+DEBUG    2025-07-28 12:17:53,121 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-28 12:17:54,097 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+INFO     2025-07-28 12:17:54,107 [bot] (admin_handlers.py).admin_menu_handler(28) Вход в панель админа
+DEBUG    2025-07-28 12:17:55,205 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-28 12:17:55,210 [bot] (admin_handlers.py).get_statistic(38) State AdminMenuState:statistic_menu
+DEBUG    2025-07-28 12:17:56,331 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+WARNING  2025-07-28 12:18:59,719 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-07-28 12:19:02,282 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+DEBUG    2025-07-28 12:19:02,928 [bot] (horoscope_keyboard.py).zodiac_kb(18) передаю клавы <generator object KeyboardBuilder.buttons at 0x00000226B5319F20>
+INFO     2025-07-28 12:19:03,223 [bot] (start_handlers.py).seed_admin(24) Проверка: seed_admin вызвана
+INFO     2025-07-28 12:19:03,400 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-07-28 12:19:05,617 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-28 12:19:05,641 [bot] (start_handlers.py).get_start(53) Передаю нового пользователя для сохранения484385628
+DEBUG    2025-07-28 12:19:05,642 [bot] (get_user.py).get_role_user(30) Юзер зарегистрирован: 484385628
+DEBUG    2025-07-28 12:19:05,642 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю клаву. Роль юзера: 484385628
+DEBUG    2025-07-28 12:19:06,998 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-28 12:19:08,474 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+INFO     2025-07-28 12:19:08,479 [bot] (admin_handlers.py).admin_menu_handler(28) Вход в панель админа
+DEBUG    2025-07-28 12:19:09,190 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-28 12:19:09,202 [bot] (admin_handlers.py).get_statistic(38) State AdminMenuState:statistic_menu
+DEBUG    2025-07-28 12:19:09,853 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-28 12:19:10,955 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-28 12:19:10,960 [bot] (admin_handlers.py).get_statistic(38) State AdminMenuState:statistic_menu
+DEBUG    2025-07-28 12:19:15,033 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-28 12:19:15,100 [bot] (admin_handlers.py).get_day_statistic(51) State StatsState:waiting_date
+DEBUG    2025-07-28 12:19:16,749 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-28 12:19:28,730 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-28 12:19:30,523 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-28 12:19:30,616 [bot] (back_handler.py).back(44) Состояние AdminMenuState:admin сброшено
+DEBUG    2025-07-28 12:19:31,854 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+INFO     2025-07-28 12:19:31,858 [bot] (admin_handlers.py).admin_menu_handler(28) Вход в панель админа
+DEBUG    2025-07-28 12:19:32,398 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-28 12:19:32,403 [bot] (admin_handlers.py).get_statistic(38) State AdminMenuState:statistic_menu
+DEBUG    2025-07-28 12:19:35,033 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-28 12:19:37,472 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-28 12:19:37,659 [bot] (back_handler.py).back(44) Состояние AdminMenuState:admin сброшено
+DEBUG    2025-07-28 12:19:38,448 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-07-28 12:19:38,453 [bot] (get_user.py).get_role_user(30) Юзер зарегистрирован: 484385628
+DEBUG    2025-07-28 12:19:38,453 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю клаву. Роль юзера: 484385628
+DEBUG    2025-07-28 12:19:38,534 [bot] (back_handler.py).back(29) Состояние AdminMenuState:admin_menu сброшено
+WARNING  2025-07-28 12:20:08,045 [bot] (main.py).start_bot(23) Бот закрыт

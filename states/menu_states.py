@@ -15,6 +15,15 @@ class AdminMenuState(StatesGroup):
     admin_menu = State()
     admin = State()
     barista = State()
+    statistic_menu = State()  # меню статистики
+    statistic = State()
+
+
+class StatsState(StatesGroup):
+    waiting_date = State()
+    waiting_first_date = State()
+    waiting_second_date = State()
+
 
 
 class BaristaState(StatesGroup):

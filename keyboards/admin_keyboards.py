@@ -21,7 +21,7 @@ def admin_btn(role: str):
 def admin_kb():
     """ Кнопки в отделе администрирования """
     kb = InlineKeyboardBuilder()
-    kb.button(text="Статистика за день",
+    kb.button(text="Статистика",
               callback_data="statistic")
     kb.button(text="Управление правами",
               callback_data="rights")
@@ -30,4 +30,12 @@ def admin_kb():
 
     return kb.as_markup()
 
+
+def admin_stat_kb():
+    kb = InlineKeyboardBuilder()
+    kb.button(text='За день', callback_data='stat_day')
+    kb.button(text='За период', callback_data='stat_')
+    kb.adjust(2)
+    kb.row(InlineKeyboardButton(text='⬅️ Назад', callback_data='back'))
+    return kb.as_markup()
 
