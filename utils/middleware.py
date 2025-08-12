@@ -20,6 +20,7 @@ class RoleMiddleware(BaseMiddleware):
             user_id = event.from_user.id  # 7599073638
             user = await User.get_or_none(telegram_id=user_id)
             bot_logger.debug(f'Пользователь взаимодействует с ботом {user.id, user.first_name, user.role}')
+
             # Запись последнего посещения
             user.last_activity = datetime.now()
             await user.save()
@@ -29,7 +30,8 @@ class RoleMiddleware(BaseMiddleware):
             data["role"] = "user"
             bot_logger.debug(f"Юзера {event.from_user.id} нет в базе, присваиваем роль по умолчанию")
         except Exception as e:
-            bot_logger.error(f"DB error in middleware: {e}")
+            bot_logger.exception(f"Exception в мидлваре нового пользователя: {e}.\n"
+                                 f"Присваиваем роль = user")
             data["role"] = "user"
 
         return await handler(event, data)
@@ -74,10 +76,10 @@ class StatisticMiddleware(BaseMiddleware):
 
                 user = await User.get_or_none(telegram_id=event.from_user.id)
 
-                # Если пользователь ещё не зарегистрирован в БД — считаем как нового
-                if not user:
-                    await Statistic.filter(id=stat.id).update(new_user=stat.new_user + 1)
-                    bot_logger.debug(f'Сохранил нового пользователя в статистику - {user}')
+                # # Если пользователь ещё не зарегистрирован в БД — считаем как нового
+                # if not user:
+                #     await Statistic.filter(id=stat.id).update(new_user=stat.new_user + 1)
+                #     bot_logger.debug(f'Сохранил нового пользователя в статистику - {user}')
             try:
                 await stat.save()
             except Exception as e:

@@ -1578,3 +1578,10 @@ DEBUG    2025-08-12 22:55:02,015 [bot] (middleware.py).__call__(64) stat соз�
 DEBUG    2025-08-12 22:55:02,018 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
 DEBUG    2025-08-12 22:55:02,018 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
 WARNING  2025-08-12 22:55:30,187 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-12 22:55:32,674 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+INFO     2025-08-12 22:55:33,612 [bot] (start_handlers.py).seed_admin(24) Проверка: seed_admin вызвана
+INFO     2025-08-12 22:55:33,786 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-12 22:55:35,206 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-08-12 22:55:35,218 [bot] (middleware.py).__call__(64) stat создался при апдейте: False
+DEBUG    2025-08-12 22:55:35,221 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-12 22:55:35,221 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
