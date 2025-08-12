@@ -2,7 +2,7 @@ from aiogram import Dispatcher, F
 from aiogram.filters import Command, StateFilter
 
 from handlers.help_handlers import help_menu
-from handlers.start_handlers import get_start, on_start, start_handler
+from handlers.start_handlers import get_start, on_start
 from handlers.admin_handlers import (admin_menu_handler, admin_menu, get_statistic, get_period_statistic)
 
 from handlers.barista_handlers import approve_review, reject_review, moderate_review, show_barista_btn, show_reviews, \
