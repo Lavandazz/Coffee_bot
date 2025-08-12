@@ -34,7 +34,7 @@ def admin_kb():
 def admin_stat_kb():
     kb = InlineKeyboardBuilder()
     kb.button(text='За день', callback_data='stat_day')
-    kb.button(text='За период', callback_data='stat_')
+    kb.button(text='За период', callback_data='stat_all')
     kb.adjust(2)
     kb.row(InlineKeyboardButton(text='⬅️ Назад', callback_data='back'))
     return kb.as_markup()

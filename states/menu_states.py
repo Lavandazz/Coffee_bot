@@ -25,7 +25,6 @@ class StatsState(StatesGroup):
     waiting_second_date = State()
 
 
-
 class BaristaState(StatesGroup):
     """ Меню бариста """
     review_menu = State()

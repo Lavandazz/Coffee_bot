@@ -27,7 +27,7 @@ async def get_role_user(user_id: int) -> str | None:
     try:
         user = await User.get(telegram_id=user_id)  # telegram_id=484385628
         if user:
-            bot_logger.debug(f'Юзер зарегистрирован: {user_id}')
+            bot_logger.debug(f'Возврат роли: {user_id}, {user.role}')
             return user.role
         else:
             bot_logger.debug(f'Юзер не зарегистрирован: {user_id}')

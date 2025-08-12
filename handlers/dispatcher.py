@@ -1,13 +1,14 @@
 from aiogram import Dispatcher, F
 from aiogram.filters import Command, StateFilter
+from aiogram_dialog import setup_dialogs
 
 from handlers.help_handlers import help_menu
 from handlers.start_handlers import get_start, on_start, start_handler
-from handlers.admin_handlers import (admin_menu_handler, admin_menu, get_statistic,
-                                     get_day_statistic, get_period_statistic, process_first_date, process_second_date,
-                                     process_single_date)
+from handlers.admin_handlers import (admin_menu_handler, admin_menu, get_statistic, get_period_statistic)
+
 from handlers.barista_handlers import approve_review, reject_review, moderate_review, show_barista_btn, show_reviews, \
     add_post, add_photo, save_post, generate_phrase, change_post, save_edited_text, show_barista_posts, barista_post
+# from handlers.statistic_handler_calendar import get_day_statistic, calendar_dialog
 from handlers.user_review_handlers import (handle_review_photo, ask_for_photo, ask_for_text,
                                            handle_review_text)
 from handlers.back_handler import back, clear_message
@@ -35,13 +36,12 @@ def setup_dispatcher(dp: Dispatcher):
     # панель администратора
     dp.callback_query.register(admin_menu, F.data == "admin_panel")
     dp.callback_query.register(admin_menu_handler, F.data == "admin")
-
     dp.callback_query.register(get_statistic, F.data == 'statistic')
-    dp.callback_query.register(get_day_statistic, F.data == 'stat_day')
-    dp.callback_query.register(get_period_statistic, F.data == 'stat_period')
-    dp.message.register(process_first_date, StatsState.waiting_first_date)
-    dp.message.register(process_second_date, StatsState.waiting_second_date)
-    dp.message.register(process_single_date, StatsState.waiting_date)
+    # календарь
+    # dp.callback_query.register(get_day_statistic, F.data == 'stat_day')
+    dp.callback_query.register(get_period_statistic, F.data.startswith('stat_'))
+    # dp.include_router(calendar_dialog)
+    # setup_dialogs(dp)
 
     # панель бариста
     dp.callback_query.register(show_barista_btn, F.data == "barista")

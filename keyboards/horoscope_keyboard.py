@@ -15,5 +15,5 @@ def zodiac_kb():
     kb.row(InlineKeyboardButton(text='⬅️ Назад', callback_data='back'))
     if SUPERADMIN:
         kb.row(InlineKeyboardButton(text='Запуск гороскопа', callback_data='start_horo'))
-    bot_logger.debug(f'передаю клавы {kb.buttons}')
+    bot_logger.debug(f'передаю клавы {list(kb.buttons)}')
     return kb.as_markup()

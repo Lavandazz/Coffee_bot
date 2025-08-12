@@ -2526,3 +2526,540 @@ INFO     2025-07-28 12:10:31,012 [horoscope] (logging_config.py)._setup_handlers
 INFO     2025-07-28 12:12:50,017 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
 INFO     2025-07-28 12:17:47,945 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
 INFO     2025-07-28 12:19:02,282 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-07-28 12:41:52,039 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-07-28 12:46:09,768 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-07-28 13:25:50,490 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-07-28 13:31:25,638 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-07-28 13:57:17,252 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-07-28 13:58:23,678 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-07-28 14:57:13,882 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-07-28 14:57:34,277 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-07-28 15:02:21,252 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-07-28 15:02:40,942 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-07-28 15:05:51,438 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-07-28 15:22:00,664 [horoscope] (generator_horoscope.py).generate_horoscope(35) Начинаю генерацию гороскопа для Овен
+INFO     2025-07-28 15:22:00,725 [horoscope] (ai_generator.py).get_completion(204) Генерирую ответ
+INFO     2025-07-28 15:22:56,562 [horoscope] (ai_generator.py).get_completion(217) Получил ответ
+DEBUG    2025-07-28 15:22:56,562 [horoscope] (generator_horoscope.py).generate_horoscope(42) получен гороскоп длинной : 3738
+INFO     2025-07-28 15:23:06,576 [horoscope] (generator_horoscope.py).horoscope_transformation_text(55) Перехожу к тексту знака - Овен
+DEBUG    2025-07-28 15:23:06,576 [horoscope] (generator_horoscope.py).horoscope_transformation_text(56) Длинна гороскопа - 3738
+DEBUG    2025-07-28 15:23:06,576 [horoscope] (generator_horoscope.py).horoscope_transformation_text(58) Строка гороскопа - 1: Взрывоопасный ристретто подсказывает: сегодня твое упрямство переплюнет даже пылающую соковыжималку Сатурна — сделаешь три ненужных дела из принципа, но кофе будет бесплатным  
+DEBUG    2025-07-28 15:23:06,576 [horoscope] (generator_horoscope.py).horoscope_transformation_text(60) строка: 1: Взрывоопасный ристретто подсказывает: сегодня твое упрямство переплюнет даже пылающую соковыжималку Сатурна — сделаешь три ненужных дела из принципа, но кофе будет бесплатным  
+DEBUG    2025-07-28 15:23:06,576 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) daily_horoscope для Овен - 1 - 177
+DEBUG    2025-07-28 15:23:06,577 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) day Овен - 2025-07-01 
+INFO     2025-07-28 15:23:06,577 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) Сохраняю гороскоп знака - Овен
+WARNING  2025-07-28 15:23:07,080 [horoscope] (generator_horoscope.py).save_horoscope(90) Гороскоп для Овен на 2025-07-01 уже существует: повторяющееся значение ключа нарушает ограничение уникальности "uid_horoscopes_zodiac_ad23b6"
+DETAIL:  Ключ "(zodiac, date)=(Овен, 2025-07-01)" уже существует.
+ERROR    2025-07-28 15:23:07,081 [horoscope] (generator_horoscope.py).generate_horoscope(49) Ошибка получения гороскопа для Овен - module 'aiogram.client.bot' has no attribute 'send_message'
+Traceback (most recent call last):
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\tortoise\backends\asyncpg\client.py", line 89, in _translate_exceptions
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\tortoise\backends\asyncpg\client.py", line 112, in execute_insert
+    return await connection.fetchrow(query, *values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\asyncpg\connection.py", line 748, in fetchrow
+    data = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\asyncpg\connection.py", line 1864, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\asyncpg\connection.py", line 1961, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\asyncpg\connection.py", line 2024, in _do_execute
+    result = await executor(stmt, None)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg\\protocol\\protocol.pyx", line 206, in bind_execute
+asyncpg.exceptions.UniqueViolationError: повторяющееся значение ключа нарушает ограничение уникальности "uid_horoscopes_zodiac_ad23b6"
+DETAIL:  Ключ "(zodiac, date)=(Овен, 2025-07-01)" уже существует.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\python\bots\cafe_bot\utils\generator_horoscope.py", line 81, in save_horoscope
+    await Horoscope.update_or_create(
+    ...<3 lines>...
+    )
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\tortoise\models.py", line 1184, in update_or_create
+    return await cls._create_or_get(db, defaults, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\tortoise\models.py", line 1134, in _create_or_get
+    raise exc
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\tortoise\models.py", line 1128, in _create_or_get
+    return await cls.create(using_db=connection, **merged_defaults), True
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\tortoise\models.py", line 1210, in create
+    await instance.save(using_db=db, force_create=True)
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\tortoise\models.py", line 996, in save
+    await executor.execute_insert(self)
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\tortoise\backends\base\executor.py", line 188, in execute_insert
+    insert_result = await self.db.execute_insert(self.insert_query, values)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\tortoise\backends\base_postgres\client.py", line 33, in _translate_exceptions
+    return await self._translate_exceptions(func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\tortoise\backends\asyncpg\client.py", line 93, in _translate_exceptions
+    raise IntegrityError(exc)
+tortoise.exceptions.IntegrityError: повторяющееся значение ключа нарушает ограничение уникальности "uid_horoscopes_zodiac_ad23b6"
+DETAIL:  Ключ "(zodiac, date)=(Овен, 2025-07-01)" уже существует.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\python\bots\cafe_bot\utils\generator_horoscope.py", line 47, in generate_horoscope
+    await horoscope_transformation_text(zodiac, horoscope, month, year, bot)
+  File "E:\python\bots\cafe_bot\utils\generator_horoscope.py", line 70, in horoscope_transformation_text
+    await save_horoscope(zodiac, day, daily_horoscope.strip(), bot)
+  File "E:\python\bots\cafe_bot\utils\generator_horoscope.py", line 91, in save_horoscope
+    await bot.send_message(chat_id=SUPERADMIN, text=f'Дата дублируется {zodiac}: {e}')
+          ^^^^^^^^^^^^^^^^
+AttributeError: module 'aiogram.client.bot' has no attribute 'send_message'. Did you mean: 'SendMessage'?
+INFO     2025-07-28 17:04:26,194 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-07-28 17:08:13,311 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-07-28 22:23:25,017 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-07-28 22:44:04,364 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-07-28 23:03:52,185 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-07-28 23:07:46,829 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-07-28 23:19:32,212 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-07-28 23:23:04,810 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-08 14:17:15,309 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-08 14:18:24,867 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-08 14:21:59,209 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-08 15:22:00,001 [horoscope] (generator_horoscope.py).generate_horoscope(35) Начинаю генерацию гороскопа для Овен
+INFO     2025-08-08 15:22:00,366 [horoscope] (ai_generator.py).get_completion(204) Генерирую ответ
+INFO     2025-08-08 15:22:51,854 [horoscope] (ai_generator.py).get_completion(217) Получил ответ
+DEBUG    2025-08-08 15:22:51,854 [horoscope] (generator_horoscope.py).generate_horoscope(42) получен гороскоп длинной : 4745
+INFO     2025-08-08 15:23:01,857 [horoscope] (generator_horoscope.py).horoscope_transformation_text(55) Перехожу к тексту знака - Овен
+DEBUG    2025-08-08 15:23:01,857 [horoscope] (generator_horoscope.py).horoscope_transformation_text(56) Длинна гороскопа - 4745
+DEBUG    2025-08-08 15:23:01,860 [horoscope] (generator_horoscope.py).horoscope_transformation_text(58) Строка гороскопа - Отлично! Лови кофейную судьбу для огненного **Овна** на **август 2025**, вытащенную прямиком из турки Вселенной, с пенкой юмора и крепким намеком на твою энергию:
+DEBUG    2025-08-08 15:23:01,860 [horoscope] (generator_horoscope.py).horoscope_transformation_text(60) строка: Отлично! Лови кофейную судьбу для огненного **Овна** на **август 2025**, вытащенную прямиком из турки Вселенной, с пенкой юмора и крепким намеком на твою энергию:
+DEBUG    2025-08-08 15:23:01,860 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) daily_horoscope для Овен - Отлично! Лови кофейную судьбу для огненного **Овна** на **август 2025**, вытащенную прямиком из турки Вселенной, с пенкой юмора и крепким намеком на твою энергию - 0
+DEBUG    2025-08-08 15:23:01,860 [horoscope] (generator_horoscope.py).horoscope_transformation_text(58) Строка гороскопа - 
+DEBUG    2025-08-08 15:23:01,860 [horoscope] (generator_horoscope.py).horoscope_transformation_text(58) Строка гороскопа - 1. **1: Огненная пенка в аффогато предвещает: сегодня ты завершишь споры с энтузиазмом метронома, взбивающего парное молоко.**
+DEBUG    2025-08-08 15:23:01,860 [horoscope] (generator_horoscope.py).horoscope_transformation_text(60) строка: 1. **1: Огненная пенка в аффогато предвещает: сегодня ты завершишь споры с энтузиазмом метронома, взбивающего парное молоко.**
+DEBUG    2025-08-08 15:23:01,860 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) daily_horoscope для Овен - 1 - 119
+DEBUG    2025-08-08 15:23:01,860 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) day Овен - 2025-08-01 
+INFO     2025-08-08 15:23:01,860 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) Сохраняю гороскоп знака - Овен
+INFO     2025-08-08 15:23:01,972 [horoscope] (generator_horoscope.py).save_horoscope(86) Сохранил гороскоп знака - Овен
+DEBUG    2025-08-08 15:23:01,973 [horoscope] (generator_horoscope.py).horoscope_transformation_text(58) Строка гороскопа - 2. **2: Кофейные зерна шепчут: твой сегодняшний импульсивный план сработает, как кнопка 'турбо' на кофемашине, но потом искать придется запчасти до 47-й параллели.**
+DEBUG    2025-08-08 15:23:01,973 [horoscope] (generator_horoscope.py).horoscope_transformation_text(60) строка: 2. **2: Кофейные зерна шепчут: твой сегодняшний импульсивный план сработает, как кнопка 'турбо' на кофемашине, но потом искать придется запчасти до 47-й параллели.**
+DEBUG    2025-08-08 15:23:01,973 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) daily_horoscope для Овен - 2 - 158
+DEBUG    2025-08-08 15:23:01,973 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) day Овен - 2025-08-02 
+INFO     2025-08-08 15:23:01,973 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) Сохраняю гороскоп знака - Овен
+INFO     2025-08-08 15:23:01,974 [horoscope] (generator_horoscope.py).save_horoscope(86) Сохранил гороскоп знака - Овен
+DEBUG    2025-08-08 15:23:01,974 [horoscope] (generator_horoscope.py).horoscope_transformation_text(58) Строка гороскопа - 3. **3: На дне чаши авгур увидел: не мешай утренний ристретто ложкой из Икеи – симфония разобранного конструктора гарантирована до самого Мачьято.**
+DEBUG    2025-08-08 15:23:01,975 [horoscope] (generator_horoscope.py).horoscope_transformation_text(60) строка: 3. **3: На дне чаши авгур увидел: не мешай утренний ристретто ложкой из Икеи – симфония разобранного конструктора гарантирована до самого Мачьято.**
+DEBUG    2025-08-08 15:23:01,975 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) daily_horoscope для Овен - 3 - 141
+DEBUG    2025-08-08 15:23:01,975 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) day Овен - 2025-08-03 
+INFO     2025-08-08 15:23:01,975 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) Сохраняю гороскоп знака - Овен
+INFO     2025-08-08 15:23:01,977 [horoscope] (generator_horoscope.py).save_horoscope(86) Сохранил гороскоп знака - Овен
+DEBUG    2025-08-08 15:23:01,977 [horoscope] (generator_horoscope.py).horoscope_transformation_text(58) Строка гороскопа - 4. **4: Вспышка эспрессо в темноте сулит: ты поймаешь сиюминутное вдохновение с такой силой, что кофемолка завизжит от восторга. Жги и не ищи горелое зерно.**
+DEBUG    2025-08-08 15:23:01,977 [horoscope] (generator_horoscope.py).horoscope_transformation_text(60) строка: 4. **4: Вспышка эспрессо в темноте сулит: ты поймаешь сиюминутное вдохновение с такой силой, что кофемолка завизжит от восторга. Жги и не ищи горелое зерно.**
+DEBUG    2025-08-08 15:23:01,977 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) daily_horoscope для Овен - 4 - 151
+DEBUG    2025-08-08 15:23:01,977 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) day Овен - 2025-08-04 
+INFO     2025-08-08 15:23:01,977 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) Сохраняю гороскоп знака - Овен
+INFO     2025-08-08 15:23:01,979 [horoscope] (generator_horoscope.py).save_horoscope(86) Сохранил гороскоп знака - Овен
+DEBUG    2025-08-08 15:23:01,979 [horoscope] (generator_horoscope.py).horoscope_transformation_text(58) Строка гороскопа - 5. **5: Гущиный паттерн кричит Овену: твой офисный стул сегодня – тайный родстер. Тормози виртуозно до отмены заказа капучино.**
+DEBUG    2025-08-08 15:23:01,979 [horoscope] (generator_horoscope.py).horoscope_transformation_text(60) строка: 5. **5: Гущиный паттерн кричит Овену: твой офисный стул сегодня – тайный родстер. Тормози виртуозно до отмены заказа капучино.**
+DEBUG    2025-08-08 15:23:01,979 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) daily_horoscope для Овен - 5 - 121
+DEBUG    2025-08-08 15:23:01,979 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) day Овен - 2025-08-05 
+INFO     2025-08-08 15:23:01,979 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) Сохраняю гороскоп знака - Овен
+INFO     2025-08-08 15:23:01,981 [horoscope] (generator_horoscope.py).save_horoscope(86) Сохранил гороскоп знака - Овен
+DEBUG    2025-08-08 15:23:01,981 [horoscope] (generator_horoscope.py).horoscope_transformation_text(58) Строка гороскопа - 6. **6: Холодная брусника в фраппе намекает: проект, затерянный в летнем хламе, окажется шедевром. Ищи его между пакетиком какао и старыми билетами.**
+DEBUG    2025-08-08 15:23:01,981 [horoscope] (generator_horoscope.py).horoscope_transformation_text(60) строка: 6. **6: Холодная брусника в фраппе намекает: проект, затерянный в летнем хламе, окажется шедевром. Ищи его между пакетиком какао и старыми билетами.**
+DEBUG    2025-08-08 15:23:01,981 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) daily_horoscope для Овен - 6 - 143
+DEBUG    2025-08-08 15:23:01,981 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) day Овен - 2025-08-06 
+INFO     2025-08-08 15:23:01,981 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) Сохраняю гороскоп знака - Овен
+INFO     2025-08-08 15:23:01,983 [horoscope] (generator_horoscope.py).save_horoscope(86) Сохранил гороскоп знака - Овен
+DEBUG    2025-08-08 15:23:01,983 [horoscope] (generator_horoscope.py).horoscope_transformation_text(58) Строка гороскопа - 7. **7: Аура карамельного макиато вещает: сегодня ты превратишь мелкую пакость в триумфальную подачу. Просто надень фартук супербариста.**
+DEBUG    2025-08-08 15:23:01,984 [horoscope] (generator_horoscope.py).horoscope_transformation_text(60) строка: 7. **7: Аура карамельного макиато вещает: сегодня ты превратишь мелкую пакость в триумфальную подачу. Просто надень фартук супербариста.**
+DEBUG    2025-08-08 15:23:01,984 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) daily_horoscope для Овен - 7 - 131
+DEBUG    2025-08-08 15:23:01,984 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) day Овен - 2025-08-07 
+INFO     2025-08-08 15:23:01,984 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) Сохраняю гороскоп знака - Овен
+INFO     2025-08-08 15:23:01,986 [horoscope] (generator_horoscope.py).save_horoscope(86) Сохранил гороскоп знака - Овен
+DEBUG    2025-08-08 15:23:01,986 [horoscope] (generator_horoscope.py).horoscope_transformation_text(58) Строка гороскопа - 8. **8: Круги на латте – карты судьбы: найди сироп 'Маракуйя-Импакт'. С ним ты договоришься даже с кофемашиной, плачущей эспрессо.**
+DEBUG    2025-08-08 15:23:01,986 [horoscope] (generator_horoscope.py).horoscope_transformation_text(60) строка: 8. **8: Круги на латте – карты судьбы: найди сироп 'Маракуйя-Импакт'. С ним ты договоришься даже с кофемашиной, плачущей эспрессо.**
+DEBUG    2025-08-08 15:23:01,986 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) daily_horoscope для Овен - 8 - 125
+DEBUG    2025-08-08 15:23:01,986 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) day Овен - 2025-08-08 
+INFO     2025-08-08 15:23:01,986 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) Сохраняю гороскоп знака - Овен
+INFO     2025-08-08 15:23:01,987 [horoscope] (generator_horoscope.py).save_horoscope(86) Сохранил гороскоп знака - Овен
+DEBUG    2025-08-08 15:23:01,988 [horoscope] (generator_horoscope.py).horoscope_transformation_text(58) Строка гороскопа - 9. **9: Взбитое молоко клянется: не строй глазки бариста перед заказом – сепаратор зависнет, а твое айриш молоко не сбежит.**
+DEBUG    2025-08-08 15:23:01,988 [horoscope] (generator_horoscope.py).horoscope_transformation_text(60) строка: 9. **9: Взбитое молоко клянется: не строй глазки бариста перед заказом – сепаратор зависнет, а твое айриш молоко не сбежит.**
+DEBUG    2025-08-08 15:23:01,988 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) daily_horoscope для Овен - 9 - 118
+DEBUG    2025-08-08 15:23:01,988 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) day Овен - 2025-08-09 
+INFO     2025-08-08 15:23:01,988 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) Сохраняю гороскоп знака - Овен
+INFO     2025-08-08 15:23:01,989 [horoscope] (generator_horoscope.py).save_horoscope(86) Сохранил гороскоп знака - Овен
+DEBUG    2025-08-08 15:23:01,989 [horoscope] (generator_horoscope.py).horoscope_transformation_text(58) Строка гороскопа - 10. **10: Ройбуш с кофейным привкусом ворчит: твоя энергия – двойной шот для усталого мира. Не проснись среди Львов, павших от твоего кофеина.**
+DEBUG    2025-08-08 15:23:01,989 [horoscope] (generator_horoscope.py).horoscope_transformation_text(60) строка: 10. **10: Ройбуш с кофейным привкусом ворчит: твоя энергия – двойной шот для усталого мира. Не проснись среди Львов, павших от твоего кофеина.**
+DEBUG    2025-08-08 15:23:01,989 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) daily_horoscope для Овен - 10 - 135
+DEBUG    2025-08-08 15:23:01,989 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) day Овен - 2025-08-10 
+INFO     2025-08-08 15:23:01,989 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) Сохраняю гороскоп знака - Овен
+INFO     2025-08-08 15:23:01,990 [horoscope] (generator_horoscope.py).save_horoscope(86) Сохранил гороскоп знака - Овен
+DEBUG    2025-08-08 15:23:01,992 [horoscope] (generator_horoscope.py).horoscope_transformation_text(58) Строка гороскопа - 11. **11: Зерно Пророка сухо молвило: ты откроешь дорогу сквозь пробку с ловкостью эспрессо, пробившегося через забитый фильтр. Твой гудок – аккорд.**
+DEBUG    2025-08-08 15:23:01,992 [horoscope] (generator_horoscope.py).horoscope_transformation_text(60) строка: 11. **11: Зерно Пророка сухо молвило: ты откроешь дорогу сквозь пробку с ловкостью эспрессо, пробившегося через забитый фильтр. Твой гудок – аккорд.**
+DEBUG    2025-08-08 15:23:01,992 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) daily_horoscope для Овен - 11 - 141
+DEBUG    2025-08-08 15:23:01,992 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) day Овен - 2025-08-11 
+INFO     2025-08-08 15:23:01,992 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) Сохраняю гороскоп знака - Овен
+INFO     2025-08-08 15:23:01,994 [horoscope] (generator_horoscope.py).save_horoscope(86) Сохранил гороскоп знака - Овен
+DEBUG    2025-08-08 15:23:01,994 [horoscope] (generator_horoscope.py).horoscope_transformation_text(58) Строка гороскопа - 12. **12: Пена на капучино сложилась в знак 'Инновация': дорисуй стрелу на карте коридора самокатом. Обед будет в бухте Капучинеро.**
+DEBUG    2025-08-08 15:23:01,994 [horoscope] (generator_horoscope.py).horoscope_transformation_text(60) строка: 12. **12: Пена на капучино сложилась в знак 'Инновация': дорисуй стрелу на карте коридора самокатом. Обед будет в бухте Капучинеро.**
+DEBUG    2025-08-08 15:23:01,994 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) daily_horoscope для Овен - 12 - 124
+DEBUG    2025-08-08 15:23:01,994 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) day Овен - 2025-08-12 
+INFO     2025-08-08 15:23:01,994 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) Сохраняю гороскоп знака - Овен
+INFO     2025-08-08 15:23:01,995 [horoscope] (generator_horoscope.py).save_horoscope(86) Сохранил гороскоп знака - Овен
+DEBUG    2025-08-08 15:23:01,995 [horoscope] (generator_horoscope.py).horoscope_transformation_text(58) Строка гороскопа - 13. **13: Тень от чашки стращает: не бери кофе 'на вынос' в кроссовках на шпильках – твоя походка заставит цейлонский чай расколоться.**
+DEBUG    2025-08-08 15:23:01,995 [horoscope] (generator_horoscope.py).horoscope_transformation_text(60) строка: 13. **13: Тень от чашки стращает: не бери кофе 'на вынос' в кроссовках на шпильках – твоя походка заставит цейлонский чай расколоться.**
+DEBUG    2025-08-08 15:23:01,995 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) daily_horoscope для Овен - 13 - 127
+DEBUG    2025-08-08 15:23:01,995 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) day Овен - 2025-08-13 
+INFO     2025-08-08 15:23:01,996 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) Сохраняю гороскоп знака - Овен
+INFO     2025-08-08 15:23:01,997 [horoscope] (generator_horoscope.py).save_horoscope(86) Сохранил гороскоп знака - Овен
+DEBUG    2025-08-08 15:23:01,997 [horoscope] (generator_horoscope.py).horoscope_transformation_text(58) Строка гороскопа - 14. **14: Августовский зной в колд-брю шепчет: твоя страстная речь убедит даже чашку латте не сворачиваться в бублик дефицита. Будь вихрем!**
+DEBUG    2025-08-08 15:23:01,997 [horoscope] (generator_horoscope.py).horoscope_transformation_text(60) строка: 14. **14: Августовский зной в колд-брю шепчет: твоя страстная речь убедит даже чашку латте не сворачиваться в бублик дефицита. Будь вихрем!**
+DEBUG    2025-08-08 15:23:01,997 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) daily_horoscope для Овен - 14 - 132
+DEBUG    2025-08-08 15:23:01,997 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) day Овен - 2025-08-14 
+INFO     2025-08-08 15:23:01,997 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) Сохраняю гороскоп знака - Овен
+INFO     2025-08-08 15:23:02,002 [horoscope] (generator_horoscope.py).save_horoscope(86) Сохранил гороскоп знака - Овен
+DEBUG    2025-08-08 15:23:02,002 [horoscope] (generator_horoscope.py).horoscope_transformation_text(58) Строка гороскопа - 15. **15: Кофейный гений в тебе просит: смастери 'Огненный Мокаччино' из красного перца и взлетов. Мир заплатит за рецепт валерьянкой и звёздами.**
+DEBUG    2025-08-08 15:23:02,002 [horoscope] (generator_horoscope.py).horoscope_transformation_text(60) строка: 15. **15: Кофейный гений в тебе просит: смастери 'Огненный Мокаччино' из красного перца и взлетов. Мир заплатит за рецепт валерьянкой и звёздами.**
+DEBUG    2025-08-08 15:23:02,002 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) daily_horoscope для Овен - 15 - 138
+DEBUG    2025-08-08 15:23:02,002 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) day Овен - 2025-08-15 
+INFO     2025-08-08 15:23:02,002 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) Сохраняю гороскоп знака - Овен
+INFO     2025-08-08 15:23:02,004 [horoscope] (generator_horoscope.py).save_horoscope(86) Сохранил гороскоп знака - Овен
+DEBUG    2025-08-08 15:23:02,004 [horoscope] (generator_horoscope.py).horoscope_transformation_text(58) Строка гороскопа - 16. **16: Вотербэг с артефактом: найденная кофейная чашка на помойке станет твоим Граалем, главное – не уронить ее под взглядом завистливого Тельца.**
+DEBUG    2025-08-08 15:23:02,004 [horoscope] (generator_horoscope.py).horoscope_transformation_text(60) строка: 16. **16: Вотербэг с артефактом: найденная кофейная чашка на помойке станет твоим Граалем, главное – не уронить ее под взглядом завистливого Тельца.**
+DEBUG    2025-08-08 15:23:02,004 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) daily_horoscope для Овен - 16 - 141
+DEBUG    2025-08-08 15:23:02,004 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) day Овен - 2025-08-16 
+INFO     2025-08-08 15:23:02,004 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) Сохраняю гороскоп знака - Овен
+INFO     2025-08-08 15:23:02,005 [horoscope] (generator_horoscope.py).save_horoscope(86) Сохранил гороскоп знака - Овен
+DEBUG    2025-08-08 15:23:02,005 [horoscope] (generator_horoscope.py).horoscope_transformation_text(58) Строка гороскопа - 17. **17: Пробой в турке жизни: сегодня ты прошибешь стену проблем, как кипяток – хлипкий фильтр для пуровера. Иди крушить устаревшие правила.**
+DEBUG    2025-08-08 15:23:02,005 [horoscope] (generator_horoscope.py).horoscope_transformation_text(60) строка: 17. **17: Пробой в турке жизни: сегодня ты прошибешь стену проблем, как кипяток – хлипкий фильтр для пуровера. Иди крушить устаревшие правила.**
+DEBUG    2025-08-08 15:23:02,005 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) daily_horoscope для Овен - 17 - 135
+DEBUG    2025-08-08 15:23:02,006 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) day Овен - 2025-08-17 
+INFO     2025-08-08 15:23:02,006 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) Сохраняю гороскоп знака - Овен
+INFO     2025-08-08 15:23:02,008 [horoscope] (generator_horoscope.py).save_horoscope(86) Сохранил гороскоп знака - Овен
+DEBUG    2025-08-08 15:23:02,008 [horoscope] (generator_horoscope.py).horoscope_transformation_text(58) Строка гороскопа - 18. **19: Падающие сливки в небе намекают: сегодня даже твоя "спасительная" ложка сахара приземлится точно в чашку судьбы. Овен, меткость выше нормы!**
+DEBUG    2025-08-08 15:23:02,008 [horoscope] (generator_horoscope.py).horoscope_transformation_text(60) строка: 18. **19: Падающие сливки в небе намекают: сегодня даже твоя "спасительная" ложка сахара приземлится точно в чашку судьбы. Овен, меткость выше нормы!**
+DEBUG    2025-08-08 15:23:02,008 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) daily_horoscope для Овен - 18 - 142
+DEBUG    2025-08-08 15:23:02,008 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) day Овен - 2025-08-18 
+INFO     2025-08-08 15:23:02,008 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) Сохраняю гороскоп знака - Овен
+INFO     2025-08-08 15:23:02,009 [horoscope] (generator_horoscope.py).save_horoscope(86) Сохранил гороскоп знака - Овен
+DEBUG    2025-08-08 15:23:02,009 [horoscope] (generator_horoscope.py).horoscope_transformation_text(58) Строка гороскопа - 19. **19: Кофейный лист сказал: воспаришь над рутиной, как пар из кемекса, но смотри, не сожги крылья о лампочку ипотеки.**
+DEBUG    2025-08-08 15:23:02,009 [horoscope] (generator_horoscope.py).horoscope_transformation_text(60) строка: 19. **19: Кофейный лист сказал: воспаришь над рутиной, как пар из кемекса, но смотри, не сожги крылья о лампочку ипотеки.**
+DEBUG    2025-08-08 15:23:02,010 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) daily_horoscope для Овен - 19 - 114
+DEBUG    2025-08-08 15:23:02,010 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) day Овен - 2025-08-19 
+INFO     2025-08-08 15:23:02,010 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) Сохраняю гороскоп знака - Овен
+INFO     2025-08-08 15:23:02,011 [horoscope] (generator_horoscope.py).save_horoscope(86) Сохранил гороскоп знака - Овен
+DEBUG    2025-08-08 15:23:02,011 [horoscope] (generator_horoscope.py).horoscope_transformation_text(58) Строка гороскопа - 20. **20: В холодной гуще – розыгрыш: вместо аванса получишь мешок вишни кофе. Но именно в одной косточке спит твой выигрышный лот. Расколи!**
+DEBUG    2025-08-08 15:23:02,011 [horoscope] (generator_horoscope.py).horoscope_transformation_text(60) строка: 20. **20: В холодной гуще – розыгрыш: вместо аванса получишь мешок вишни кофе. Но именно в одной косточке спит твой выигрышный лот. Расколи!**
+DEBUG    2025-08-08 15:23:02,011 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) daily_horoscope для Овен - 20 - 133
+DEBUG    2025-08-08 15:23:02,011 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) day Овен - 2025-08-20 
+INFO     2025-08-08 15:23:02,011 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) Сохраняю гороскоп знака - Овен
+INFO     2025-08-08 15:23:02,012 [horoscope] (generator_horoscope.py).save_horoscope(86) Сохранил гороскоп знака - Овен
+DEBUG    2025-08-08 15:23:02,013 [horoscope] (generator_horoscope.py).horoscope_transformation_text(58) Строка гороскопа - 21. **21: Лунная дорожка в эспрессо манит: следуй за запахом жареных зерен до полуночи – найдешь тот самый причал, где рождаются смелые идеи.**
+DEBUG    2025-08-08 15:23:02,013 [horoscope] (generator_horoscope.py).horoscope_transformation_text(60) строка: 21. **21: Лунная дорожка в эспрессо манит: следуй за запахом жареных зерен до полуночи – найдешь тот самый причал, где рождаются смелые идеи.**
+DEBUG    2025-08-08 15:23:02,013 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) daily_horoscope для Овен - 21 - 134
+DEBUG    2025-08-08 15:23:02,013 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) day Овен - 2025-08-21 
+INFO     2025-08-08 15:23:02,013 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) Сохраняю гороскоп знака - Овен
+INFO     2025-08-08 15:23:02,014 [horoscope] (generator_horoscope.py).save_horoscope(86) Сохранил гороскоп знака - Овен
+DEBUG    2025-08-08 15:23:02,014 [horoscope] (generator_horoscope.py).horoscope_transformation_text(58) Строка гороскопа - 22. **22: Штрихи пенки кричат 'Дипломатия': сегодня твой комплимент о 'неземном капучино' откроет сейф с бонус-кофе на год вперед. Говори!**
+DEBUG    2025-08-08 15:23:02,014 [horoscope] (generator_horoscope.py).horoscope_transformation_text(60) строка: 22. **22: Штрихи пенки кричат 'Дипломатия': сегодня твой комплимент о 'неземном капучино' откроет сейф с бонус-кофе на год вперед. Говори!**
+DEBUG    2025-08-08 15:23:02,014 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) daily_horoscope для Овен - 22 - 131
+DEBUG    2025-08-08 15:23:02,015 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) day Овен - 2025-08-22 
+INFO     2025-08-08 15:23:02,015 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) Сохраняю гороскоп знака - Овен
+INFO     2025-08-08 15:23:02,016 [horoscope] (generator_horoscope.py).save_horoscope(86) Сохранил гороскоп знака - Овен
+DEBUG    2025-08-08 15:23:02,016 [horoscope] (generator_horoscope.py).horoscope_transformation_text(58) Строка гороскопа - 23. **23: Жаркое посасывание воздух кружкой руля удачи: твой отчаянный маневр припаркует мечту у самого входа в 'Кофейную Судьбу'.**
+DEBUG    2025-08-08 15:23:02,016 [horoscope] (generator_horoscope.py).horoscope_transformation_text(60) строка: 23. **23: Жаркое посасывание воздух кружкой руля удачи: твой отчаянный маневр припаркует мечту у самого входа в 'Кофейную Судьбу'.**
+DEBUG    2025-08-08 15:23:02,016 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) daily_horoscope для Овен - 23 - 123
+DEBUG    2025-08-08 15:23:02,016 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) day Овен - 2025-08-23 
+INFO     2025-08-08 15:23:02,016 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) Сохраняю гороскоп знака - Овен
+INFO     2025-08-08 15:23:02,017 [horoscope] (generator_horoscope.py).save_horoscope(86) Сохранил гороскоп знака - Овен
+DEBUG    2025-08-08 15:23:02,018 [horoscope] (generator_horoscope.py).horoscope_transformation_text(58) Строка гороскопа - 24. **24: Август стучит в окно кофейни: не доверяй тишине за углом – там Шираз задумчиво считает твои неотправленные резкие эмодзи.**
+DEBUG    2025-08-08 15:23:02,018 [horoscope] (generator_horoscope.py).horoscope_transformation_text(60) строка: 24. **24: Август стучит в окно кофейни: не доверяй тишине за углом – там Шираз задумчиво считает твои неотправленные резкие эмодзи.**
+DEBUG    2025-08-08 15:23:02,018 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) daily_horoscope для Овен - 24 - 124
+DEBUG    2025-08-08 15:23:02,018 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) day Овен - 2025-08-24 
+INFO     2025-08-08 15:23:02,018 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) Сохраняю гороскоп знака - Овен
+INFO     2025-08-08 15:23:02,019 [horoscope] (generator_horoscope.py).save_horoscope(86) Сохранил гороскоп знака - Овен
+DEBUG    2025-08-08 15:23:02,019 [horoscope] (generator_horoscope.py).horoscope_transformation_text(58) Строка гороскопа - 25. **25: Обожженный язык от раф-кофе – символ: твоя правда сегодня жжет точнее лазера. Но остуди ее шуткой про 'Фьорды Вспененного Молока'.**
+DEBUG    2025-08-08 15:23:02,019 [horoscope] (generator_horoscope.py).horoscope_transformation_text(60) строка: 25. **25: Обожженный язык от раф-кофе – символ: твоя правда сегодня жжет точнее лазера. Но остуди ее шуткой про 'Фьорды Вспененного Молока'.**
+DEBUG    2025-08-08 15:23:02,019 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) daily_horoscope для Овен - 25 - 133
+DEBUG    2025-08-08 15:23:02,020 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) day Овен - 2025-08-25 
+INFO     2025-08-08 15:23:02,020 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) Сохраняю гороскоп знака - Овен
+INFO     2025-08-08 15:23:02,021 [horoscope] (generator_horoscope.py).save_horoscope(86) Сохранил гороскоп знака - Овен
+DEBUG    2025-08-08 15:23:02,021 [horoscope] (generator_horoscope.py).horoscope_transformation_text(58) Строка гороскопа - 26. **26: Осенний ветер в чашке чибатты с кофе: поймай последний летний букмекерский порыв – рекорд по питью глясе установишь именно ты. Звезды в сливках.**
+DEBUG    2025-08-08 15:23:02,021 [horoscope] (generator_horoscope.py).horoscope_transformation_text(60) строка: 26. **26: Осенний ветер в чашке чибатты с кофе: поймай последний летний букмекерский порыв – рекорд по питью глясе установишь именно ты. Звезды в сливках.**
+DEBUG    2025-08-08 15:23:02,021 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) daily_horoscope для Овен - 26 - 147
+DEBUG    2025-08-08 15:23:02,021 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) day Овен - 2025-08-26 
+INFO     2025-08-08 15:23:02,021 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) Сохраняю гороскоп знака - Овен
+INFO     2025-08-08 15:23:02,022 [horoscope] (generator_horoscope.py).save_horoscope(86) Сохранил гороскоп знака - Овен
+DEBUG    2025-08-08 15:23:02,022 [horoscope] (generator_horoscope.py).horoscope_transformation_text(58) Строка гороскопа - 27. **27: Капли на кофемашине – слезы предков: не бери кредит на золотую кофемолку, поверь в мощь старой доброй ступки и молотка Овна.**
+DEBUG    2025-08-08 15:23:02,022 [horoscope] (generator_horoscope.py).horoscope_transformation_text(60) строка: 27. **27: Капли на кофемашине – слезы предков: не бери кредит на золотую кофемолку, поверь в мощь старой доброй ступки и молотка Овна.**
+DEBUG    2025-08-08 15:23:02,022 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) daily_horoscope для Овен - 27 - 127
+DEBUG    2025-08-08 15:23:02,022 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) day Овен - 2025-08-27 
+INFO     2025-08-08 15:23:02,022 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) Сохраняю гороскоп знака - Овен
+INFO     2025-08-08 15:23:02,023 [horoscope] (generator_horoscope.py).save_horoscope(86) Сохранил гороскоп знака - Овен
+DEBUG    2025-08-08 15:23:02,023 [horoscope] (generator_horoscope.py).horoscope_transformation_text(58) Строка гороскопа - 28. **28: Филигрань из корицы пророчит: твой 'нет' сегодня сработает, как экстренный стоп-кран в поезде чужих амбиций. Тормози громко!**
+DEBUG    2025-08-08 15:23:02,024 [horoscope] (generator_horoscope.py).horoscope_transformation_text(60) строка: 28. **28: Филигрань из корицы пророчит: твой 'нет' сегодня сработает, как экстренный стоп-кран в поезде чужих амбиций. Тормози громко!**
+DEBUG    2025-08-08 15:23:02,024 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) daily_horoscope для Овен - 28 - 127
+DEBUG    2025-08-08 15:23:02,024 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) day Овен - 2025-08-28 
+INFO     2025-08-08 15:23:02,024 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) Сохраняю гороскоп знака - Овен
+INFO     2025-08-08 15:23:02,025 [horoscope] (generator_horoscope.py).save_horoscope(86) Сохранил гороскоп знака - Овен
+DEBUG    2025-08-08 15:23:02,025 [horoscope] (generator_horoscope.py).horoscope_transformation_text(58) Строка гороскопа - 29. **29: Всплывшие танцующие кофейные феи шепчут: сегодня твой ритм – магия хаоса. Подмигни бармену сложным заказом – получишь эликсир мужества бонусом.**
+DEBUG    2025-08-08 15:23:02,025 [horoscope] (generator_horoscope.py).horoscope_transformation_text(60) строка: 29. **29: Всплывшие танцующие кофейные феи шепчут: сегодня твой ритм – магия хаоса. Подмигни бармену сложным заказом – получишь эликсир мужества бонусом.**
+DEBUG    2025-08-08 15:23:02,025 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) daily_horoscope для Овен - 29 - 146
+DEBUG    2025-08-08 15:23:02,025 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) day Овен - 2025-08-29 
+INFO     2025-08-08 15:23:02,025 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) Сохраняю гороскоп знака - Овен
+INFO     2025-08-08 15:23:02,026 [horoscope] (generator_horoscope.py).save_horoscope(86) Сохранил гороскоп знака - Овен
+DEBUG    2025-08-08 15:23:02,026 [horoscope] (generator_horoscope.py).horoscope_transformation_text(58) Строка гороскопа - 30. **30: Напиток 'Овен Максимус': к концу второй порции робусты твоя уверенность сможет продать снег Арктике, упаковав его в стаканы фраппе. Действуй!**
+DEBUG    2025-08-08 15:23:02,026 [horoscope] (generator_horoscope.py).horoscope_transformation_text(60) строка: 30. **30: Напиток 'Овен Максимус': к концу второй порции робусты твоя уверенность сможет продать снег Арктике, упаковав его в стаканы фраппе. Действуй!**
+DEBUG    2025-08-08 15:23:02,026 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) daily_horoscope для Овен - 30 - 144
+DEBUG    2025-08-08 15:23:02,026 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) day Овен - 2025-08-30 
+INFO     2025-08-08 15:23:02,026 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) Сохраняю гороскоп знака - Овен
+INFO     2025-08-08 15:23:02,027 [horoscope] (generator_horoscope.py).save_horoscope(86) Сохранил гороскоп знака - Овен
+DEBUG    2025-08-08 15:23:02,028 [horoscope] (generator_horoscope.py).horoscope_transformation_text(58) Строка гороскопа - 31. **31: Август выдохнул звездную пену в твой финальный эспрессо: возьми чемоданчик беззеркальных идей – пора уезжать на кофейные плантации успеха. Next station – сентябрь!**
+DEBUG    2025-08-08 15:23:02,028 [horoscope] (generator_horoscope.py).horoscope_transformation_text(60) строка: 31. **31: Август выдохнул звездную пену в твой финальный эспрессо: возьми чемоданчик беззеркальных идей – пора уезжать на кофейные плантации успеха. Next station – сентябрь!**
+DEBUG    2025-08-08 15:23:02,028 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) daily_horoscope для Овен - 31 - 166
+DEBUG    2025-08-08 15:23:02,028 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) day Овен - 2025-08-31 
+INFO     2025-08-08 15:23:02,028 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) Сохраняю гороскоп знака - Овен
+INFO     2025-08-08 15:23:02,029 [horoscope] (generator_horoscope.py).save_horoscope(86) Сохранил гороскоп знака - Овен
+DEBUG    2025-08-08 15:23:02,029 [horoscope] (generator_horoscope.py).horoscope_transformation_text(58) Строка гороскопа - 
+DEBUG    2025-08-08 15:23:02,029 [horoscope] (generator_horoscope.py).horoscope_transformation_text(58) Строка гороскопа - Пусть каждый глоток августа 2025 будет дерзким, как твой характер, Овен! Твоя энергия – лучший сироп в этом мире. 🔥☕️
+INFO     2025-08-09 13:49:00,520 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-09 13:50:58,385 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-09 15:19:19,177 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-09 15:20:04,827 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-09 15:22:00,014 [horoscope] (generator_horoscope.py).generate_horoscope(35) Начинаю генерацию гороскопа для Овен
+INFO     2025-08-09 15:22:00,014 [horoscope] (ai_generator.py).get_completion(204) Генерирую ответ
+INFO     2025-08-09 15:23:04,542 [horoscope] (ai_generator.py).get_completion(217) Получил ответ
+DEBUG    2025-08-09 15:23:04,542 [horoscope] (generator_horoscope.py).generate_horoscope(42) получен гороскоп длинной : 4187
+INFO     2025-08-09 15:23:14,546 [horoscope] (generator_horoscope.py).horoscope_transformation_text(55) Перехожу к тексту знака - Овен
+DEBUG    2025-08-09 15:23:14,547 [horoscope] (generator_horoscope.py).horoscope_transformation_text(56) Длинна гороскопа - 4187
+DEBUG    2025-08-09 15:23:14,547 [horoscope] (generator_horoscope.py).horoscope_transformation_text(58) Строка гороскопа - Отлично, огненный Овен! Август 2025 льется как свежесваренный эспрессо – горячий, бодрящий и полный сюрпризов. Твои кофейные судьбы на каждый день:
+DEBUG    2025-08-09 15:23:14,547 [horoscope] (generator_horoscope.py).horoscope_transformation_text(60) строка: Отлично, огненный Овен! Август 2025 льется как свежесваренный эспрессо – горячий, бодрящий и полный сюрпризов. Твои кофейные судьбы на каждый день:
+DEBUG    2025-08-09 15:23:14,547 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) daily_horoscope для Овен - Отлично, огненный Овен! Август 2025 льется как свежесваренный эспрессо – горячий, бодрящий и полный сюрпризов - 0
+DEBUG    2025-08-09 15:23:14,547 [horoscope] (generator_horoscope.py).horoscope_transformation_text(58) Строка гороскопа - 
+DEBUG    2025-08-09 15:23:14,547 [horoscope] (generator_horoscope.py).horoscope_transformation_text(58) Строка гороскопа - 1. Сегодняшний капучино выкипит ровно в тот момент, когда примете громадное решение – знак вскипеть заново с удвоенной экспрессией.
+DEBUG    2025-08-09 15:23:14,547 [horoscope] (generator_horoscope.py).horoscope_transformation_text(58) Строка гороскопа - 2. Кофейные зерна из Бразилии шепчут: "Отправляй непрошеный совет по работе. Шанс, что его оценят – 33%, но упорство Овна доведет его до 135%".
+DEBUG    2025-08-09 15:23:14,547 [horoscope] (generator_horoscope.py).horoscope_transformation_text(60) строка: 2. Кофейные зерна из Бразилии шепчут: "Отправляй непрошеный совет по работе. Шанс, что его оценят – 33%, но упорство Овна доведет его до 135%".
+DEBUG    2025-08-09 15:23:14,547 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) daily_horoscope для Овен - 2 - 106
+DEBUG    2025-08-09 15:23:14,547 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) day Овен - 2025-08-02 
+INFO     2025-08-09 15:23:14,548 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) Сохраняю гороскоп знака - Овен
+WARNING  2025-08-09 15:23:14,568 [horoscope] (generator_horoscope.py).save_horoscope(90) Гороскоп для Овен на 2025-08-02 уже существует: повторяющееся значение ключа нарушает ограничение уникальности "uid_horoscopes_zodiac_ad23b6"
+DETAIL:  Ключ "(zodiac, date)=(Овен, 2025-08-02)" уже существует.
+ERROR    2025-08-09 15:23:14,568 [horoscope] (generator_horoscope.py).generate_horoscope(49) Ошибка получения гороскопа для Овен - module 'aiogram.client.bot' has no attribute 'send_message'
+Traceback (most recent call last):
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\tortoise\backends\asyncpg\client.py", line 89, in _translate_exceptions
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\tortoise\backends\asyncpg\client.py", line 112, in execute_insert
+    return await connection.fetchrow(query, *values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\asyncpg\connection.py", line 748, in fetchrow
+    data = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\asyncpg\connection.py", line 1864, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\asyncpg\connection.py", line 1961, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\asyncpg\connection.py", line 2024, in _do_execute
+    result = await executor(stmt, None)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg\\protocol\\protocol.pyx", line 206, in bind_execute
+asyncpg.exceptions.UniqueViolationError: повторяющееся значение ключа нарушает ограничение уникальности "uid_horoscopes_zodiac_ad23b6"
+DETAIL:  Ключ "(zodiac, date)=(Овен, 2025-08-02)" уже существует.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\python\bots\cafe_bot\utils\generator_horoscope.py", line 81, in save_horoscope
+    await Horoscope.update_or_create(
+    ...<3 lines>...
+    )
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\tortoise\models.py", line 1184, in update_or_create
+    return await cls._create_or_get(db, defaults, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\tortoise\models.py", line 1134, in _create_or_get
+    raise exc
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\tortoise\models.py", line 1128, in _create_or_get
+    return await cls.create(using_db=connection, **merged_defaults), True
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\tortoise\models.py", line 1210, in create
+    await instance.save(using_db=db, force_create=True)
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\tortoise\models.py", line 996, in save
+    await executor.execute_insert(self)
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\tortoise\backends\base\executor.py", line 188, in execute_insert
+    insert_result = await self.db.execute_insert(self.insert_query, values)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\tortoise\backends\base_postgres\client.py", line 33, in _translate_exceptions
+    return await self._translate_exceptions(func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\tortoise\backends\asyncpg\client.py", line 93, in _translate_exceptions
+    raise IntegrityError(exc)
+tortoise.exceptions.IntegrityError: повторяющееся значение ключа нарушает ограничение уникальности "uid_horoscopes_zodiac_ad23b6"
+DETAIL:  Ключ "(zodiac, date)=(Овен, 2025-08-02)" уже существует.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\python\bots\cafe_bot\utils\generator_horoscope.py", line 47, in generate_horoscope
+    await horoscope_transformation_text(zodiac, horoscope, month, year, bot)
+  File "E:\python\bots\cafe_bot\utils\generator_horoscope.py", line 70, in horoscope_transformation_text
+    await save_horoscope(zodiac, day, daily_horoscope.strip(), bot)
+  File "E:\python\bots\cafe_bot\utils\generator_horoscope.py", line 91, in save_horoscope
+    await bot.send_message(chat_id=SUPERADMIN, text=f'Дата дублируется {zodiac}: {e}')
+          ^^^^^^^^^^^^^^^^
+AttributeError: module 'aiogram.client.bot' has no attribute 'send_message'. Did you mean: 'SendMessage'?
+INFO     2025-08-09 15:23:33,167 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-09 15:24:02,045 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-09 15:24:25,763 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-09 15:39:00,175 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-09 15:39:23,578 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-09 15:40:11,831 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-09 15:40:47,846 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-09 15:45:02,129 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-09 15:49:12,211 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-09 15:49:24,589 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-09 15:50:10,605 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-09 15:51:26,151 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-09 15:53:10,427 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-09 15:54:01,978 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-09 15:55:08,948 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-09 15:59:14,722 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-09 15:59:50,997 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-09 16:00:54,350 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-09 16:01:10,607 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-09 16:01:54,639 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-11 15:18:00,883 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-11 15:22:00,005 [horoscope] (generator_horoscope.py).generate_horoscope(35) Начинаю генерацию гороскопа для Овен
+INFO     2025-08-11 15:22:00,005 [horoscope] (ai_generator.py).get_completion(204) Генерирую ответ
+INFO     2025-08-11 15:22:42,559 [horoscope] (ai_generator.py).get_completion(217) Получил ответ
+DEBUG    2025-08-11 15:22:42,560 [horoscope] (generator_horoscope.py).generate_horoscope(42) получен гороскоп длинной : 4066
+INFO     2025-08-11 15:22:52,569 [horoscope] (generator_horoscope.py).horoscope_transformation_text(55) Перехожу к тексту знака - Овен
+DEBUG    2025-08-11 15:22:52,569 [horoscope] (generator_horoscope.py).horoscope_transformation_text(56) Длинна гороскопа - 4066
+DEBUG    2025-08-11 15:22:52,570 [horoscope] (generator_horoscope.py).horoscope_transformation_text(58) Строка гороскопа - 1: В твоей чашке сегодня не эспрессо, а ракетное топливо — ровно столько, чтобы успеть зажечь 5 костров и первым окунуться в августовскую реку  
+DEBUG    2025-08-11 15:22:52,570 [horoscope] (generator_horoscope.py).horoscope_transformation_text(60) строка: 1: В твоей чашке сегодня не эспрессо, а ракетное топливо — ровно столько, чтобы успеть зажечь 5 костров и первым окунуться в августовскую реку  
+DEBUG    2025-08-11 15:22:52,570 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) daily_horoscope для Овен - 1 - 142
+DEBUG    2025-08-11 15:22:52,570 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) day Овен - 2025-08-01 
+INFO     2025-08-11 15:22:52,571 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) Сохраняю гороскоп знака - Овен
+WARNING  2025-08-11 15:22:52,591 [horoscope] (generator_horoscope.py).save_horoscope(90) Гороскоп для Овен на 2025-08-01 уже существует: повторяющееся значение ключа нарушает ограничение уникальности "uid_horoscopes_zodiac_ad23b6"
+DETAIL:  Ключ "(zodiac, date)=(Овен, 2025-08-01)" уже существует.
+ERROR    2025-08-11 15:22:52,592 [horoscope] (generator_horoscope.py).generate_horoscope(49) Ошибка получения гороскопа для Овен - module 'aiogram.client.bot' has no attribute 'send_message'
+Traceback (most recent call last):
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\tortoise\backends\asyncpg\client.py", line 89, in _translate_exceptions
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\tortoise\backends\asyncpg\client.py", line 112, in execute_insert
+    return await connection.fetchrow(query, *values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\asyncpg\connection.py", line 748, in fetchrow
+    data = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\asyncpg\connection.py", line 1864, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\asyncpg\connection.py", line 1961, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\asyncpg\connection.py", line 2024, in _do_execute
+    result = await executor(stmt, None)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg\\protocol\\protocol.pyx", line 206, in bind_execute
+asyncpg.exceptions.UniqueViolationError: повторяющееся значение ключа нарушает ограничение уникальности "uid_horoscopes_zodiac_ad23b6"
+DETAIL:  Ключ "(zodiac, date)=(Овен, 2025-08-01)" уже существует.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\python\bots\cafe_bot\utils\generator_horoscope.py", line 81, in save_horoscope
+    await Horoscope.update_or_create(
+    ...<3 lines>...
+    )
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\tortoise\models.py", line 1184, in update_or_create
+    return await cls._create_or_get(db, defaults, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\tortoise\models.py", line 1134, in _create_or_get
+    raise exc
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\tortoise\models.py", line 1128, in _create_or_get
+    return await cls.create(using_db=connection, **merged_defaults), True
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\tortoise\models.py", line 1210, in create
+    await instance.save(using_db=db, force_create=True)
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\tortoise\models.py", line 996, in save
+    await executor.execute_insert(self)
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\tortoise\backends\base\executor.py", line 188, in execute_insert
+    insert_result = await self.db.execute_insert(self.insert_query, values)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\tortoise\backends\base_postgres\client.py", line 33, in _translate_exceptions
+    return await self._translate_exceptions(func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\tortoise\backends\asyncpg\client.py", line 93, in _translate_exceptions
+    raise IntegrityError(exc)
+tortoise.exceptions.IntegrityError: повторяющееся значение ключа нарушает ограничение уникальности "uid_horoscopes_zodiac_ad23b6"
+DETAIL:  Ключ "(zodiac, date)=(Овен, 2025-08-01)" уже существует.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\python\bots\cafe_bot\utils\generator_horoscope.py", line 47, in generate_horoscope
+    await horoscope_transformation_text(zodiac, horoscope, month, year, bot)
+  File "E:\python\bots\cafe_bot\utils\generator_horoscope.py", line 70, in horoscope_transformation_text
+    await save_horoscope(zodiac, day, daily_horoscope.strip(), bot)
+  File "E:\python\bots\cafe_bot\utils\generator_horoscope.py", line 91, in save_horoscope
+    await bot.send_message(chat_id=SUPERADMIN, text=f'Дата дублируется {zodiac}: {e}')
+          ^^^^^^^^^^^^^^^^
+AttributeError: module 'aiogram.client.bot' has no attribute 'send_message'. Did you mean: 'SendMessage'?
+INFO     2025-08-11 15:23:10,072 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-11 15:23:32,413 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-11 16:01:07,812 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-11 16:04:08,909 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-11 16:05:26,955 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-11 16:06:11,270 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-11 16:07:09,710 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-11 16:10:31,163 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-11 16:13:21,834 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-11 16:14:22,141 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-11 16:15:11,057 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-11 16:16:03,910 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-11 16:20:46,760 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-11 16:27:06,181 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-11 21:53:39,326 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-11 22:02:12,364 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-11 22:02:43,496 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-11 22:49:15,686 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-11 22:50:28,604 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-12 10:10:25,979 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-12 10:28:12,995 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-12 10:29:11,634 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-12 10:34:10,331 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-12 10:35:55,904 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-12 10:36:58,964 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-12 14:25:28,728 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
