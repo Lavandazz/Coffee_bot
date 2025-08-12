@@ -19,7 +19,7 @@ class RoleMiddleware(BaseMiddleware):
         try:
             user_id = event.from_user.id  # 7599073638
             user = await User.get_or_none(telegram_id=user_id)
-            bot_logger.debug(f'Пользователь взаимодействует с ботом {user.id, user.first_name, user.role}')
+            bot_logger.debug(f'Пользователь взаимодействует с ботом {user_id}')
 
             # Запись последнего посещения
             user.last_activity = datetime.now()
