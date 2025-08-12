@@ -27,7 +27,7 @@ async def scheduler_horoscope():
     horo_timezone = timezone('Europe/Moscow')
 
     scheduler = AsyncIOScheduler()
-    scheduler.add_job(generate_horo, "cron", hour=15, minute=22, timezone=horo_timezone,
+    scheduler.add_job(generate_horo, "cron", hour=00, minute=22, timezone=horo_timezone,
                       args=[bot])
     scheduler.start()
     # scheduler_logger.info(f'Гороскопный шедулер запущен в {datetime.now()}')

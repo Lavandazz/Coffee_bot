@@ -1,6 +1,5 @@
 from aiogram import Dispatcher, F
 from aiogram.filters import Command, StateFilter
-from aiogram_dialog import setup_dialogs
 
 from handlers.help_handlers import help_menu
 from handlers.start_handlers import get_start, on_start, start_handler
@@ -8,7 +7,7 @@ from handlers.admin_handlers import (admin_menu_handler, admin_menu, get_statist
 
 from handlers.barista_handlers import approve_review, reject_review, moderate_review, show_barista_btn, show_reviews, \
     add_post, add_photo, save_post, generate_phrase, change_post, save_edited_text, show_barista_posts, barista_post
-# from handlers.statistic_handler_calendar import get_day_statistic, calendar_dialog
+
 from handlers.user_review_handlers import (handle_review_photo, ask_for_photo, ask_for_text,
                                            handle_review_text)
 from handlers.back_handler import back, clear_message

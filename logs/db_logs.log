@@ -91,3 +91,4 @@ INFO     2025-08-12 10:34:10,332 [db] (logging_config.py)._setup_handlers(49) Л
 INFO     2025-08-12 10:35:55,905 [db] (logging_config.py)._setup_handlers(49) Логирование для 'db' настроено успешно.
 INFO     2025-08-12 10:36:58,964 [db] (logging_config.py)._setup_handlers(49) Логирование для 'db' настроено успешно.
 INFO     2025-08-12 14:25:28,729 [db] (logging_config.py)._setup_handlers(49) Логирование для 'db' настроено успешно.
+INFO     2025-08-12 14:29:27,844 [db] (logging_config.py)._setup_handlers(49) Логирование для 'db' настроено успешно.
