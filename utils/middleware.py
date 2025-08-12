@@ -60,8 +60,8 @@ class StatisticMiddleware(BaseMiddleware):
             # Проверяем, есть ли в базе ключ redis_key, то есть заходил ли пользователь
             already_seen = await self.redis.exists(redis_key)
             # Создание в бд строки с датой
-            stat, _ = await Statistic.get_or_create(day=event_date)
-
+            stat, create_state = await Statistic.get_or_create(day=event_date)
+            bot_logger.debug(f'stat создался при апдейте: {create_state}')
             if not already_seen:
                 # Устанавливаем ключ с TTL до конца суток (24 часа)
                 await self.redis.set(redis_key, "1", ex=60 * 60 * 24)

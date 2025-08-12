@@ -5487,3 +5487,7 @@ INFO     2025-08-12 15:20:33,734 [horoscope] (generator_horoscope.py).horoscope_
 INFO     2025-08-12 15:20:33,737 [horoscope] (generator_horoscope.py).save_horoscope(86) Сохранил гороскоп знака - Рыбы
 DEBUG    2025-08-12 15:20:33,883 [horoscope] (generator_horoscope.py).start_generate_all_horoscopes(20) SUPERADMIN: 484385628, Генерирую гороскоп для знака Рыбы
 INFO     2025-08-12 18:19:20,918 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-12 18:19:52,384 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-12 18:34:12,795 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-12 22:53:39,284 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-12 22:54:59,194 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.

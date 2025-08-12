@@ -61,7 +61,7 @@ class Horoscope(Model):
 
 class Statistic(Model):
     id = fields.IntField(pk=True)
-    day = fields.DateField()
+    day = fields.DateField(unique=True)
     new_user = fields.IntField(default=0)
     event = fields.IntField(default=0)
 
