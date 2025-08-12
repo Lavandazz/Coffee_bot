@@ -17,7 +17,14 @@ async def show_horoscope(call: CallbackQuery, state: FSMContext):
 
 
 async def send_horoscope(call: CallbackQuery, state: FSMContext):
-    """ Обработка кнопки знака зодиака """
+    """
+    Отправление гороскопа в зависимости от знака зодиака и даты.
+    Если в азе существует знак и текущая дата, то пользователю будет отправлен гороскоп из бд.
+    При отсутствии гороскопа в бд, пользователю будет отрпавлен гороскоп из мокбазы MockHoroscope.
+    :param call: CallbackQuery
+    :param state: MenuState.zodiac_menu
+    :return: Гороскоп
+    """
     call_date = call.message.date.date()
     zodiac = call.data.replace('zodiac_', '')
     await state.set_state(MenuState.zodiac_menu)

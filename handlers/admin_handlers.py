@@ -3,11 +3,6 @@ import locale
 
 from aiogram.fsm.context import FSMContext
 from aiogram.types import Message, CallbackQuery
-
-from aiogram_dialog import DialogManager
-from aiogram_dialog.widgets.kbd import Calendar
-
-
 from database.models_db import Statistic
 from handlers.back_handler import back
 from keyboards.admin_keyboards import admin_btn, admin_kb, admin_stat_kb
