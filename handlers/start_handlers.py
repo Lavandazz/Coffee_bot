@@ -50,8 +50,6 @@ async def get_start(message: Message, bot: Bot):
     # Преобразуем часовой пояс (+3 часа для Москвы)
     local_time = time_message.replace(tzinfo=timezone.utc).astimezone(tz=None)  # определяет локальный пояс
     try:
-        bot_logger.debug(f'Передаю нового пользователя для сохранения{message.from_user.id}')
-
         create_u = await create_user(message.from_user.username, message.from_user.first_name,
                                      message.from_user.id)
         if create_u:

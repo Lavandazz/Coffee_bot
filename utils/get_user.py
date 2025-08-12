@@ -34,7 +34,7 @@ async def get_role_user(user_id: int) -> str | None:
             return None
 
     except DoesNotExist:
-        bot_logger.debug(f'Ошибка, Юзер не зарегистрирован: {user_id}')
+        bot_logger.error(f'Ошибка, Юзер не зарегистрирован: {user_id}')
         return None
 
 

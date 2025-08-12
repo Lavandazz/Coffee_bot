@@ -13,7 +13,7 @@ async def inline_menu_kb(user_id: int):
     kb.adjust(2)
 
     role = await get_role_user(user_id)  # получаем роль юзера
-    bot_logger.debug(f'Передаю клаву. Роль юзера: {user_id}')
+    bot_logger.debug(f'Передаю inline_menu_kb. Роль юзера: {role}')
     if role == 'admin' or role == 'barista':
         kb.row(InlineKeyboardButton(text='Админ-панель', callback_data='admin_panel'))
 

@@ -1530,3 +1530,12 @@ DEBUG    2025-08-12 15:24:20,658 [bot] (middleware.py).__call__(22) Пользо
 DEBUG    2025-08-12 15:24:20,667 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
 DEBUG    2025-08-12 15:24:20,667 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю клаву. Роль юзера: 484385628
 DEBUG    2025-08-12 15:24:20,805 [bot] (back_handler.py).back(29) Состояние MenuState:horoscope_menu сброшено
+WARNING  2025-08-12 18:19:13,047 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-08-12 18:19:13,620 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-08-12 18:19:20,918 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+INFO     2025-08-12 18:19:23,594 [bot] (start_handlers.py).seed_admin(24) Проверка: seed_admin вызвана
+INFO     2025-08-12 18:19:23,962 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-12 18:19:31,967 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-08-12 18:19:35,323 [bot] (middleware.py).__call__(22) Пользователь взаимодействует с ботом (2, 'Админ', 'admin')
+DEBUG    2025-08-12 18:19:35,329 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+WARNING  2025-08-12 18:19:49,747 [bot] (main.py).start_bot(23) Бот закрыт
