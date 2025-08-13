@@ -23,9 +23,6 @@ async def show_barista_btn(call: CallbackQuery, state: FSMContext, role: str):
     # if role == 'admin' or role == 'barista':
     await call.message.edit_text(text='Вы находитесь в меню бариста.',
                                  reply_markup=barista_kb())
-    # else:
-    #     await call.message.edit_text(text='У вас нет прав для этого действия.',
-    #                                  reply_markup=await inline_menu_kb(call.from_user.id))
 
 
 @staff_only
@@ -64,9 +61,9 @@ async def generate_phrase(call: CallbackQuery, state: FSMContext, role: str):
     """ Обработка кнопки для генерации текста поста """
     await call.message.edit_text('Ждите, генерирую фразу...')
     ai_text = await generate_ai_greeting()  # генерируем текст
-    # ai_text = "Хорошего дня тебя, кофейный человек"
+
     await state.update_data(text=ai_text)
-    print(ai_text)
+    bot_logger.debug(f'Сгенерирован текст для бариста {ai_text}')
     await call.message.edit_text(f'✨ Вот что я придумал:\n\n {ai_text}',
                                  reply_markup=edit_text_keyboard())
 
@@ -202,7 +199,7 @@ async def save_review(call: CallbackQuery, status: bool, role: str):
     return telegram_id
 
 
-# @staff_only
+@staff_only
 async def approve_review(call: CallbackQuery, bot: Bot, role: str, state: FSMContext):
     """ Одобрение отзыва """
     telegram_id = await save_review(call, True, role)  # получаем телеграм пользователя
@@ -225,7 +222,7 @@ async def approve_review(call: CallbackQuery, bot: Bot, role: str, state: FSMCon
 
 
 
-# @staff_only
+@staff_only
 async def reject_review(call: CallbackQuery, bot: Bot, role: str, state: FSMContext):
     """ Отклонение отзыва """
     current_state = await state.get_state()

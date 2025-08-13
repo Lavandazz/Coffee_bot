@@ -27,8 +27,8 @@ async def barista_posts_kb():
     kb = InlineKeyboardBuilder()
     posts = await AdminPost.all()
     bot_logger.debug(f'Показываю кнопки с постами')
-    if not posts:
-        kb.row(InlineKeyboardButton(text='⬅️ Назад', callback_data='back'))
+    # if not posts:
+    #     kb.row(InlineKeyboardButton(text='⬅️ Назад', callback_data='back'))
 
     for post in posts:
         kb.button(text=post.text[:30]+'...', callback_data=f'post_{post.id}')

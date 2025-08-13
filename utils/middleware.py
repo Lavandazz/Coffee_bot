@@ -12,8 +12,17 @@ from utils.logging_config import bot_logger
 
 class RoleMiddleware(BaseMiddleware):
     """
-    Этот мидлвар проверяет роли пользователей бота для дальнейшей работы с ними.
-    Если пользователя нет в базе, то записывает его как обычного юзера.
+    Middleware для обработки каждого события от пользователя.
+
+    Функция выполняет:
+    1. Определение пользователя по telegram_id.
+    2. Если пользователь найден в базе — обновление времени его последней активности.
+    3. Если пользователь не найден — создание нового пользователя с ролью "user".
+    4. Запись в словарь data:
+       - "role": роль пользователя.
+       - "new_user": True, если пользователь зарегистрирован в этот момент, иначе False.
+
+    После обработки передает управление следующему хендлеру в цепочке.
     """
     async def __call__(self, handler, event, data):
         try:
@@ -21,18 +30,27 @@ class RoleMiddleware(BaseMiddleware):
             user = await User.get_or_none(telegram_id=user_id)
             bot_logger.debug(f'Пользователь взаимодействует с ботом {user_id}')
 
-            # Запись последнего посещения
-            user.last_activity = datetime.now()
-            await user.save()
+            if user:
+                # Если есть в базе — обновляем активность
+                user.last_activity = datetime.now()
+                await user.save()
+                data["role"] = user.role
+                data["new_user"] = False
+            else:
+                # Если нет в базе — создаем нового
+                user = await User.create(
+                    telegram_id=user_id,
+                    first_name=event.from_user.first_name,
+                    username=event.from_user.username,
+                    role="user",
+                    last_activity=datetime.now()
+                )
+                bot_logger.debug(f"Создан новый пользователь {user_id}")
+                data["new_user"] = True
+                data["role"] = "user"
 
-            data["role"] = user.role if user else "user"
-        except DoesNotExist:  # Конкретное исключение для отсутствия пользователя
-            data["role"] = "user"
-            bot_logger.debug(f"Юзера {event.from_user.id} нет в базе, присваиваем роль по умолчанию")
         except Exception as e:
-            bot_logger.exception(f"Exception в мидлваре нового пользователя: {e}.\n"
-                                 f"Присваиваем роль = user")
-            data["role"] = "user"
+            bot_logger.exception(e)
 
         return await handler(event, data)
 
