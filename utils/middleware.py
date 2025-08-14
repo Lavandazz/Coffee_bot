@@ -74,18 +74,23 @@ class StatisticMiddleware(BaseMiddleware):
 
         user_id = event.from_user.id
         user = await User.get_or_none(telegram_id=user_id)
-        bot_logger.debug(f'user : {user.first_name}')
+        bot_logger.debug(f'user : {user}')
         event_date = date.today()
 
         redis_key = f'user{user_id}:visit'
         bot_logger.debug(f'redis_key : {redis_key}')
 
         try:
+
             # Создание в бд строки с датой
             stat, create_state = await Statistic.get_or_create(day=event_date)
             bot_logger.debug(f'stat создался при апдейте: {stat}{create_state}.\n'
                              f'redis_key : {redis_key} = {await self.redis.get(redis_key)}\n'
                              f'{await self.redis.exists(redis_key)}')
+            # Если юзера нет в бд, то добавляется +1 new_user
+            if not user:
+                stat.new_user += 1
+                bot_logger.debug(f"stat.new_user увеличен до {stat.new_user}")
 
             # Проверяем, есть ли в базе ключ redis_key, то есть заходил ли пользователь
             if not await self.redis.exists(redis_key):
@@ -94,9 +99,7 @@ class StatisticMiddleware(BaseMiddleware):
                 # Сохраняем в бд
                 stat.event += 1
                 bot_logger.debug(f"stat.event увеличен до {stat.event}")
-            if not user:
-                stat.new_user += 1
-                bot_logger.debug(f"stat.new_user увеличен до {stat.new_user}")
+
             try:
                 await stat.save()
                 bot_logger.debug(f"статистика сохранена event = {stat.event}, new_user = {stat.new_user}")
