@@ -73,38 +73,33 @@ class StatisticMiddleware(BaseMiddleware):
                        data: Dict[str, Any]):
 
         user_id = event.from_user.id
+        user = await User.get_or_none(telegram_id=user_id)
+        bot_logger.debug(f'user : {user.first_name}')
         event_date = date.today()
 
         redis_key = f'user{user_id}:visit'
-        bot_logger.debug(f'data нового пользователя {data.get("new_user")}')
+        bot_logger.debug(f'redis_key : {redis_key}')
+
         try:
-            # Проверяем, есть ли в базе ключ redis_key, то есть заходил ли пользователь
-            already_seen = await self.redis.exists(redis_key)
             # Создание в бд строки с датой
             stat, create_state = await Statistic.get_or_create(day=event_date)
-            bot_logger.debug(f'stat создался при апдейте: {create_state}')
-            if not already_seen:
+            bot_logger.debug(f'stat создался при апдейте: {stat}{create_state}.\n'
+                             f'redis_key : {redis_key} = {await self.redis.get(redis_key)}\n'
+                             f'{await self.redis.exists(redis_key)}')
+
+            # Проверяем, есть ли в базе ключ redis_key, то есть заходил ли пользователь
+            if not await self.redis.exists(redis_key):
                 # Устанавливаем ключ с TTL до конца суток (24 часа)
                 await self.redis.set(redis_key, "1", ex=60 * 60 * 24)
                 # Сохраняем в бд
-                await Statistic.filter(id=stat.id).update(event=stat.event + 1)
-            bot_logger.debug(f'{await Statistic.get_or_none(stat.event)}')
-
-            if stat.event == 0:
-                stat.event += 1  # добавляем апдейт
-                bot_logger.debug(f'stat.event стал: {stat.event}')
-
-                user = await User.get_or_none(telegram_id=event.from_user.id)
-                bot_logger.error(f"проверка, получение юзера {user}")
-            bot_logger.debug(f'stat.event = {stat.event}')
-
-            # # Если пользователь ещё не зарегистрирован в БД — считаем как нового
-            if data.get("new_user"):
-                bot_logger.error(f"проверка, запускается ли new_user")
-                await Statistic.filter(id=stat.id).update(new_user=stat.new_user + 1)
-                bot_logger.error(f"попытка сохранить stat.id {stat.id}")
+                stat.event += 1
+                bot_logger.debug(f"stat.event увеличен до {stat.event}")
+            if not user:
+                stat.new_user += 1
+                bot_logger.debug(f"stat.new_user увеличен до {stat.new_user}")
             try:
                 await stat.save()
+                bot_logger.debug(f"статистика сохранена event = {stat.event}, new_user = {stat.new_user}")
             except Exception as e:
                 bot_logger.error(f"[Ошибка сохранения в БД]: {e}")
             #

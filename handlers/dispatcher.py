@@ -24,10 +24,11 @@ def setup_dispatcher(dp: Dispatcher):
     """ Регистрация роутеров бота """
     dp.startup.register(on_start)
     # мидлвары
-    dp.message.middleware(RoleMiddleware())
-    dp.callback_query.middleware(RoleMiddleware())
     dp.message.middleware(StatisticMiddleware(redis_client))
     dp.callback_query.middleware(StatisticMiddleware(redis_client))
+    dp.message.middleware(RoleMiddleware())
+    dp.callback_query.middleware(RoleMiddleware())
+
 
 
     # команды
