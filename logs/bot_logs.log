@@ -1838,3 +1838,24 @@ DEBUG    2025-08-14 15:41:46,514 [bot] (middleware.py).__call__(102) стати�
 DEBUG    2025-08-14 15:41:46,515 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
 DEBUG    2025-08-14 15:41:46,516 [bot] (admin_handlers.py).get_statistic(32) State AdminMenuState:statistic_menu
 WARNING  2025-08-14 15:43:01,454 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-14 15:43:04,422 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+INFO     2025-08-14 15:43:05,254 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-14 15:43:05,403 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-14 15:43:15,891 [bot] (middleware.py).__call__(77) user : Админ
+DEBUG    2025-08-14 15:43:15,892 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-14 15:43:15,905 [bot] (middleware.py).__call__(86) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = None
+0
+DEBUG    2025-08-14 15:43:15,906 [bot] (middleware.py).__call__(96) stat.event увеличен до 2
+DEBUG    2025-08-14 15:43:15,909 [bot] (middleware.py).__call__(102) статистика сохранена event = 2, new_user = 0
+DEBUG    2025-08-14 15:43:15,910 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-14 15:43:15,912 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-14 15:43:15,912 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+DEBUG    2025-08-14 15:43:22,237 [bot] (middleware.py).__call__(77) user : Админ
+DEBUG    2025-08-14 15:43:22,237 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-14 15:43:22,239 [bot] (middleware.py).__call__(86) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-14 15:43:22,241 [bot] (middleware.py).__call__(102) статистика сохранена event = 2, new_user = 0
+DEBUG    2025-08-14 15:43:22,242 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+WARNING  2025-08-14 15:47:00,485 [bot] (main.py).start_bot(23) Бот закрыт
