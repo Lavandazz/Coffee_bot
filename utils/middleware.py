@@ -76,6 +76,7 @@ class StatisticMiddleware(BaseMiddleware):
         event_date = date.today()
 
         redis_key = f'user{user_id}:visit'
+        bot_logger.debug(f'data нового пользователя {data.get("new_user")}')
         try:
             # Проверяем, есть ли в базе ключ redis_key, то есть заходил ли пользователь
             already_seen = await self.redis.exists(redis_key)
@@ -87,6 +88,7 @@ class StatisticMiddleware(BaseMiddleware):
                 await self.redis.set(redis_key, "1", ex=60 * 60 * 24)
                 # Сохраняем в бд
                 await Statistic.filter(id=stat.id).update(event=stat.event + 1)
+            bot_logger.debug(f'{await Statistic.get_or_none(stat.event)}')
 
             if stat.event == 0:
                 stat.event += 1  # добавляем апдейт
@@ -94,6 +96,7 @@ class StatisticMiddleware(BaseMiddleware):
 
                 user = await User.get_or_none(telegram_id=event.from_user.id)
                 bot_logger.error(f"проверка, получение юзера {user}")
+            bot_logger.debug(f'stat.event = {stat.event}')
 
             # # Если пользователь ещё не зарегистрирован в БД — считаем как нового
             if data.get("new_user"):
