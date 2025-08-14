@@ -1714,3 +1714,8 @@ DEBUG    2025-08-13 15:44:10,772 [bot] (back_handler.py).back(54) Текущее
 DEBUG    2025-08-13 15:44:10,839 [bot] (back_handler.py).back(67) Перешел назад к состоянию AdminMenuState:barista
 WARNING  2025-08-13 15:48:06,824 [bot] (main.py).start_bot(23) Бот закрыт
 WARNING  2025-08-13 15:48:06,992 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-08-13 16:04:37,403 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+INFO     2025-08-13 16:04:39,837 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-13 16:04:40,071 [bot] (commands.py).set_commands(20) Установил команды
+WARNING  2025-08-13 20:18:51,121 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-08-13 20:18:51,286 [bot] (main.py).<module>(45) Помощник завершены

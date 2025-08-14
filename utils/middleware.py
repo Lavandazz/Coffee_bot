@@ -94,10 +94,9 @@ class StatisticMiddleware(BaseMiddleware):
 
                 user = await User.get_or_none(telegram_id=event.from_user.id)
 
-                # # Если пользователь ещё не зарегистрирован в БД — считаем как нового
-                # if not user:
-                #     await Statistic.filter(id=stat.id).update(new_user=stat.new_user + 1)
-                #     bot_logger.debug(f'Сохранил нового пользователя в статистику - {user}')
+            # # Если пользователь ещё не зарегистрирован в БД — считаем как нового
+            if data.get("new_user"):
+                await Statistic.filter(id=stat.id).update(new_user=stat.new_user + 1)
             try:
                 await stat.save()
             except Exception as e:
