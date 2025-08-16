@@ -98,7 +98,8 @@ async def back(call: CallbackQuery, state: FSMContext, bot: Bot, role: str):
 
     if current_state in (StatsState.waiting_date,
                          StatsState.waiting_first_date,
-                         StatsState.waiting_second_date
+                         StatsState.waiting_second_date,
+                         StatsState.answer
                          ):
         await state.set_state(AdminMenuState.statistic_menu)
         await call.message.edit_text(text='Возврат в статистику', reply_markup=admin_stat_kb())

@@ -23,6 +23,7 @@ class StatsState(StatesGroup):
     waiting_date = State()
     waiting_first_date = State()
     waiting_second_date = State()
+    answer = State()
 
 
 class BaristaState(StatesGroup):

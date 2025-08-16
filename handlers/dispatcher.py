@@ -3,7 +3,8 @@ from aiogram.filters import Command, StateFilter
 
 from handlers.help_handlers import help_menu
 from handlers.start_handlers import get_start, on_start
-from handlers.admin_handlers import (admin_menu_handler, admin_menu, get_statistic, get_period_statistic)
+from handlers.admin_handlers import (admin_menu_handler, admin_menu, get_statistic, get_period_statistic, day_statistic,
+                                     first_day_statistic, second_day_statistic)
 
 from handlers.barista_handlers import approve_review, reject_review, moderate_review, show_barista_btn, show_reviews, \
     add_post, add_photo, save_post, generate_phrase, change_post, save_edited_text, show_barista_posts, barista_post
@@ -40,10 +41,12 @@ def setup_dispatcher(dp: Dispatcher):
     dp.callback_query.register(admin_menu_handler, F.data == "admin")
     dp.callback_query.register(get_statistic, F.data == 'statistic')
     # календарь
-    # dp.callback_query.register(get_day_statistic, F.data == 'stat_day')
     dp.callback_query.register(get_period_statistic, F.data.startswith('stat_'))
-    # dp.include_router(calendar_dialog)
-    # setup_dialogs(dp)
+
+    dp.callback_query.register(day_statistic, StateFilter(StatsState.waiting_date))
+    dp.callback_query.register(first_day_statistic, StateFilter(StatsState.waiting_first_date))
+    dp.callback_query.register(second_day_statistic, StateFilter(StatsState.waiting_second_date))
+
 
     # панель бариста
     dp.callback_query.register(show_barista_btn, F.data == "barista")

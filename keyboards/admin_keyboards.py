@@ -1,6 +1,7 @@
 from aiogram.types import InlineKeyboardButton
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 
+from utils.config import SUPERADMIN
 from utils.logging_config import bot_logger
 
 
@@ -25,6 +26,8 @@ def admin_kb():
               callback_data="statistic")
     kb.button(text="Управление правами",
               callback_data="rights")
+    if SUPERADMIN:
+        kb.row(InlineKeyboardButton(text='Запуск гороскопа', callback_data='start_horo'))
     kb.adjust(2)
     kb.row(InlineKeyboardButton(text='⬅️ Назад', callback_data='back'))
 
