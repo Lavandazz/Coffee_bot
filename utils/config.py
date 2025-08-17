@@ -1,4 +1,6 @@
 import os
+
+from aiogram.fsm.storage.redis import RedisStorage
 from redis.asyncio import Redis
 from aiogram.client.default import DefaultBotProperties
 from aiogram.client.session.aiohttp import AiohttpSession
@@ -23,17 +25,19 @@ redis_client = Redis(host=os.getenv("REDIS_HOST"),
                      password=os.getenv("REDIS_PASSWORD"),
                      decode_responses=True)  # чтобы строки были не в байтах
 
+storage = RedisStorage(redis=redis_client)
+
 # Объекты бота
 bot = Bot(
     token=token,
     session=AiohttpSession(),
     default=DefaultBotProperties(parse_mode="HTML")
 )
+# dp = Dispatcher(storage=storage)
 dp = Dispatcher()
 
-
-def get_admin_id() -> list[int]:
-    """ Преобразование строки админов в инт """
-    return [int(x.strip()) for x in admin_id.split(",") if x.strip().isdigit()]
+# def get_admin_id() -> list[int]:
+#     """ Преобразование строки админов в инт """
+#     return [int(x.strip()) for x in admin_id.split(",") if x.strip().isdigit()]
 
 

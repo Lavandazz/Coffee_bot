@@ -3936,3 +3936,1047 @@ DEBUG    2025-08-16 22:17:57,279 [bot] (middleware.py).__call__(105) стати�
 DEBUG    2025-08-16 22:17:57,280 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
 DEBUG    2025-08-16 22:17:57,283 [bot] (admin_handlers.py).get_statistic_from_db(179) period_statistic: [<Statistic: 11>, <Statistic: 9>, <Statistic: 10>]
 WARNING  2025-08-16 22:18:47,600 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-16 22:18:51,744 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+INFO     2025-08-16 22:18:53,405 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-16 22:18:53,575 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-16 22:18:55,693 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 22:18:55,694 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 22:18:55,704 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 22:18:55,709 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 22:18:55,710 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-16 22:18:55,713 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-16 22:18:55,714 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+DEBUG    2025-08-16 22:18:57,520 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 22:18:57,521 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 22:18:57,524 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 22:18:57,527 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 22:18:57,529 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-16 22:18:59,060 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 22:18:59,060 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 22:18:59,063 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 22:18:59,066 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 22:18:59,067 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+INFO     2025-08-16 22:18:59,068 [bot] (admin_handlers.py).admin_menu_handler(29) Вход в панель админа
+DEBUG    2025-08-16 22:19:00,233 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 22:19:00,234 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 22:19:00,236 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 22:19:00,237 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 22:19:00,238 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-16 22:19:00,239 [bot] (admin_handlers.py).get_statistic(39) State AdminMenuState:admin
+DEBUG    2025-08-16 22:19:02,388 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 22:19:02,388 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 22:19:02,390 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 22:19:02,394 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 22:19:02,395 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-16 22:19:02,545 [bot] (admin_handlers.py).get_period_statistic(63) Выбор начальной даты периода: get_period_statistic StatsState:waiting_first_date
+DEBUG    2025-08-16 22:19:03,907 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 22:19:03,907 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 22:19:03,911 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 22:19:03,914 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 22:19:03,916 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-16 22:19:03,918 [bot] (admin_handlers.py).first_day_statistic(119) жду конечную дату
+DEBUG    2025-08-16 22:19:05,589 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 22:19:05,589 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 22:19:05,592 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 22:19:05,594 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 22:19:05,596 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-16 22:19:05,601 [bot] (admin_handlers.py).get_statistic_from_db(179) period_statistic: [<Statistic: 11>, <Statistic: 9>, <Statistic: 10>]
+DEBUG    2025-08-16 22:19:13,059 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 22:19:13,059 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 22:19:13,061 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 22:19:13,065 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 22:19:13,066 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-16 22:19:13,995 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 22:19:13,996 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 22:19:13,998 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 22:19:14,001 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 22:19:14,002 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-16 22:19:14,955 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 22:19:14,955 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 22:19:14,958 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 22:19:14,961 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 22:19:14,963 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-16 22:19:15,041 [bot] (back_handler.py).back(44) Состояние AdminMenuState:admin сброшено
+DEBUG    2025-08-16 22:19:16,642 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 22:19:16,643 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 22:19:16,645 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 22:19:16,648 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 22:19:16,649 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+INFO     2025-08-16 22:19:16,649 [bot] (admin_handlers.py).admin_menu_handler(29) Вход в панель админа
+DEBUG    2025-08-16 22:22:17,877 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 22:22:17,877 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 22:22:17,879 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 22:22:17,882 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 22:22:17,883 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-16 22:22:17,884 [bot] (admin_handlers.py).get_statistic(39) State AdminMenuState:admin
+DEBUG    2025-08-16 22:22:19,724 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 22:22:19,724 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 22:22:19,726 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 22:22:19,730 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 22:22:19,730 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-16 22:22:19,852 [bot] (admin_handlers.py).get_period_statistic(71) Выбор даты: get_period_statistic StatsState:waiting_date
+DEBUG    2025-08-16 22:22:21,133 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 22:22:21,133 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 22:22:21,136 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 22:22:21,139 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 22:22:21,140 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-16 22:22:21,143 [bot] (admin_handlers.py).get_statistic_from_db(175) day_statistic: None
+DEBUG    2025-08-16 22:22:21,143 [bot] (admin_handlers.py).day_statistic(91) Получил статистику за день
+DEBUG    2025-08-16 22:22:23,150 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 22:22:23,150 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 22:22:23,153 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 22:22:23,156 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 22:22:23,158 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-16 22:22:24,596 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 22:22:24,596 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 22:22:24,598 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 22:22:24,601 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 22:22:24,602 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-16 22:22:24,694 [bot] (admin_handlers.py).get_period_statistic(63) Выбор начальной даты периода: get_period_statistic StatsState:waiting_first_date
+DEBUG    2025-08-16 22:22:25,898 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 22:22:25,899 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 22:22:25,901 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 22:22:25,906 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 22:22:25,907 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-16 22:22:25,908 [bot] (admin_handlers.py).first_day_statistic(119) жду конечную дату
+DEBUG    2025-08-16 22:22:27,417 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 22:22:27,417 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 22:22:27,419 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 22:22:27,420 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 22:22:27,421 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-16 22:22:27,423 [bot] (admin_handlers.py).get_statistic_from_db(179) period_statistic: []
+DEBUG    2025-08-16 22:22:29,016 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 22:22:29,017 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 22:22:29,019 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 22:22:29,023 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 22:22:29,024 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-16 22:22:30,386 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 22:22:30,387 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 22:22:30,390 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 22:22:30,393 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 22:22:30,395 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-16 22:22:30,477 [bot] (admin_handlers.py).get_period_statistic(63) Выбор начальной даты периода: get_period_statistic StatsState:waiting_first_date
+DEBUG    2025-08-16 22:22:31,566 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 22:22:31,566 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 22:22:31,568 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 22:22:31,571 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 22:22:31,572 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-16 22:22:31,573 [bot] (admin_handlers.py).first_day_statistic(119) жду конечную дату
+DEBUG    2025-08-16 22:22:32,381 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 22:22:32,381 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 22:22:32,384 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 22:22:32,386 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 22:22:32,387 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-16 22:22:32,389 [bot] (admin_handlers.py).get_statistic_from_db(179) period_statistic: [<Statistic: 11>, <Statistic: 9>, <Statistic: 10>]
+DEBUG    2025-08-16 22:22:34,385 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 22:22:34,385 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 22:22:34,387 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 22:22:34,389 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 22:22:34,390 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+WARNING  2025-08-16 23:41:52,656 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-08-16 23:41:52,912 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-08-16 23:41:57,778 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+INFO     2025-08-16 23:41:59,878 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-16 23:42:00,061 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-16 23:42:03,016 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 23:42:03,016 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 23:42:03,021 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 23:42:03,027 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 23:42:03,028 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-16 23:42:03,034 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-16 23:42:03,034 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+DEBUG    2025-08-16 23:42:04,250 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 23:42:04,250 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 23:42:04,252 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 23:42:04,256 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 23:42:04,257 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-16 23:42:06,373 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 23:42:06,373 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 23:42:06,376 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 23:42:06,377 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 23:42:06,378 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+INFO     2025-08-16 23:42:06,379 [bot] (admin_handlers.py).admin_menu_handler(29) Вход в панель админа
+DEBUG    2025-08-16 23:42:07,210 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 23:42:07,210 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 23:42:07,213 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 23:42:07,216 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 23:42:07,216 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-16 23:42:07,290 [bot] (back_handler.py).back(44) Состояние AdminMenuState:admin сброшено
+DEBUG    2025-08-16 23:42:16,529 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 23:42:16,529 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 23:42:16,532 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 23:42:16,534 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 23:42:16,535 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-16 23:42:16,537 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-16 23:42:16,537 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+DEBUG    2025-08-16 23:42:16,673 [bot] (back_handler.py).back(29) Состояние AdminMenuState:admin_menu сброшено
+DEBUG    2025-08-16 23:42:28,477 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 23:42:28,477 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 23:42:28,478 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 23:42:28,480 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 23:42:28,480 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-16 23:42:29,633 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 23:42:29,633 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 23:42:29,635 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 23:42:29,638 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 23:42:29,639 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+INFO     2025-08-16 23:42:29,639 [bot] (admin_handlers.py).admin_menu_handler(29) Вход в панель админа
+DEBUG    2025-08-16 23:42:30,597 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 23:42:30,597 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 23:42:30,599 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 23:42:30,602 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 23:42:30,602 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-16 23:42:30,604 [bot] (admin_handlers.py).get_statistic(39) State AdminMenuState:admin
+DEBUG    2025-08-16 23:42:32,276 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 23:42:32,276 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 23:42:32,279 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 23:42:32,281 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 23:42:32,282 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-16 23:42:32,355 [bot] (admin_handlers.py).get_period_statistic(71) Выбор даты: get_period_statistic StatsState:waiting_date
+DEBUG    2025-08-16 23:42:33,556 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 23:42:33,556 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 23:42:33,558 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 23:42:33,560 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 23:42:33,561 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-16 23:42:42,700 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 23:42:42,700 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 23:42:42,701 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 23:42:42,703 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 23:42:42,703 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-16 23:43:17,233 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 23:43:17,233 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 23:43:17,235 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 23:43:17,238 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 23:43:17,239 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-16 23:43:17,240 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-16 23:43:17,240 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+DEBUG    2025-08-16 23:44:56,375 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 23:44:56,375 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 23:44:56,378 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 23:44:56,380 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 23:44:56,382 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-16 23:44:57,226 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 23:44:57,227 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 23:44:57,229 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 23:44:57,230 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 23:44:57,231 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+INFO     2025-08-16 23:44:57,233 [bot] (admin_handlers.py).admin_menu_handler(29) Вход в панель админа
+DEBUG    2025-08-16 23:44:58,336 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 23:44:58,336 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 23:44:58,338 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 23:44:58,339 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 23:44:58,340 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-16 23:44:58,341 [bot] (admin_handlers.py).get_statistic(39) State AdminMenuState:admin
+DEBUG    2025-08-16 23:44:59,381 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 23:44:59,381 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 23:44:59,384 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 23:44:59,386 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 23:44:59,387 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-16 23:44:59,531 [bot] (admin_handlers.py).get_period_statistic(71) Выбор даты: get_period_statistic StatsState:waiting_date
+DEBUG    2025-08-16 23:45:01,023 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 23:45:01,024 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 23:45:01,026 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 23:45:01,027 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 23:45:01,028 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+WARNING  2025-08-16 23:46:23,290 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-16 23:46:26,035 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+INFO     2025-08-16 23:46:26,846 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-16 23:46:26,996 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-16 23:46:28,515 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 23:46:28,515 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 23:46:28,519 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 23:46:28,522 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 23:46:28,523 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-16 23:46:28,526 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-16 23:46:28,526 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+DEBUG    2025-08-16 23:46:29,833 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 23:46:29,833 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 23:46:29,835 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 23:46:29,839 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 23:46:29,840 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-16 23:46:30,546 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 23:46:30,546 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 23:46:30,548 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 23:46:30,551 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 23:46:30,552 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+INFO     2025-08-16 23:46:30,553 [bot] (admin_handlers.py).admin_menu_handler(29) Вход в панель админа
+DEBUG    2025-08-16 23:46:31,503 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 23:46:31,503 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 23:46:31,504 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 23:46:31,506 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 23:46:31,507 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-16 23:46:31,508 [bot] (admin_handlers.py).get_statistic(39) State AdminMenuState:admin
+DEBUG    2025-08-16 23:46:32,610 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 23:46:32,610 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 23:46:32,615 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 23:46:32,620 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 23:46:32,622 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-16 23:46:32,755 [bot] (admin_handlers.py).get_period_statistic(71) Выбор даты: get_period_statistic StatsState:waiting_date
+DEBUG    2025-08-16 23:46:35,361 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 23:46:35,361 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 23:46:35,364 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 23:46:35,367 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 23:46:35,367 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-16 23:46:41,396 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-16 23:46:41,397 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-16 23:46:41,399 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-16 23:46:41,402 [bot] (middleware.py).__call__(105) статистика сохранена event = 1, new_user = 0
+DEBUG    2025-08-16 23:46:41,403 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+WARNING  2025-08-16 23:47:05,940 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-17 14:27:00,800 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+INFO     2025-08-17 14:27:03,451 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-17 14:27:03,671 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-17 14:27:24,013 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 14:27:24,014 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 14:27:24,035 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>True.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 14:27:24,042 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 14:27:24,043 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-17 14:27:24,050 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-17 14:27:24,051 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+DEBUG    2025-08-17 14:27:25,761 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 14:27:25,761 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 14:27:25,766 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 14:27:25,807 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 14:27:25,808 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-17 14:27:27,016 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 14:27:27,017 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 14:27:27,020 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 14:27:27,059 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 14:27:27,060 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+INFO     2025-08-17 14:27:27,062 [bot] (admin_handlers.py).admin_menu_handler(29) Вход в панель админа
+DEBUG    2025-08-17 14:27:28,301 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 14:27:28,301 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 14:27:28,303 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 14:27:28,305 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 14:27:28,307 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-17 14:27:28,308 [bot] (admin_handlers.py).get_statistic(39) State AdminMenuState:admin
+DEBUG    2025-08-17 14:27:30,401 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 14:27:30,401 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 14:27:30,405 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 14:27:30,410 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 14:27:30,412 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-17 14:27:30,619 [bot] (admin_handlers.py).get_period_statistic(63) Выбор начальной даты периода: get_period_statistic StatsState:waiting_first_date
+DEBUG    2025-08-17 14:27:32,943 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 14:27:32,943 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 14:27:32,947 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 14:27:32,950 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 14:27:32,952 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-17 14:27:32,953 [bot] (admin_handlers.py).first_day_statistic(119) жду конечную дату
+DEBUG    2025-08-17 14:27:34,290 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 14:27:34,290 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 14:27:34,294 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 14:27:34,298 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 14:27:34,299 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-17 14:27:34,303 [bot] (admin_handlers.py).get_statistic_from_db(180) period_statistic: [<Statistic: 11>, <Statistic: 9>, <Statistic: 10>]
+WARNING  2025-08-17 14:28:01,638 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-08-17 14:28:01,791 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-08-17 14:28:04,818 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+INFO     2025-08-17 14:28:06,090 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-17 14:28:06,308 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-17 14:28:08,760 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 14:28:08,761 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 14:28:08,777 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 14:28:08,819 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 14:28:08,821 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-17 14:28:08,827 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-17 14:28:08,827 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+DEBUG    2025-08-17 14:28:10,219 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 14:28:10,220 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 14:28:10,223 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 14:28:10,263 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 14:28:10,266 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-17 14:28:11,083 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 14:28:11,083 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 14:28:11,089 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 14:28:11,129 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 14:28:11,133 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+INFO     2025-08-17 14:28:11,136 [bot] (admin_handlers.py).admin_menu_handler(29) Вход в панель админа
+DEBUG    2025-08-17 14:28:13,279 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 14:28:13,280 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 14:28:13,286 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 14:28:13,324 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 14:28:13,326 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-17 14:28:13,328 [bot] (admin_handlers.py).get_statistic(39) State AdminMenuState:admin
+DEBUG    2025-08-17 14:28:14,239 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 14:28:14,240 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 14:28:14,248 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 14:28:14,282 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 14:28:14,285 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-17 14:28:14,366 [bot] (admin_handlers.py).get_period_statistic(63) Выбор начальной даты периода: get_period_statistic StatsState:waiting_first_date
+DEBUG    2025-08-17 14:28:15,482 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 14:28:15,482 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 14:28:15,486 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 14:28:15,491 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 14:28:15,494 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-17 14:28:15,495 [bot] (admin_handlers.py).first_day_statistic(119) жду конечную дату
+DEBUG    2025-08-17 14:28:16,508 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 14:28:16,508 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 14:28:16,511 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 14:28:16,549 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 14:28:16,550 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-17 14:28:16,554 [bot] (admin_handlers.py).get_statistic_from_db(180) period_statistic: [<Statistic: 11>, <Statistic: 9>, <Statistic: 10>]
+DEBUG    2025-08-17 14:28:22,373 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 14:28:22,373 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 14:28:22,377 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 14:28:22,380 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 14:28:22,381 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+WARNING  2025-08-17 14:35:51,516 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-17 15:11:56,750 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+INFO     2025-08-17 15:11:58,430 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-17 15:11:58,623 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-17 15:12:06,217 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:12:06,217 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:12:06,241 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:12:06,286 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 15:12:06,291 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-17 15:12:06,297 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-17 15:12:06,297 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+DEBUG    2025-08-17 15:12:08,099 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:12:08,099 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:12:08,102 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:12:08,105 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 15:12:08,107 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-17 15:12:09,950 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:12:09,950 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:12:09,954 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:12:09,994 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 15:12:09,996 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+INFO     2025-08-17 15:12:09,997 [bot] (admin_handlers.py).admin_menu_handler(29) Вход в панель админа
+DEBUG    2025-08-17 15:12:16,275 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:12:16,276 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:12:16,279 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:12:16,282 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 15:12:16,283 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+WARNING  2025-08-17 15:12:46,404 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-08-17 15:12:46,560 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-08-17 15:12:50,884 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+INFO     2025-08-17 15:12:52,688 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-17 15:12:52,947 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-17 15:12:54,599 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:12:54,599 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:12:54,613 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:12:54,655 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 15:12:54,657 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-17 15:12:54,661 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-17 15:12:54,662 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+DEBUG    2025-08-17 15:12:56,205 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:12:56,205 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:12:56,210 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:12:56,250 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 15:12:56,251 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-17 15:12:56,953 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:12:56,953 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:12:56,958 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:12:56,995 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 15:12:56,997 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+INFO     2025-08-17 15:12:56,998 [bot] (admin_handlers.py).admin_menu_handler(29) Вход в панель админа
+DEBUG    2025-08-17 15:12:58,553 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:12:58,553 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:12:58,558 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:12:58,561 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 15:12:58,562 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+WARNING  2025-08-17 15:13:46,136 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-17 15:13:50,555 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+INFO     2025-08-17 15:13:52,417 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-17 15:13:52,653 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-17 15:13:54,282 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:13:54,283 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:13:54,298 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:13:54,339 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 15:13:54,341 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-17 15:13:54,345 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-17 15:13:54,347 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+DEBUG    2025-08-17 15:13:55,546 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:13:55,547 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:13:55,551 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:13:55,558 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 15:13:55,560 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-17 15:13:56,286 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:13:56,287 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:13:56,293 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:13:56,332 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 15:13:56,334 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+INFO     2025-08-17 15:13:56,335 [bot] (admin_handlers.py).admin_menu_handler(29) Вход в панель админа
+DEBUG    2025-08-17 15:13:57,421 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:13:57,422 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:13:57,426 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:13:57,466 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 15:13:57,468 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-17 15:13:58,654 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:13:58,655 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:13:58,659 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:13:58,698 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 15:13:58,700 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-17 15:15:51,099 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:15:51,099 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:15:51,103 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:15:51,143 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 15:15:51,145 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+WARNING  2025-08-17 15:25:34,240 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-08-17 15:25:34,386 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-08-17 15:25:37,463 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+INFO     2025-08-17 15:25:38,710 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-17 15:25:38,996 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-17 15:25:40,898 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:25:40,898 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:25:40,908 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:25:40,914 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 15:25:40,915 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-17 15:25:40,919 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-17 15:25:40,919 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+DEBUG    2025-08-17 15:25:42,288 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:25:42,288 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:25:42,291 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:25:42,295 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 15:25:42,296 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-17 15:25:42,973 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:25:42,973 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:25:42,977 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:25:42,981 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 15:25:42,983 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+INFO     2025-08-17 15:25:42,984 [bot] (admin_handlers.py).admin_menu_handler(29) Вход в панель админа
+DEBUG    2025-08-17 15:25:46,457 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:25:46,458 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:25:46,461 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:25:46,466 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 15:25:46,467 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-17 15:25:47,503 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:25:47,504 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:25:47,508 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:25:47,511 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 15:25:47,512 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+WARNING  2025-08-17 15:27:31,260 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-17 15:27:36,109 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+INFO     2025-08-17 15:27:37,676 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-17 15:27:37,845 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-17 15:27:40,973 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:27:40,973 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:27:40,986 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:27:40,991 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 15:27:40,993 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-17 15:27:40,996 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-17 15:27:40,996 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+DEBUG    2025-08-17 15:27:42,125 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:27:42,126 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:27:42,130 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:27:42,135 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 15:27:42,136 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-17 15:27:42,983 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:27:42,983 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:27:42,987 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:27:42,989 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 15:27:42,990 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+INFO     2025-08-17 15:27:42,991 [bot] (admin_handlers.py).admin_menu_handler(29) Вход в панель админа
+DEBUG    2025-08-17 15:27:44,630 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:27:44,630 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:27:44,634 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:27:44,638 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 15:27:44,639 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-17 15:27:45,890 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:27:45,891 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:27:45,894 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:27:45,898 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 15:27:45,899 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-17 15:27:49,773 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:27:49,774 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:27:49,777 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:27:49,781 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 15:27:49,782 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+ERROR    2025-08-17 15:27:49,785 [bot] (admin_handlers.py).register_barista(238) Ошибка во время добавления бариста, username: Length of 'message_id=7997 date=datetime.datetime(2025, 8, 17, 12, 27, 42, tzinfo=TzInfo(UTC)) chat=Chat(id=484385628, type='private', title=None, username='itLavandazz', first_name='Марина', last_name=None, is_forum=None, accent_color_id=None, active_usernames=None, available_reactions=None, background_custom_emoji_id=None, bio=None, birthdate=None, business_intro=None, business_location=None, business_opening_hours=None, can_set_sticker_set=None, custom_emoji_sticker_set_name=None, description=None, emoji_status_custom_emoji_id=None, emoji_status_expiration_date=None, has_aggressive_anti_spam_enabled=None, has_hidden_members=None, has_private_forwards=None, has_protected_content=None, has_restricted_voice_and_video_messages=None, has_visible_history=None, invite_link=None, join_by_request=None, join_to_send_messages=None, linked_chat_id=None, location=None, message_auto_delete_time=None, permissions=None, personal_chat=None, photo=None, pinned_message=None, profile_accent_color_id=None, profile_background_custom_emoji_id=None, slow_mode_delay=None, sticker_set_name=None, unrestrict_boost_count=None) message_thread_id=None from_user=User(id=7693453113, is_bot=True, first_name='CoffeeBot', last_name=None, username='test_for_arbirt_bot', language_code=None, is_premium=None, added_to_attachment_menu=None, can_join_groups=None, can_read_all_group_messages=None, supports_inline_queries=None, can_connect_to_business=None, has_main_web_app=None) sender_chat=None sender_boost_count=None sender_business_bot=None business_connection_id=None forward_origin=None is_topic_message=None is_automatic_forward=None reply_to_message=None external_reply=None quote=None reply_to_story=None via_bot=None edit_date=1755433667 has_protected_content=None is_from_offline=None media_group_id=None author_signature=None paid_star_count=None text='Введите имя пользователя telegram.\nДля точности данных необходимо зайти в профиль пользователя и нажать "Имя пользователя".\nИмя с @ копируется автоматически.' entities=[MessageEntity(type='code', offset=33, length=1, url=None, user=None, language=None, custom_emoji_id=None), MessageEntity(type='bold', offset=55, length=67, url=None, user=None, language=None, custom_emoji_id=None), MessageEntity(type='code', offset=122, length=1, url=None, user=None, language=None, custom_emoji_id=None), MessageEntity(type='bold', offset=130, length=1, url=None, user=None, language=None, custom_emoji_id=None), MessageEntity(type='code', offset=156, length=1, url=None, user=None, language=None, custom_emoji_id=None)] link_preview_options=None effect_id=None animation=None audio=None document=None paid_media=None photo=None sticker=None story=None video=None video_note=None voice=None caption=None caption_entities=None show_caption_above_media=None has_media_spoiler=None contact=None dice=None game=None poll=None venue=None location=None new_chat_members=None left_chat_member=None new_chat_title=None new_chat_photo=None delete_chat_photo=None group_chat_created=None supergroup_chat_created=None channel_chat_created=None message_auto_delete_timer_changed=None migrate_to_chat_id=None migrate_from_chat_id=None pinned_message=None invoice=None successful_payment=None refunded_payment=None users_shared=None chat_shared=None gift=None unique_gift=None connected_website=None write_access_allowed=None passport_data=None proximity_alert_triggered=None boost_added=None chat_background_set=None forum_topic_created=None forum_topic_edited=None forum_topic_closed=None forum_topic_reopened=None general_forum_topic_hidden=None general_forum_topic_unhidden=None giveaway_created=None giveaway=None giveaway_winners=None giveaway_completed=None paid_message_price_changed=None video_chat_scheduled=None video_chat_started=None video_chat_ended=None video_chat_participants_invited=None web_app_data=None reply_markup=InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text='⬅️ Назад', url=None, callback_data='back', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, copy_text=None, callback_game=None, pay=None)]]) forward_date=None forward_from=None forward_from_chat=None forward_from_message_id=None forward_sender_name=None forward_signature=None user_shared=None' 4294 > 100
+WARNING  2025-08-17 15:28:25,707 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-17 15:28:28,941 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+INFO     2025-08-17 15:28:30,040 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-17 15:28:30,239 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-17 15:28:31,348 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:28:31,348 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:28:31,359 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:28:31,365 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 15:28:31,367 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-17 15:28:31,371 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-17 15:28:31,371 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+DEBUG    2025-08-17 15:28:32,639 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:28:32,639 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:28:32,643 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:28:32,647 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 15:28:32,649 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-17 15:28:33,626 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:28:33,627 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:28:33,631 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:28:33,636 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 15:28:33,637 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+INFO     2025-08-17 15:28:33,638 [bot] (admin_handlers.py).admin_menu_handler(29) Вход в панель админа
+DEBUG    2025-08-17 15:28:34,611 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:28:34,612 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:28:34,615 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:28:34,619 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 15:28:34,620 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-17 15:28:34,621 [bot] (admin_handlers.py).get_statistic(39) State AdminMenuState:admin
+DEBUG    2025-08-17 15:28:36,519 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:28:36,519 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:28:36,523 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:28:36,529 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 15:28:36,530 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-17 15:28:37,474 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:28:37,474 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:28:37,478 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:28:37,482 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 15:28:37,483 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-17 15:28:38,242 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:28:38,243 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:28:38,247 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:28:38,251 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 15:28:38,252 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-17 15:28:39,418 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:28:39,418 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:28:39,421 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:28:39,425 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 15:28:39,426 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+ERROR    2025-08-17 15:28:39,428 [bot] (admin_handlers.py).register_barista(238) Ошибка во время добавления бариста, username: Length of 'message_id=8000 date=datetime.datetime(2025, 8, 17, 12, 28, 33, tzinfo=TzInfo(UTC)) chat=Chat(id=484385628, type='private', title=None, username='itLavandazz', first_name='Марина', last_name=None, is_forum=None, accent_color_id=None, active_usernames=None, available_reactions=None, background_custom_emoji_id=None, bio=None, birthdate=None, business_intro=None, business_location=None, business_opening_hours=None, can_set_sticker_set=None, custom_emoji_sticker_set_name=None, description=None, emoji_status_custom_emoji_id=None, emoji_status_expiration_date=None, has_aggressive_anti_spam_enabled=None, has_hidden_members=None, has_private_forwards=None, has_protected_content=None, has_restricted_voice_and_video_messages=None, has_visible_history=None, invite_link=None, join_by_request=None, join_to_send_messages=None, linked_chat_id=None, location=None, message_auto_delete_time=None, permissions=None, personal_chat=None, photo=None, pinned_message=None, profile_accent_color_id=None, profile_background_custom_emoji_id=None, slow_mode_delay=None, sticker_set_name=None, unrestrict_boost_count=None) message_thread_id=None from_user=User(id=7693453113, is_bot=True, first_name='CoffeeBot', last_name=None, username='test_for_arbirt_bot', language_code=None, is_premium=None, added_to_attachment_menu=None, can_join_groups=None, can_read_all_group_messages=None, supports_inline_queries=None, can_connect_to_business=None, has_main_web_app=None) sender_chat=None sender_boost_count=None sender_business_bot=None business_connection_id=None forward_origin=None is_topic_message=None is_automatic_forward=None reply_to_message=None external_reply=None quote=None reply_to_story=None via_bot=None edit_date=1755433720 has_protected_content=None is_from_offline=None media_group_id=None author_signature=None paid_star_count=None text='Введите имя пользователя telegram.\nДля точности данных необходимо зайти в профиль пользователя и нажать "Имя пользователя".\nИмя с @ копируется автоматически.' entities=[MessageEntity(type='code', offset=33, length=1, url=None, user=None, language=None, custom_emoji_id=None), MessageEntity(type='bold', offset=55, length=67, url=None, user=None, language=None, custom_emoji_id=None), MessageEntity(type='code', offset=122, length=1, url=None, user=None, language=None, custom_emoji_id=None), MessageEntity(type='bold', offset=130, length=1, url=None, user=None, language=None, custom_emoji_id=None), MessageEntity(type='code', offset=156, length=1, url=None, user=None, language=None, custom_emoji_id=None)] link_preview_options=None effect_id=None animation=None audio=None document=None paid_media=None photo=None sticker=None story=None video=None video_note=None voice=None caption=None caption_entities=None show_caption_above_media=None has_media_spoiler=None contact=None dice=None game=None poll=None venue=None location=None new_chat_members=None left_chat_member=None new_chat_title=None new_chat_photo=None delete_chat_photo=None group_chat_created=None supergroup_chat_created=None channel_chat_created=None message_auto_delete_timer_changed=None migrate_to_chat_id=None migrate_from_chat_id=None pinned_message=None invoice=None successful_payment=None refunded_payment=None users_shared=None chat_shared=None gift=None unique_gift=None connected_website=None write_access_allowed=None passport_data=None proximity_alert_triggered=None boost_added=None chat_background_set=None forum_topic_created=None forum_topic_edited=None forum_topic_closed=None forum_topic_reopened=None general_forum_topic_hidden=None general_forum_topic_unhidden=None giveaway_created=None giveaway=None giveaway_winners=None giveaway_completed=None paid_message_price_changed=None video_chat_scheduled=None video_chat_started=None video_chat_ended=None video_chat_participants_invited=None web_app_data=None reply_markup=InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text='⬅️ Назад', url=None, callback_data='back', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, copy_text=None, callback_game=None, pay=None)]]) forward_date=None forward_from=None forward_from_chat=None forward_from_message_id=None forward_sender_name=None forward_signature=None user_shared=None' 4294 > 100
+DEBUG    2025-08-17 15:30:06,820 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:30:06,820 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:30:06,826 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:30:06,829 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 15:30:06,831 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-17 15:31:12,110 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:31:12,110 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:31:12,112 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:31:12,115 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 15:31:12,116 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-17 15:31:13,299 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:31:13,299 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:31:13,304 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:31:13,309 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 15:31:13,310 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+WARNING  2025-08-17 15:43:14,331 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-08-17 15:43:14,475 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-08-17 15:43:17,627 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+INFO     2025-08-17 15:43:18,773 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-17 15:43:19,024 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-17 15:43:20,912 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:43:20,912 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:43:20,922 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:43:20,927 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 15:43:20,928 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-17 15:43:20,931 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-17 15:43:20,931 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+DEBUG    2025-08-17 15:43:22,007 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:43:22,007 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:43:22,012 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:43:22,017 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 15:43:22,018 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-17 15:43:22,953 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:43:22,954 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:43:22,956 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:43:22,960 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 15:43:22,961 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+INFO     2025-08-17 15:43:22,961 [bot] (admin_handlers.py).admin_menu_handler(29) Вход в панель админа
+DEBUG    2025-08-17 15:43:24,220 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:43:24,220 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:43:24,225 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:43:24,229 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 15:43:24,230 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-17 15:43:25,123 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:43:25,123 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:43:25,126 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:43:25,130 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 15:43:25,131 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+DEBUG    2025-08-17 15:43:32,119 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:43:32,119 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:43:32,122 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:43:32,125 [bot] (middleware.py).__call__(105) статистика сохранена event = 0, new_user = 0
+DEBUG    2025-08-17 15:43:32,127 [bot] (middleware.py).__call__(31) Пользователь взаимодействует с ботом 484385628
+WARNING  2025-08-17 15:45:11,480 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-17 15:45:14,676 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+INFO     2025-08-17 15:45:15,809 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-17 15:45:16,009 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-17 15:45:18,716 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:45:18,716 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:45:18,727 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:45:18,737 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-17 15:45:18,737 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+DEBUG    2025-08-17 15:45:22,809 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:45:22,809 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:45:22,811 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:45:25,222 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:45:25,222 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:45:25,226 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+INFO     2025-08-17 15:45:25,232 [bot] (admin_handlers.py).admin_menu_handler(29) Вход в панель админа
+DEBUG    2025-08-17 15:45:27,472 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:45:27,473 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:45:27,476 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:45:30,010 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:45:30,010 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:45:30,015 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+DEBUG    2025-08-17 15:45:36,700 [bot] (middleware.py).__call__(77) user : <User>
+DEBUG    2025-08-17 15:45:36,700 [bot] (middleware.py).__call__(81) redis_key : user484385628:visit
+DEBUG    2025-08-17 15:45:36,704 [bot] (middleware.py).__call__(87) stat создался при апдейте: <Statistic>False.
+redis_key : user484385628:visit = 1
+1
+WARNING  2025-08-17 15:46:11,505 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-17 15:46:14,373 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+INFO     2025-08-17 15:46:15,419 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-17 15:46:15,586 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-17 15:46:16,842 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-17 15:46:16,842 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-17 15:46:20,809 [bot] (admin_handlers.py).admin_menu_handler(29) Вход в панель админа
+DEBUG    2025-08-17 15:51:34,831 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-17 15:51:34,831 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+DEBUG    2025-08-17 15:51:39,327 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-17 15:51:39,327 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+DEBUG    2025-08-17 15:51:39,517 [bot] (back_handler.py).back(30) Состояние MenuState:horoscope_menu сброшено
+DEBUG    2025-08-17 15:51:42,564 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-17 15:51:42,564 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+DEBUG    2025-08-17 15:51:42,671 [bot] (back_handler.py).back(30) Состояние ReviewStates:waiting_for_photo сброшено
+DEBUG    2025-08-17 15:51:46,954 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-17 15:51:46,954 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+DEBUG    2025-08-17 15:51:47,016 [bot] (back_handler.py).back(30) Состояние AdminMenuState:admin_menu сброшено
+DEBUG    2025-08-17 15:51:51,397 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-17 15:51:51,397 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+DEBUG    2025-08-17 15:51:51,462 [bot] (back_handler.py).back(30) Состояние MenuState:horoscope_menu сброшено
+WARNING  2025-08-17 15:52:13,797 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-17 15:52:16,824 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+INFO     2025-08-17 15:52:17,856 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-17 15:52:18,092 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-17 15:52:21,561 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-17 15:52:21,561 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-17 15:52:24,240 [bot] (admin_handlers.py).admin_menu_handler(29) Вход в панель админа
+WARNING  2025-08-17 15:53:13,346 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-17 15:53:16,506 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+INFO     2025-08-17 15:53:17,594 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-17 15:53:17,765 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-17 15:53:22,503 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-17 15:53:22,503 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-17 15:53:24,548 [bot] (admin_handlers.py).admin_menu_handler(29) Вход в панель админа
+WARNING  2025-08-17 15:54:32,133 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-08-17 15:54:32,298 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-08-17 15:54:35,101 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+INFO     2025-08-17 15:54:36,136 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-17 15:54:36,296 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-17 15:54:38,885 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-17 15:54:38,886 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-17 15:54:42,053 [bot] (admin_handlers.py).admin_menu_handler(29) Вход в панель админа
+INFO     2025-08-17 15:54:51,614 [bot] (admin_handlers.py).enter_role_barista(230) FunkyFunnyFox
+WARNING  2025-08-17 16:03:11,458 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-17 16:03:14,442 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+INFO     2025-08-17 16:03:15,460 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-17 16:03:15,645 [bot] (commands.py).set_commands(20) Установил команды
+WARNING  2025-08-17 16:05:07,382 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-08-17 16:05:07,527 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-08-17 16:05:10,267 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+INFO     2025-08-17 16:05:11,311 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-17 16:05:11,490 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-17 16:05:13,015 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-17 16:05:13,015 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-17 16:05:15,053 [bot] (admin_handlers.py).admin_menu_handler(29) Вход в панель админа
+INFO     2025-08-17 16:05:22,040 [bot] (admin_handlers.py).enter_role_barista(230) FunkyFunnyFox
+INFO     2025-08-17 16:05:47,020 [bot] (admin_handlers.py).enter_role_barista(230) Админ
+WARNING  2025-08-17 16:06:32,732 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-17 16:06:35,962 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+INFO     2025-08-17 16:06:37,168 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-17 16:06:37,335 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-17 16:06:44,260 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-17 16:06:44,260 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-17 16:06:46,277 [bot] (admin_handlers.py).admin_menu_handler(29) Вход в панель админа
+INFO     2025-08-17 16:06:56,120 [bot] (admin_handlers.py).enter_role_barista(230) Админ
+DEBUG    2025-08-17 16:06:58,455 [bot] (admin_handlers.py).save_barista_role(262) Пользователь Админ получил роль barista
+DEBUG    2025-08-17 16:07:34,121 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, barista
+DEBUG    2025-08-17 16:07:34,121 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: barista
+DEBUG    2025-08-17 16:07:37,652 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, barista
+DEBUG    2025-08-17 16:07:37,652 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: barista
+DEBUG    2025-08-17 16:07:37,743 [bot] (back_handler.py).back(30) Состояние AdminMenuState:admin_menu сброшено
+WARNING  2025-08-17 16:09:03,462 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-17 16:09:06,647 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+INFO     2025-08-17 16:09:07,683 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-17 16:09:07,699 [bot] (start_handlers.py).seed_admin(38) Админ уже существует, пропускаем создание
+INFO     2025-08-17 16:09:07,841 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-17 16:09:21,647 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-17 16:09:21,647 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-17 16:09:23,801 [bot] (admin_handlers.py).admin_menu_handler(29) Вход в панель админа
+INFO     2025-08-17 16:09:31,393 [bot] (admin_handlers.py).enter_role_barista(230) Админ
+WARNING  2025-08-17 16:10:24,799 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-17 16:10:27,953 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+INFO     2025-08-17 16:10:29,136 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-17 16:10:29,289 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-17 16:10:32,057 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-17 16:10:32,057 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-17 16:10:33,814 [bot] (admin_handlers.py).admin_menu_handler(29) Вход в панель админа
+INFO     2025-08-17 16:10:42,262 [bot] (admin_handlers.py).enter_role_barista(230) Админ
+WARNING  2025-08-17 16:11:59,644 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-17 16:12:02,688 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+INFO     2025-08-17 16:12:03,672 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-17 16:12:03,842 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-17 16:12:05,109 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-17 16:12:05,109 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-17 16:12:06,961 [bot] (admin_handlers.py).admin_menu_handler(29) Вход в панель админа
+INFO     2025-08-17 16:12:13,499 [bot] (admin_handlers.py).enter_role_barista(230) Админ
+WARNING  2025-08-17 16:13:05,016 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-17 16:13:08,023 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+INFO     2025-08-17 16:13:09,046 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-17 16:13:09,216 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-17 16:13:11,793 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-17 16:13:11,794 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-17 16:13:16,295 [bot] (admin_handlers.py).admin_menu_handler(29) Вход в панель админа
+INFO     2025-08-17 16:13:21,521 [bot] (admin_handlers.py).enter_role_barista(230) Админ
+WARNING  2025-08-17 16:13:55,137 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-17 16:13:58,012 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+INFO     2025-08-17 16:13:59,042 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-17 16:13:59,205 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-17 16:14:00,361 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-17 16:14:00,361 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-17 16:14:02,059 [bot] (admin_handlers.py).admin_menu_handler(29) Вход в панель админа
+INFO     2025-08-17 16:14:09,553 [bot] (admin_handlers.py).enter_role_barista(230) Админ
+DEBUG    2025-08-17 16:14:24,332 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-17 16:14:24,332 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-17 16:14:26,217 [bot] (admin_handlers.py).admin_menu_handler(29) Вход в панель админа
+WARNING  2025-08-17 16:14:39,343 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-17 16:14:42,296 [bot] (logging_config.py)._setup_handlers(49) Логирование для 'bot' настроено успешно.
+INFO     2025-08-17 16:14:43,412 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-17 16:14:43,578 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-17 16:14:45,709 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-17 16:14:45,709 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-17 16:14:47,470 [bot] (admin_handlers.py).admin_menu_handler(29) Вход в панель админа
+INFO     2025-08-17 16:14:54,373 [bot] (admin_handlers.py).enter_role_barista(230) Админ
+INFO     2025-08-17 16:15:13,448 [bot] (admin_handlers.py).enter_role_barista(230) Админ
+DEBUG    2025-08-17 16:15:14,575 [bot] (admin_handlers.py).save_barista_role(263) Пользователь Админ получил роль barista
+DEBUG    2025-08-17 16:15:22,381 [bot] (back_handler.py).back(45) Состояние AdminMenuState:admin сброшено
+DEBUG    2025-08-17 16:15:23,869 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, barista
+DEBUG    2025-08-17 16:15:23,869 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: barista
+DEBUG    2025-08-17 16:15:23,941 [bot] (back_handler.py).back(30) Состояние AdminMenuState:admin_menu сброшено
+WARNING  2025-08-17 16:23:43,256 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-08-17 16:23:43,401 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-08-17 16:23:46,379 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-17 16:23:47,475 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-17 16:23:47,684 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-17 16:23:50,286 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-17 16:23:50,286 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-17 16:23:54,465 [bot] (barista_handlers.py).show_barista_btn(21) Вход в панель бариста
+DEBUG    2025-08-17 16:23:57,936 [bot] (barista_handlers.py).show_barista_posts(249) текущее состояние BaristaState:posts
+DEBUG    2025-08-17 16:23:57,940 [bot] (barista_keyboard.py).barista_posts_kb(29) Показываю кнопки с постами
+DEBUG    2025-08-17 16:24:02,297 [bot] (back_handler.py).back(55) Текущее состояние BaristaState:posts
+DEBUG    2025-08-17 16:24:02,362 [bot] (back_handler.py).back(68) Перешел назад к состоянию AdminMenuState:barista
+INFO     2025-08-17 16:24:04,288 [bot] (barista_handlers.py).show_reviews(153) отправлю клаву
+INFO     2025-08-17 16:24:04,293 [bot] (barista_keyboard.py).review_kb(74) отправлена клавиатура с отзывами
+DEBUG    2025-08-17 16:24:08,986 [bot] (back_handler.py).back(55) Текущее состояние BaristaState:review_menu
+DEBUG    2025-08-17 16:24:09,108 [bot] (back_handler.py).back(68) Перешел назад к состоянию AdminMenuState:barista
+DEBUG    2025-08-17 16:24:31,411 [bot] (back_handler.py).back(45) Состояние AdminMenuState:barista сброшено
+INFO     2025-08-17 16:24:32,261 [bot] (admin_handlers.py).admin_menu_handler(29) Вход в панель админа
+INFO     2025-08-17 16:24:44,579 [bot] (admin_handlers.py).enter_role_barista(230) Фвьшт
+WARNING  2025-08-17 16:26:07,730 [bot] (main.py).start_bot(23) Бот закрыт

@@ -15,6 +15,7 @@ class AdminMenuState(StatesGroup):
     admin_menu = State()
     admin = State()
     barista = State()
+    rights = State()
     statistic_menu = State()  # меню статистики
     statistic = State()
 
@@ -32,6 +33,12 @@ class BaristaState(StatesGroup):
     approve_menu = State()
     posts = State()  # отображение всех постов
     post = State()  # отображение поста
+
+
+class BaristaRegistrationState(StatesGroup):
+    """Регистрация бариста"""
+    registration_name = State()
+    save_name = State()
 
 
 class PostState(StatesGroup):

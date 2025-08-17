@@ -3,13 +3,13 @@ from typing import List
 
 from aiogram.enums import ParseMode
 from aiogram.fsm.context import FSMContext
-from aiogram.types import CallbackQuery
+from aiogram.types import CallbackQuery, Message
 
-from database.models_db import Statistic
-from keyboards.admin_keyboards import admin_btn, admin_kb, admin_stat_kb
+from database.models_db import Statistic, User
+from keyboards.admin_keyboards import admin_btn, admin_kb, admin_stat_kb, admin_rights, yes_or_no_btn
 from keyboards.back_keyboard import back_button
 from keyboards.calendar_keyboard import calendar_kb
-from states.menu_states import AdminMenuState, StatsState
+from states.menu_states import AdminMenuState, StatsState, BaristaRegistrationState
 from utils.custom_calendar import MyCalendar
 from utils.date_formats import from_str_to_date_day
 from utils.get_user import admin_only, staff_only
@@ -156,6 +156,7 @@ async def second_day_statistic(call: CallbackQuery, state: FSMContext, role: str
             text=f'Нет данных.',
             reply_markup=back_button()
         )
+    # await state.clear_data()
     await state.set_state(StatsState.answer)
 
 
@@ -193,5 +194,93 @@ async def answer_statistic_from_period(list_period: List[Statistic]) -> list:
     sum_events = sum(statistic.event for statistic in list_period)
     return [sum_new_users, sum_events]
 
+
+@admin_only
+async def barista_rights(call: CallbackQuery, state: FSMContext, role: str):
+    """Отправление клавиатуры для регистрации или удаления прав бариста"""
+    await call.message.edit_text(
+        text='Выберите действие',
+        reply_markup=admin_rights())
+    await state.set_state(AdminMenuState.rights)
+
+
+@admin_only
+async def start_register_name_barista(call: CallbackQuery, state: FSMContext, role: str):
+    """
+    Регистрация бариста.
+    :param call:
+    :param state:
+    :param role: admin
+    """
+    await call.message.edit_text(
+        text='Введите имя пользователя telegram`.`\n'
+             'Для точности данных *необходимо зайти в профиль пользователя и нажать "Имя пользователя"*`.`\n'
+             'Имя с *@* копируется автоматически`.`',
+        parse_mode=ParseMode.MARKDOWN_V2,
+        reply_markup=back_button()
+    )
+    await state.set_state(BaristaRegistrationState.registration_name)
+
+
+@admin_only
+async def enter_role_barista(message: Message, state: FSMContext, role: str):
+    """Ожидание регистрации"""
+    await state.update_data(name_barista=message.text)
+    bot_logger.info(message.text)
+    user = await User.get_or_none(username=message.text.replace('@', ''))
+
+    if user:
+        await message.answer(
+            text=f'Вы уверены, что хотите добавить роль бариста для {user.username}?',
+            reply_markup=yes_or_no_btn()
+        )
+        bot_logger.info(f'Изменение роли для  {user.username} на роль barista')
+        await state.set_state(BaristaRegistrationState.save_name)
+    else:
+        await message.answer("Пользователь с таким ником не найден. Попробуйте ещё раз.")
+
+
+@admin_only
+async def save_barista_role(call: CallbackQuery, state: FSMContext, role: str):
+    """Сохранение роли бариста"""
+    data = await state.get_data()
+    name_barista = data.get('name_barista')
+
+    try:
+        user = await User.get_or_none(username=name_barista)
+        if not user:
+            await call.message.edit_text("Ошибка: пользователь не найден.")
+            await state.clear()
+            return
+
+        if call.data == "yes":
+            user.role = "barista"
+            await user.save()
+            await call.message.edit_text(
+                f"✅ Пользователь {user.username} теперь бариста!",
+                reply_markup=admin_rights()
+            )
+            bot_logger.debug(f"Пользователь {user.username} получил роль barista")
+
+        elif call.data == "no":
+            await call.message.edit_text(text="❌ Операция отменена.",
+                                         reply_markup=admin_rights())
+
+    except Exception as e:
+        bot_logger.error(f"Ошибка во время добавления бариста: {e}")
+        await call.message.edit_text("⚠️ Произошла ошибка. Попробуйте снова.")
+
+    await state.set_state(AdminMenuState.rights)
+
+
+@admin_only
+async def delete_barista(call: CallbackQuery, state: FSMContext, role: str):
+    """
+    Функция удаления прав бариста. Статус barista меняется в бд на user.
+    :param call:
+    :param state:
+    :param role:
+    """
+    pass
 
 

@@ -44,6 +44,7 @@ class BaseLogger:
         # Добавляем обработчики
         self.logger.addHandler(console_handler)
         self.logger.addHandler(file_handler)
+        self.logger.propagate = False
 
         # Логируем успешную настройку
         self.logger.info(f"Логирование для '{self.name}' настроено успешно.")
@@ -78,7 +79,7 @@ class HelpAiLogger(BaseLogger):
         log_folder = "logs"
         os.makedirs(log_folder, exist_ok=True)
         log_file = os.path.join(log_folder, "phrase_logs.log")
-        super().__init__(name="horoscope", log_file=log_file, logging_level=logging.DEBUG)
+        super().__init__(name="help_ai", log_file=log_file, logging_level=logging.DEBUG)
 
 
 class DatabaseLogger(BaseLogger):

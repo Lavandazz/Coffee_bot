@@ -34,6 +34,23 @@ def admin_kb():
     return kb.as_markup()
 
 
+def admin_rights():
+    kb = InlineKeyboardBuilder()
+    kb.button(text='Добавить бариста', callback_data='add_barista')
+    kb.button(text='Удалить бариста', callback_data='delete_barista')
+    kb.adjust(2)
+    kb.row(InlineKeyboardButton(text='⬅️ Назад', callback_data='back'))
+    return kb.as_markup()
+
+
+def yes_or_no_btn():
+    kb = InlineKeyboardBuilder()
+    kb.button(text='Да', callback_data='yes')
+    kb.button(text='Нет', callback_data='no')
+    kb.adjust(2)
+    return kb.as_markup()
+
+
 def admin_stat_kb():
     kb = InlineKeyboardBuilder()
     kb.button(text='За день', callback_data='stat_day')
