@@ -4980,3 +4980,14 @@ DEBUG    2025-08-17 16:24:31,411 [bot] (back_handler.py).back(45) Состоян
 INFO     2025-08-17 16:24:32,261 [bot] (admin_handlers.py).admin_menu_handler(29) Вход в панель админа
 INFO     2025-08-17 16:24:44,579 [bot] (admin_handlers.py).enter_role_barista(230) Фвьшт
 WARNING  2025-08-17 16:26:07,730 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-17 16:26:10,737 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-17 16:26:11,762 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-17 16:26:11,953 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-17 16:26:13,537 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-17 16:26:13,537 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-17 16:26:15,665 [bot] (admin_handlers.py).admin_menu_handler(29) Вход в панель админа
+INFO     2025-08-17 16:26:30,215 [bot] (admin_handlers.py).enter_role_barista(230) Админ
+INFO     2025-08-17 16:26:30,286 [bot] (admin_handlers.py).enter_role_barista(238) Изменение роли для  Админ на роль barista
+INFO     2025-08-17 16:27:01,984 [bot] (admin_handlers.py).enter_role_barista(230) @Админ
+INFO     2025-08-17 16:27:02,059 [bot] (admin_handlers.py).enter_role_barista(238) Изменение роли для  Админ на роль barista
+WARNING  2025-08-17 16:29:03,180 [bot] (main.py).start_bot(23) Бот закрыт

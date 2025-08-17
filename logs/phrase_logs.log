@@ -1,1 +1,2 @@
 INFO     2025-08-17 16:23:46,380 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-17 16:26:10,738 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.

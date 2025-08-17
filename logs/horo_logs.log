@@ -5569,3 +5569,4 @@ INFO     2025-08-17 16:13:08,023 [horoscope] (logging_config.py)._setup_handlers
 INFO     2025-08-17 16:13:58,012 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
 INFO     2025-08-17 16:14:42,297 [horoscope] (logging_config.py)._setup_handlers(49) Логирование для 'horoscope' настроено успешно.
 INFO     2025-08-17 16:23:46,379 [horoscope] (logging_config.py)._setup_handlers(50) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-17 16:26:10,737 [horoscope] (logging_config.py)._setup_handlers(50) Логирование для 'horoscope' настроено успешно.

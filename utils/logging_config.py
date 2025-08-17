@@ -44,7 +44,7 @@ class BaseLogger:
         # Добавляем обработчики
         self.logger.addHandler(console_handler)
         self.logger.addHandler(file_handler)
-        self.logger.propagate = False
+        self.logger.propagate = False  # чтобы aiogram не перекрывал логи, иначе видно только логи мидлваров
 
         # Логируем успешную настройку
         self.logger.info(f"Логирование для '{self.name}' настроено успешно.")
