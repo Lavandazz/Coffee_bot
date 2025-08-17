@@ -248,6 +248,7 @@ async def save_barista_role(call: CallbackQuery, state: FSMContext, role: str):
 
     try:
         user = await User.get_or_none(username=name_barista)
+        bot_logger.info(f'Сохранение роли бариста для {user.username}')
         if not user:
             await call.message.edit_text("Ошибка: пользователь не найден.")
             await state.clear()
