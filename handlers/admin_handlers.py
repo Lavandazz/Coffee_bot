@@ -225,7 +225,7 @@ async def start_register_name_barista(call: CallbackQuery, state: FSMContext, ro
 @admin_only
 async def enter_role_barista(message: Message, state: FSMContext, role: str):
     """Ожидание регистрации"""
-    await state.update_data(name_barista=message.text)
+    await state.update_data(name_barista=message.text.replace('@', ''))
     bot_logger.info(message.text)
     user = await User.get_or_none(username=message.text.replace('@', ''))
 
