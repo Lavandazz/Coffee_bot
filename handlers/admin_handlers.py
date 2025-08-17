@@ -225,9 +225,10 @@ async def start_register_name_barista(call: CallbackQuery, state: FSMContext, ro
 @admin_only
 async def enter_role_barista(message: Message, state: FSMContext, role: str):
     """Ожидание регистрации"""
-    await state.update_data(name_barista=message.text.replace('@', ''))
-    bot_logger.info(message.text)
-    user = await User.get_or_none(username=message.text.replace('@', ''))
+    name = message.text.replace('@', '')
+    await state.update_data(name_barista=name)
+    bot_logger.info(f'сохранение в память name_barista {name}')
+    user = await User.get_or_none(username=name)
 
     if user:
         await message.answer(
@@ -238,6 +239,7 @@ async def enter_role_barista(message: Message, state: FSMContext, role: str):
         await state.set_state(BaristaRegistrationState.save_name)
     else:
         await message.answer("Пользователь с таким ником не найден. Попробуйте ещё раз.")
+        # прописать отмену, если нажата кнопка back
 
 
 @admin_only
@@ -245,6 +247,7 @@ async def save_barista_role(call: CallbackQuery, state: FSMContext, role: str):
     """Сохранение роли бариста"""
     data = await state.get_data()
     name_barista = data.get('name_barista')
+    bot_logger.debug(f'Сохранение бариста data.get(name_barista) {name_barista}')
 
     try:
         user = await User.get_or_none(username=name_barista)
