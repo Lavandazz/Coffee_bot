@@ -1,6 +1,9 @@
+from typing import List
+
 from aiogram.types import InlineKeyboardButton
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 
+from database.models_db import User
 from utils.config import SUPERADMIN
 from utils.logging_config import bot_logger
 
@@ -37,7 +40,7 @@ def admin_kb():
 def admin_rights():
     kb = InlineKeyboardBuilder()
     kb.button(text='Добавить бариста', callback_data='add_barista')
-    kb.button(text='Удалить бариста', callback_data='delete_barista')
+    kb.button(text='Удалить бариста', callback_data='baristas_for_delete')
     kb.adjust(2)
     kb.row(InlineKeyboardButton(text='⬅️ Назад', callback_data='back'))
     return kb.as_markup()
@@ -59,3 +62,12 @@ def admin_stat_kb():
     kb.row(InlineKeyboardButton(text='⬅️ Назад', callback_data='back'))
     return kb.as_markup()
 
+
+async def delete_baristas_kb(users: List[User]):
+    """Клавиатура для смены роли пользователя (к примеру, поменять роль бариста на юзера)"""
+    kb = InlineKeyboardBuilder()
+    for user in users:
+        kb.button(text=f'{user.username}', callback_data=f'delete_{user.id}')
+    kb.adjust(3)
+    kb.row(InlineKeyboardButton(text='⬅️ Назад', callback_data='back'))
+    return kb.as_markup()

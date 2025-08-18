@@ -5,7 +5,8 @@ from handlers.help_handlers import help_menu
 from handlers.start_handlers import get_start, on_start
 from handlers.admin_handlers import (admin_menu_handler, admin_menu, get_statistic, get_period_statistic, day_statistic,
                                      first_day_statistic, second_day_statistic, barista_rights,
-                                     start_register_name_barista, enter_role_barista, save_barista_role)
+                                     start_register_name_barista, enter_role_barista, save_barista_role, delete_barista,
+                                     baristas_for_delete)
 
 from handlers.barista_handlers import approve_review, reject_review, moderate_review, show_barista_btn, show_reviews, \
     add_post, add_photo, save_post, generate_phrase, change_post, save_edited_text, show_barista_posts, barista_post
@@ -45,6 +46,9 @@ def setup_dispatcher(dp: Dispatcher):
     dp.callback_query.register(start_register_name_barista, F.data == "add_barista")
     dp.message.register(enter_role_barista, StateFilter(BaristaRegistrationState.registration_name))
     dp.callback_query.register(save_barista_role,  StateFilter(BaristaRegistrationState.save_name))
+    # удаление бариста
+    dp.callback_query.register(baristas_for_delete, F.data == "baristas_for_delete")
+    dp.callback_query.register(delete_barista, F.data.startswith("delete_"))
 
     # календарь
     dp.callback_query.register(get_period_statistic, F.data.startswith('stat_'))

@@ -39,6 +39,7 @@ class BaristaRegistrationState(StatesGroup):
     """Регистрация бариста"""
     registration_name = State()
     save_name = State()
+    delete_name = State()
 
 
 class PostState(StatesGroup):

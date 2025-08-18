@@ -4991,3 +4991,199 @@ INFO     2025-08-17 16:26:30,286 [bot] (admin_handlers.py).enter_role_barista(23
 INFO     2025-08-17 16:27:01,984 [bot] (admin_handlers.py).enter_role_barista(230) @Админ
 INFO     2025-08-17 16:27:02,059 [bot] (admin_handlers.py).enter_role_barista(238) Изменение роли для  Админ на роль barista
 WARNING  2025-08-17 16:29:03,180 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-17 16:55:34,296 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-17 16:55:35,507 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-17 16:55:35,674 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-17 16:55:39,465 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-17 16:55:39,465 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-17 16:55:41,361 [bot] (admin_handlers.py).admin_menu_handler(29) Вход в панель админа
+DEBUG    2025-08-17 16:55:42,197 [bot] (admin_handlers.py).get_statistic(39) State AdminMenuState:admin
+INFO     2025-08-17 16:55:52,408 [bot] (admin_handlers.py).enter_role_barista(229) @Админ
+INFO     2025-08-17 16:55:52,491 [bot] (admin_handlers.py).enter_role_barista(237) Изменение роли для  Админ на роль barista
+DEBUG    2025-08-17 16:56:00,165 [bot] (admin_handlers.py).save_barista_role(249) Сохранение бариста Админ
+INFO     2025-08-17 16:56:00,167 [bot] (admin_handlers.py).save_barista_role(253) Сохранение роли бариста для Админ
+DEBUG    2025-08-17 16:56:00,259 [bot] (admin_handlers.py).save_barista_role(266) Пользователь Админ получил роль barista
+DEBUG    2025-08-17 16:57:04,209 [bot] (back_handler.py).back(117) Статус BaristaRegistrationState:registration_name сбрасываю
+DEBUG    2025-08-17 16:57:04,209 [bot] (back_handler.py).back(120) Новый статус BaristaRegistrationState:registration_name
+WARNING  2025-08-17 17:05:43,400 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-08-17 17:05:43,557 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-08-18 15:36:14,559 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-18 15:36:17,799 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-18 15:36:18,112 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-18 15:37:02,265 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-18 15:37:02,265 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-18 15:37:04,739 [bot] (admin_handlers.py).admin_menu_handler(30) Вход в панель админа
+DEBUG    2025-08-18 15:37:08,868 [bot] (admin_handlers.py).delete_barista(291) Получение списка барист для удаления []
+WARNING  2025-08-18 15:39:32,926 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-18 15:39:37,545 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-18 15:39:39,426 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-18 15:39:39,630 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-18 15:39:48,219 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-18 15:39:48,220 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-18 15:39:50,096 [bot] (admin_handlers.py).admin_menu_handler(30) Вход в панель админа
+DEBUG    2025-08-18 15:39:53,882 [bot] (admin_handlers.py).delete_barista(291) Получение списка барист для удаления []
+DEBUG    2025-08-18 15:39:56,105 [bot] (back_handler.py).back(118) Статус BaristaRegistrationState:delete_name сбрасываю
+DEBUG    2025-08-18 15:39:56,105 [bot] (back_handler.py).back(121) Новый статус BaristaRegistrationState:delete_name
+DEBUG    2025-08-18 15:40:42,875 [bot] (admin_handlers.py).delete_barista(291) Получение списка барист для удаления []
+DEBUG    2025-08-18 15:40:49,903 [bot] (back_handler.py).back(118) Статус BaristaRegistrationState:delete_name сбрасываю
+DEBUG    2025-08-18 15:40:49,903 [bot] (back_handler.py).back(121) Новый статус BaristaRegistrationState:delete_name
+DEBUG    2025-08-18 15:41:04,246 [bot] (admin_handlers.py).delete_barista(291) Получение списка барист для удаления []
+DEBUG    2025-08-18 15:41:17,568 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-18 15:41:17,569 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-18 15:41:22,496 [bot] (admin_handlers.py).admin_menu_handler(30) Вход в панель админа
+DEBUG    2025-08-18 15:41:32,377 [bot] (back_handler.py).back(118) Статус BaristaRegistrationState:registration_name сбрасываю
+DEBUG    2025-08-18 15:41:32,377 [bot] (back_handler.py).back(121) Новый статус BaristaRegistrationState:registration_name
+DEBUG    2025-08-18 15:41:41,378 [bot] (admin_handlers.py).delete_barista(291) Получение списка барист для удаления []
+DEBUG    2025-08-18 15:41:43,834 [bot] (back_handler.py).back(118) Статус BaristaRegistrationState:delete_name сбрасываю
+DEBUG    2025-08-18 15:41:43,834 [bot] (back_handler.py).back(121) Новый статус BaristaRegistrationState:delete_name
+WARNING  2025-08-18 15:42:13,291 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-18 15:42:16,601 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-18 15:42:17,740 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-18 15:42:17,904 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-18 15:42:18,990 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-18 15:42:18,991 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-18 15:42:21,426 [bot] (admin_handlers.py).admin_menu_handler(30) Вход в панель админа
+DEBUG    2025-08-18 15:42:25,741 [bot] (admin_handlers.py).delete_barista(291) Получение списка барист для удаления []
+DEBUG    2025-08-18 15:42:27,471 [bot] (back_handler.py).back(118) Статус BaristaRegistrationState:delete_name сбрасываю
+DEBUG    2025-08-18 15:42:27,598 [bot] (back_handler.py).back(123) Новый статус BaristaRegistrationState:delete_name
+WARNING  2025-08-18 15:43:11,515 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-18 15:43:15,415 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-18 15:43:17,037 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-18 15:43:17,206 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-18 15:43:19,294 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-18 15:43:19,295 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-18 15:43:21,682 [bot] (admin_handlers.py).admin_menu_handler(30) Вход в панель админа
+DEBUG    2025-08-18 15:43:22,620 [bot] (admin_handlers.py).get_statistic(40) State AdminMenuState:admin
+DEBUG    2025-08-18 15:43:25,230 [bot] (admin_handlers.py).get_period_statistic(72) Выбор даты: get_period_statistic StatsState:waiting_date
+DEBUG    2025-08-18 15:43:30,171 [bot] (admin_handlers.py).get_statistic_from_db(177) day_statistic: <Statistic>
+DEBUG    2025-08-18 15:43:30,171 [bot] (admin_handlers.py).day_statistic(92) Получил статистику за день
+DEBUG    2025-08-18 15:43:40,088 [bot] (back_handler.py).back(114) Новый статус AdminMenuState:statistic_menu
+DEBUG    2025-08-18 15:46:07,788 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-18 15:46:07,788 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-18 15:46:11,208 [bot] (admin_handlers.py).admin_menu_handler(30) Вход в панель админа
+DEBUG    2025-08-18 15:46:14,289 [bot] (admin_handlers.py).delete_barista(291) Получение списка барист для удаления [<User: 3>]
+DEBUG    2025-08-18 15:46:55,635 [bot] (back_handler.py).back(119) Статус BaristaRegistrationState:delete_name сбрасываю
+DEBUG    2025-08-18 15:46:55,815 [bot] (back_handler.py).back(124) Новый статус BaristaRegistrationState:delete_name
+DEBUG    2025-08-18 15:47:53,758 [bot] (admin_handlers.py).delete_barista(291) Получение списка барист для удаления [<User: 3>, <User: 4>]
+DEBUG    2025-08-18 15:47:56,516 [bot] (back_handler.py).back(119) Статус BaristaRegistrationState:delete_name сбрасываю
+DEBUG    2025-08-18 15:47:56,743 [bot] (back_handler.py).back(124) Новый статус BaristaRegistrationState:delete_name
+DEBUG    2025-08-18 15:48:17,495 [bot] (admin_handlers.py).delete_barista(291) Получение списка барист для удаления [<User: 3>, <User: 4>]
+DEBUG    2025-08-18 15:48:20,009 [bot] (back_handler.py).back(119) Статус BaristaRegistrationState:delete_name сбрасываю
+DEBUG    2025-08-18 15:48:20,118 [bot] (back_handler.py).back(124) Новый статус BaristaRegistrationState:delete_name
+WARNING  2025-08-18 15:54:29,826 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-08-18 15:54:30,006 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-08-18 15:54:33,566 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-18 15:54:34,724 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-18 15:54:35,169 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-18 15:54:39,861 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-18 15:54:39,862 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-18 15:54:41,557 [bot] (admin_handlers.py).admin_menu_handler(30) Вход в панель админа
+DEBUG    2025-08-18 15:54:44,203 [bot] (admin_handlers.py).baristas_for_delete(291) Получение списка барист для удаления [<User: 3>, <User: 4>]
+WARNING  2025-08-18 15:55:20,617 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-18 15:55:24,626 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-18 15:55:25,795 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-18 15:55:25,964 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-18 15:55:32,129 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-18 15:55:32,129 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-18 15:55:34,351 [bot] (admin_handlers.py).admin_menu_handler(30) Вход в панель админа
+DEBUG    2025-08-18 15:55:37,202 [bot] (admin_handlers.py).baristas_for_delete(291) Получение списка барист для удаления [<User: 3>, <User: 4>]
+WARNING  2025-08-18 15:56:46,049 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-18 15:56:50,372 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-18 15:56:52,138 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-18 15:56:52,315 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-18 15:56:54,077 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-18 15:56:54,077 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-18 15:56:56,465 [bot] (admin_handlers.py).admin_menu_handler(30) Вход в панель админа
+DEBUG    2025-08-18 15:56:58,606 [bot] (admin_handlers.py).baristas_for_delete(291) Получение списка барист для удаления [<User: 3>, <User: 4>]
+DEBUG    2025-08-18 15:57:28,770 [bot] (back_handler.py).back(119) Статус BaristaRegistrationState:delete_name сбрасываю
+DEBUG    2025-08-18 15:57:28,848 [bot] (back_handler.py).back(124) Новый статус BaristaRegistrationState:delete_name
+DEBUG    2025-08-18 15:57:29,708 [bot] (admin_handlers.py).baristas_for_delete(291) Получение списка барист для удаления [<User: 3>, <User: 4>]
+WARNING  2025-08-18 15:58:27,892 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-18 15:58:31,804 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-18 15:58:33,146 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-18 15:58:33,306 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-18 15:58:42,729 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-18 15:58:42,730 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-18 15:58:45,391 [bot] (admin_handlers.py).admin_menu_handler(30) Вход в панель админа
+DEBUG    2025-08-18 15:58:48,871 [bot] (admin_handlers.py).baristas_for_delete(291) Получение списка барист для удаления [<User: 3>, <User: 4>]
+WARNING  2025-08-18 16:06:37,959 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-08-18 16:06:38,130 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-08-18 16:06:41,116 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-18 16:06:42,312 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-18 16:06:42,531 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-18 16:06:45,510 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-18 16:06:45,510 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-18 16:06:47,415 [bot] (admin_handlers.py).admin_menu_handler(30) Вход в панель админа
+DEBUG    2025-08-18 16:06:49,017 [bot] (admin_handlers.py).baristas_for_delete(291) Получение списка барист для удаления [<User: 3>, <User: 4>]
+ERROR    2025-08-18 16:06:49,947 [bot] (admin_handlers.py).delete_barista(314) Ошибка удаления бариста значение NULL в столбце "telegram_id" отношения "users" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (4, null, null, null, user, 2025-08-18 16:06:49.936822+03, null).
+ERROR    2025-08-18 16:07:06,341 [bot] (admin_handlers.py).delete_barista(314) Ошибка удаления бариста значение NULL в столбце "telegram_id" отношения "users" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (3, null, null, null, user, 2025-08-18 16:07:06.339748+03, null).
+WARNING  2025-08-18 16:08:33,207 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-18 16:08:36,230 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-18 16:08:37,370 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-18 16:08:37,657 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-18 16:08:38,876 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-18 16:08:38,876 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-18 16:08:41,092 [bot] (admin_handlers.py).admin_menu_handler(30) Вход в панель админа
+DEBUG    2025-08-18 16:08:43,177 [bot] (admin_handlers.py).baristas_for_delete(291) Получение списка барист для удаления [<User: 3>, <User: 4>]
+ERROR    2025-08-18 16:08:44,146 [bot] (admin_handlers.py).delete_barista(315) Ошибка удаления бариста Unknown filter param 'default'. Allowed base values are ['first_name', 'id', 'last_activity', 'posts', 'registration_date', 'reviews', 'role', 'telegram_id', 'username']
+WARNING  2025-08-18 16:09:04,247 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-18 16:09:07,386 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-18 16:09:08,562 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-18 16:09:08,730 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-18 16:09:11,971 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-18 16:09:11,971 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-18 16:09:13,995 [bot] (admin_handlers.py).admin_menu_handler(30) Вход в панель админа
+DEBUG    2025-08-18 16:09:16,218 [bot] (admin_handlers.py).baristas_for_delete(291) Получение списка барист для удаления [<User: 3>, <User: 4>]
+ERROR    2025-08-18 16:09:17,065 [bot] (admin_handlers.py).delete_barista(315) Ошибка удаления бариста значение NULL в столбце "telegram_id" отношения "users" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (4, null, null, null, user, 2025-08-18 16:09:17.062619+03, null).
+WARNING  2025-08-18 16:10:27,181 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-18 16:10:30,497 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-18 16:10:31,528 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-18 16:10:31,685 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-18 16:10:32,756 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-18 16:10:32,756 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-18 16:10:34,526 [bot] (admin_handlers.py).admin_menu_handler(30) Вход в панель админа
+DEBUG    2025-08-18 16:10:36,486 [bot] (admin_handlers.py).baristas_for_delete(291) Получение списка барист для удаления [<User: 3>, <User: 4>]
+ERROR    2025-08-18 16:10:37,391 [bot] (admin_handlers.py).delete_barista(316) Ошибка удаления бариста значение NULL в столбце "telegram_id" отношения "users" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (5, null, null, null, user, 2025-08-18 16:10:37.388479+03, null).
+WARNING  2025-08-18 16:14:36,495 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-18 16:14:44,220 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-18 16:14:45,498 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-18 16:14:45,645 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-18 16:14:47,138 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-18 16:14:47,138 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-18 16:14:51,239 [bot] (admin_handlers.py).admin_menu_handler(30) Вход в панель админа
+DEBUG    2025-08-18 16:14:53,431 [bot] (admin_handlers.py).baristas_for_delete(291) Получение списка барист для удаления [<User: 3>, <User: 4>]
+DEBUG    2025-08-18 16:14:54,436 [bot] (admin_handlers.py).delete_barista(314) Изменил роль бариста
+DEBUG    2025-08-18 16:15:01,301 [bot] (admin_handlers.py).delete_barista(314) Изменил роль бариста
+DEBUG    2025-08-18 16:15:29,832 [bot] (back_handler.py).back(119) Статус BaristaRegistrationState:delete_name сбрасываю
+DEBUG    2025-08-18 16:15:29,989 [bot] (back_handler.py).back(124) Новый статус BaristaRegistrationState:delete_name
+DEBUG    2025-08-18 16:15:51,558 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-18 16:15:51,558 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-18 16:15:54,445 [bot] (admin_handlers.py).admin_menu_handler(30) Вход в панель админа
+DEBUG    2025-08-18 16:15:57,248 [bot] (admin_handlers.py).baristas_for_delete(291) Получение списка барист для удаления [<User: 3>, <User: 4>]
+DEBUG    2025-08-18 16:15:58,687 [bot] (admin_handlers.py).delete_barista(314) Изменил роль бариста
+DEBUG    2025-08-18 16:16:03,680 [bot] (back_handler.py).back(119) Статус BaristaRegistrationState:delete_name сбрасываю
+DEBUG    2025-08-18 16:16:03,777 [bot] (back_handler.py).back(124) Новый статус BaristaRegistrationState:delete_name
+DEBUG    2025-08-18 16:16:04,852 [bot] (admin_handlers.py).baristas_for_delete(291) Получение списка барист для удаления [<User: 3>]
+DEBUG    2025-08-18 16:16:06,175 [bot] (admin_handlers.py).delete_barista(314) Изменил роль бариста
+DEBUG    2025-08-18 16:16:08,342 [bot] (back_handler.py).back(119) Статус BaristaRegistrationState:delete_name сбрасываю
+DEBUG    2025-08-18 16:16:08,436 [bot] (back_handler.py).back(124) Новый статус BaristaRegistrationState:delete_name
+DEBUG    2025-08-18 16:16:09,894 [bot] (admin_handlers.py).baristas_for_delete(291) Получение списка барист для удаления []
+WARNING  2025-08-18 16:17:25,420 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-08-18 16:17:25,585 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-08-18 16:17:28,369 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-18 16:17:29,338 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-18 16:17:29,557 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-18 16:17:31,284 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-18 16:17:31,285 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-18 16:17:33,681 [bot] (admin_handlers.py).admin_menu_handler(30) Вход в панель админа
+DEBUG    2025-08-18 16:17:36,744 [bot] (admin_handlers.py).baristas_for_delete(291) Получение списка барист для удаления []
+DEBUG    2025-08-18 16:17:38,054 [bot] (back_handler.py).back(119) Статус BaristaRegistrationState:delete_name сбрасываю
+DEBUG    2025-08-18 16:17:38,120 [bot] (back_handler.py).back(124) Новый статус BaristaRegistrationState:delete_name
+DEBUG    2025-08-18 16:17:40,018 [bot] (admin_handlers.py).baristas_for_delete(291) Получение списка барист для удаления []
+DEBUG    2025-08-18 16:17:43,103 [bot] (back_handler.py).back(119) Статус BaristaRegistrationState:delete_name сбрасываю
+DEBUG    2025-08-18 16:17:43,271 [bot] (back_handler.py).back(124) Новый статус BaristaRegistrationState:delete_name
+WARNING  2025-08-18 16:19:52,376 [bot] (main.py).start_bot(23) Бот закрыт

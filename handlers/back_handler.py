@@ -111,14 +111,17 @@ async def back(call: CallbackQuery, state: FSMContext, bot: Bot, role: str):
                          AdminMenuState.rights):
         await state.set_state(AdminMenuState.admin)
         await call.message.edit_text(text='Возврат в статистику', reply_markup=admin_kb())
+        bot_logger.debug(f'Новый статус {current_state}')
 
     # возврат в управление правами
-    if current_state == BaristaRegistrationState.registration_name:
+    if current_state in (BaristaRegistrationState.registration_name,
+                         BaristaRegistrationState.delete_name):
         bot_logger.debug(f'Статус {current_state} сбрасываю')
         await state.clear()
+
+        await call.message.edit_text(text='Возврат в управление правами', reply_markup=admin_rights())
         await state.set_state(AdminMenuState.rights)
         bot_logger.debug(f'Новый статус {current_state}')
-        await call.message.edit_text(text='Возврат в управление правами', reply_markup=admin_rights())
 
 
 async def clear_message(call: CallbackQuery, bot: Bot, role: str):
