@@ -375,3 +375,85 @@ INFO     2025-08-18 16:14:44,221 [scheduler] (logging_config.py)._setup_handlers
 INFO     2025-08-18 16:14:45,691 [scheduler] (cleane_base_scheduler.py).scheduler_clean_horoscope(47) Шедулер очистки дат запущен в 2025-08-18 16:14:45.691311
 INFO     2025-08-18 16:17:28,370 [scheduler] (logging_config.py)._setup_handlers(50) Логирование для 'scheduler' настроено успешно.
 INFO     2025-08-18 16:17:29,596 [scheduler] (cleane_base_scheduler.py).scheduler_clean_horoscope(47) Шедулер очистки дат запущен в 2025-08-18 16:17:29.596887
+INFO     2025-08-18 16:19:55,336 [scheduler] (logging_config.py)._setup_handlers(50) Логирование для 'scheduler' настроено успешно.
+INFO     2025-08-18 16:19:56,578 [scheduler] (cleane_base_scheduler.py).scheduler_clean_horoscope(47) Шедулер очистки дат запущен в 2025-08-18 16:19:56.578234
+INFO     2025-08-20 11:13:07,800 [scheduler] (logging_config.py)._setup_handlers(50) Логирование для 'scheduler' настроено успешно.
+INFO     2025-08-20 11:13:11,520 [scheduler] (cleane_base_scheduler.py).scheduler_clean_horoscope(47) Шедулер очистки дат запущен в 2025-08-20 11:13:11.520844
+INFO     2025-08-20 11:25:27,917 [scheduler] (logging_config.py)._setup_handlers(50) Логирование для 'scheduler' настроено успешно.
+INFO     2025-08-20 11:25:29,092 [scheduler] (cleane_base_scheduler.py).scheduler_clean_horoscope(47) Шедулер очистки дат запущен в 2025-08-20 11:25:29.092362
+INFO     2025-08-20 12:40:44,662 [scheduler] (logging_config.py)._setup_handlers(50) Логирование для 'scheduler' настроено успешно.
+INFO     2025-08-20 12:40:47,876 [scheduler] (cleane_base_scheduler.py).scheduler_clean_horoscope(47) Шедулер очистки дат запущен в 2025-08-20 12:40:47.876667
+INFO     2025-08-20 12:42:17,302 [scheduler] (logging_config.py)._setup_handlers(50) Логирование для 'scheduler' настроено успешно.
+INFO     2025-08-20 12:42:18,369 [scheduler] (cleane_base_scheduler.py).scheduler_clean_horoscope(47) Шедулер очистки дат запущен в 2025-08-20 12:42:18.369407
+INFO     2025-08-20 13:05:00,889 [scheduler] (logging_config.py)._setup_handlers(50) Логирование для 'scheduler' настроено успешно.
+INFO     2025-08-20 13:05:01,901 [scheduler] (cleane_base_scheduler.py).scheduler_clean_horoscope(47) Шедулер очистки дат запущен в 2025-08-20 13:05:01.901713
+INFO     2025-08-20 14:20:35,753 [scheduler] (logging_config.py)._setup_handlers(50) Логирование для 'scheduler' настроено успешно.
+INFO     2025-08-20 14:24:33,897 [scheduler] (logging_config.py)._setup_handlers(50) Логирование для 'scheduler' настроено успешно.
+INFO     2025-08-20 14:24:34,916 [scheduler] (cleane_base_scheduler.py).scheduler_clean_horoscope(60) Шедулер очистки дат запущен в 2025-08-20 14:24:34.916171
+INFO     2025-08-20 14:29:28,129 [scheduler] (logging_config.py)._setup_handlers(50) Логирование для 'scheduler' настроено успешно.
+INFO     2025-08-20 14:29:29,078 [scheduler] (cleane_base_scheduler.py).scheduler_clean_horoscope(60) Шедулер очистки дат запущен в 2025-08-20 14:29:29.078815
+INFO     2025-08-20 14:31:55,856 [scheduler] (logging_config.py)._setup_handlers(50) Логирование для 'scheduler' настроено успешно.
+INFO     2025-08-20 14:31:56,847 [scheduler] (horo_scheduler.py).scheduler_horoscope(43) Гороскопный шедулер будет запущен в 2025-08-20
+INFO     2025-08-20 14:31:56,848 [scheduler] (cleane_base_scheduler.py).scheduler_clean_horoscope(60) Шедулер очистки дат запущен в 2025-08-20 14:31:56.848170
+INFO     2025-08-20 14:34:15,176 [scheduler] (logging_config.py)._setup_handlers(50) Логирование для 'scheduler' настроено успешно.
+INFO     2025-08-20 14:34:16,156 [scheduler] (horo_scheduler.py).scheduler_horoscope(44) Гороскопный шедулер запущен в 2025-08-20
+INFO     2025-08-20 14:34:16,157 [scheduler] (cleane_base_scheduler.py).scheduler_clean_horoscope(60) Шедулер очистки дат запущен в 2025-08-20 14:34:16.157311
+INFO     2025-08-20 14:35:07,878 [scheduler] (logging_config.py)._setup_handlers(50) Логирование для 'scheduler' настроено успешно.
+INFO     2025-08-20 14:35:09,220 [scheduler] (horo_scheduler.py).scheduler_horoscope(45) Гороскопный шедулер запущен в 2025-08-20
+INFO     2025-08-20 14:35:09,220 [scheduler] (cleane_base_scheduler.py).scheduler_clean_horoscope(60) Шедулер очистки дат запущен в 2025-08-20 14:35:09.220949
+INFO     2025-08-20 14:35:59,692 [scheduler] (logging_config.py)._setup_handlers(50) Логирование для 'scheduler' настроено успешно.
+INFO     2025-08-20 14:36:00,697 [scheduler] (horo_scheduler.py).scheduler_horoscope(46) Гороскопный шедулер запущен в 2025-08-20
+INFO     2025-08-20 14:36:00,697 [scheduler] (cleane_base_scheduler.py).scheduler_clean_horoscope(60) Шедулер очистки дат запущен в 2025-08-20 14:36:00.697801
+INFO     2025-08-20 14:36:31,066 [scheduler] (logging_config.py)._setup_handlers(50) Логирование для 'scheduler' настроено успешно.
+INFO     2025-08-20 14:36:32,160 [scheduler] (horo_scheduler.py).scheduler_horoscope(46) Гороскопный шедулер запущен в 2025-08-20
+INFO     2025-08-20 14:36:32,160 [scheduler] (cleane_base_scheduler.py).scheduler_clean_horoscope(60) Шедулер очистки дат запущен в 2025-08-20 14:36:32.160396
+INFO     2025-08-20 14:37:05,418 [scheduler] (logging_config.py)._setup_handlers(50) Логирование для 'scheduler' настроено успешно.
+INFO     2025-08-20 14:37:06,450 [scheduler] (horo_scheduler.py).scheduler_horoscope(46) Гороскопный шедулер запущен в 2025-08-20
+INFO     2025-08-20 14:37:06,450 [scheduler] (cleane_base_scheduler.py).scheduler_clean_horoscope(60) Шедулер очистки дат запущен в 2025-08-20 14:37:06.450913
+INFO     2025-08-20 14:39:55,044 [scheduler] (logging_config.py)._setup_handlers(50) Логирование для 'scheduler' настроено успешно.
+INFO     2025-08-20 14:39:56,138 [scheduler] (cleane_base_scheduler.py).scheduler_clean_horoscope(60) Шедулер очистки дат запущен в 2025-08-20 14:39:56.138489
+INFO     2025-08-20 14:39:59,570 [scheduler] (logging_config.py)._setup_handlers(50) Логирование для 'scheduler' настроено успешно.
+INFO     2025-08-20 14:40:00,617 [scheduler] (horo_scheduler.py).scheduler_horoscope(47) Гороскопный шедулер запущен в 2025-08-20
+INFO     2025-08-20 14:40:00,618 [scheduler] (cleane_base_scheduler.py).scheduler_clean_horoscope(60) Шедулер очистки дат запущен в 2025-08-20 14:40:00.618180
+INFO     2025-08-20 14:41:19,522 [scheduler] (logging_config.py)._setup_handlers(50) Логирование для 'scheduler' настроено успешно.
+INFO     2025-08-20 14:41:20,619 [scheduler] (horo_scheduler.py).scheduler_horoscope(46) Гороскопный шедулер запущен в 2025-08-20
+INFO     2025-08-20 14:41:20,619 [scheduler] (cleane_base_scheduler.py).scheduler_clean_horoscope(60) Шедулер очистки дат запущен в 2025-08-20 14:41:20.619550
+INFO     2025-08-21 10:33:12,081 [scheduler] (logging_config.py)._setup_handlers(50) Логирование для 'scheduler' настроено успешно.
+INFO     2025-08-21 10:33:19,050 [scheduler] (horo_scheduler.py).scheduler_horoscope(46) Гороскопный шедулер запущен в 2025-08-20
+INFO     2025-08-21 10:33:19,051 [scheduler] (cleane_base_scheduler.py).scheduler_clean_horoscope(60) Шедулер очистки дат запущен в 2025-08-21 10:33:19.051364
+INFO     2025-08-21 10:46:17,632 [scheduler] (logging_config.py)._setup_handlers(50) Логирование для 'scheduler' настроено успешно.
+INFO     2025-08-21 10:46:19,541 [scheduler] (horo_scheduler.py).scheduler_horoscope(46) Гороскопный шедулер запущен в 2025-09-01
+INFO     2025-08-21 10:46:19,542 [scheduler] (cleane_base_scheduler.py).scheduler_clean_horoscope(60) Шедулер очистки дат запущен в 2025-08-21 10:46:19.542801
+INFO     2025-08-21 10:49:40,069 [scheduler] (logging_config.py)._setup_handlers(50) Логирование для 'scheduler' настроено успешно.
+INFO     2025-08-21 10:49:41,799 [scheduler] (horo_scheduler.py).scheduler_horoscope(46) Гороскопный шедулер запущен в 2025-09-01
+INFO     2025-08-21 10:49:41,799 [scheduler] (cleane_base_scheduler.py).scheduler_clean_horoscope(60) Шедулер очистки дат запущен в 2025-08-21 10:49:41.799930
+INFO     2025-08-21 10:50:17,149 [scheduler] (logging_config.py)._setup_handlers(50) Логирование для 'scheduler' настроено успешно.
+INFO     2025-08-21 10:50:18,812 [scheduler] (horo_scheduler.py).scheduler_horoscope(46) Гороскопный шедулер запущен в 2025-09-01
+INFO     2025-08-21 10:50:18,813 [scheduler] (cleane_base_scheduler.py).scheduler_clean_horoscope(60) Шедулер очистки дат запущен в 2025-08-21 10:50:18.813854
+INFO     2025-08-21 11:05:34,901 [scheduler] (logging_config.py)._setup_handlers(50) Логирование для 'scheduler' настроено успешно.
+INFO     2025-08-21 11:05:36,768 [scheduler] (horo_scheduler.py).scheduler_horoscope(46) Гороскопный шедулер запущен в 2025-09-01
+INFO     2025-08-21 11:05:36,769 [scheduler] (cleane_base_scheduler.py).scheduler_clean_horoscope(60) Шедулер очистки дат запущен в 2025-08-21 11:05:36.769187
+INFO     2025-08-21 11:34:47,725 [scheduler] (logging_config.py)._setup_handlers(50) Логирование для 'scheduler' настроено успешно.
+INFO     2025-08-21 11:34:48,757 [scheduler] (horo_scheduler.py).scheduler_horoscope(46) Гороскопный шедулер запущен в 2025-09-01
+INFO     2025-08-21 11:34:48,758 [scheduler] (cleane_base_scheduler.py).scheduler_clean_horoscope(60) Шедулер очистки дат запущен в 2025-08-21 11:34:48.758357
+INFO     2025-08-21 11:37:43,701 [scheduler] (logging_config.py)._setup_handlers(50) Логирование для 'scheduler' настроено успешно.
+INFO     2025-08-21 11:37:44,855 [scheduler] (horo_scheduler.py).scheduler_horoscope(46) Гороскопный шедулер запущен в 2025-09-01
+INFO     2025-08-21 11:37:44,855 [scheduler] (cleane_base_scheduler.py).scheduler_clean_horoscope(60) Шедулер очистки дат запущен в 2025-08-21 11:37:44.855823
+INFO     2025-08-21 12:09:16,781 [scheduler] (logging_config.py)._setup_handlers(50) Логирование для 'scheduler' настроено успешно.
+INFO     2025-08-21 12:09:18,208 [scheduler] (horo_scheduler.py).scheduler_horoscope(46) Гороскопный шедулер запущен в 2025-09-01
+INFO     2025-08-21 12:09:18,208 [scheduler] (cleane_base_scheduler.py).scheduler_clean_horoscope(60) Шедулер очистки дат запущен в 2025-08-21 12:09:18.208396
+INFO     2025-08-21 12:11:12,277 [scheduler] (logging_config.py)._setup_handlers(50) Логирование для 'scheduler' настроено успешно.
+INFO     2025-08-21 12:11:13,313 [scheduler] (horo_scheduler.py).scheduler_horoscope(46) Гороскопный шедулер запущен в 2025-09-01
+INFO     2025-08-21 12:11:13,314 [scheduler] (cleane_base_scheduler.py).scheduler_clean_horoscope(60) Шедулер очистки дат запущен в 2025-08-21 12:11:13.314322
+INFO     2025-08-21 12:15:25,369 [scheduler] (logging_config.py)._setup_handlers(50) Логирование для 'scheduler' настроено успешно.
+INFO     2025-08-21 12:15:26,435 [scheduler] (horo_scheduler.py).scheduler_horoscope(46) Гороскопный шедулер запущен в 2025-09-01
+INFO     2025-08-21 12:15:26,435 [scheduler] (cleane_base_scheduler.py).scheduler_clean_horoscope(60) Шедулер очистки дат запущен в 2025-08-21 12:15:26.435833
+INFO     2025-08-21 12:18:18,200 [scheduler] (logging_config.py)._setup_handlers(50) Логирование для 'scheduler' настроено успешно.
+INFO     2025-08-21 12:18:19,272 [scheduler] (horo_scheduler.py).scheduler_horoscope(46) Гороскопный шедулер запущен в 2025-09-01
+INFO     2025-08-21 12:18:19,273 [scheduler] (cleane_base_scheduler.py).scheduler_clean_horoscope(60) Шедулер очистки дат запущен в 2025-08-21 12:18:19.273218
+INFO     2025-08-21 12:22:46,399 [scheduler] (logging_config.py)._setup_handlers(50) Логирование для 'scheduler' настроено успешно.
+INFO     2025-08-21 12:22:47,423 [scheduler] (horo_scheduler.py).scheduler_horoscope(46) Гороскопный шедулер запущен в 2025-09-01
+INFO     2025-08-21 12:22:47,424 [scheduler] (cleane_base_scheduler.py).scheduler_clean_horoscope(60) Шедулер очистки дат запущен в 2025-08-21 12:22:47.424485
+INFO     2025-08-21 12:25:10,460 [scheduler] (logging_config.py)._setup_handlers(50) Логирование для 'scheduler' настроено успешно.
+INFO     2025-08-21 12:25:11,611 [scheduler] (horo_scheduler.py).scheduler_horoscope(46) Гороскопный шедулер запущен в 2025-09-01
+INFO     2025-08-21 12:25:11,611 [scheduler] (cleane_base_scheduler.py).scheduler_clean_horoscope(60) Шедулер очистки дат запущен в 2025-08-21 12:25:11.611489

@@ -2,16 +2,15 @@ from aiogram import Bot
 from aiogram.fsm.context import FSMContext
 from aiogram.types import Message, CallbackQuery
 
-from handlers.channel_handlers import publish_post_to_channel, forward_review_to_channel
+from handlers.barista.channel_handlers import publish_post_to_channel, forward_review_to_channel
 from keyboards.back_keyboard import back_button
 from keyboards.barista_keyboard import (get_review_keyboard, review_kb, get_post_keyboard,
                                         edit_text_keyboard, barista_posts_kb, barista_kb)
-from keyboards.menu_keyboard import inline_menu_kb
 from states.menu_states import AdminMenuState, BaristaState, PostState
 from database.models_db import Review, AdminPost, User
 from utils.ai_generator import generate_ai_greeting
 
-from utils.get_user import get_users_from_db, is_admin, staff_only
+from utils.get_user import is_admin, staff_only
 from utils.logging_config import bot_logger
 
 

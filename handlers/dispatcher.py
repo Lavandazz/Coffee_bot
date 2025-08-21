@@ -1,23 +1,27 @@
 from aiogram import Dispatcher, F
 from aiogram.filters import Command, StateFilter
 
+from handlers.admin.admin_rights_handlers import show_baristas_to_admin, delete_admin, save_role_admin, approve_admin, \
+    show_admins_for_delete
+from handlers.admin.barista_rights_handlers import barista_rights, start_register_name_barista, enter_role_barista, \
+    save_barista_role, baristas_for_delete, delete_barista
+from handlers.admin.get_statistic_handlers import get_statistic, get_period_statistic, day_statistic, \
+    first_day_statistic, second_day_statistic
 from handlers.help_handlers import help_menu
 from handlers.start_handlers import get_start, on_start
-from handlers.admin_handlers import (admin_menu_handler, admin_menu, get_statistic, get_period_statistic, day_statistic,
-                                     first_day_statistic, second_day_statistic, barista_rights,
-                                     start_register_name_barista, enter_role_barista, save_barista_role, delete_barista,
-                                     baristas_for_delete)
+from handlers.admin.admin_handlers import admin_menu_handler, admin_menu
 
-from handlers.barista_handlers import approve_review, reject_review, moderate_review, show_barista_btn, show_reviews, \
-    add_post, add_photo, save_post, generate_phrase, change_post, save_edited_text, show_barista_posts, barista_post
+from handlers.barista.barista_handlers import (approve_review, reject_review, moderate_review, show_barista_btn,
+                                               show_reviews, add_post, add_photo, save_post, generate_phrase,
+                                               change_post, save_edited_text, show_barista_posts, barista_post)
 
-from handlers.user_review_handlers import (handle_review_photo, ask_for_photo, ask_for_text,
-                                           handle_review_text)
+from handlers.barista.user_review_handlers import (handle_review_photo, ask_for_photo, ask_for_text,
+                                                   handle_review_text)
 from handlers.back_handler import back, clear_message
 from handlers.cancel_state_handler import cancel_handler
-from handlers.horoscope_handkers import show_horoscope, send_horoscope, start_schedule_horo
+from handlers.admin.horoscope_handkers import show_horoscope, send_horoscope, start_schedule_horo
 
-from states.menu_states import ReviewStates, PostState, StatsState, BaristaRegistrationState
+from states.menu_states import ReviewStates, PostState, StatsState, BaristaRegistrationState, AdminRegistrationState
 from utils.middleware import RoleMiddleware, StatisticMiddleware
 from utils.shedulers.cleane_base_scheduler import horo_to_clean
 from utils.config import redis_client
@@ -42,6 +46,14 @@ def setup_dispatcher(dp: Dispatcher):
     dp.callback_query.register(get_statistic, F.data == 'statistic')
     dp.callback_query.register(barista_rights, F.data == "rights")
     dp.callback_query.register(get_statistic, F.data == 'statistic')
+
+    # добавление админа
+    dp.callback_query.register(show_baristas_to_admin, F.data == 'add_admin')
+    dp.callback_query.register(approve_admin, StateFilter(AdminRegistrationState.wait_name))
+    dp.callback_query.register(save_role_admin, StateFilter(AdminRegistrationState.waiting_choice))
+    dp.callback_query.register(show_admins_for_delete, F.data == 'admins_for_delete')
+    dp.callback_query.register(delete_admin, F.data.startswith('delete_'))
+
     # регистрация бариста
     dp.callback_query.register(start_register_name_barista, F.data == "add_barista")
     dp.message.register(enter_role_barista, StateFilter(BaristaRegistrationState.registration_name))
@@ -56,7 +68,6 @@ def setup_dispatcher(dp: Dispatcher):
     dp.callback_query.register(day_statistic, StateFilter(StatsState.waiting_date))
     dp.callback_query.register(first_day_statistic, StateFilter(StatsState.waiting_first_date))
     dp.callback_query.register(second_day_statistic, StateFilter(StatsState.waiting_second_date))
-
 
     # панель бариста
     dp.callback_query.register(show_barista_btn, F.data == "barista")

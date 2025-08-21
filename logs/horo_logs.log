@@ -5585,3 +5585,951 @@ INFO     2025-08-18 16:09:07,386 [horoscope] (logging_config.py)._setup_handlers
 INFO     2025-08-18 16:10:30,498 [horoscope] (logging_config.py)._setup_handlers(50) Логирование для 'horoscope' настроено успешно.
 INFO     2025-08-18 16:14:44,220 [horoscope] (logging_config.py)._setup_handlers(50) Логирование для 'horoscope' настроено успешно.
 INFO     2025-08-18 16:17:28,370 [horoscope] (logging_config.py)._setup_handlers(50) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-18 16:19:55,335 [horoscope] (logging_config.py)._setup_handlers(50) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-20 11:13:07,785 [horoscope] (logging_config.py)._setup_handlers(50) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-20 11:13:21,891 [horoscope] (generator_horoscope.py).generate_horoscope(37) Начинаю генерацию гороскопа для Дева
+DEBUG    2025-08-20 11:14:32,096 [horoscope] (generator_horoscope.py).generate_horoscope(44) получен гороскоп длинной : 5133
+INFO     2025-08-20 11:14:42,106 [horoscope] (generator_horoscope.py).horoscope_transformation_text(59) Перехожу к тексту знака - Дева
+DEBUG    2025-08-20 11:14:42,106 [horoscope] (generator_horoscope.py).horoscope_transformation_text(60) Длинна гороскопа - 5133
+DEBUG    2025-08-20 11:14:42,106 [horoscope] (generator_horoscope.py).horoscope_transformation_text(62) Строка гороскопа - Отлично, Дева! Готовь свою любимую мерную ложку и термометр для идеальной экстракции. Август 2025 пахнет жарой и свежесмолотым перфекционизмом. Лови кофейную судьбу:
+DEBUG    2025-08-20 11:14:42,107 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) строка: Отлично, Дева! Готовь свою любимую мерную ложку и термометр для идеальной экстракции. Август 2025 пахнет жарой и свежесмолотым перфекционизмом. Лови кофейную судьбу:
+DEBUG    2025-08-20 11:14:42,107 [horoscope] (generator_horoscope.py).horoscope_transformation_text(68) daily_horoscope для Дева - Отлично, Дева! Готовь свою любимую мерную ложку и термометр для идеальной экстракции - 0
+DEBUG    2025-08-20 11:14:42,107 [horoscope] (generator_horoscope.py).horoscope_transformation_text(62) Строка гороскопа - 
+DEBUG    2025-08-20 11:14:42,107 [horoscope] (generator_horoscope.py).horoscope_transformation_text(62) Строка гороскопа - 1: Утренний эспрессо показал: сегодня ты идеально разложишь салфетки в кафе ровно 23 раза. Вселенский баланс в мелочах!
+DEBUG    2025-08-20 11:14:42,107 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) строка: 1: Утренний эспрессо показал: сегодня ты идеально разложишь салфетки в кафе ровно 23 раза. Вселенский баланс в мелочах!
+DEBUG    2025-08-20 11:14:42,107 [horoscope] (generator_horoscope.py).horoscope_transformation_text(68) daily_horoscope для Дева - 1 - 117
+DEBUG    2025-08-20 11:14:42,107 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) day Дева - 2025-08-01 
+INFO     2025-08-20 11:14:42,107 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:14:42,117 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:14:42,117 [horoscope] (generator_horoscope.py).horoscope_transformation_text(62) Строка гороскопа - 2: На дне чашки проявилось число 142. Столько раз ты сегодня мысленно поправишь чужой галстук/завязку/документ. Расслабься, выдохни... если расписание позволяет.
+DEBUG    2025-08-20 11:14:42,117 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) строка: 2: На дне чашки проявилось число 142. Столько раз ты сегодня мысленно поправишь чужой галстук/завязку/документ. Расслабься, выдохни... если расписание позволяет.
+DEBUG    2025-08-20 11:14:42,117 [horoscope] (generator_horoscope.py).horoscope_transformation_text(68) daily_horoscope для Дева - 2 - 159
+DEBUG    2025-08-20 11:14:42,117 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) day Дева - 2025-08-02 
+INFO     2025-08-20 11:14:42,117 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:14:42,118 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:14:42,119 [horoscope] (generator_horoscope.py).horoscope_transformation_text(62) Строка гороскопа - 3: Зёрна сулят конфликт: твоя душа жаждет творческого капучино с пенкой-бабочкой, но мозг требует американо по ГОСТу. Выбери *оба* – этот август пылает!
+DEBUG    2025-08-20 11:14:42,119 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) строка: 3: Зёрна сулят конфликт: твоя душа жаждет творческого капучино с пенкой-бабочкой, но мозг требует американо по ГОСТу. Выбери *оба* – этот август пылает!
+DEBUG    2025-08-20 11:14:42,119 [horoscope] (generator_horoscope.py).horoscope_transformation_text(68) daily_horoscope для Дева - 3 - 150
+DEBUG    2025-08-20 11:14:42,119 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) day Дева - 2025-08-03 
+INFO     2025-08-20 11:14:42,119 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:14:42,120 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:14:42,120 [horoscope] (generator_horoscope.py).horoscope_transformation_text(62) Строка гороскопа - 4: Кофейная гуща рисует торопливого муравья. Твоя миссия: замедлить ход событий ровно на время, нужное для осознанного пролива воды через V60. 90 секунд спасут день.
+DEBUG    2025-08-20 11:14:42,120 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) строка: 4: Кофейная гуща рисует торопливого муравья. Твоя миссия: замедлить ход событий ровно на время, нужное для осознанного пролива воды через V60. 90 секунд спасут день.
+DEBUG    2025-08-20 11:14:42,120 [horoscope] (generator_horoscope.py).horoscope_transformation_text(68) daily_horoscope для Дева - 4 - 163
+DEBUG    2025-08-20 11:14:42,120 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) day Дева - 2025-08-04 
+INFO     2025-08-20 11:14:42,120 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:14:42,122 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:14:42,122 [horoscope] (generator_horoscope.py).horoscope_transformation_text(62) Строка гороскопа - 5: Предупреждение от сливочного питчера: не сортируй сегодня МОККУ по размеру зёрен! Вселенная уже восхищена твоей дотошностью, но решила подарить выходной.
+DEBUG    2025-08-20 11:14:42,122 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) строка: 5: Предупреждение от сливочного питчера: не сортируй сегодня МОККУ по размеру зёрен! Вселенная уже восхищена твоей дотошностью, но решила подарить выходной.
+DEBUG    2025-08-20 11:14:42,122 [horoscope] (generator_horoscope.py).horoscope_transformation_text(68) daily_horoscope для Дева - 5 - 154
+DEBUG    2025-08-20 11:14:42,122 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) day Дева - 2025-08-05 
+INFO     2025-08-20 11:14:42,123 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:14:42,124 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:14:42,124 [horoscope] (generator_horoscope.py).horoscope_transformation_text(62) Строка гороскопа - 6: В пенке прочитал: "Пятница + Дева = Перепроверить трижды". Не доверяй календарю – встречу перенесут, рецептуру изменят, а кофемолка закапризничает. Будь гибким, как свежее молоко!
+DEBUG    2025-08-20 11:14:42,124 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) строка: 6: В пенке прочитал: "Пятница + Дева = Перепроверить трижды". Не доверяй календарю – встречу перенесут, рецептуру изменят, а кофемолка закапризничает. Будь гибким, как свежее молоко!
+DEBUG    2025-08-20 11:14:42,125 [horoscope] (generator_horoscope.py).horoscope_transformation_text(68) daily_horoscope для Дева - 6 - 180
+DEBUG    2025-08-20 11:14:42,126 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) day Дева - 2025-08-06 
+INFO     2025-08-20 11:14:42,126 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:14:42,127 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:14:42,127 [horoscope] (generator_horoscope.py).horoscope_transformation_text(62) Строка гороскопа - 7: Сегодняшний холодный брю найдет твой сокровенный список списков. Добавь туда пункт «Иногда плевать». Радикально, но бобы намекают на облегчение.
+DEBUG    2025-08-20 11:14:42,127 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) строка: 7: Сегодняшний холодный брю найдет твой сокровенный список списков. Добавь туда пункт «Иногда плевать». Радикально, но бобы намекают на облегчение.
+DEBUG    2025-08-20 11:14:42,128 [horoscope] (generator_horoscope.py).horoscope_transformation_text(68) daily_horoscope для Дева - 7 - 145
+DEBUG    2025-08-20 11:14:42,128 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) day Дева - 2025-08-07 
+INFO     2025-08-20 11:14:42,128 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:14:42,129 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:14:42,129 [horoscope] (generator_horoscope.py).horoscope_transformation_text(62) Строка гороскопа - 8: Робуста в твоей чаше шепчет: чей-то медовый раф заварган сегодня твои планы. Сопротивляйся сладкому повороту – дисциплина превыше кардамона!
+DEBUG    2025-08-20 11:14:42,129 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) строка: 8: Робуста в твоей чаше шепчет: чей-то медовый раф заварган сегодня твои планы. Сопротивляйся сладкому повороту – дисциплина превыше кардамона!
+DEBUG    2025-08-20 11:14:42,129 [horoscope] (generator_horoscope.py).horoscope_transformation_text(68) daily_horoscope для Дева - 8 - 141
+DEBUG    2025-08-20 11:14:42,130 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) day Дева - 2025-08-08 
+INFO     2025-08-20 11:14:42,130 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:14:42,131 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:14:42,131 [horoscope] (generator_horoscope.py).horoscope_transformation_text(62) Строка гороскопа - 9: Дождь смоет пыльцу, а твой фильтр-кофе – недовольство. Забудь про "идеально", да здравствует "вполне нормально"! Стаканчик с собой спасет положение.
+DEBUG    2025-08-20 11:14:42,131 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) строка: 9: Дождь смоет пыльцу, а твой фильтр-кофе – недовольство. Забудь про "идеально", да здравствует "вполне нормально"! Стаканчик с собой спасет положение.
+DEBUG    2025-08-20 11:14:42,131 [horoscope] (generator_horoscope.py).horoscope_transformation_text(68) daily_horoscope для Дева - 9 - 149
+DEBUG    2025-08-20 11:14:42,131 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) day Дева - 2025-08-09 
+INFO     2025-08-20 11:14:42,131 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:14:42,133 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:14:42,133 [horoscope] (generator_horoscope.py).horoscope_transformation_text(62) Строка гороскопа - 10: Астробариста детектед: твоя точилка для ножа/карандаша достигла нирваны. Но сегодня добей её покупкой кофе «Бурбон» с Сантоса – в нём все углы скруглены.
+DEBUG    2025-08-20 11:14:42,133 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) строка: 10: Астробариста детектед: твоя точилка для ножа/карандаша достигла нирваны. Но сегодня добей её покупкой кофе «Бурбон» с Сантоса – в нём все углы скруглены.
+DEBUG    2025-08-20 11:14:42,134 [horoscope] (generator_horoscope.py).horoscope_transformation_text(68) daily_horoscope для Дева - 10 - 154
+DEBUG    2025-08-20 11:14:42,134 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) day Дева - 2025-08-10 
+INFO     2025-08-20 11:14:42,134 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:14:42,136 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:14:42,136 [horoscope] (generator_horoscope.py).horoscope_transformation_text(62) Строка гороскопа - 11: Датчик в кофемашине завис на цифре 99,9%. Твоя миссия – найти ту злосчастную 0,1%. Подсказка: ищи в третьем ящике кухонного стола рядом с чеком 2018 года.
+DEBUG    2025-08-20 11:14:42,136 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) строка: 11: Датчик в кофемашине завис на цифре 99,9%. Твоя миссия – найти ту злосчастную 0,1%. Подсказка: ищи в третьем ящике кухонного стола рядом с чеком 2018 года.
+DEBUG    2025-08-20 11:14:42,136 [horoscope] (generator_horoscope.py).horoscope_transformation_text(68) daily_horoscope для Дева - 11 - 155
+DEBUG    2025-08-20 11:14:42,136 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) day Дева - 2025-08-11 
+INFO     2025-08-20 11:14:42,136 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:14:42,138 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:14:42,138 [horoscope] (generator_horoscope.py).horoscope_transformation_text(62) Строка гороскопа - 12: Поток негатива? Закажи шот с лимоном. Кислинка – лучшее противоядие от августовского нытья. Не забудь процитировать ГОСТ на кислотность!
+DEBUG    2025-08-20 11:14:42,138 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) строка: 12: Поток негатива? Закажи шот с лимоном. Кислинка – лучшее противоядие от августовского нытья. Не забудь процитировать ГОСТ на кислотность!
+DEBUG    2025-08-20 11:14:42,138 [horoscope] (generator_horoscope.py).horoscope_transformation_text(68) daily_horoscope для Дева - 12 - 137
+DEBUG    2025-08-20 11:14:42,138 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) day Дева - 2025-08-12 
+INFO     2025-08-20 11:14:42,138 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:14:42,140 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:14:42,140 [horoscope] (generator_horoscope.py).horoscope_transformation_text(62) Строка гороскопа - 13: Кофейное видение: ты пытаешься выстроить кубики коричневой пены в идеальную башню. Башня рухнет. Зато будет вкусная анаэроба... такой вот урок августа.
+DEBUG    2025-08-20 11:14:42,140 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) строка: 13: Кофейное видение: ты пытаешься выстроить кубики коричневой пены в идеальную башню. Башня рухнет. Зато будет вкусная анаэроба... такой вот урок августа.
+DEBUG    2025-08-20 11:14:42,140 [horoscope] (generator_horoscope.py).horoscope_transformation_text(68) daily_horoscope для Дева - 13 - 152
+DEBUG    2025-08-20 11:14:42,140 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) day Дева - 2025-08-13 
+INFO     2025-08-20 11:14:42,140 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:14:42,142 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:14:42,142 [horoscope] (generator_horoscope.py).horoscope_transformation_text(62) Строка гороскопа - 14: Лаунж-зона или лес? Круассан или гречка? Гороскоп вещает: расширь палитру! Сегодня твоя еда должна иметь минимум... нет, не три!... ЧЕТЫРЕ оттенка коричневого.
+DEBUG    2025-08-20 11:14:42,142 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) строка: 14: Лаунж-зона или лес? Круассан или гречка? Гороскоп вещает: расширь палитру! Сегодня твоя еда должна иметь минимум... нет, не три!... ЧЕТЫРЕ оттенка коричневого.
+DEBUG    2025-08-20 11:14:42,142 [horoscope] (generator_horoscope.py).horoscope_transformation_text(68) daily_horoscope для Дева - 14 - 160
+DEBUG    2025-08-20 11:14:42,142 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) day Дева - 2025-08-14 
+INFO     2025-08-20 11:14:42,144 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:14:42,145 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:14:42,145 [horoscope] (generator_horoscope.py).horoscope_transformation_text(62) Строка гороскопа - 15: Отмени планирование. Гуща предрекла хаос: будешь спасать офисный кактус и чинить эспрессо-нестинг чужому коллеге. Прими в штыки? Прими с радостью! Кофе будет бонусом.
+DEBUG    2025-08-20 11:14:42,145 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) строка: 15: Отмени планирование. Гуща предрекла хаос: будешь спасать офисный кактус и чинить эспрессо-нестинг чужому коллеге. Прими в штыки? Прими с радостью! Кофе будет бонусом.
+DEBUG    2025-08-20 11:14:42,145 [horoscope] (generator_horoscope.py).horoscope_transformation_text(68) daily_horoscope для Дева - 15 - 167
+DEBUG    2025-08-20 11:14:42,146 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) day Дева - 2025-08-15 
+INFO     2025-08-20 11:14:42,146 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:14:42,147 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:14:42,147 [horoscope] (generator_horoscope.py).horoscope_transformation_text(62) Строка гороскопа - 16: Твоя турка сегодня запросит годичную санобработку. Не сопротивляйся — чистота граничит с... восьмым небом Девы. А мытьё меди — отличная медитация.
+DEBUG    2025-08-20 11:14:42,147 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) строка: 16: Твоя турка сегодня запросит годичную санобработку. Не сопротивляйся — чистота граничит с... восьмым небом Девы. А мытьё меди — отличная медитация.
+DEBUG    2025-08-20 11:14:42,147 [horoscope] (generator_horoscope.py).horoscope_transformation_text(68) daily_horoscope для Дева - 16 - 147
+DEBUG    2025-08-20 11:14:42,147 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) day Дева - 2025-08-16 
+INFO     2025-08-20 11:14:42,148 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:14:42,149 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:14:42,149 [horoscope] (generator_horoscope.py).horoscope_transformation_text(62) Строка гороскопа - 17: Август сжалился: фруктовые ноты в кофе наконец-то не кажутся шизофреничными. Купи лот с апельсиновой цедрой и отпусти контроль. ШОК!
+DEBUG    2025-08-20 11:14:42,149 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) строка: 17: Август сжалился: фруктовые ноты в кофе наконец-то не кажутся шизофреничными. Купи лот с апельсиновой цедрой и отпусти контроль. ШОК!
+DEBUG    2025-08-20 11:14:42,149 [horoscope] (generator_horoscope.py).horoscope_transformation_text(68) daily_horoscope для Дева - 17 - 133
+DEBUG    2025-08-20 11:14:42,149 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) day Дева - 2025-08-17 
+INFO     2025-08-20 11:14:42,150 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:14:42,151 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:14:42,151 [horoscope] (generator_horoscope.py).horoscope_transformation_text(62) Строка гороскопа - 18: Сегодня зерно скажет: брось чек-лист и понюхай кофе, как в первый раз. Поразись дрожжевым нотам... они пробьются даже сквозь твой бухгалтерский отчёт.
+DEBUG    2025-08-20 11:14:42,151 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) строка: 18: Сегодня зерно скажет: брось чек-лист и понюхай кофе, как в первый раз. Поразись дрожжевым нотам... они пробьются даже сквозь твой бухгалтерский отчёт.
+DEBUG    2025-08-20 11:14:42,151 [horoscope] (generator_horoscope.py).horoscope_transformation_text(68) daily_horoscope для Дева - 18 - 151
+DEBUG    2025-08-20 11:14:42,151 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) day Дева - 2025-08-18 
+INFO     2025-08-20 11:14:42,152 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:14:42,153 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:14:42,154 [horoscope] (generator_horoscope.py).horoscope_transformation_text(62) Строка гороскопа - 19: Фильтр прорвался? Это знак! Твоя стопка "Срочно, но некогда" требует... пожарного капучино. Залить кипятком все дела – и со спокойной душой пересортировать архив.
+DEBUG    2025-08-20 11:14:42,154 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) строка: 19: Фильтр прорвался? Это знак! Твоя стопка "Срочно, но некогда" требует... пожарного капучино. Залить кипятком все дела – и со спокойной душой пересортировать архив.
+DEBUG    2025-08-20 11:14:42,154 [horoscope] (generator_horoscope.py).horoscope_transformation_text(68) daily_horoscope для Дева - 19 - 163
+DEBUG    2025-08-20 11:14:42,154 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) day Дева - 2025-08-19 
+INFO     2025-08-20 11:14:42,154 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:14:42,156 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:14:42,156 [horoscope] (generator_horoscope.py).horoscope_transformation_text(62) Строка гороскопа - 20: На дне тарелки вырисовалась гирька от весов. Пик перфекционизма! Секретные кофейные боги просят: взвесь сегодня что-то ненужное (например, свои тревоги) и отпусти.
+DEBUG    2025-08-20 11:14:42,156 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) строка: 20: На дне тарелки вырисовалась гирька от весов. Пик перфекционизма! Секретные кофейные боги просят: взвесь сегодня что-то ненужное (например, свои тревоги) и отпусти.
+DEBUG    2025-08-20 11:14:42,156 [horoscope] (generator_horoscope.py).horoscope_transformation_text(68) daily_horoscope для Дева - 20 - 164
+DEBUG    2025-08-20 11:14:42,156 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) day Дева - 2025-08-20 
+INFO     2025-08-20 11:14:42,156 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:14:42,158 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:14:42,158 [horoscope] (generator_horoscope.py).horoscope_transformation_text(62) Строка гороскопа - 21: Лунное ралли в кофейне! Закажи "Невесомость": эспрессо, дистиллят, лепесток розы. Валяется в календаре? Идеально! Август – пора ловить экзистенциальную дряблость.
+DEBUG    2025-08-20 11:14:42,159 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) строка: 21: Лунное ралли в кофейне! Закажи "Невесомость": эспрессо, дистиллят, лепесток розы. Валяется в календаре? Идеально! Август – пора ловить экзистенциальную дряблость.
+DEBUG    2025-08-20 11:14:42,159 [horoscope] (generator_horoscope.py).horoscope_transformation_text(68) daily_horoscope для Дева - 21 - 163
+DEBUG    2025-08-20 11:14:42,159 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) day Дева - 2025-08-21 
+INFO     2025-08-20 11:14:42,159 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:14:42,160 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:14:42,160 [horoscope] (generator_horoscope.py).horoscope_transformation_text(62) Строка гороскопа - 22: Трещина на любимой чашке? Да, дефект... Но вспомни: именно из таких щелей летят лучшие идеи! Сегодняшний "недочёт" приведет к сенсации в... расстановке кружек.
+DEBUG    2025-08-20 11:14:42,160 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) строка: 22: Трещина на любимой чашке? Да, дефект... Но вспомни: именно из таких щелей летят лучшие идеи! Сегодняшний "недочёт" приведет к сенсации в... расстановке кружек.
+DEBUG    2025-08-20 11:14:42,161 [horoscope] (generator_horoscope.py).horoscope_transformation_text(68) daily_horoscope для Дева - 22 - 160
+DEBUG    2025-08-20 11:14:42,161 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) day Дева - 2025-08-22 
+INFO     2025-08-20 11:14:42,161 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:14:42,162 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:14:42,162 [horoscope] (generator_horoscope.py).horoscope_transformation_text(62) Строка гороскопа - 23: Твоя френч-пресса сегодня – оракул скорости: как утром легла гуща, так и день пройдет. Кучкой – гора дел, равномерно – гармония, хлопьями – жди курьёзов! Идеальный тест.
+DEBUG    2025-08-20 11:14:42,162 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) строка: 23: Твоя френч-пресса сегодня – оракул скорости: как утром легла гуща, так и день пройдет. Кучкой – гора дел, равномерно – гармония, хлопьями – жди курьёзов! Идеальный тест.
+DEBUG    2025-08-20 11:14:42,162 [horoscope] (generator_horoscope.py).horoscope_transformation_text(68) daily_horoscope для Дева - 23 - 170
+DEBUG    2025-08-20 11:14:42,162 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) day Дева - 2025-08-23 
+INFO     2025-08-20 11:14:42,162 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:14:42,163 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:14:42,163 [horoscope] (generator_horoscope.py).horoscope_transformation_text(62) Строка гороскопа - 24: Запах горелого? Расслабься, это просто твое правое полушарие требует хоть немного... ошибок! Сознательно пережарь партию бобов. Импровизация – новый тренд августа.
+DEBUG    2025-08-20 11:14:42,163 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) строка: 24: Запах горелого? Расслабься, это просто твое правое полушарие требует хоть немного... ошибок! Сознательно пережарь партию бобов. Импровизация – новый тренд августа.
+DEBUG    2025-08-20 11:14:42,163 [horoscope] (generator_horoscope.py).horoscope_transformation_text(68) daily_horoscope для Дева - 24 - 164
+DEBUG    2025-08-20 11:14:42,163 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) day Дева - 2025-08-24 
+INFO     2025-08-20 11:14:42,163 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:14:42,164 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:14:42,165 [horoscope] (generator_horoscope.py).horoscope_transformation_text(62) Строка гороскопа - 25: Кофейные ангелы на пенке вещают: сегодняшняя встреча-солостакан пойдет наперекосяк. Спасительный ход? Декламируй температуру воды как поэзию. Фокус переведёт!
+DEBUG    2025-08-20 11:14:42,165 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) строка: 25: Кофейные ангелы на пенке вещают: сегодняшняя встреча-солостакан пойдет наперекосяк. Спасительный ход? Декламируй температуру воды как поэзию. Фокус переведёт!
+DEBUG    2025-08-20 11:14:42,165 [horoscope] (generator_horoscope.py).horoscope_transformation_text(68) daily_horoscope для Дева - 25 - 159
+DEBUG    2025-08-20 11:14:42,165 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) day Дева - 2025-08-25 
+INFO     2025-08-20 11:14:42,165 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:14:42,166 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:14:42,166 [horoscope] (generator_horoscope.py).horoscope_transformation_text(62) Строка гороскопа - 26: Молоко в латте свернулось? Срочная перенастройка! Знай: вселенная решила добавить тебе творожных ноток в август. Прими... или сражайся с кофемашиной. Битва эпична!
+DEBUG    2025-08-20 11:14:42,166 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) строка: 26: Молоко в латте свернулось? Срочная перенастройка! Знай: вселенная решила добавить тебе творожных ноток в август. Прими... или сражайся с кофемашиной. Битва эпична!
+DEBUG    2025-08-20 11:14:42,167 [horoscope] (generator_horoscope.py).horoscope_transformation_text(68) daily_horoscope для Дева - 26 - 164
+DEBUG    2025-08-20 11:14:42,167 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) day Дева - 2025-08-26 
+INFO     2025-08-20 11:14:42,167 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:14:42,168 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:14:42,168 [horoscope] (generator_horoscope.py).horoscope_transformation_text(62) Строка гороскопа - 27: Зерно раскалывается: пора отревизировать "аварийный запас" кофе на зиму. Обретешь в нем закатканное письмо... с просьбой не быть таким гиперответственным. Подпись: Выдох.
+DEBUG    2025-08-20 11:14:42,168 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) строка: 27: Зерно раскалывается: пора отревизировать "аварийный запас" кофе на зиму. Обретешь в нем закатканное письмо... с просьбой не быть таким гиперответственным. Подпись: Выдох.
+DEBUG    2025-08-20 11:14:42,168 [horoscope] (generator_horoscope.py).horoscope_transformation_text(68) daily_horoscope для Дева - 27 - 171
+DEBUG    2025-08-20 11:14:42,168 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) day Дева - 2025-08-27 
+INFO     2025-08-20 11:14:42,169 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:14:42,170 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:14:42,170 [horoscope] (generator_horoscope.py).horoscope_transformation_text(62) Строка гороскопа - 28: Тень от кофейника предупредила! Сегодня ровно 17 раз прольёшь ровно 3 капли – затососешь гаечку / встретишь курьёзного курьера. Считай – безумие не пройдёт мимо.
+DEBUG    2025-08-20 11:14:42,170 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) строка: 28: Тень от кофейника предупредила! Сегодня ровно 17 раз прольёшь ровно 3 капли – затососешь гаечку / встретишь курьёзного курьера. Считай – безумие не пройдёт мимо.
+DEBUG    2025-08-20 11:14:42,170 [horoscope] (generator_horoscope.py).horoscope_transformation_text(68) daily_horoscope для Дева - 28 - 162
+DEBUG    2025-08-20 11:14:42,170 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) day Дева - 2025-08-28 
+INFO     2025-08-20 11:14:42,170 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:14:42,172 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:14:42,172 [horoscope] (generator_horoscope.py).horoscope_transformation_text(62) Строка гороскопа - 29: Август готовит финт: твой идеальный ритуал заваривания даст сбой. Выключатель щёлкнет, часы врут, а мозг потребует ванильной фраппы. Сдайся сладости хаоса!
+DEBUG    2025-08-20 11:14:42,172 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) строка: 29: Август готовит финт: твой идеальный ритуал заваривания даст сбой. Выключатель щёлкнет, часы врут, а мозг потребует ванильной фраппы. Сдайся сладости хаоса!
+DEBUG    2025-08-20 11:14:42,172 [horoscope] (generator_horoscope.py).horoscope_transformation_text(68) daily_horoscope для Дева - 29 - 156
+DEBUG    2025-08-20 11:14:42,172 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) day Дева - 2025-08-29 
+INFO     2025-08-20 11:14:42,172 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:14:42,173 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:14:42,174 [horoscope] (generator_horoscope.py).horoscope_transformation_text(62) Строка гороскопа - 30: Налетай на уборку пыли! Награда: под комодом заваляется редкий Марагоджип. Твой шанс на эксклюзивный бленд... или повод гордиться чистотой. Дева, ты победила август!
+DEBUG    2025-08-20 11:14:42,174 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) строка: 30: Налетай на уборку пыли! Награда: под комодом заваляется редкий Марагоджип. Твой шанс на эксклюзивный бленд... или повод гордиться чистотой. Дева, ты победила август!
+DEBUG    2025-08-20 11:14:42,174 [horoscope] (generator_horoscope.py).horoscope_transformation_text(68) daily_horoscope для Дева - 30 - 166
+DEBUG    2025-08-20 11:14:42,174 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) day Дева - 2025-08-30 
+INFO     2025-08-20 11:14:42,174 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:14:42,176 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:14:42,176 [horoscope] (generator_horoscope.py).horoscope_transformation_text(62) Строка гороскопа - 31: Конец месяца – ритуал! Слей всю "остаточную" воду из чайника, пересчитай зёрна на завтра. Кофе-дух шепчет: "Минутку, я проверю документацию"... потом оторвись с латте в закат!
+DEBUG    2025-08-20 11:14:42,176 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) строка: 31: Конец месяца – ритуал! Слей всю "остаточную" воду из чайника, пересчитай зёрна на завтра. Кофе-дух шепчет: "Минутку, я проверю документацию"... потом оторвись с латте в закат!
+DEBUG    2025-08-20 11:14:42,177 [horoscope] (generator_horoscope.py).horoscope_transformation_text(68) daily_horoscope для Дева - 31 - 176
+DEBUG    2025-08-20 11:14:42,177 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) day Дева - 2025-08-31 
+INFO     2025-08-20 11:14:42,177 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:14:42,178 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:14:42,270 [horoscope] (generator_horoscope.py).start_generate_all_horoscopes(22) SUPERADMIN: 484385628, Генерирую гороскоп для знака Дева
+INFO     2025-08-20 11:25:27,917 [horoscope] (logging_config.py)._setup_handlers(50) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-20 11:25:32,060 [horoscope] (generator_horoscope.py).generate_horoscope(37) Начинаю генерацию гороскопа для Дева
+DEBUG    2025-08-20 11:26:39,064 [horoscope] (generator_horoscope.py).generate_horoscope(44) получен гороскоп длинной : 4570
+INFO     2025-08-20 11:26:49,069 [horoscope] (generator_horoscope.py).horoscope_transformation_text(59) Перехожу к тексту знака - Дева
+DEBUG    2025-08-20 11:26:49,070 [horoscope] (generator_horoscope.py).horoscope_transformation_text(60) Длинна гороскопа - 4570
+DEBUG    2025-08-20 11:26:49,070 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) Строка гороскопа - 1: Молоко в твоём капучино сегодня сбежало раньше таймера – так же стремительно ты вычеркнешь из планов три пункта и заменишь их послеобеденным сном  
+DEBUG    2025-08-20 11:26:49,070 [horoscope] (generator_horoscope.py).horoscope_transformation_text(66) строка: 1: Молоко в твоём капучино сегодня сбежало раньше таймера – так же стремительно ты вычеркнешь из планов три пункта и заменишь их послеобеденным сном  
+DEBUG    2025-08-20 11:26:49,070 [horoscope] (generator_horoscope.py).horoscope_transformation_text(70) daily_horoscope для Дева - 1 - 148
+DEBUG    2025-08-20 11:26:49,070 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) day Дева - 2025-08-01 
+INFO     2025-08-20 11:26:49,070 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:26:49,078 [horoscope] (generator_horoscope.py).save_horoscope(103) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:26:49,156 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) Строка гороскопа - 2: Гуща выложила фигуру пылесоса! Значит, к вечеру найдёшь под диваном пропавшую кофемолку и стопку непомытых чашек августа 2024  
+DEBUG    2025-08-20 11:26:49,157 [horoscope] (generator_horoscope.py).horoscope_transformation_text(66) строка: 2: Гуща выложила фигуру пылесоса! Значит, к вечеру найдёшь под диваном пропавшую кофемолку и стопку непомытых чашек августа 2024  
+DEBUG    2025-08-20 11:26:49,157 [horoscope] (generator_horoscope.py).horoscope_transformation_text(70) daily_horoscope для Дева - 2 - 128
+DEBUG    2025-08-20 11:26:49,158 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) day Дева - 2025-08-02 
+INFO     2025-08-20 11:26:49,158 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:26:49,162 [horoscope] (generator_horoscope.py).save_horoscope(103) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:26:49,271 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) Строка гороскопа - 3: Айс-кофе слился с конденсатом на стакане – лови момент, Дева: сегодня воздух прохладен ровно настолько, чтоб открыть окно и перестать ревизировать пляжные фото друзей  
+DEBUG    2025-08-20 11:26:49,271 [horoscope] (generator_horoscope.py).horoscope_transformation_text(66) строка: 3: Айс-кофе слился с конденсатом на стакане – лови момент, Дева: сегодня воздух прохладен ровно настолько, чтоб открыть окно и перестать ревизировать пляжные фото друзей  
+DEBUG    2025-08-20 11:26:49,271 [horoscope] (generator_horoscope.py).horoscope_transformation_text(70) daily_horoscope для Дева - 3 - 169
+DEBUG    2025-08-20 11:26:49,271 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) day Дева - 2025-08-03 
+INFO     2025-08-20 11:26:49,272 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:26:49,274 [horoscope] (generator_horoscope.py).save_horoscope(103) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:26:49,397 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) Строка гороскопа - 4: Луна в эспрессо-боксе советует: не доверяй сегодня барристе с именем "Зевс" – может влить раф с кленовым сиропом вместо ванильного  
+DEBUG    2025-08-20 11:26:49,397 [horoscope] (generator_horoscope.py).horoscope_transformation_text(66) строка: 4: Луна в эспрессо-боксе советует: не доверяй сегодня барристе с именем "Зевс" – может влить раф с кленовым сиропом вместо ванильного  
+DEBUG    2025-08-20 11:26:49,397 [horoscope] (generator_horoscope.py).horoscope_transformation_text(70) daily_horoscope для Дева - 4 - 133
+DEBUG    2025-08-20 11:26:49,397 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) day Дева - 2025-08-04 
+INFO     2025-08-20 11:26:49,397 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:26:49,400 [horoscope] (generator_horoscope.py).save_horoscope(103) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:26:49,545 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) Строка гороскопа - 5: Три зёрна Робусты выстроились в линеечку! Настолько идеально ты разместишь полотенца на сушилке, что соседи начнут фотографировать через лоджию  
+DEBUG    2025-08-20 11:26:49,545 [horoscope] (generator_horoscope.py).horoscope_transformation_text(66) строка: 5: Три зёрна Робусты выстроились в линеечку! Настолько идеально ты разместишь полотенца на сушилке, что соседи начнут фотографировать через лоджию  
+DEBUG    2025-08-20 11:26:49,545 [horoscope] (generator_horoscope.py).horoscope_transformation_text(70) daily_horoscope для Дева - 5 - 146
+DEBUG    2025-08-20 11:26:49,545 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) day Дева - 2025-08-05 
+INFO     2025-08-20 11:26:49,545 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:26:49,547 [horoscope] (generator_horoscope.py).save_horoscope(103) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:26:49,657 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) Строка гороскопа - 6: Кислинка в фильтр-кофе пророчит: туфель ровно на одну ступню окажется меньше в шкафу – готовься к квест-руму "Парная обувь"  
+DEBUG    2025-08-20 11:26:49,657 [horoscope] (generator_horoscope.py).horoscope_transformation_text(66) строка: 6: Кислинка в фильтр-кофе пророчит: туфель ровно на одну ступню окажется меньше в шкафу – готовься к квест-руму "Парная обувь"  
+DEBUG    2025-08-20 11:26:49,658 [horoscope] (generator_horoscope.py).horoscope_transformation_text(70) daily_horoscope для Дева - 6 - 126
+DEBUG    2025-08-20 11:26:49,658 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) day Дева - 2025-08-06 
+INFO     2025-08-20 11:26:49,658 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:26:49,660 [horoscope] (generator_horoscope.py).save_horoscope(103) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:26:49,788 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) Строка гороскопа - 7: Фраппе устроит бунт пенки – так же взрывно восстанешь против советов мамы по поводу летних носков в тридцатиградусную жару  
+DEBUG    2025-08-20 11:26:49,789 [horoscope] (generator_horoscope.py).horoscope_transformation_text(66) строка: 7: Фраппе устроит бунт пенки – так же взрывно восстанешь против советов мамы по поводу летних носков в тридцатиградусную жару  
+DEBUG    2025-08-20 11:26:49,789 [horoscope] (generator_horoscope.py).horoscope_transformation_text(70) daily_horoscope для Дева - 7 - 125
+DEBUG    2025-08-20 11:26:49,789 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) day Дева - 2025-08-07 
+INFO     2025-08-20 11:26:49,789 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:26:49,792 [horoscope] (generator_horoscope.py).save_horoscope(103) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:26:49,918 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) Строка гороскопа - 8: Всплеск латт-арта порвал сахарное сердце! Сегодня твой сарказм на деловой встрече будет настолько точен, что маркетологи аплодисментами утвердят бюджет  
+DEBUG    2025-08-20 11:26:49,918 [horoscope] (generator_horoscope.py).horoscope_transformation_text(66) строка: 8: Всплеск латт-арта порвал сахарное сердце! Сегодня твой сарказм на деловой встрече будет настолько точен, что маркетологи аплодисментами утвердят бюджет  
+DEBUG    2025-08-20 11:26:49,918 [horoscope] (generator_horoscope.py).horoscope_transformation_text(70) daily_horoscope для Дева - 8 - 154
+DEBUG    2025-08-20 11:26:49,918 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) day Дева - 2025-08-08 
+INFO     2025-08-20 11:26:49,918 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:26:49,920 [horoscope] (generator_horoscope.py).save_horoscope(103) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:26:50,094 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) Строка гороскопа - 9: Упущенная глоток американо прольётся на ноутбук – но именно этот лэптоп ведро работы спасёт пародийный скриншот в девелоперском чате  
+DEBUG    2025-08-20 11:26:50,094 [horoscope] (generator_horoscope.py).horoscope_transformation_text(66) строка: 9: Упущенная глоток американо прольётся на ноутбук – но именно этот лэптоп ведро работы спасёт пародийный скриншот в девелоперском чате  
+DEBUG    2025-08-20 11:26:50,095 [horoscope] (generator_horoscope.py).horoscope_transformation_text(70) daily_horoscope для Дева - 9 - 135
+DEBUG    2025-08-20 11:26:50,095 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) day Дева - 2025-08-09 
+INFO     2025-08-20 11:26:50,095 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:26:50,097 [horoscope] (generator_horoscope.py).save_horoscope(103) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:26:50,246 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) Строка гороскопа - 10: Зерномол предсказывает: передвинешь мебель и найдешь пропавшие эко-соломинки. И крошку печенья 5-дневной давности в форме созвездия Льва  
+DEBUG    2025-08-20 11:26:50,246 [horoscope] (generator_horoscope.py).horoscope_transformation_text(66) строка: 10: Зерномол предсказывает: передвинешь мебель и найдешь пропавшие эко-соломинки. И крошку печенья 5-дневной давности в форме созвездия Льва  
+DEBUG    2025-08-20 11:26:50,246 [horoscope] (generator_horoscope.py).horoscope_transformation_text(70) daily_horoscope для Дева - 10 - 139
+DEBUG    2025-08-20 11:26:50,246 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) day Дева - 2025-08-10 
+INFO     2025-08-20 11:26:50,246 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:26:50,248 [horoscope] (generator_horoscope.py).save_horoscope(103) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:26:50,418 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) Строка гороскопа - 11: Термочехол заляпался холодным отжимом! Жара доведёт до того, что нальёшь эспрессо в мороженицу вместо двойного блендера  
+DEBUG    2025-08-20 11:26:50,419 [horoscope] (generator_horoscope.py).horoscope_transformation_text(66) строка: 11: Термочехол заляпался холодным отжимом! Жара доведёт до того, что нальёшь эспрессо в мороженицу вместо двойного блендера  
+DEBUG    2025-08-20 11:26:50,419 [horoscope] (generator_horoscope.py).horoscope_transformation_text(70) daily_horoscope для Дева - 11 - 122
+DEBUG    2025-08-20 11:26:50,419 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) day Дева - 2025-08-11 
+INFO     2025-08-20 11:26:50,419 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:26:50,421 [horoscope] (generator_horoscope.py).save_horoscope(103) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:26:50,580 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) Строка гороскопа - 12: Кофеварка зашипела азбукой Морзе: "Не заправлять матрицу картриджа водой из-под крана". Угадай, кто проигнорирует это августовское предостережение?  
+DEBUG    2025-08-20 11:26:50,580 [horoscope] (generator_horoscope.py).horoscope_transformation_text(66) строка: 12: Кофеварка зашипела азбукой Морзе: "Не заправлять матрицу картриджа водой из-под крана". Угадай, кто проигнорирует это августовское предостережение?  
+DEBUG    2025-08-20 11:26:50,580 [horoscope] (generator_horoscope.py).horoscope_transformation_text(70) daily_horoscope для Дева - 12 - 150
+DEBUG    2025-08-20 11:26:50,580 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) day Дева - 2025-08-12 
+INFO     2025-08-20 11:26:50,580 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:26:50,582 [horoscope] (generator_horoscope.py).save_horoscope(103) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:26:50,759 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) Строка гороскопа - 13: Одинокие отпечатки губ на чашке. Такая же таинственная аура витает вокруг твоего коллеги – не забудь спросить, где он прячет кофемашину с Флорентийскими фильтрами  
+DEBUG    2025-08-20 11:26:50,759 [horoscope] (generator_horoscope.py).horoscope_transformation_text(66) строка: 13: Одинокие отпечатки губ на чашке. Такая же таинственная аура витает вокруг твоего коллеги – не забудь спросить, где он прячет кофемашину с Флорентийскими фильтрами  
+DEBUG    2025-08-20 11:26:50,760 [horoscope] (generator_horoscope.py).horoscope_transformation_text(70) daily_horoscope для Дева - 13 - 165
+DEBUG    2025-08-20 11:26:50,760 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) day Дева - 2025-08-13 
+INFO     2025-08-20 11:26:50,760 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:26:50,762 [horoscope] (generator_horoscope.py).save_horoscope(103) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:26:51,000 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) Строка гороскопа - 14: Пена в раф-кофе сложилась в огрызок карандаша. Будь готова: вечером пересчитаешь сдачу в супермаркете до копейки и заставишь кассира переделать чек  
+DEBUG    2025-08-20 11:26:51,001 [horoscope] (generator_horoscope.py).horoscope_transformation_text(66) строка: 14: Пена в раф-кофе сложилась в огрызок карандаша. Будь готова: вечером пересчитаешь сдачу в супермаркете до копейки и заставишь кассира переделать чек  
+DEBUG    2025-08-20 11:26:51,001 [horoscope] (generator_horoscope.py).horoscope_transformation_text(70) daily_horoscope для Дева - 14 - 150
+DEBUG    2025-08-20 11:26:51,001 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) day Дева - 2025-08-14 
+INFO     2025-08-20 11:26:51,001 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:26:51,003 [horoscope] (generator_horoscope.py).save_horoscope(103) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:26:51,254 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) Строка гороскопа - 15: Зелёный зёрнышко притаилось в пачке! Настолько же камуфлировано заляпаешь белоснежную блузку, нервничая под августовским дождём у окна  
+DEBUG    2025-08-20 11:26:51,254 [horoscope] (generator_horoscope.py).horoscope_transformation_text(66) строка: 15: Зелёный зёрнышко притаилось в пачке! Настолько же камуфлировано заляпаешь белоснежную блузку, нервничая под августовским дождём у окна  
+DEBUG    2025-08-20 11:26:51,254 [horoscope] (generator_horoscope.py).horoscope_transformation_text(70) daily_horoscope для Дева - 15 - 137
+DEBUG    2025-08-20 11:26:51,254 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) day Дева - 2025-08-15 
+INFO     2025-08-20 11:26:51,254 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:26:51,256 [horoscope] (generator_horoscope.py).save_horoscope(103) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:26:51,484 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) Строка гороскопа - 16: Мелет нервозно – значит к обеду заметишь три грамматических ошибки на витрине конфетного уличного ларечка и разродишься правками  
+DEBUG    2025-08-20 11:26:51,484 [horoscope] (generator_horoscope.py).horoscope_transformation_text(66) строка: 16: Мелет нервозно – значит к обеду заметишь три грамматических ошибки на витрине конфетного уличного ларечка и разродишься правками  
+DEBUG    2025-08-20 11:26:51,484 [horoscope] (generator_horoscope.py).horoscope_transformation_text(70) daily_horoscope для Дева - 16 - 131
+DEBUG    2025-08-20 11:26:51,484 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) day Дева - 2025-08-16 
+INFO     2025-08-20 11:26:51,484 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:26:51,486 [horoscope] (generator_horoscope.py).save_horoscope(103) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:26:51,665 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) Строка гороскопа - 17: Тампер прожужжал про старого знакомого с тягой к дрипам – будете спорить про крепость арабики в Суринаме, пока смартфон не отсчитает полтора часа  
+DEBUG    2025-08-20 11:26:51,666 [horoscope] (generator_horoscope.py).horoscope_transformation_text(66) строка: 17: Тампер прожужжал про старого знакомого с тягой к дрипам – будете спорить про крепость арабики в Суринаме, пока смартфон не отсчитает полтора часа  
+DEBUG    2025-08-20 11:26:51,666 [horoscope] (generator_horoscope.py).horoscope_transformation_text(70) daily_horoscope для Дева - 17 - 148
+DEBUG    2025-08-20 11:26:51,666 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) day Дева - 2025-08-17 
+INFO     2025-08-20 11:26:51,666 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:26:51,668 [horoscope] (generator_horoscope.py).save_horoscope(103) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:26:51,797 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) Строка гороскопа - 18: Ложка зависла над чашкой, как выброшенный якорь! Сегодня скажешь "нет" третьей фразовочи и поедешь жарить креветки вместо премиум-встречи по криптокошельку  
+DEBUG    2025-08-20 11:26:51,797 [horoscope] (generator_horoscope.py).horoscope_transformation_text(66) строка: 18: Ложка зависла над чашкой, как выброшенный якорь! Сегодня скажешь "нет" третьей фразовочи и поедешь жарить креветки вместо премиум-встречи по криптокошельку  
+DEBUG    2025-08-20 11:26:51,798 [horoscope] (generator_horoscope.py).horoscope_transformation_text(70) daily_horoscope для Дева - 18 - 158
+DEBUG    2025-08-20 11:26:51,798 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) day Дева - 2025-08-18 
+INFO     2025-08-20 11:26:51,798 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:26:51,800 [horoscope] (generator_horoscope.py).save_horoscope(103) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:26:51,922 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) Строка гороскопа - 19: Медленная пропускная способность капельной кофеварки – твой намёк: зарядка для ноутбука вылетит ровно в 19:00, дата сдвинется, а ты выкрутишься йогуртом из холодильника  
+DEBUG    2025-08-20 11:26:51,922 [horoscope] (generator_horoscope.py).horoscope_transformation_text(66) строка: 19: Медленная пропускная способность капельной кофеварки – твой намёк: зарядка для ноутбука вылетит ровно в 19:00, дата сдвинется, а ты выкрутишься йогуртом из холодильника  
+DEBUG    2025-08-20 11:26:51,922 [horoscope] (generator_horoscope.py).horoscope_transformation_text(70) daily_horoscope для Дева - 19 - 171
+DEBUG    2025-08-20 11:26:51,922 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) day Дева - 2025-08-19 
+INFO     2025-08-20 11:26:51,922 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:26:51,925 [horoscope] (generator_horoscope.py).save_horoscope(103) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:26:52,065 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) Строка гороскопа - 20: В чеке от кофейной точки найдёшь строчку "Лунный грильяж". Настолько креативно назовёшь домашний завтрак-микс из клюквы, тофу и поджаренных зёрен  
+DEBUG    2025-08-20 11:26:52,066 [horoscope] (generator_horoscope.py).horoscope_transformation_text(66) строка: 20: В чеке от кофейной точки найдёшь строчку "Лунный грильяж". Настолько креативно назовёшь домашний завтрак-микс из клюквы, тофу и поджаренных зёрен  
+DEBUG    2025-08-20 11:26:52,066 [horoscope] (generator_horoscope.py).horoscope_transformation_text(70) daily_horoscope для Дева - 20 - 148
+DEBUG    2025-08-20 11:26:52,066 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) day Дева - 2025-08-20 
+INFO     2025-08-20 11:26:52,066 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:26:52,070 [horoscope] (generator_horoscope.py).save_horoscope(103) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:26:52,201 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) Строка гороскопа - 21: Блестящая точка на чёрной гуще – не отсвет ночника, а подсказка: батарейки в кухонных весах разрядятся именно во время взвешивания эликсира счастья для гороскопа Овна  
+DEBUG    2025-08-20 11:26:52,201 [horoscope] (generator_horoscope.py).horoscope_transformation_text(66) строка: 21: Блестящая точка на чёрной гуще – не отсвет ночника, а подсказка: батарейки в кухонных весах разрядятся именно во время взвешивания эликсира счастья для гороскопа Овна  
+DEBUG    2025-08-20 11:26:52,201 [horoscope] (generator_horoscope.py).horoscope_transformation_text(70) daily_horoscope для Дева - 21 - 169
+DEBUG    2025-08-20 11:26:52,201 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) day Дева - 2025-08-21 
+INFO     2025-08-20 11:26:52,201 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:26:52,204 [horoscope] (generator_horoscope.py).save_horoscope(103) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:26:52,310 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) Строка гороскопа - 22: Потёк шов на пакете сангушко – эта же дырка в действиях откроется при попытке совместить душ с опом помешиванием тирамису  
+DEBUG    2025-08-20 11:26:52,311 [horoscope] (generator_horoscope.py).horoscope_transformation_text(66) строка: 22: Потёк шов на пакете сангушко – эта же дырка в действиях откроется при попытке совместить душ с опом помешиванием тирамису  
+DEBUG    2025-08-20 11:26:52,311 [horoscope] (generator_horoscope.py).horoscope_transformation_text(70) daily_horoscope для Дева - 22 - 124
+DEBUG    2025-08-20 11:26:52,311 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) day Дева - 2025-08-22 
+INFO     2025-08-20 11:26:52,311 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:26:52,314 [horoscope] (generator_horoscope.py).save_horoscope(103) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:26:52,401 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) Строка гороскопа - 23: Августовский ветер подхватил кофейный зонтик – твой сегодняшний разговор в очереди зайдёт так далеко, что обсудишь кварцевый микроцикл плантаций на Суматре  
+DEBUG    2025-08-20 11:26:52,402 [horoscope] (generator_horoscope.py).horoscope_transformation_text(66) строка: 23: Августовский ветер подхватил кофейный зонтик – твой сегодняшний разговор в очереди зайдёт так далеко, что обсудишь кварцевый микроцикл плантаций на Суматре  
+DEBUG    2025-08-20 11:26:52,403 [horoscope] (generator_horoscope.py).horoscope_transformation_text(70) daily_horoscope для Дева - 23 - 158
+DEBUG    2025-08-20 11:26:52,403 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) day Дева - 2025-08-23 
+INFO     2025-08-20 11:26:52,404 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:26:52,410 [horoscope] (generator_horoscope.py).save_horoscope(103) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:26:52,481 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) Строка гороскопа - 24: Кубик льда в латте уже не кубик, а мизантроп по коленкам! Так же иронично отключишь мозг и покушаешь суши руками после перерыва на шоппинг  
+DEBUG    2025-08-20 11:26:52,481 [horoscope] (generator_horoscope.py).horoscope_transformation_text(66) строка: 24: Кубик льда в латте уже не кубик, а мизантроп по коленкам! Так же иронично отключишь мозг и покушаешь суши руками после перерыва на шоппинг  
+DEBUG    2025-08-20 11:26:52,481 [horoscope] (generator_horoscope.py).horoscope_transformation_text(70) daily_horoscope для Дева - 24 - 141
+DEBUG    2025-08-20 11:26:52,481 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) day Дева - 2025-08-24 
+INFO     2025-08-20 11:26:52,481 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:26:52,484 [horoscope] (generator_horoscope.py).save_horoscope(103) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:26:52,564 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) Строка гороскопа - 25: Фишка из чекушного автомата застрянет трижды. Гарантированно получишь сверхкорткий экспресс на работе вместо летнего ланча  
+DEBUG    2025-08-20 11:26:52,564 [horoscope] (generator_horoscope.py).horoscope_transformation_text(66) строка: 25: Фишка из чекушного автомата застрянет трижды. Гарантированно получишь сверхкорткий экспресс на работе вместо летнего ланча  
+DEBUG    2025-08-20 11:26:52,565 [horoscope] (generator_horoscope.py).horoscope_transformation_text(70) daily_horoscope для Дева - 25 - 125
+DEBUG    2025-08-20 11:26:52,566 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) day Дева - 2025-08-25 
+INFO     2025-08-20 11:26:52,566 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:26:52,570 [horoscope] (generator_horoscope.py).save_horoscope(103) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:26:52,636 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) Строка гороскопа - 26: Червивое кофейное зёрнышко мелькнёт в упаковке. Столь же скандально откроешь соцсети экс с курса digital и швырнёшь фисташки в стену  
+DEBUG    2025-08-20 11:26:52,636 [horoscope] (generator_horoscope.py).horoscope_transformation_text(66) строка: 26: Червивое кофейное зёрнышко мелькнёт в упаковке. Столь же скандально откроешь соцсети экс с курса digital и швырнёшь фисташки в стену  
+DEBUG    2025-08-20 11:26:52,636 [horoscope] (generator_horoscope.py).horoscope_transformation_text(70) daily_horoscope для Дева - 26 - 135
+DEBUG    2025-08-20 11:26:52,636 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) day Дева - 2025-08-26 
+INFO     2025-08-20 11:26:52,636 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:26:52,640 [horoscope] (generator_horoscope.py).save_horoscope(103) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:26:52,710 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) Строка гороскопа - 27: Ёмкость для отработанной гущи внезапно пуста! Настолько чётко проложишь маршрут до парка, что запросто поймаешь сеанс кайтфишинга по Вирго  
+DEBUG    2025-08-20 11:26:52,711 [horoscope] (generator_horoscope.py).horoscope_transformation_text(66) строка: 27: Ёмкость для отработанной гущи внезапно пуста! Настолько чётко проложишь маршрут до парка, что запросто поймаешь сеанс кайтфишинга по Вирго  
+DEBUG    2025-08-20 11:26:52,712 [horoscope] (generator_horoscope.py).horoscope_transformation_text(70) daily_horoscope для Дева - 27 - 141
+DEBUG    2025-08-20 11:26:52,712 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) day Дева - 2025-08-27 
+INFO     2025-08-20 11:26:52,713 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:26:52,717 [horoscope] (generator_horoscope.py).save_horoscope(103) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:26:52,786 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) Строка гороскопа - 28: Сиропная бутылка прилипла к дну полки – те же совпадения ждать, когда попробуешь пожарить листья салата на минутке лени  
+DEBUG    2025-08-20 11:26:52,786 [horoscope] (generator_horoscope.py).horoscope_transformation_text(66) строка: 28: Сиропная бутылка прилипла к дну полки – те же совпадения ждать, когда попробуешь пожарить листья салата на минутке лени  
+DEBUG    2025-08-20 11:26:52,786 [horoscope] (generator_horoscope.py).horoscope_transformation_text(70) daily_horoscope для Дева - 28 - 122
+DEBUG    2025-08-20 11:26:52,787 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) day Дева - 2025-08-28 
+INFO     2025-08-20 11:26:52,787 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:26:52,790 [horoscope] (generator_horoscope.py).save_horoscope(103) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:26:52,863 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) Строка гороскопа - 29: Глубокий вдох над нотками гватемальской арабики предвещает: вечером почувствуешь эстетику и распробуешь ту горькость, что мама назвала бранью  
+DEBUG    2025-08-20 11:26:52,864 [horoscope] (generator_horoscope.py).horoscope_transformation_text(66) строка: 29: Глубокий вдох над нотками гватемальской арабики предвещает: вечером почувствуешь эстетику и распробуешь ту горькость, что мама назвала бранью  
+DEBUG    2025-08-20 11:26:52,864 [horoscope] (generator_horoscope.py).horoscope_transformation_text(70) daily_horoscope для Дева - 29 - 144
+DEBUG    2025-08-20 11:26:52,864 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) day Дева - 2025-08-29 
+INFO     2025-08-20 11:26:52,864 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:26:52,866 [horoscope] (generator_horoscope.py).save_horoscope(103) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:26:52,936 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) Строка гороскопа - 30: Угрюмая автопродувка кофемолки! Так же резко выпалишь комплимент левому соседу – владельцу потрёпанного бук-кроссинга "Азбука Перфекциониста"  
+DEBUG    2025-08-20 11:26:52,936 [horoscope] (generator_horoscope.py).horoscope_transformation_text(66) строка: 30: Угрюмая автопродувка кофемолки! Так же резко выпалишь комплимент левому соседу – владельцу потрёпанного бук-кроссинга "Азбука Перфекциониста"  
+DEBUG    2025-08-20 11:26:52,936 [horoscope] (generator_horoscope.py).horoscope_transformation_text(70) daily_horoscope для Дева - 30 - 144
+DEBUG    2025-08-20 11:26:52,936 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) day Дева - 2025-08-30 
+INFO     2025-08-20 11:26:52,936 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:26:52,940 [horoscope] (generator_horoscope.py).save_horoscope(103) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:26:53,008 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) Строка гороскопа - 31: Пятна на фартуке складываются в перечёркнутый календарь. Пора отставить расчет фильтров – август завершён. В сентябре твой капучино будет идеально классическим... почти.
+DEBUG    2025-08-20 11:26:53,008 [horoscope] (generator_horoscope.py).horoscope_transformation_text(66) строка: 31: Пятна на фартуке складываются в перечёркнутый календарь. Пора отставить расчет фильтров – август завершён. В сентябре твой капучино будет идеально классическим... почти.
+DEBUG    2025-08-20 11:26:53,009 [horoscope] (generator_horoscope.py).horoscope_transformation_text(70) daily_horoscope для Дева - 31 - 170
+DEBUG    2025-08-20 11:26:53,009 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) day Дева - 2025-08-31 
+INFO     2025-08-20 11:26:53,010 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) Сохраняю гороскоп знака - Дева
+INFO     2025-08-20 11:26:53,015 [horoscope] (generator_horoscope.py).save_horoscope(103) Сохранил гороскоп знака - Дева
+DEBUG    2025-08-20 11:26:56,179 [horoscope] (generator_horoscope.py).start_generate_all_horoscopes(22) SUPERADMIN: 484385628, Генерирую гороскоп для знака Дева
+INFO     2025-08-20 12:40:44,661 [horoscope] (logging_config.py)._setup_handlers(50) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-20 12:42:17,302 [horoscope] (logging_config.py)._setup_handlers(50) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-20 12:42:27,986 [horoscope] (generator_horoscope.py).generate_horoscope(38) Начинаю генерацию гороскопа для Лев
+DEBUG    2025-08-20 12:43:53,043 [horoscope] (generator_horoscope.py).generate_horoscope(45) получен гороскоп длинной : 5391
+INFO     2025-08-20 12:44:03,059 [horoscope] (generator_horoscope.py).horoscope_transformation_text(60) Перехожу к тексту знака - Лев
+DEBUG    2025-08-20 12:44:03,060 [horoscope] (generator_horoscope.py).horoscope_transformation_text(61) Длинна гороскопа - 5391
+DEBUG    2025-08-20 12:44:03,062 [horoscope] (generator_horoscope.py).horoscope_transformation_text(65) Строка гороскопа - Отлично! Лови августовский кофе-гороскоп для царственного Льва (2025), где каждое утро начинается не с будильника, а с толкования пены:
+DEBUG    2025-08-20 12:44:03,063 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) строка: Отлично! Лови августовский кофе-гороскоп для царственного Льва (2025), где каждое утро начинается не с будильника, а с толкования пены:
+DEBUG    2025-08-20 12:44:03,064 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) daily_horoscope для Лев - Отлично! Лови августовский кофе-гороскоп для царственного Льва (2025), где каждое утро начинается не с будильника, а с толкования пены - 0
+DEBUG    2025-08-20 12:44:03,064 [horoscope] (generator_horoscope.py).horoscope_transformation_text(65) Строка гороскопа - 
+DEBUG    2025-08-20 12:44:03,065 [horoscope] (generator_horoscope.py).horoscope_transformation_text(65) Строка гороскопа - 1. Твоя арабика сегодня заварилась в форме львиной гривы – значит, будешь буквально излучать харизму, даже пока чистишь зубы. Используй это: скидка на капучино – 110% (бармен не устоит).  
+DEBUG    2025-08-20 12:44:03,065 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) строка: 1. Твоя арабика сегодня заварилась в форме львиной гривы – значит, будешь буквально излучать харизму, даже пока чистишь зубы. Используй это: скидка на капучино – 110% (бармен не устоит).  
+DEBUG    2025-08-20 12:44:03,066 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) daily_horoscope для Лев - 1 - 48
+DEBUG    2025-08-20 12:44:03,066 [horoscope] (generator_horoscope.py).horoscope_transformation_text(74) day Лев - 2025-08-01 
+INFO     2025-08-20 12:44:03,067 [horoscope] (generator_horoscope.py).horoscope_transformation_text(77) Сохраняю гороскоп знака - Лев
+INFO     2025-08-20 12:44:03,075 [horoscope] (generator_horoscope.py).save_horoscope(104) Сохранил гороскоп знака - Лев
+DEBUG    2025-08-20 12:44:03,076 [horoscope] (generator_horoscope.py).horoscope_transformation_text(65) Строка гороскопа - 2. Вспенила латте? Ошибка! Зёрна шепчут: только американо с утра. Иначе к вечеру начнешь организовывать парад в офисе прямо в трико из халата.  
+DEBUG    2025-08-20 12:44:03,076 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) строка: 2. Вспенила латте? Ошибка! Зёрна шепчут: только американо с утра. Иначе к вечеру начнешь организовывать парад в офисе прямо в трико из халата.  
+DEBUG    2025-08-20 12:44:03,076 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) daily_horoscope для Лев - 2 - 104
+DEBUG    2025-08-20 12:44:03,077 [horoscope] (generator_horoscope.py).horoscope_transformation_text(74) day Лев - 2025-08-02 
+INFO     2025-08-20 12:44:03,077 [horoscope] (generator_horoscope.py).horoscope_transformation_text(77) Сохраняю гороскоп знака - Лев
+INFO     2025-08-20 12:44:03,081 [horoscope] (generator_horoscope.py).save_horoscope(104) Сохранил гороскоп знака - Лев
+DEBUG    2025-08-20 12:44:03,081 [horoscope] (generator_horoscope.py).horoscope_transformation_text(65) Строка гороскопа - 3. Пятно на дне чашки ясно как солнце: пропусти встречу до обеда. Лучше "обноЛЕВиться" под крыльцом с холодным рафом – там тебя ждет потрясающе бесполезная, но очень красивая идея.  
+DEBUG    2025-08-20 12:44:03,081 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) строка: 3. Пятно на дне чашки ясно как солнце: пропусти встречу до обеда. Лучше "обноЛЕВиться" под крыльцом с холодным рафом – там тебя ждет потрясающе бесполезная, но очень красивая идея.  
+DEBUG    2025-08-20 12:44:03,081 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) daily_horoscope для Лев - 3 - 144
+DEBUG    2025-08-20 12:44:03,081 [horoscope] (generator_horoscope.py).horoscope_transformation_text(74) day Лев - 2025-08-03 
+INFO     2025-08-20 12:44:03,081 [horoscope] (generator_horoscope.py).horoscope_transformation_text(77) Сохраняю гороскоп знака - Лев
+INFO     2025-08-20 12:44:03,086 [horoscope] (generator_horoscope.py).save_horoscope(104) Сохранил гороскоп знака - Лев
+DEBUG    2025-08-20 12:44:03,087 [horoscope] (generator_horoscope.py).horoscope_transformation_text(65) Строка гороскопа - 4. Кофемашина вселенной грозит перегревом! Сегодня твой эго-турбо-режим включится с таким кофеином, что твои слова заставят файлы Excel сохраняться самостоятельно. Do your magic!  
+DEBUG    2025-08-20 12:44:03,087 [horoscope] (generator_horoscope.py).horoscope_transformation_text(65) Строка гороскопа - 5. Орущие цикады и кофейный оракул в один голос: зумирование бока льва на камере – твой сегодняшний супер-успех. Остальное... спроси совета у кошки (она умнее).  
+DEBUG    2025-08-20 12:44:03,087 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) строка: 5. Орущие цикады и кофейный оракул в один голос: зумирование бока льва на камере – твой сегодняшний супер-успех. Остальное... спроси совета у кошки (она умнее).  
+DEBUG    2025-08-20 12:44:03,088 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) daily_horoscope для Лев - 5 - 114
+DEBUG    2025-08-20 12:44:03,088 [horoscope] (generator_horoscope.py).horoscope_transformation_text(74) day Лев - 2025-08-05 
+INFO     2025-08-20 12:44:03,089 [horoscope] (generator_horoscope.py).horoscope_transformation_text(77) Сохраняю гороскоп знака - Лев
+INFO     2025-08-20 12:44:03,093 [horoscope] (generator_horoscope.py).save_horoscope(104) Сохранил гороскоп знака - Лев
+DEBUG    2025-08-20 12:44:03,094 [horoscope] (generator_horoscope.py).horoscope_transformation_text(65) Строка гороскопа - 6. В туче сливок проступил силуэт самолета: время бронировать спонтанный VIP-тур куда угодно. Учти, вопрос "Документы?" Вселенная решит через внезапный скидочный купон из прошлого.  
+DEBUG    2025-08-20 12:44:03,094 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) строка: 6. В туче сливок проступил силуэт самолета: время бронировать спонтанный VIP-тур куда угодно. Учти, вопрос "Документы?" Вселенная решит через внезапный скидочный купон из прошлого.  
+DEBUG    2025-08-20 12:44:03,094 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) daily_horoscope для Лев - 6 - 139
+DEBUG    2025-08-20 12:44:03,094 [horoscope] (generator_horoscope.py).horoscope_transformation_text(74) day Лев - 2025-08-06 
+INFO     2025-08-20 12:44:03,094 [horoscope] (generator_horoscope.py).horoscope_transformation_text(77) Сохраняю гороскоп знака - Лев
+INFO     2025-08-20 12:44:03,097 [horoscope] (generator_horoscope.py).save_horoscope(104) Сохранил гороскоп знака - Лев
+DEBUG    2025-08-20 12:44:03,097 [horoscope] (generator_horoscope.py).horoscope_transformation_text(65) Строка гороскопа - 7. Твой капучино на удивление безупречен – значит, весь мир сегодня слегка нервничает и пытается тебя ублажить. Наслаждайся! Но не вздумай принимать подарки от хитрых Весов.  
+DEBUG    2025-08-20 12:44:03,097 [horoscope] (generator_horoscope.py).horoscope_transformation_text(65) Строка гороскопа - 8. Львиный рёв? Кофейные газы! Пенка сулит: сегодня будешь испаряться каждые 2 часа. Запиши, где оставляешь ключи, иначе возвращаться придётся... в другом образе.  
+DEBUG    2025-08-20 12:44:03,098 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) строка: 8. Львиный рёв? Кофейные газы! Пенка сулит: сегодня будешь испаряться каждые 2 часа. Запиши, где оставляешь ключи, иначе возвращаться придётся... в другом образе.  
+DEBUG    2025-08-20 12:44:03,098 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) daily_horoscope для Лев - 8 - 121
+DEBUG    2025-08-20 12:44:03,098 [horoscope] (generator_horoscope.py).horoscope_transformation_text(74) day Лев - 2025-08-08 
+INFO     2025-08-20 12:44:03,098 [horoscope] (generator_horoscope.py).horoscope_transformation_text(77) Сохраняю гороскоп знака - Лев
+INFO     2025-08-20 12:44:03,101 [horoscope] (generator_horoscope.py).save_horoscope(104) Сохранил гороскоп знака - Лев
+DEBUG    2025-08-20 12:44:03,101 [horoscope] (generator_horoscope.py).horoscope_transformation_text(65) Строка гороскопа - 9. Терпкий эспрессо и щепотка звездной пыли в кофе – готовься к Fight Club с тостером. Демон конкурентности сегодня ярче летнего солнца!  
+DEBUG    2025-08-20 12:44:03,101 [horoscope] (generator_horoscope.py).horoscope_transformation_text(65) Строка гороскопа - 10. Гуща образ очкастого ангела рисует: кто-то разобьет твою любимую чашку. Но это повод купить ЗОЛОТУЮ! Вселенная скинет на неё ~67% бюджета (в виде найденной купюры).  
+DEBUG    2025-08-20 12:44:03,101 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) строка: 10. Гуща образ очкастого ангела рисует: кто-то разобьет твою любимую чашку. Но это повод купить ЗОЛОТУЮ! Вселенная скинет на неё ~67% бюджета (в виде найденной купюры).  
+DEBUG    2025-08-20 12:44:03,101 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) daily_horoscope для Лев - 10 - 131
+DEBUG    2025-08-20 12:44:03,101 [horoscope] (generator_horoscope.py).horoscope_transformation_text(74) day Лев - 2025-08-10 
+INFO     2025-08-20 12:44:03,101 [horoscope] (generator_horoscope.py).horoscope_transformation_text(77) Сохраняю гороскоп знака - Лев
+INFO     2025-08-20 12:44:03,103 [horoscope] (generator_horoscope.py).save_horoscope(104) Сохранил гороскоп знака - Лев
+DEBUG    2025-08-20 12:44:03,103 [horoscope] (generator_horoscope.py).horoscope_transformation_text(65) Строка гороскопа - 11. "Специально для царя зверей!" – пробурчала кофемолка. Идеальный раф – символ дня: тебе сегодня без усилий дадут лучший столик/парковку/комплимент. Вальяжно принимай дань!  
+DEBUG    2025-08-20 12:44:03,103 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) строка: 11. "Специально для царя зверей!" – пробурчала кофемолка. Идеальный раф – символ дня: тебе сегодня без усилий дадут лучший столик/парковку/комплимент. Вальяжно принимай дань!  
+DEBUG    2025-08-20 12:44:03,103 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) daily_horoscope для Лев - 11 - 91
+DEBUG    2025-08-20 12:44:03,103 [horoscope] (generator_horoscope.py).horoscope_transformation_text(74) day Лев - 2025-08-11 
+INFO     2025-08-20 12:44:03,103 [horoscope] (generator_horoscope.py).horoscope_transformation_text(77) Сохраняю гороскоп знака - Лев
+INFO     2025-08-20 12:44:03,104 [horoscope] (generator_horoscope.py).save_horoscope(104) Сохранил гороскоп знака - Лев
+DEBUG    2025-08-20 12:44:03,104 [horoscope] (generator_horoscope.py).horoscope_transformation_text(65) Строка гороскопа - 12. Кофейный гений предупреждает: не вздумай объяснять бариста принцип "идеальной температуры". Закончишь лекцией о вашем духовном родстве... на 3 часа.  
+DEBUG    2025-08-20 12:44:03,104 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) строка: 12. Кофейный гений предупреждает: не вздумай объяснять бариста принцип "идеальной температуры". Закончишь лекцией о вашем духовном родстве... на 3 часа.  
+DEBUG    2025-08-20 12:44:03,104 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) daily_horoscope для Лев - 12 - 121
+DEBUG    2025-08-20 12:44:03,105 [horoscope] (generator_horoscope.py).horoscope_transformation_text(74) day Лев - 2025-08-12 
+INFO     2025-08-20 12:44:03,105 [horoscope] (generator_horoscope.py).horoscope_transformation_text(77) Сохраняю гороскоп знака - Лев
+INFO     2025-08-20 12:44:03,106 [horoscope] (generator_horoscope.py).save_horoscope(104) Сохранил гороскоп знака - Лев
+DEBUG    2025-08-20 12:44:03,106 [horoscope] (generator_horoscope.py).horoscope_transformation_text(65) Строка гороскопа - 13. Пятно намекает на форму недостроенной Эйфелевой башни: приступ организаторского гения в 23:30. Кто-то сказал "Пижамный митинг"?  
+DEBUG    2025-08-20 12:44:03,106 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) строка: 13. Пятно намекает на форму недостроенной Эйфелевой башни: приступ организаторского гения в 23:30. Кто-то сказал "Пижамный митинг"?  
+DEBUG    2025-08-20 12:44:03,106 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) daily_horoscope для Лев - 13 - 75
+DEBUG    2025-08-20 12:44:03,106 [horoscope] (generator_horoscope.py).horoscope_transformation_text(74) day Лев - 2025-08-13 
+INFO     2025-08-20 12:44:03,106 [horoscope] (generator_horoscope.py).horoscope_transformation_text(77) Сохраняю гороскоп знака - Лев
+INFO     2025-08-20 12:44:03,108 [horoscope] (generator_horoscope.py).save_horoscope(104) Сохранил гороскоп знака - Лев
+DEBUG    2025-08-20 12:44:03,108 [horoscope] (generator_horoscope.py).horoscope_transformation_text(65) Строка гороскопа - 14. Зерна вразнобой звучат, словно маракасы – такое впечатление проведешь день в роли "дирижёра безумных обстоятельств". Полистай бесплатный статус: Симфония Хаоса.  
+DEBUG    2025-08-20 12:44:03,108 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) строка: 14. Зерна вразнобой звучат, словно маракасы – такое впечатление проведешь день в роли "дирижёра безумных обстоятельств". Полистай бесплатный статус: Симфония Хаоса.  
+DEBUG    2025-08-20 12:44:03,108 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) daily_horoscope для Лев - 14 - 18
+DEBUG    2025-08-20 12:44:03,108 [horoscope] (generator_horoscope.py).horoscope_transformation_text(74) day Лев - 2025-08-14 
+INFO     2025-08-20 12:44:03,108 [horoscope] (generator_horoscope.py).horoscope_transformation_text(77) Сохраняю гороскоп знака - Лев
+INFO     2025-08-20 12:44:03,110 [horoscope] (generator_horoscope.py).save_horoscope(104) Сохранил гороскоп знака - Лев
+DEBUG    2025-08-20 12:44:03,110 [horoscope] (generator_horoscope.py).horoscope_transformation_text(65) Строка гороскопа - 15. Августовский тайфун? Нет! Это бармен так твое экспрессо взбивал. Жди ураган гостей – запасись печеньем, солнцем и фейерверком (хоть сухим) под шезлонг.  
+DEBUG    2025-08-20 12:44:03,110 [horoscope] (generator_horoscope.py).horoscope_transformation_text(65) Строка гороскопа - 16. Отложи кофе со льдом... почти. В пенке проступил меч – сарказм сегодня твоё заточенное оружие. Им можно хлеб нарезать или стену пробить! Осознанно выбирай жертву.  
+DEBUG    2025-08-20 12:44:03,110 [horoscope] (generator_horoscope.py).horoscope_transformation_text(65) Строка гороскопа - 17. Молоко в латте свернулось? Прекрасно! Значит, "Босс, я ТАК больше не могу!" прозвучит идеально затянуто и с театральной паузой. Овации гарантированы.  
+DEBUG    2025-08-20 12:44:03,110 [horoscope] (generator_horoscope.py).horoscope_transformation_text(65) Строка гороскопа - 18. Предсказание от церемониальной чайной ложки: ты сегодня – главный архитектор чужого везения. Закажи дабл-шот передвижения планет (его фирменный стиль опционально взбодрит соседей).  
+DEBUG    2025-08-20 12:44:03,110 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) строка: 18. Предсказание от церемониальной чайной ложки: ты сегодня – главный архитектор чужого везения. Закажи дабл-шот передвижения планет (его фирменный стиль опционально взбодрит соседей).  
+DEBUG    2025-08-20 12:44:03,110 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) daily_horoscope для Лев - 18 - 138
+DEBUG    2025-08-20 12:44:03,110 [horoscope] (generator_horoscope.py).horoscope_transformation_text(74) day Лев - 2025-08-18 
+INFO     2025-08-20 12:44:03,111 [horoscope] (generator_horoscope.py).horoscope_transformation_text(77) Сохраняю гороскоп знака - Лев
+INFO     2025-08-20 12:44:03,112 [horoscope] (generator_horoscope.py).save_horoscope(104) Сохранил гороскоп знака - Лев
+DEBUG    2025-08-20 12:44:03,112 [horoscope] (generator_horoscope.py).horoscope_transformation_text(65) Строка гороскопа - 19. Львиный зевок? Идеальное резонансная частота смеха! Твой американо и дело сгорело? Насладись оранжевым закатом и криком меланхоличных чашек. Завтра будет вдвое энергетичнее.  
+DEBUG    2025-08-20 12:44:03,112 [horoscope] (generator_horoscope.py).horoscope_transformation_text(65) Строка гороскопа - 20. Ты сегодня с утра "Лев на шару"! Барабанная дрожь турки к добру: жди новости... с формулировкой "только вас искали", "исключительное предложение". Не распушишь чёрную гриву?  
+DEBUG    2025-08-20 12:44:03,112 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) строка: 20. Ты сегодня с утра "Лев на шару"! Барабанная дрожь турки к добру: жди новости... с формулировкой "только вас искали", "исключительное предложение". Не распушишь чёрную гриву?  
+DEBUG    2025-08-20 12:44:03,112 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) daily_horoscope для Лев - 20 - 111
+DEBUG    2025-08-20 12:44:03,112 [horoscope] (generator_horoscope.py).horoscope_transformation_text(74) day Лев - 2025-08-20 
+INFO     2025-08-20 12:44:03,112 [horoscope] (generator_horoscope.py).horoscope_transformation_text(77) Сохраняю гороскоп знака - Лев
+INFO     2025-08-20 12:44:03,114 [horoscope] (generator_horoscope.py).save_horoscope(104) Сохранил гороскоп знака - Лев
+DEBUG    2025-08-20 12:44:03,114 [horoscope] (generator_horoscope.py).horoscope_transformation_text(65) Строка гороскопа - 21. Птица в кофейных облаках – чужие перышки наряду с царским галопом. Отложи забор "А кто тут СУПЕР?" до вечера – день капризный, как долгий айс-кофе под вентилятором.  
+DEBUG    2025-08-20 12:44:03,114 [horoscope] (generator_horoscope.py).horoscope_transformation_text(65) Строка гороскопа - 22. Взгляд на кофе– сразу "я же говорил(а)"
+DEBUG    2025-08-20 12:44:03,114 [horoscope] (generator_horoscope.py).horoscope_transformation_text(65) Строка гороскопа - Количество мысленных повторов равнозначно упавшим ложкам с балкона... Пора чаще выдохнуть.  
+DEBUG    2025-08-20 12:44:03,114 [horoscope] (generator_horoscope.py).horoscope_transformation_text(65) Строка гороскопа - 23. Нуследежник для льва? Мох Кенийский! Гуща четко прописала: ваш роскошный день закончится... отверстием в носке. Но это начало звёздного пути иглы.  
+DEBUG    2025-08-20 12:44:03,114 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) строка: 23. Нуследежник для льва? Мох Кенийский! Гуща четко прописала: ваш роскошный день закончится... отверстием в носке. Но это начало звёздного пути иглы.  
+DEBUG    2025-08-20 12:44:03,115 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) daily_horoscope для Лев - 23 - 90
+DEBUG    2025-08-20 12:44:03,115 [horoscope] (generator_horoscope.py).horoscope_transformation_text(74) day Лев - 2025-08-23 
+INFO     2025-08-20 12:44:03,115 [horoscope] (generator_horoscope.py).horoscope_transformation_text(77) Сохраняю гороскоп знака - Лев
+INFO     2025-08-20 12:44:03,121 [horoscope] (generator_horoscope.py).save_horoscope(104) Сохранил гороскоп знака - Лев
+DEBUG    2025-08-20 12:44:03,121 [horoscope] (generator_horoscope.py).horoscope_transformation_text(65) Строка гороскопа - 24. Листья за окном ржавеют лишь за страхе вашей ауры забрать их краски! Сегодня все критики столкнутся с вами на бегу по оттенкам и признают своё желтое поражение.  
+DEBUG    2025-08-20 12:44:03,122 [horoscope] (generator_horoscope.py).horoscope_transformation_text(65) Строка гороскопа - 25. Плеснуло на клавиатуру? Оракул подсказывает танки пикселей в почте. Включай режим "хппч" и запасись луной стаканчиков... Отстрел через кнопку DELETE подскажет звёздная камедь.
+DEBUG    2025-08-20 12:44:03,123 [horoscope] (generator_horoscope.py).horoscope_transformation_text(65) Строка гороскопа - 26. Кофе-мороженое! Инсайт пасется под хруст вафельного рожка. Будьте готовы издать громкий "Ааах!": до чего-то щемяще простого, как забытая реклама счастья.  
+DEBUG    2025-08-20 12:44:03,123 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) строка: 26. Кофе-мороженое! Инсайт пасется под хруст вафельного рожка. Будьте готовы издать громкий "Ааах!": до чего-то щемяще простого, как забытая реклама счастья.  
+DEBUG    2025-08-20 12:44:03,124 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) daily_horoscope для Лев - 26 - 59
+DEBUG    2025-08-20 12:44:03,124 [horoscope] (generator_horoscope.py).horoscope_transformation_text(74) day Лев - 2025-08-26 
+INFO     2025-08-20 12:44:03,124 [horoscope] (generator_horoscope.py).horoscope_transformation_text(77) Сохраняю гороскоп знака - Лев
+INFO     2025-08-20 12:44:03,127 [horoscope] (generator_horoscope.py).save_horoscope(104) Сохранил гороскоп знака - Лев
+DEBUG    2025-08-20 12:44:03,127 [horoscope] (generator_horoscope.py).horoscope_transformation_text(65) Строка гороскопа - 27. Дождь норовит затушить ваше внутреннее солнце? Лицедейте хмурые капли звонкого космоса! Львиный гранде в языках молнии споет сегодня элегию в честь вас.  
+DEBUG    2025-08-20 12:44:03,127 [horoscope] (generator_horoscope.py).horoscope_transformation_text(65) Строка гороскопа - 28. Взаймы кофеин – смерть для гривы! Тот, кто попросит сегодня "глоток удачи" – получит термин-прерогативу вашего молчания... поджаривая тот факт усиками.  
+DEBUG    2025-08-20 12:44:03,127 [horoscope] (generator_horoscope.py).horoscope_transformation_text(65) Строка гороскопа - 29. Утро началось с кошки в чашке? Ждите чужих эмоций багажом на гордости! Стойкое "не моё" обретет голос... а зевок на весь офис напомнит: так себе карма.  
+DEBUG    2025-08-20 12:44:03,127 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) строка: 29. Утро началось с кошки в чашке? Ждите чужих эмоций багажом на гордости! Стойкое "не моё" обретет голос... а зевок на весь офис напомнит: так себе карма.  
+DEBUG    2025-08-20 12:44:03,127 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) daily_horoscope для Лев - 29 - 18
+DEBUG    2025-08-20 12:44:03,127 [horoscope] (generator_horoscope.py).horoscope_transformation_text(74) day Лев - 2025-08-29 
+INFO     2025-08-20 12:44:03,127 [horoscope] (generator_horoscope.py).horoscope_transformation_text(77) Сохраняю гороскоп знака - Лев
+INFO     2025-08-20 12:44:03,129 [horoscope] (generator_horoscope.py).save_horoscope(104) Сохранил гороскоп знака - Лев
+DEBUG    2025-08-20 12:44:03,129 [horoscope] (generator_horoscope.py).horoscope_transformation_text(65) Строка гороскопа - 30. Август коньками тоскует! Но лёгкости глить бочино не помеха: ловкость потягиваний и бэксвош-хаос у вас прокачаны до звёздного мига... Кто-то всё снимет? Лепота!  
+DEBUG    2025-08-20 12:44:03,129 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) строка: 30. Август коньками тоскует! Но лёгкости глить бочино не помеха: ловкость потягиваний и бэксвош-хаос у вас прокачаны до звёздного мига... Кто-то всё снимет? Лепота!  
+DEBUG    2025-08-20 12:44:03,129 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) daily_horoscope для Лев - 30 - 102
+DEBUG    2025-08-20 12:44:03,129 [horoscope] (generator_horoscope.py).horoscope_transformation_text(74) day Лев - 2025-08-30 
+INFO     2025-08-20 12:44:03,129 [horoscope] (generator_horoscope.py).horoscope_transformation_text(77) Сохраняю гороскоп знака - Лев
+INFO     2025-08-20 12:44:03,131 [horoscope] (generator_horoscope.py).save_horoscope(104) Сохранил гороскоп знака - Лев
+DEBUG    2025-08-20 12:44:03,131 [horoscope] (generator_horoscope.py).horoscope_transformation_text(65) Строка гороскопа - 31. Последняя искорка августовского костра селфи на фоне рыжих зонтиков! Ваша гуща засветилась надписью: "Львы Special". Задержите глоток капучино – в сети объявлен уже сентябрь.
+DEBUG    2025-08-20 12:44:03,131 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) строка: 31. Последняя искорка августовского костра селфи на фоне рыжих зонтиков! Ваша гуща засветилась надписью: "Львы Special". Задержите глоток капучино – в сети объявлен уже сентябрь.
+DEBUG    2025-08-20 12:44:03,131 [horoscope] (generator_horoscope.py).horoscope_transformation_text(71) daily_horoscope для Лев - 31 - 74
+DEBUG    2025-08-20 12:44:03,131 [horoscope] (generator_horoscope.py).horoscope_transformation_text(74) day Лев - 2025-08-31 
+INFO     2025-08-20 12:44:03,132 [horoscope] (generator_horoscope.py).horoscope_transformation_text(77) Сохраняю гороскоп знака - Лев
+INFO     2025-08-20 12:44:03,133 [horoscope] (generator_horoscope.py).save_horoscope(104) Сохранил гороскоп знака - Лев
+DEBUG    2025-08-20 12:44:03,133 [horoscope] (generator_horoscope.py).horoscope_transformation_text(65) Строка гороскопа - 
+DEBUG    2025-08-20 12:44:03,133 [horoscope] (generator_horoscope.py).horoscope_transformation_text(65) Строка гороскопа - Пусть каждый августовский глоток коронует твою гриву бодростью, о Великий Дворцовый Потребитель Кофе! 🌞☕👑
+DEBUG    2025-08-20 12:44:03,511 [horoscope] (generator_horoscope.py).start_generate_all_horoscopes(23) SUPERADMIN: 484385628, Генерирую гороскоп для знака Лев
+INFO     2025-08-20 13:05:00,889 [horoscope] (logging_config.py)._setup_handlers(50) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-20 13:05:26,156 [horoscope] (generator_horoscope.py).generate_horoscope(39) Начинаю генерацию гороскопа для Лев
+ERROR    2025-08-20 13:06:31,720 [horoscope] (generator_horoscope.py).generate_horoscope(55) Ошибка получения гороскопа для Лев - object of type 'NoneType' has no len()
+Traceback (most recent call last):
+  File "E:\python\bots\cafe_bot\utils\generator_horoscope.py", line 46, in generate_horoscope
+    horo_logger.debug(f'получен гороскоп длинной : {len(horoscope)}')
+                                                    ~~~^^^^^^^^^^^
+TypeError: object of type 'NoneType' has no len()
+DEBUG    2025-08-20 13:06:31,802 [horoscope] (generator_horoscope.py).start_generate_all_horoscopes(24) SUPERADMIN: 484385628, Генерирую гороскоп для знака Лев
+INFO     2025-08-20 13:07:31,816 [horoscope] (generator_horoscope.py).generate_horoscope(39) Начинаю генерацию гороскопа для Телец
+DEBUG    2025-08-20 13:08:31,372 [horoscope] (generator_horoscope.py).generate_horoscope(46) получен гороскоп длинной : 3884
+INFO     2025-08-20 13:08:41,384 [horoscope] (generator_horoscope.py).horoscope_transformation_text(63) Перехожу к тексту знака - Телец
+DEBUG    2025-08-20 13:08:41,384 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) Длинна гороскопа - 3884
+DEBUG    2025-08-20 13:08:41,384 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - Отлично, земляной кофолюб! Августовская жара раскалит твою бычью натуру, как турку на углях. Продиагностирую пенку и гущу за тебя:
+DEBUG    2025-08-20 13:08:41,384 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: Отлично, земляной кофолюб! Августовская жара раскалит твою бычью натуру, как турку на углях. Продиагностирую пенку и гущу за тебя:
+DEBUG    2025-08-20 13:08:41,384 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Телец - Отлично, земляной кофолюб! Августовская жара раскалит твою бычью натуру, как турку на углях - 0
+DEBUG    2025-08-20 13:08:41,384 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 
+DEBUG    2025-08-20 13:08:41,384 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 1: Твой капучино раскрылся двойной пеной эго: сегодня ты заслуженно получишь комплимент размером с торт "Захер", но не дашь ему растаять
+DEBUG    2025-08-20 13:08:41,384 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 1: Твой капучино раскрылся двойной пеной эго: сегодня ты заслуженно получишь комплимент размером с торт "Захер", но не дашь ему растаять
+DEBUG    2025-08-20 13:08:41,384 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Телец - 1 - 134
+DEBUG    2025-08-20 13:08:41,385 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Телец - 2025-08-01 
+INFO     2025-08-20 13:08:41,386 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Телец
+INFO     2025-08-20 13:08:41,393 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Телец
+DEBUG    2025-08-20 13:08:41,394 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 2: Фильтр-кофе процеживает истину: на работе предложат срок "до понедельника", что по-тельцовски означает "сделаю, когда созрею, как августовская слива"
+DEBUG    2025-08-20 13:08:41,394 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 2: Фильтр-кофе процеживает истину: на работе предложат срок "до понедельника", что по-тельцовски означает "сделаю, когда созрею, как августовская слива"
+DEBUG    2025-08-20 13:08:41,394 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Телец - 2 - 150
+DEBUG    2025-08-20 13:08:41,394 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Телец - 2025-08-02 
+INFO     2025-08-20 13:08:41,394 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Телец
+INFO     2025-08-20 13:08:41,395 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Телец
+DEBUG    2025-08-20 13:08:41,395 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 3: Выдыхай пары эспрессо и приземляйся: импульсивные траты сегодня обернутся покупкой вендингового авто для кальяо (ну вдруг!)
+DEBUG    2025-08-20 13:08:41,396 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 3: Выдыхай пары эспрессо и приземляйся: импульсивные траты сегодня обернутся покупкой вендингового авто для кальяо (ну вдруг!)
+DEBUG    2025-08-20 13:08:41,396 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Телец - 3 - 124
+DEBUG    2025-08-20 13:08:41,396 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Телец - 2025-08-03 
+INFO     2025-08-20 13:08:41,396 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Телец
+INFO     2025-08-20 13:08:41,397 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Телец
+DEBUG    2025-08-20 13:08:41,397 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 4: Зёрна советуют какао instead: звёзды шепчут, что ты на 43% готов признать чью-то правоту. Шанс повысит темный шоколад с миндалём
+DEBUG    2025-08-20 13:08:41,397 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 4: Зёрна советуют какао instead: звёзды шепчут, что ты на 43% готов признать чью-то правоту. Шанс повысит темный шоколад с миндалём
+DEBUG    2025-08-20 13:08:41,397 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Телец - 4 - 129
+DEBUG    2025-08-20 13:08:41,397 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Телец - 2025-08-04 
+INFO     2025-08-20 13:08:41,397 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Телец
+INFO     2025-08-20 13:08:41,398 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Телец
+DEBUG    2025-08-20 13:08:41,399 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 5: Твоя чашка пустовата? Это знак игнорировать навязчивых советчиков: выплесни их советы, как перестоявшийся флэт уайт
+DEBUG    2025-08-20 13:08:41,399 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 5: Твоя чашка пустовата? Это знак игнорировать навязчивых советчиков: выплесни их советы, как перестоявшийся флэт уайт
+DEBUG    2025-08-20 13:08:41,399 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Телец - 5 - 116
+DEBUG    2025-08-20 13:08:41,399 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Телец - 2025-08-05 
+INFO     2025-08-20 13:08:41,399 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Телец
+INFO     2025-08-20 13:08:41,400 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Телец
+DEBUG    2025-08-20 13:08:41,400 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 6: Американо остывает критично: не дай сахару утренних конфликтов раствориться в твоём терпении. Подсласти жизнь сарказмом!
+DEBUG    2025-08-20 13:08:41,401 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 6: Американо остывает критично: не дай сахару утренних конфликтов раствориться в твоём терпении. Подсласти жизнь сарказмом!
+DEBUG    2025-08-20 13:08:41,401 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Телец - 6 - 121
+DEBUG    2025-08-20 13:08:41,401 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Телец - 2025-08-06 
+INFO     2025-08-20 13:08:41,401 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Телец
+INFO     2025-08-20 13:08:41,403 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Телец
+DEBUG    2025-08-20 13:08:41,404 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 7: Эспрессо будет медленным, как движение облаков: наслаждайся отпускным ритмом, даже если это просто полчаса с айс-кофе на балконе
+DEBUG    2025-08-20 13:08:41,404 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 7: Эспрессо будет медленным, как движение облаков: наслаждайся отпускным ритмом, даже если это просто полчаса с айс-кофе на балконе
+DEBUG    2025-08-20 13:08:41,404 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Телец - 7 - 129
+DEBUG    2025-08-20 13:08:41,404 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Телец - 2025-08-07 
+INFO     2025-08-20 13:08:41,404 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Телец
+INFO     2025-08-20 13:08:41,405 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Телец
+DEBUG    2025-08-20 13:08:41,406 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 8: Кофейная гуща рисует скелет карпуччино: кто-то скрыщает твой кофе, Телец! Расследование начни с коллеги с липкими пальцами
+DEBUG    2025-08-20 13:08:41,406 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 8: Кофейная гуща рисует скелет карпуччино: кто-то скрыщает твой кофе, Телец! Расследование начни с коллеги с липкими пальцами
+DEBUG    2025-08-20 13:08:41,406 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Телец - 8 - 123
+DEBUG    2025-08-20 13:08:41,406 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Телец - 2025-08-08 
+INFO     2025-08-20 13:08:41,406 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Телец
+INFO     2025-08-20 13:08:41,407 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Телец
+DEBUG    2025-08-20 13:08:41,408 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 9: Зеркало на дне чашки: ты будешь безупречно прокрастинировать, пока не поймёшь, что счёт идёт на последние кофейные зёрна лета
+DEBUG    2025-08-20 13:08:41,408 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 9: Зеркало на дне чашки: ты будешь безупречно прокрастинировать, пока не поймёшь, что счёт идёт на последние кофейные зёрна лета
+DEBUG    2025-08-20 13:08:41,408 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Телец - 9 - 126
+DEBUG    2025-08-20 13:08:41,408 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Телец - 2025-08-09 
+INFO     2025-08-20 13:08:41,408 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Телец
+INFO     2025-08-20 13:08:41,409 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Телец
+DEBUG    2025-08-20 13:08:41,409 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 10: Турка бурлит с угрозами: избегай споров о политике — твоё мнение сегодня ценно, как редкий копи-лувак, но мало кто проглотит
+DEBUG    2025-08-20 13:08:41,409 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 10: Турка бурлит с угрозами: избегай споров о политике — твоё мнение сегодня ценно, как редкий копи-лувак, но мало кто проглотит
+DEBUG    2025-08-20 13:08:41,410 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Телец - 10 - 125
+DEBUG    2025-08-20 13:08:41,410 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Телец - 2025-08-10 
+INFO     2025-08-20 13:08:41,410 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Телец
+INFO     2025-08-20 13:08:41,410 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Телец
+DEBUG    2025-08-20 13:08:41,411 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 11: Зачем холодный брю? Он монетной горой притянет нежданного гостя с пирогами для твоей божественной арабики!
+DEBUG    2025-08-20 13:08:41,411 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 11: Зачем холодный брю? Он монетной горой притянет нежданного гостя с пирогами для твоей божественной арабики!
+DEBUG    2025-08-20 13:08:41,411 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Телец - 11 - 107
+DEBUG    2025-08-20 13:08:41,411 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Телец - 2025-08-11 
+INFO     2025-08-20 13:08:41,411 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Телец
+INFO     2025-08-20 13:08:41,412 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Телец
+DEBUG    2025-08-20 13:08:41,412 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 12: Видишь сколотую чашку? Это сигнал отпустить прошлогоднюю обиду... или просто аккуратней мой посуду
+DEBUG    2025-08-20 13:08:41,412 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 12: Видишь сколотую чашку? Это сигнал отпустить прошлогоднюю обиду... или просто аккуратней мой посуду
+DEBUG    2025-08-20 13:08:41,412 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Телец - 12 - 99
+DEBUG    2025-08-20 13:08:41,412 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Телец - 2025-08-12 
+INFO     2025-08-20 13:08:41,412 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Телец
+INFO     2025-08-20 13:08:41,413 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Телец
+DEBUG    2025-08-20 13:08:41,413 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 13: Взбивай молоко в пик жары: твоя фраза «А можно я позже?» сработает мощнее кондиционера
+DEBUG    2025-08-20 13:08:41,413 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 13: Взбивай молоко в пик жары: твоя фраза «А можно я позже?» сработает мощнее кондиционера
+DEBUG    2025-08-20 13:08:41,413 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Телец - 13 - 87
+DEBUG    2025-08-20 13:08:41,413 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Телец - 2025-08-13 
+INFO     2025-08-20 13:08:41,413 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Телец
+INFO     2025-08-20 13:08:41,414 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Телец
+DEBUG    2025-08-20 13:08:41,414 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 14: Алхимия в чашке: фраза «это слишком дорого» волшебно превратит ценник в «бесплатный пробник»
+DEBUG    2025-08-20 13:08:41,414 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 14: Алхимия в чашке: фраза «это слишком дорого» волшебно превратит ценник в «бесплатный пробник»
+DEBUG    2025-08-20 13:08:41,414 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Телец - 14 - 93
+DEBUG    2025-08-20 13:08:41,414 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Телец - 2025-08-14 
+INFO     2025-08-20 13:08:41,414 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Телец
+INFO     2025-08-20 13:08:41,416 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Телец
+DEBUG    2025-08-20 13:08:41,416 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 15: Кофемашина кхм... подавится: отложи техногенные эксперименты. Доверься старой доброй турке и её мудрости пузырей
+DEBUG    2025-08-20 13:08:41,416 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 15: Кофемашина кхм... подавится: отложи техногенные эксперименты. Доверься старой доброй турке и её мудрости пузырей
+DEBUG    2025-08-20 13:08:41,416 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Телец - 15 - 113
+DEBUG    2025-08-20 13:08:41,416 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Телец - 2025-08-15 
+INFO     2025-08-20 13:08:41,416 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Телец
+INFO     2025-08-20 13:08:41,417 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Телец
+DEBUG    2025-08-20 13:08:41,418 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 16: Рисунок пены напоминает долговязого пса: сегодня 89% твоего пути помешает соседский гаструляйтер. Благослови его капучино с корицей
+DEBUG    2025-08-20 13:08:41,418 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 16: Рисунок пены напоминает долговязого пса: сегодня 89% твоего пути помешает соседский гаструляйтер. Благослови его капучино с корицей
+DEBUG    2025-08-20 13:08:41,418 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Телец - 16 - 132
+DEBUG    2025-08-20 13:08:41,418 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Телец - 2025-08-16 
+INFO     2025-08-20 13:08:41,418 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Телец
+INFO     2025-08-20 13:08:41,419 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Телец
+DEBUG    2025-08-20 13:08:41,419 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 17: Эспрессо-прозрение: ты осознаешь, что лето утекло, как молоко из холодильника. Срочно покупай пакетированный раф!
+DEBUG    2025-08-20 13:08:41,419 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 17: Эспрессо-прозрение: ты осознаешь, что лето утекло, как молоко из холодильника. Срочно покупай пакетированный раф!
+DEBUG    2025-08-20 13:08:41,419 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Телец - 17 - 114
+DEBUG    2025-08-20 13:08:41,419 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Телец - 2025-08-17 
+INFO     2025-08-20 13:08:41,419 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Телец
+INFO     2025-08-20 13:08:41,420 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Телец
+DEBUG    2025-08-20 13:08:41,420 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 18: Гуща предупреждает об «экономии»: не разбавляй кофе водой — биохакеры заметят и назовут тебя теоретиком жидкого бюджета
+DEBUG    2025-08-20 13:08:41,420 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 18: Гуща предупреждает об «экономии»: не разбавляй кофе водой — биохакеры заметят и назовут тебя теоретиком жидкого бюджета
+DEBUG    2025-08-20 13:08:41,420 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Телец - 18 - 120
+DEBUG    2025-08-20 13:08:41,420 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Телец - 2025-08-18 
+INFO     2025-08-20 13:08:41,420 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Телец
+INFO     2025-08-20 13:08:41,421 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Телец
+DEBUG    2025-08-20 13:08:41,421 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 19: Брошенный стаканчик на скамейке — твой тотем: сиди спокойно, и августовская инсайт-муха сама сядет на нос
+DEBUG    2025-08-20 13:08:41,422 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 19: Брошенный стаканчик на скамейке — твой тотем: сиди спокойно, и августовская инсайт-муха сама сядет на нос
+DEBUG    2025-08-20 13:08:41,422 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Телец - 19 - 106
+DEBUG    2025-08-20 13:08:41,422 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Телец - 2025-08-19 
+INFO     2025-08-20 13:08:41,422 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Телец
+INFO     2025-08-20 13:08:41,423 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Телец
+DEBUG    2025-08-20 13:08:41,423 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 20: В кофейной пене проступил барельеф Тауруса: твоё упрямство сегодня сэкономит тебе 3 рабочих часа... и 1 нервную клетку
+DEBUG    2025-08-20 13:08:41,423 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 20: В кофейной пене проступил барельеф Тауруса: твоё упрямство сегодня сэкономит тебе 3 рабочих часа... и 1 нервную клетку
+DEBUG    2025-08-20 13:08:41,423 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Телец - 20 - 119
+DEBUG    2025-08-20 13:08:41,423 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Телец - 2025-08-20 
+INFO     2025-08-20 13:08:41,423 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Телец
+INFO     2025-08-20 13:08:41,424 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Телец
+DEBUG    2025-08-20 13:08:41,424 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 21: Зёрна сулят диалог глухоты: повтори свой заказ в кофейне трижды, и барриста отроет самый дорогой сливочный сироп последней надежды
+DEBUG    2025-08-20 13:08:41,424 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 21: Зёрна сулят диалог глухоты: повтори свой заказ в кофейне трижды, и барриста отроет самый дорогой сливочный сироп последней надежды
+DEBUG    2025-08-20 13:08:41,424 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Телец - 21 - 132
+DEBUG    2025-08-20 13:08:41,424 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Телец - 2025-08-21 
+INFO     2025-08-20 13:08:41,424 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Телец
+INFO     2025-08-20 13:08:41,425 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Телец
+DEBUG    2025-08-20 13:08:41,425 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 22: Настаивайсь на чудака, как чай: его идея с подпольной пекарней принесет тебе бесплатный круассан... и тайну дрожей
+DEBUG    2025-08-20 13:08:41,425 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 22: Настаивайсь на чудака, как чай: его идея с подпольной пекарней принесет тебе бесплатный круассан... и тайну дрожей
+DEBUG    2025-08-20 13:08:41,425 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Телец - 22 - 120
+DEBUG    2025-08-20 13:08:41,425 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Телец - 2025-08-22 
+INFO     2025-08-20 13:08:41,425 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Телец
+INFO     2025-08-20 13:08:41,426 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Телец
+DEBUG    2025-08-20 13:08:41,429 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 23: Льдинка упала в раф роково: непредсказуемое событие отсрочит отпускное бронирование... продай историю Счирикательному Пикачу!
+DEBUG    2025-08-20 13:08:41,429 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 23: Льдинка упала в раф роково: непредсказуемое событие отсрочит отпускное бронирование... продай историю Счирикательному Пикачу!
+DEBUG    2025-08-20 13:08:41,429 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Телец - 23 - 127
+DEBUG    2025-08-20 13:08:41,429 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Телец - 2025-08-23 
+INFO     2025-08-20 13:08:41,429 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Телец
+INFO     2025-08-20 13:08:41,431 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Телец
+DEBUG    2025-08-20 13:08:41,431 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 24: Тёмный церемониал: нарезай авокадо с арт-подходом — эстетика важнее калорий! Особенно если калории платные
+DEBUG    2025-08-20 13:08:41,431 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 24: Тёмный церемониал: нарезай авокадо с арт-подходом — эстетика важнее калорий! Особенно если калории платные
+DEBUG    2025-08-20 13:08:41,431 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Телец - 24 - 110
+DEBUG    2025-08-20 13:08:41,431 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Телец - 2025-08-24 
+INFO     2025-08-20 13:08:41,431 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Телец
+INFO     2025-08-20 13:08:41,433 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Телец
+DEBUG    2025-08-20 13:08:41,433 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 25: Сифон угрожает взрывом: не начинай генеральную уборку дома без кофеиной анестезии в дозировке 150 мл
+DEBUG    2025-08-20 13:08:41,433 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 25: Сифон угрожает взрывом: не начинай генеральную уборку дома без кофеиной анестезии в дозировке 150 мл
+DEBUG    2025-08-20 13:08:41,433 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Телец - 25 - 103
+DEBUG    2025-08-20 13:08:41,433 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Телец - 2025-08-25 
+INFO     2025-08-20 13:08:41,433 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Телец
+INFO     2025-08-20 13:08:41,434 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Телец
+DEBUG    2025-08-20 13:08:41,434 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 26: Автомат выдал тебе «Супруга Бьянка»: в конце дня тебя ждёт сюрприз столь же неожиданный... и горчащий
+DEBUG    2025-08-20 13:08:41,434 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 26: Автомат выдал тебе «Супруга Бьянка»: в конце дня тебя ждёт сюрприз столь же неожиданный... и горчащий
+DEBUG    2025-08-20 13:08:41,434 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Телец - 26 - 104
+DEBUG    2025-08-20 13:08:41,434 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Телец - 2025-08-26 
+INFO     2025-08-20 13:08:41,434 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Телец
+INFO     2025-08-20 13:08:41,436 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Телец
+DEBUG    2025-08-20 13:08:41,436 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 27: Вибрации утреннего латте: твой шанс шпионить за милыми мелочами жизни по дороге на работу вырос на 150%
+DEBUG    2025-08-20 13:08:41,436 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 27: Вибрации утреннего латте: твой шанс шпионить за милыми мелочами жизни по дороге на работу вырос на 150%
+DEBUG    2025-08-20 13:08:41,436 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Телец - 27 - 104
+DEBUG    2025-08-20 13:08:41,436 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Телец - 2025-08-27 
+INFO     2025-08-20 13:08:41,436 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Телец
+INFO     2025-08-20 13:08:41,437 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Телец
+DEBUG    2025-08-20 13:08:41,437 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 28: Охлаждай гнев розовым фраппе: злорадный коллега поливает чипсы сметаной — твой невинный вопрос рецепта его унизит без боя
+DEBUG    2025-08-20 13:08:41,437 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 28: Охлаждай гнев розовым фраппе: злорадный коллега поливает чипсы сметаной — твой невинный вопрос рецепта его унизит без боя
+DEBUG    2025-08-20 13:08:41,437 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Телец - 28 - 122
+DEBUG    2025-08-20 13:08:41,437 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Телец - 2025-08-28 
+INFO     2025-08-20 13:08:41,437 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Телец
+INFO     2025-08-20 13:08:41,438 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Телец
+DEBUG    2025-08-20 13:08:41,438 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 29: Вспени мечты интенсивно: закрой приложения-хулиганы и собраси тёплыми скамейками парка для кофе-йоги
+DEBUG    2025-08-20 13:08:41,438 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 29: Вспени мечты интенсивно: закрой приложения-хулиганы и собраси тёплыми скамейками парка для кофе-йоги
+DEBUG    2025-08-20 13:08:41,438 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Телец - 29 - 102
+DEBUG    2025-08-20 13:08:41,439 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Телец - 2025-08-29 
+INFO     2025-08-20 13:08:41,439 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Телец
+INFO     2025-08-20 13:08:41,439 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Телец
+DEBUG    2025-08-20 13:08:41,439 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 30: Август уходит дымкой: ключевой совет Вселенского Бариста – заверши сезон шелковистым мокко и любовной зарисовкой в блокнот
+DEBUG    2025-08-20 13:08:41,440 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 30: Август уходит дымкой: ключевой совет Вселенского Бариста – заверши сезон шелковистым мокко и любовной зарисовкой в блокнот
+DEBUG    2025-08-20 13:08:41,440 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Телец - 30 - 123
+DEBUG    2025-08-20 13:08:41,440 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Телец - 2025-08-30 
+INFO     2025-08-20 13:08:41,440 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Телец
+INFO     2025-08-20 13:08:41,440 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Телец
+DEBUG    2025-08-20 13:08:41,441 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 31: Круговерть в кофеварке: загадывай желание на оставшиеся три зерна! Одно точно сработает. И будет связано с новой кофемолкой
+DEBUG    2025-08-20 13:08:41,441 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 31: Круговерть в кофеварке: загадывай желание на оставшиеся три зерна! Одно точно сработает. И будет связано с новой кофемолкой
+DEBUG    2025-08-20 13:08:41,441 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Телец - 31 - 124
+DEBUG    2025-08-20 13:08:41,441 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Телец - 2025-08-31 
+INFO     2025-08-20 13:08:41,441 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Телец
+INFO     2025-08-20 13:08:41,442 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Телец
+DEBUG    2025-08-20 13:08:41,663 [horoscope] (generator_horoscope.py).start_generate_all_horoscopes(24) SUPERADMIN: 484385628, Генерирую гороскоп для знака Телец
+INFO     2025-08-20 13:09:41,667 [horoscope] (generator_horoscope.py).generate_horoscope(39) Начинаю генерацию гороскопа для Водолей
+DEBUG    2025-08-20 13:10:45,050 [horoscope] (generator_horoscope.py).generate_horoscope(46) получен гороскоп длинной : 4173
+INFO     2025-08-20 13:10:55,065 [horoscope] (generator_horoscope.py).horoscope_transformation_text(63) Перехожу к тексту знака - Водолей
+DEBUG    2025-08-20 13:10:55,065 [horoscope] (generator_horoscope.py).horoscope_transformation_text(64) Длинна гороскопа - 4173
+DEBUG    2025-08-20 13:10:55,065 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - Отлично, держи кофейные пророчества для Водолея на каждый день августа 2025! Готовь свою самую необычную кружку:
+DEBUG    2025-08-20 13:10:55,065 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: Отлично, держи кофейные пророчества для Водолея на каждый день августа 2025! Готовь свою самую необычную кружку:
+DEBUG    2025-08-20 13:10:55,066 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Водолей - Отлично, держи кофейные пророчества для Водолея на каждый день августа 2025! Готовь свою самую необычную кружку - 0
+DEBUG    2025-08-20 13:10:55,066 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 
+DEBUG    2025-08-20 13:10:55,066 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 1: Пузырьки в твоем капучино сегодня сигнализируют: начни день с отрицания очевидного — возможно, с демонстративного питья эспрессо через соломинку.
+DEBUG    2025-08-20 13:10:55,066 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 1: Пузырьки в твоем капучино сегодня сигнализируют: начни день с отрицания очевидного — возможно, с демонстративного питья эспрессо через соломинку.
+DEBUG    2025-08-20 13:10:55,066 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Водолей - 1 - 146
+DEBUG    2025-08-20 13:10:55,066 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Водолей - 2025-08-01 
+INFO     2025-08-20 13:10:55,066 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Водолей
+INFO     2025-08-20 13:10:55,072 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Водолей
+DEBUG    2025-08-20 13:10:55,073 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 2: Кофейная гуща рисует галактику: не верь "галактическому капуччино" в меню — это обман вселенной и пена захваченной туманности.
+DEBUG    2025-08-20 13:10:55,073 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 2: Кофейная гуща рисует галактику: не верь "галактическому капуччино" в меню — это обман вселенной и пена захваченной туманности.
+DEBUG    2025-08-20 13:10:55,073 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Водолей - 2 - 127
+DEBUG    2025-08-20 13:10:55,073 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Водолей - 2025-08-02 
+INFO     2025-08-20 13:10:55,073 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Водолей
+INFO     2025-08-20 13:10:55,075 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Водолей
+DEBUG    2025-08-20 13:10:55,075 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 3: Летний зной требует действий: отфильтруй трех друзей через сито холодного брю — один точно окажется несвежим.
+DEBUG    2025-08-20 13:10:55,075 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 3: Летний зной требует действий: отфильтруй трех друзей через сито холодного брю — один точно окажется несвежим.
+DEBUG    2025-08-20 13:10:55,075 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Водолей - 3 - 110
+DEBUG    2025-08-20 13:10:55,075 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Водолей - 2025-08-03 
+INFO     2025-08-20 13:10:55,075 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Водолей
+INFO     2025-08-20 13:10:55,076 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Водолей
+DEBUG    2025-08-20 13:10:55,076 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 4: Планеты в твоей кофемашине встали в странный ряд: жди мелкого сбоя матрицы (например, в автобусе сдачу дадут пёрышком феникса).
+DEBUG    2025-08-20 13:10:55,076 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 4: Планеты в твоей кофемашине встали в странный ряд: жди мелкого сбоя матрицы (например, в автобусе сдачу дадут пёрышком феникса).
+DEBUG    2025-08-20 13:10:55,077 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Водолей - 4 - 128
+DEBUG    2025-08-20 13:10:55,077 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Водолей - 2025-08-04 
+INFO     2025-08-20 13:10:55,077 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Водолей
+INFO     2025-08-20 13:10:55,077 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Водолей
+DEBUG    2025-08-20 13:10:55,078 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 5: Вместо сахара сегодня подсыпь в кофе щепотку созвездия Лиры — поможет импровизировать сонеты бармену.
+DEBUG    2025-08-20 13:10:55,078 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 5: Вместо сахара сегодня подсыпь в кофе щепотку созвездия Лиры — поможет импровизировать сонеты бармену.
+DEBUG    2025-08-20 13:10:55,078 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Водолей - 5 - 102
+DEBUG    2025-08-20 13:10:55,078 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Водолей - 2025-08-05 
+INFO     2025-08-20 13:10:55,078 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Водолей
+INFO     2025-08-20 13:10:55,079 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Водолей
+DEBUG    2025-08-20 13:10:55,079 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 6: Зерна шепчут: сквозняк на кухне сегодня — не просто сквозняк, а дух забытого летнего флирта в поисках чашки.
+DEBUG    2025-08-20 13:10:55,079 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 6: Зерна шепчут: сквозняк на кухне сегодня — не просто сквозняк, а дух забытого летнего флирта в поисках чашки.
+DEBUG    2025-08-20 13:10:55,079 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Водолей - 6 - 109
+DEBUG    2025-08-20 13:10:55,079 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Водолей - 2025-08-06 
+INFO     2025-08-20 13:10:55,079 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Водолей
+INFO     2025-08-20 13:10:55,080 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Водолей
+DEBUG    2025-08-20 13:10:55,080 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 7: На дне чашки обнаружен чертеж: сделай сегодня что-то вопиюще нелогичное, но полезное (хоть почисти уши вафельным стаканчиком!).
+DEBUG    2025-08-20 13:10:55,080 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 7: На дне чашки обнаружен чертеж: сделай сегодня что-то вопиюще нелогичное, но полезное (хоть почисти уши вафельным стаканчиком!).
+DEBUG    2025-08-20 13:10:55,080 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Водолей - 7 - 128
+DEBUG    2025-08-20 13:10:55,080 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Водолей - 2025-08-07 
+INFO     2025-08-20 13:10:55,080 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Водолей
+INFO     2025-08-20 13:10:55,081 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Водолей
+DEBUG    2025-08-20 13:10:55,081 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 8: Кофейный фильтр сегодня особенно капризен: как знак, что мироздание проверит твоё умение отделять зёрна нескучного от плевел рутины.
+DEBUG    2025-08-20 13:10:55,081 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 8: Кофейный фильтр сегодня особенно капризен: как знак, что мироздание проверит твоё умение отделять зёрна нескучного от плевел рутины.
+DEBUG    2025-08-20 13:10:55,081 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Водолей - 8 - 133
+DEBUG    2025-08-20 13:10:55,081 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Водолей - 2025-08-08 
+INFO     2025-08-20 13:10:55,081 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Водолей
+INFO     2025-08-20 13:10:55,082 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Водолей
+DEBUG    2025-08-20 13:10:55,082 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 9: Не верь первому глотку латте: под пенной шапкой скрывается твоя давняя идея, ставшая вдруг выполнимой под августовским солнцем.
+DEBUG    2025-08-20 13:10:55,082 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 9: Не верь первому глотку латте: под пенной шапкой скрывается твоя давняя идея, ставшая вдруг выполнимой под августовским солнцем.
+DEBUG    2025-08-20 13:10:55,082 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Водолей - 9 - 128
+DEBUG    2025-08-20 13:10:55,083 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Водолей - 2025-08-09 
+INFO     2025-08-20 13:10:55,083 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Водолей
+INFO     2025-08-20 13:10:55,083 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Водолей
+DEBUG    2025-08-20 13:10:55,083 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 10: Смешай сегодня темную и светлую обжарку в одной кружке — метафора твоей души и сигнал к неожиданному компромиссу.
+DEBUG    2025-08-20 13:10:55,084 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 10: Смешай сегодня темную и светлую обжарку в одной кружке — метафора твоей души и сигнал к неожиданному компромиссу.
+DEBUG    2025-08-20 13:10:55,084 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Водолей - 10 - 114
+DEBUG    2025-08-20 13:10:55,084 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Водолей - 2025-08-10 
+INFO     2025-08-20 13:10:55,084 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Водолей
+INFO     2025-08-20 13:10:55,084 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Водолей
+DEBUG    2025-08-20 13:10:55,085 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 11: Зёрна предупреждают о "Рое Лебедя": возможны помехи в космическом wi-fi, выраженные в потере одной тапочки или смысла шутки.
+DEBUG    2025-08-20 13:10:55,085 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 11: Зёрна предупреждают о "Рое Лебедя": возможны помехи в космическом wi-fi, выраженные в потере одной тапочки или смысла шутки.
+DEBUG    2025-08-20 13:10:55,085 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Водолей - 11 - 125
+DEBUG    2025-08-20 13:10:55,085 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Водолей - 2025-08-11 
+INFO     2025-08-20 13:10:55,085 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Водолей
+INFO     2025-08-20 13:10:55,086 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Водолей
+DEBUG    2025-08-20 13:10:55,086 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 12: Нашли на дне осадок в виде кляксы? Значит, сегодняшняя гениальность требует доработки — хотя бы третьей чашки кофе.
+DEBUG    2025-08-20 13:10:55,086 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 12: Нашли на дне осадок в виде кляксы? Значит, сегодняшняя гениальность требует доработки — хотя бы третьей чашки кофе.
+DEBUG    2025-08-20 13:10:55,086 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Водолей - 12 - 116
+DEBUG    2025-08-20 13:10:55,086 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Водолей - 2025-08-12 
+INFO     2025-08-20 13:10:55,086 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Водолей
+INFO     2025-08-20 13:10:55,087 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Водолей
+DEBUG    2025-08-20 13:10:55,087 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 13: Гуща сулит кармический долг: заплати за чужой капучино, и вселенная сбалансирует весы, прислав тебе бесплатный пончик судьбы.
+DEBUG    2025-08-20 13:10:55,087 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 13: Гуща сулит кармический долг: заплати за чужой капучино, и вселенная сбалансирует весы, прислав тебе бесплатный пончик судьбы.
+DEBUG    2025-08-20 13:10:55,087 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Водолей - 13 - 126
+DEBUG    2025-08-20 13:10:55,088 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Водолей - 2025-08-13 
+INFO     2025-08-20 13:10:55,088 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Водолей
+INFO     2025-08-20 13:10:55,088 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Водолей
+DEBUG    2025-08-20 13:10:55,089 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 14: Срочно! Твое эспрессо сегодня — ключ к пониманию речи воробьев на балконе. Не упусти шанс расшифровать их сплетни о соседях.
+DEBUG    2025-08-20 13:10:55,089 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 14: Срочно! Твое эспрессо сегодня — ключ к пониманию речи воробьев на балконе. Не упусти шанс расшифровать их сплетни о соседях.
+DEBUG    2025-08-20 13:10:55,089 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Водолей - 14 - 125
+DEBUG    2025-08-20 13:10:55,089 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Водолей - 2025-08-14 
+INFO     2025-08-20 13:10:55,089 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Водолей
+INFO     2025-08-20 13:10:55,090 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Водолей
+DEBUG    2025-08-20 13:10:55,090 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 15: Августовская гроза пронеслась? Жди неожиданного ингредиента в кофе — возможно, твои мысли о селёдке материализуются в солёный карамельный сироп.
+DEBUG    2025-08-20 13:10:55,090 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 15: Августовская гроза пронеслась? Жди неожиданного ингредиента в кофе — возможно, твои мысли о селёдке материализуются в солёный карамельный сироп.
+DEBUG    2025-08-20 13:10:55,090 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Водолей - 15 - 145
+DEBUG    2025-08-20 13:10:55,090 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Водолей - 2025-08-15 
+INFO     2025-08-20 13:10:55,090 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Водолей
+INFO     2025-08-20 13:10:55,092 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Водолей
+DEBUG    2025-08-20 13:10:55,092 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 16: Звезды в пенке советуют: устрой сегодня ревизию кружек — в одной наверняка завалялся черновик твоей супер-идеи из прошлого лета.
+DEBUG    2025-08-20 13:10:55,092 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 16: Звезды в пенке советуют: устрой сегодня ревизию кружек — в одной наверняка завалялся черновик твоей супер-идеи из прошлого лета.
+DEBUG    2025-08-20 13:10:55,092 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Водолей - 16 - 129
+DEBUG    2025-08-20 13:10:55,092 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Водолей - 2025-08-16 
+INFO     2025-08-20 13:10:55,092 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Водолей
+INFO     2025-08-20 13:10:55,094 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Водолей
+DEBUG    2025-08-20 13:10:55,094 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 17: Вкус кофе сегодня — как квантовая суперпозиция. Будь готов к тому, что твой сегодняшний план одновременно сработает и провалится.
+DEBUG    2025-08-20 13:10:55,094 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 17: Вкус кофе сегодня — как квантовая суперпозиция. Будь готов к тому, что твой сегодняшний план одновременно сработает и провалится.
+DEBUG    2025-08-20 13:10:55,094 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Водолей - 17 - 130
+DEBUG    2025-08-20 13:10:55,094 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Водолей - 2025-08-17 
+INFO     2025-08-20 13:10:55,095 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Водолей
+INFO     2025-08-20 13:10:55,096 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Водолей
+DEBUG    2025-08-20 13:10:55,096 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 18: Прогноз от Кофемолки Вселенной: сегодня твой сахар растворится только в компании харизматичного незнакомца с квебекским акцентом.
+DEBUG    2025-08-20 13:10:55,096 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 18: Прогноз от Кофемолки Вселенной: сегодня твой сахар растворится только в компании харизматичного незнакомца с квебекским акцентом.
+DEBUG    2025-08-20 13:10:55,096 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Водолей - 18 - 130
+DEBUG    2025-08-20 13:10:55,096 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Водолей - 2025-08-18 
+INFO     2025-08-20 13:10:55,096 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Водолей
+INFO     2025-08-20 13:10:55,097 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Водолей
+DEBUG    2025-08-20 13:10:55,097 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 19: Нарисуй на пенке молоком что-то абсурдное (хоть хорёчка-философа) — это привлечёт нужную энергию для вечернего инсайта.
+DEBUG    2025-08-20 13:10:55,097 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 19: Нарисуй на пенке молоком что-то абсурдное (хоть хорёчка-философа) — это привлечёт нужную энергию для вечернего инсайта.
+DEBUG    2025-08-20 13:10:55,097 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Водолей - 19 - 120
+DEBUG    2025-08-20 13:10:55,097 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Водолей - 2025-08-19 
+INFO     2025-08-20 13:10:55,097 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Водолей
+INFO     2025-08-20 13:10:55,098 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Водолей
+DEBUG    2025-08-20 13:10:55,098 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 20: Вибрации в чашке низкие: буквально весь день тебя будут преследовать любители поговорить о погоде. Способ защиты — закатить глаза в такт кофемашине.
+DEBUG    2025-08-20 13:10:55,098 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 20: Вибрации в чашке низкие: буквально весь день тебя будут преследовать любители поговорить о погоде. Способ защиты — закатить глаза в такт кофемашине.
+DEBUG    2025-08-20 13:10:55,098 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Водолей - 20 - 149
+DEBUG    2025-08-20 13:10:55,098 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Водолей - 2025-08-20 
+INFO     2025-08-20 13:10:55,099 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Водолей
+INFO     2025-08-20 13:10:55,100 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Водолей
+DEBUG    2025-08-20 13:10:55,100 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 21: На дне чашки — схема переустройства мира. Начни с малого: переставь все стулья на кухне по фэн-шую наоборот.
+DEBUG    2025-08-20 13:10:55,100 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 21: На дне чашки — схема переустройства мира. Начни с малого: переставь все стулья на кухне по фэн-шую наоборот.
+DEBUG    2025-08-20 13:10:55,100 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Водолей - 21 - 109
+DEBUG    2025-08-20 13:10:55,100 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Водолей - 2025-08-21 
+INFO     2025-08-20 13:10:55,100 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Водолей
+INFO     2025-08-20 13:10:55,101 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Водолей
+DEBUG    2025-08-20 13:10:55,101 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 22: Твой холодный напиток сегодня — проводник! Прислушайся к шипению льда: возможно, он пытается спеть тебе серенаду на языке русалок.
+DEBUG    2025-08-20 13:10:55,101 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 22: Твой холодный напиток сегодня — проводник! Прислушайся к шипению льда: возможно, он пытается спеть тебе серенаду на языке русалок.
+DEBUG    2025-08-20 13:10:55,102 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Водолей - 22 - 131
+DEBUG    2025-08-20 13:10:55,102 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Водолей - 2025-08-22 
+INFO     2025-08-20 13:10:55,102 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Водолей
+INFO     2025-08-20 13:10:55,102 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Водолей
+DEBUG    2025-08-20 13:10:55,103 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 23: Кофейная гуща предупреждает: не заказывай сегодня десерт с рубиновым соусом — это та самая ловушка твоей слабости в облике вишни.
+DEBUG    2025-08-20 13:10:55,103 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 23: Кофейная гуща предупреждает: не заказывай сегодня десерт с рубиновым соусом — это та самая ловушка твоей слабости в облике вишни.
+DEBUG    2025-08-20 13:10:55,103 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Водолей - 23 - 130
+DEBUG    2025-08-20 13:10:55,103 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Водолей - 2025-08-23 
+INFO     2025-08-20 13:10:55,103 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Водолей
+INFO     2025-08-20 13:10:55,104 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Водолей
+DEBUG    2025-08-20 13:10:55,104 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 24: Зерна советуют добавить корицу, но методом распыления с балкона. Эффект хаоса гарантирован и сегодня необходим!
+DEBUG    2025-08-20 13:10:55,104 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 24: Зерна советуют добавить корицу, но методом распыления с балкона. Эффект хаоса гарантирован и сегодня необходим!
+DEBUG    2025-08-20 13:10:55,104 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Водолей - 24 - 112
+DEBUG    2025-08-20 13:10:55,104 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Водолей - 2025-08-24 
+INFO     2025-08-20 13:10:55,104 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Водолей
+INFO     2025-08-20 13:10:55,105 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Водолей
+DEBUG    2025-08-20 13:10:55,105 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 25: Эспрессо вдруг показался кислым? Это знак: срочно смени локацию работы на ближайший парк или крышу гаража — поток идей требует вентиляции.
+DEBUG    2025-08-20 13:10:55,105 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 25: Эспрессо вдруг показался кислым? Это знак: срочно смени локацию работы на ближайший парк или крышу гаража — поток идей требует вентиляции.
+DEBUG    2025-08-20 13:10:55,105 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Водолей - 25 - 139
+DEBUG    2025-08-20 13:10:55,105 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Водолей - 2025-08-25 
+INFO     2025-08-20 13:10:55,105 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Водолей
+INFO     2025-08-20 13:10:55,106 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Водолей
+DEBUG    2025-08-20 13:10:55,106 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 26: Сегодняшний кофе — как твое настроение: с нотами бунта и послевкусием утреннего цинизма. Воспользуйся силой цинизма для решения проблем.
+DEBUG    2025-08-20 13:10:55,106 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 26: Сегодняшний кофе — как твое настроение: с нотами бунта и послевкусием утреннего цинизма. Воспользуйся силой цинизма для решения проблем.
+DEBUG    2025-08-20 13:10:55,106 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Водолей - 26 - 137
+DEBUG    2025-08-20 13:10:55,106 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Водолей - 2025-08-26 
+INFO     2025-08-20 13:10:55,107 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Водолей
+INFO     2025-08-20 13:10:55,108 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Водолей
+DEBUG    2025-08-20 13:10:55,108 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 27: Нежный узор молока сегодня похож на трещину НАСА. Твоя задача — залатать её ложкой философии и каплей самоиронии.
+DEBUG    2025-08-20 13:10:55,108 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 27: Нежный узор молока сегодня похож на трещину НАСА. Твоя задача — залатать её ложкой философии и каплей самоиронии.
+DEBUG    2025-08-20 13:10:55,108 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Водолей - 27 - 114
+DEBUG    2025-08-20 13:10:55,108 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Водолей - 2025-08-27 
+INFO     2025-08-20 13:10:55,108 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Водолей
+INFO     2025-08-20 13:10:55,109 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Водолей
+DEBUG    2025-08-20 13:10:55,109 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 28: Обжарщик звёзд предупреждает: сегодня твои фантазии могут стать материальны! Не думай о томном осьминоге в шляпе за кассой...
+DEBUG    2025-08-20 13:10:55,109 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 28: Обжарщик звёзд предупреждает: сегодня твои фантазии могут стать материальны! Не думай о томном осьминоге в шляпе за кассой...
+DEBUG    2025-08-20 13:10:55,109 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Водолей - 28 - 126
+DEBUG    2025-08-20 13:10:55,109 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Водолей - 2025-08-28 
+INFO     2025-08-20 13:10:55,109 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Водолей
+INFO     2025-08-20 13:10:55,110 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Водолей
+DEBUG    2025-08-20 13:10:55,110 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 29: Гуща прорисовала билет: сбегай среди дня на второй завтрак — там, под шум кофемолки, тебе откроется простая истина, которую ты слишком усложнил.
+DEBUG    2025-08-20 13:10:55,110 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 29: Гуща прорисовала билет: сбегай среди дня на второй завтрак — там, под шум кофемолки, тебе откроется простая истина, которую ты слишком усложнил.
+DEBUG    2025-08-20 13:10:55,110 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Водолей - 29 - 145
+DEBUG    2025-08-20 13:10:55,110 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Водолей - 2025-08-29 
+INFO     2025-08-20 13:10:55,110 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Водолей
+INFO     2025-08-20 13:10:55,111 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Водолей
+DEBUG    2025-08-20 13:10:55,111 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 30: Август требует подведения итогов: подсчитай пустые стаканчики за месяц. Если больше 30 — начинай астрологический ликбез для кофемашины.
+DEBUG    2025-08-20 13:10:55,111 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 30: Август требует подведения итогов: подсчитай пустые стаканчики за месяц. Если больше 30 — начинай астрологический ликбез для кофемашины.
+DEBUG    2025-08-20 13:10:55,111 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Водолей - 30 - 136
+DEBUG    2025-08-20 13:10:55,112 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Водолей - 2025-08-30 
+INFO     2025-08-20 13:10:55,112 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Водолей
+INFO     2025-08-20 13:10:55,113 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Водолей
+DEBUG    2025-08-20 13:10:55,113 [horoscope] (generator_horoscope.py).horoscope_transformation_text(67) Строка гороскопа - 31: Последний день летнего кофевара! Не выливай остатки — сегодня они помогут просчитать траекторию падения загадочного круассана или твоей зарплаты.
+DEBUG    2025-08-20 13:10:55,113 [horoscope] (generator_horoscope.py).horoscope_transformation_text(69) строка: 31: Последний день летнего кофевара! Не выливай остатки — сегодня они помогут просчитать траекторию падения загадочного круассана или твоей зарплаты.
+DEBUG    2025-08-20 13:10:55,113 [horoscope] (generator_horoscope.py).horoscope_transformation_text(73) daily_horoscope для Водолей - 31 - 146
+DEBUG    2025-08-20 13:10:55,113 [horoscope] (generator_horoscope.py).horoscope_transformation_text(76) day Водолей - 2025-08-31 
+INFO     2025-08-20 13:10:55,113 [horoscope] (generator_horoscope.py).horoscope_transformation_text(78) Сохраняю гороскоп знака - Водолей
+INFO     2025-08-20 13:10:55,114 [horoscope] (generator_horoscope.py).save_horoscope(95) Сохранил гороскоп знака - Водолей
+DEBUG    2025-08-20 13:10:55,261 [horoscope] (generator_horoscope.py).start_generate_all_horoscopes(24) SUPERADMIN: 484385628, Генерирую гороскоп для знака Водолей
+INFO     2025-08-20 14:20:35,753 [horoscope] (logging_config.py)._setup_handlers(50) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-20 14:24:33,896 [horoscope] (logging_config.py)._setup_handlers(50) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-20 14:29:28,129 [horoscope] (logging_config.py)._setup_handlers(50) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-20 14:31:55,856 [horoscope] (logging_config.py)._setup_handlers(50) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-20 14:34:15,176 [horoscope] (logging_config.py)._setup_handlers(50) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-20 14:35:07,878 [horoscope] (logging_config.py)._setup_handlers(50) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-20 14:35:59,691 [horoscope] (logging_config.py)._setup_handlers(50) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-20 14:36:31,066 [horoscope] (logging_config.py)._setup_handlers(50) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-20 14:37:05,417 [horoscope] (logging_config.py)._setup_handlers(50) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-20 14:39:55,043 [horoscope] (logging_config.py)._setup_handlers(50) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-20 14:39:59,570 [horoscope] (logging_config.py)._setup_handlers(50) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-20 14:41:19,522 [horoscope] (logging_config.py)._setup_handlers(50) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-21 10:33:12,055 [horoscope] (logging_config.py)._setup_handlers(50) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-21 10:46:17,631 [horoscope] (logging_config.py)._setup_handlers(50) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-21 10:49:40,068 [horoscope] (logging_config.py)._setup_handlers(50) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-21 10:50:17,149 [horoscope] (logging_config.py)._setup_handlers(50) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-21 11:05:34,899 [horoscope] (logging_config.py)._setup_handlers(50) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-21 11:34:47,724 [horoscope] (logging_config.py)._setup_handlers(50) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-21 11:37:43,701 [horoscope] (logging_config.py)._setup_handlers(50) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-21 12:09:16,780 [horoscope] (logging_config.py)._setup_handlers(50) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-21 12:11:12,277 [horoscope] (logging_config.py)._setup_handlers(50) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-21 12:15:25,369 [horoscope] (logging_config.py)._setup_handlers(50) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-21 12:18:18,199 [horoscope] (logging_config.py)._setup_handlers(50) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-21 12:22:46,398 [horoscope] (logging_config.py)._setup_handlers(50) Логирование для 'horoscope' настроено успешно.
+INFO     2025-08-21 12:25:10,460 [horoscope] (logging_config.py)._setup_handlers(50) Логирование для 'horoscope' настроено успешно.

@@ -15,3 +15,97 @@ INFO     2025-08-18 16:09:07,387 [help_ai] (logging_config.py)._setup_handlers(5
 INFO     2025-08-18 16:10:30,498 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
 INFO     2025-08-18 16:14:44,221 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
 INFO     2025-08-18 16:17:28,371 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-18 16:19:55,336 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-20 11:13:07,805 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-20 11:13:21,891 [help_ai] (ai_generator.py).get_completion(204) Генерирую ответ
+INFO     2025-08-20 11:14:32,096 [help_ai] (ai_generator.py).get_completion(217) Получил ответ
+INFO     2025-08-20 11:25:27,917 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-20 11:25:32,061 [help_ai] (ai_generator.py).get_completion(204) Генерирую ответ
+INFO     2025-08-20 11:26:39,063 [help_ai] (ai_generator.py).get_completion(217) Получил ответ
+INFO     2025-08-20 12:40:44,662 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-20 12:42:17,302 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-20 12:42:27,986 [help_ai] (ai_generator.py).get_completion(204) Генерирую ответ
+INFO     2025-08-20 12:43:53,042 [help_ai] (ai_generator.py).get_completion(217) Получил ответ
+INFO     2025-08-20 13:05:00,890 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-20 13:05:26,157 [help_ai] (ai_generator.py).get_completion(204) Генерирую ответ
+ERROR    2025-08-20 13:06:31,230 [help_ai] (ai_generator.py).get_completion(220) Expecting value: line 303 column 1 (char 1661)
+Traceback (most recent call last):
+  File "E:\python\bots\cafe_bot\utils\ai_generator.py", line 205, in get_completion
+    completion = cls.client().chat.completions.create(
+        extra_headers={
+    ...<8 lines>...
+        ]
+    )
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\openai\_utils\_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 925, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/chat/completions",
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<43 lines>...
+        stream_cls=Stream[ChatCompletionChunk],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\openai\_base_client.py", line 1249, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\openai\_base_client.py", line 1042, in request
+    return self._process_response(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        cast_to=cast_to,
+        ^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        retries_taken=retries_taken,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\openai\_base_client.py", line 1131, in _process_response
+    return api_response.parse()
+           ~~~~~~~~~~~~~~~~~~^^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\openai\_response.py", line 323, in parse
+    parsed = self._parse(to=to)
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\openai\_response.py", line 265, in _parse
+    data = response.json()
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\httpx\_models.py", line 832, in json
+    return jsonlib.loads(self.content, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 303 column 1 (char 1661)
+INFO     2025-08-20 13:07:31,816 [help_ai] (ai_generator.py).get_completion(204) Генерирую ответ
+INFO     2025-08-20 13:08:31,372 [help_ai] (ai_generator.py).get_completion(217) Получил ответ
+INFO     2025-08-20 13:09:41,668 [help_ai] (ai_generator.py).get_completion(204) Генерирую ответ
+INFO     2025-08-20 13:10:45,050 [help_ai] (ai_generator.py).get_completion(217) Получил ответ
+INFO     2025-08-20 14:20:35,754 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-20 14:24:33,897 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-20 14:29:28,129 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-20 14:31:55,857 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-20 14:34:15,177 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-20 14:35:07,878 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-20 14:35:59,692 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-20 14:36:31,067 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-20 14:37:05,418 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-20 14:39:55,044 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-20 14:39:59,571 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-20 14:41:19,522 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-21 10:33:12,088 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-21 10:46:17,632 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-21 10:49:40,069 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-21 10:50:17,150 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-21 11:05:34,902 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-21 11:34:47,725 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-21 11:37:43,701 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-21 12:09:16,781 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-21 12:11:12,277 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-21 12:15:25,369 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-21 12:18:18,200 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-21 12:22:46,399 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-21 12:25:10,461 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.

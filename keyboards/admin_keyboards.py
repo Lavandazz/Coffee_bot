@@ -39,6 +39,8 @@ def admin_kb():
 
 def admin_rights():
     kb = InlineKeyboardBuilder()
+    kb.button(text='Добавить админа', callback_data='add_admin')
+    kb.button(text='Удалить админа', callback_data='admins_for_delete')
     kb.button(text='Добавить бариста', callback_data='add_barista')
     kb.button(text='Удалить бариста', callback_data='baristas_for_delete')
     kb.adjust(2)
@@ -55,6 +57,7 @@ def yes_or_no_btn():
 
 
 def admin_stat_kb():
+    """Клавиатура для статистики"""
     kb = InlineKeyboardBuilder()
     kb.button(text='За день', callback_data='stat_day')
     kb.button(text='За период', callback_data='stat_all')
@@ -63,11 +66,23 @@ def admin_stat_kb():
     return kb.as_markup()
 
 
-async def delete_baristas_kb(users: List[User]):
-    """Клавиатура для смены роли пользователя (к примеру, поменять роль бариста на юзера)"""
+async def all_baristas_or_admins_kb(users: List[User], status: str = None):
+    """
+    Клавиатура с пользователями, которым необходимо изменить роль.
+    Если список пуст, то status не передается и отправляется только кнопка Назад.
+    :param users: Юзеры как клавиатура
+    :param status: Передаем строку: "delete", "baristas", "admin".
+    :return: kb
+    """
     kb = InlineKeyboardBuilder()
     for user in users:
-        kb.button(text=f'{user.username}', callback_data=f'delete_{user.id}')
+        if status == "delete":
+            kb.button(text=f'{user.username}', callback_data=f'delete_{user.id}')
+        if status == "barista":
+            kb.button(text=f'{user.username}', callback_data=f'barista_{user.id}')
+        if status == "admin":
+            kb.button(text=f'{user.username}', callback_data=f'barista_{user.id}')
+
     kb.adjust(3)
     kb.row(InlineKeyboardButton(text='⬅️ Назад', callback_data='back'))
     return kb.as_markup()
