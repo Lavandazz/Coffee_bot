@@ -8,8 +8,10 @@ from aiogram.types import CallbackQuery
 
 from keyboards.admin_keyboards import admin_btn, admin_kb, admin_stat_kb, admin_rights
 from keyboards.barista_keyboard import review_kb, edit_text_keyboard, barista_posts_kb, barista_kb
+from keyboards.games_keyboard import games_kb
 from keyboards.horoscope_keyboard import zodiac_kb
 from keyboards.menu_keyboard import inline_menu_kb
+from states.games_state import GameMenuState
 from states.menu_states import MenuState, ReviewStates, AdminMenuState, BaristaState, PostState, StatsState, \
     BaristaRegistrationState, AdminRegistrationState
 from utils.get_user import get_role_user
@@ -20,9 +22,11 @@ async def back(call: CallbackQuery, state: FSMContext, bot: Bot, role: str):
     """ Обработка кнопки 'Назад' """
     current_state = await state.get_state()  # получаем текущее состояние
 
+    # возврат в главное меню
     if current_state in {MenuState.horoscope_menu.state, ReviewStates.waiting_for_photo.state,
                          ReviewStates.waiting_for_text.state, AdminMenuState.admin_menu.state,
-                         MenuState.help_menu.state}:
+                         MenuState.help_menu.state,
+                         GameMenuState.main_game_menu}:
         # переход в пользовательское главное меню
         await state.set_state(MenuState.main_menu)  # Меняем состояние на "в меню"
         await call.message.edit_text("Главное меню", reply_markup=await inline_menu_kb(call.from_user.id))
@@ -127,7 +131,14 @@ async def back(call: CallbackQuery, state: FSMContext, bot: Bot, role: str):
         await state.set_state(AdminMenuState.rights)
         bot_logger.debug(f'Новый статус {current_state}')
 
-
+    # возврат в меню игр
+    if current_state in (GameMenuState.upcoming_game_menu,
+                         GameMenuState.past_game_menu):
+        await state.set_state(GameMenuState.main_game_menu)
+        await call.message.edit_text(
+            text='Возврат в меню выбора игр',
+            reply_markup=games_kb()
+        )
 
 
 async def clear_message(call: CallbackQuery, bot: Bot, role: str):

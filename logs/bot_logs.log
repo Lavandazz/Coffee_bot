@@ -5639,3 +5639,70 @@ DEBUG    2025-08-22 14:50:13,502 [bot] (barista_rights_handlers.py).baristas_for
 DEBUG    2025-08-22 14:50:14,536 [bot] (back_handler.py).back(122) Статус BaristaRegistrationState:delete_name сбрасываю
 DEBUG    2025-08-22 14:50:14,768 [bot] (back_handler.py).back(127) Новый статус BaristaRegistrationState:delete_name
 WARNING  2025-08-22 14:51:31,025 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-22 14:51:34,022 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-22 14:51:35,054 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-22 14:51:35,384 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-22 14:51:36,390 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-22 14:51:36,391 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-22 14:51:38,225 [bot] (admin_handlers.py).admin_menu_handler(20) Вход в панель админа
+DEBUG    2025-08-22 14:51:41,015 [bot] (admin_rights_handlers.py).show_admins_for_delete(85) отправлена клавиатура для выбора админа на удаление
+DEBUG    2025-08-22 14:51:41,814 [bot] (back_handler.py).back(123) Статус AdminRegistrationState:delete_name сбрасываю
+DEBUG    2025-08-22 14:51:41,954 [bot] (back_handler.py).back(128) Новый статус AdminRegistrationState:delete_name
+DEBUG    2025-08-22 14:51:43,059 [bot] (barista_rights_handlers.py).baristas_for_delete(108) Получение списка барист для удаления [<User: 4>, <User: 3>]
+DEBUG    2025-08-22 14:51:44,279 [bot] (back_handler.py).back(123) Статус BaristaRegistrationState:delete_name сбрасываю
+DEBUG    2025-08-22 14:51:44,433 [bot] (back_handler.py).back(128) Новый статус BaristaRegistrationState:delete_name
+DEBUG    2025-08-22 14:51:49,028 [bot] (back_handler.py).back(114) Новый статус AdminMenuState:rights
+DEBUG    2025-08-22 14:51:51,728 [bot] (get_statistic_handlers.py).get_statistic(23) State AdminMenuState:admin
+DEBUG    2025-08-22 14:51:52,835 [bot] (get_statistic_handlers.py).get_period_statistic(55) Выбор даты: get_period_statistic StatsState:waiting_date
+DEBUG    2025-08-22 14:51:54,268 [bot] (get_statistic_handlers.py).get_statistic_from_db(160) day_statistic: <Statistic>
+DEBUG    2025-08-22 14:51:54,268 [bot] (get_statistic_handlers.py).day_statistic(75) Получил статистику за день
+DEBUG    2025-08-22 14:51:58,424 [bot] (get_statistic_handlers.py).get_period_statistic(55) Выбор даты: get_period_statistic StatsState:waiting_date
+DEBUG    2025-08-22 14:51:59,575 [bot] (get_statistic_handlers.py).get_statistic_from_db(160) day_statistic: <Statistic>
+DEBUG    2025-08-22 14:51:59,575 [bot] (get_statistic_handlers.py).day_statistic(75) Получил статистику за день
+DEBUG    2025-08-22 14:52:02,301 [bot] (get_statistic_handlers.py).get_period_statistic(47) Выбор начальной даты периода: get_period_statistic StatsState:waiting_first_date
+DEBUG    2025-08-22 14:52:04,189 [bot] (get_statistic_handlers.py).first_day_statistic(103) жду конечную дату
+DEBUG    2025-08-22 14:52:05,840 [bot] (get_statistic_handlers.py).get_statistic_from_db(164) period_statistic: [<Statistic: 15>, <Statistic: 14>]
+DEBUG    2025-08-22 14:52:08,693 [bot] (back_handler.py).back(114) Новый статус AdminMenuState:statistic_menu
+DEBUG    2025-08-22 14:52:14,704 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-22 14:52:14,704 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+WARNING  2025-08-22 15:16:49,898 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-08-22 15:16:50,094 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-08-22 15:16:52,966 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-22 15:16:54,271 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-22 15:16:54,530 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-22 15:16:59,506 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-22 15:16:59,507 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+WARNING  2025-08-22 15:18:17,779 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-22 15:18:20,760 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-22 15:18:21,816 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-22 15:18:22,018 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-22 15:18:23,191 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-22 15:18:23,191 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+WARNING  2025-08-22 15:46:05,571 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-08-22 15:46:05,774 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-08-22 21:30:11,825 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-22 21:30:15,397 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-22 21:30:15,615 [bot] (commands.py).set_commands(20) Установил команды
+WARNING  2025-08-22 21:30:37,218 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-22 21:30:40,735 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-22 21:30:42,161 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-22 21:30:42,364 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-22 21:30:51,975 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-22 21:30:51,975 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+DEBUG    2025-08-22 21:31:12,210 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-22 21:31:12,211 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+DEBUG    2025-08-22 21:31:12,308 [bot] (back_handler.py).back(34) Состояние GameMenuState:main_game_menu сброшено
+WARNING  2025-08-22 21:32:23,190 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-22 21:32:26,978 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-22 21:32:28,532 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-22 21:32:28,704 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-22 21:32:29,840 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-22 21:32:29,840 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+DEBUG    2025-08-22 21:32:32,773 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-22 21:32:32,773 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+DEBUG    2025-08-22 21:32:32,846 [bot] (back_handler.py).back(34) Состояние AdminMenuState:admin_menu сброшено
+WARNING  2025-08-22 21:33:13,845 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-22 21:33:17,687 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-22 21:33:18,954 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-22 21:33:19,134 [bot] (commands.py).set_commands(20) Установил команды
+WARNING  2025-08-22 21:33:33,623 [bot] (main.py).start_bot(23) Бот закрыт

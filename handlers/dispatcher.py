@@ -7,6 +7,7 @@ from handlers.admin.barista_rights_handlers import barista_rights, start_registe
     save_barista_role, baristas_for_delete, delete_barista
 from handlers.admin.get_statistic_handlers import get_statistic, get_period_statistic, day_statistic, \
     first_day_statistic, second_day_statistic
+from handlers.games.game_handlers import show_games_menu, show_games
 from handlers.help_handlers import help_menu
 from handlers.start_handlers import get_start, on_start
 from handlers.admin.admin_handlers import admin_menu_handler, admin_menu
@@ -58,6 +59,7 @@ def setup_dispatcher(dp: Dispatcher):
     dp.callback_query.register(start_register_name_barista, F.data == "add_barista")
     dp.message.register(enter_role_barista, StateFilter(BaristaRegistrationState.registration_name))
     dp.callback_query.register(save_barista_role,  StateFilter(BaristaRegistrationState.save_name))
+
     # удаление бариста
     dp.callback_query.register(baristas_for_delete, F.data == "baristas_for_delete")
     dp.callback_query.register(delete_barista, F.data.startswith("delete_"))
@@ -97,6 +99,10 @@ def setup_dispatcher(dp: Dispatcher):
     dp.message.register(handle_review_photo, StateFilter(ReviewStates.waiting_for_photo))
     dp.message.register(handle_review_text, StateFilter(ReviewStates.waiting_for_text))
     dp.callback_query.register(horo_to_clean, F.data == 'stocks')
+
+    #панель игр
+    dp.callback_query.register(show_games_menu, F.data == 'games')
+    dp.callback_query.register(show_games, F.data.startswith('show_'))
 
     dp.callback_query.register(back, F.data == 'back')
     # суперадмин

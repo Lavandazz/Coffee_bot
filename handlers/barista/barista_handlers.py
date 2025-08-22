@@ -19,7 +19,6 @@ async def show_barista_btn(call: CallbackQuery, state: FSMContext, role: str):
     """ Вход в админ клавиатуру """
     bot_logger.info('Вход в панель бариста')
     await state.set_state(AdminMenuState.barista)
-    # if role == 'admin' or role == 'barista':
     await call.message.edit_text(text='Вы находитесь в меню бариста.',
                                  reply_markup=barista_kb())
 
