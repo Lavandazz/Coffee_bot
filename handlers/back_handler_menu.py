@@ -11,6 +11,7 @@ class BackHandler:
         self.state = state
         self.role = role
 
+
     async def handle(self):
         """ Обработка кнопки 'Назад' """
         current_state = await self.state.get_state()

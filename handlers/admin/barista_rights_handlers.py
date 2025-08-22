@@ -86,6 +86,7 @@ async def save_barista_role(call: CallbackQuery, state: FSMContext, role: str):
         elif call.data == "no":
             await call.message.edit_text(text="❌ Операция отменена.",
                                          reply_markup=admin_rights())
+            return
 
     except Exception as e:
         bot_logger.error(f"Ошибка во время добавления бариста: {e}")

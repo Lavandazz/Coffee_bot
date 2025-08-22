@@ -45,9 +45,10 @@ class BaristaRegistrationState(StatesGroup):
 class AdminRegistrationState(StatesGroup):
     """Регистрация бариста"""
     waiting_choice = State()
-    wait_name = State()
+    search_name = State()
     save_name = State()
     delete_name = State()
+
 
 class PostState(StatesGroup):
     """ Действия, связанные с регистрацией поста """

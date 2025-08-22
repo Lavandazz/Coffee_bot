@@ -1,17 +1,17 @@
 import asyncio
-
+from dataclasses import dataclass
 from aiogram import Bot
 from aiogram.exceptions import TelegramBadRequest
 from aiogram.fsm.context import FSMContext
+from aiogram.fsm.state import State
 from aiogram.types import CallbackQuery
 
-from handlers.back_handler_menu import BackHandler
 from keyboards.admin_keyboards import admin_btn, admin_kb, admin_stat_kb, admin_rights
 from keyboards.barista_keyboard import review_kb, edit_text_keyboard, barista_posts_kb, barista_kb
 from keyboards.horoscope_keyboard import zodiac_kb
 from keyboards.menu_keyboard import inline_menu_kb
 from states.menu_states import MenuState, ReviewStates, AdminMenuState, BaristaState, PostState, StatsState, \
-    BaristaRegistrationState
+    BaristaRegistrationState, AdminRegistrationState
 from utils.get_user import get_role_user
 from utils.logging_config import bot_logger
 
@@ -115,7 +115,11 @@ async def back(call: CallbackQuery, state: FSMContext, bot: Bot, role: str):
 
     # возврат в управление правами
     if current_state in (BaristaRegistrationState.registration_name,
-                         BaristaRegistrationState.delete_name):
+                         BaristaRegistrationState.delete_name,
+                         AdminRegistrationState.search_name,
+                         AdminRegistrationState.save_name,
+                         AdminRegistrationState.delete_name
+                         ):
         bot_logger.debug(f'Статус {current_state} сбрасываю')
         await state.clear()
 
@@ -124,10 +128,18 @@ async def back(call: CallbackQuery, state: FSMContext, bot: Bot, role: str):
         bot_logger.debug(f'Новый статус {current_state}')
 
 
+
+
 async def clear_message(call: CallbackQuery, bot: Bot, role: str):
     """ Скрыть уведомление о новом отзыве """
     if role == 'barista':
         await call.message.delete()
         bot_logger.debug(f'Удалил сообщение')
+
+
+
+
+
+
 
 

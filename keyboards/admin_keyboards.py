@@ -81,7 +81,7 @@ async def all_baristas_or_admins_kb(users: List[User], status: str = None):
         if status == "barista":
             kb.button(text=f'{user.username}', callback_data=f'barista_{user.id}')
         if status == "admin":
-            kb.button(text=f'{user.username}', callback_data=f'barista_{user.id}')
+            kb.button(text=f'{user.username}', callback_data=f'admin_{user.id}')
 
     kb.adjust(3)
     kb.row(InlineKeyboardButton(text='⬅️ Назад', callback_data='back'))

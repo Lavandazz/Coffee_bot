@@ -49,7 +49,7 @@ def setup_dispatcher(dp: Dispatcher):
 
     # добавление админа
     dp.callback_query.register(show_baristas_to_admin, F.data == 'add_admin')
-    dp.callback_query.register(approve_admin, StateFilter(AdminRegistrationState.wait_name))
+    dp.callback_query.register(approve_admin, StateFilter(AdminRegistrationState.search_name))
     dp.callback_query.register(save_role_admin, StateFilter(AdminRegistrationState.waiting_choice))
     dp.callback_query.register(show_admins_for_delete, F.data == 'admins_for_delete')
     dp.callback_query.register(delete_admin, F.data.startswith('delete_'))
