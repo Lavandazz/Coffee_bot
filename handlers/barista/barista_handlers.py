@@ -15,15 +15,6 @@ from utils.logging_config import bot_logger
 
 
 @staff_only
-async def show_barista_btn(call: CallbackQuery, state: FSMContext, role: str):
-    """ Вход в админ клавиатуру """
-    bot_logger.info('Вход в панель бариста')
-    await state.set_state(AdminMenuState.barista)
-    await call.message.edit_text(text='Вы находитесь в меню бариста.',
-                                 reply_markup=barista_kb())
-
-
-@staff_only
 async def add_post(call: CallbackQuery, state: FSMContext, role: str):
     """ Загрузка файла и текста от бариста """
     await state.set_state(PostState.add_post)

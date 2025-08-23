@@ -28,7 +28,7 @@ async def show_games_kb(games: List[Game]):
     kb = InlineKeyboardBuilder()
     if games:
         for game in games:
-            kb.button(text=game.title, callback_data=f'game_')
+            kb.button(text=game.title, callback_data=f'game_{game.id}')
     kb.adjust(2)
     kb.row(InlineKeyboardButton(text='⬅️ Назад', callback_data='back'))
     return kb.as_markup()

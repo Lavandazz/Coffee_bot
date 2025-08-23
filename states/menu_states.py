@@ -29,6 +29,9 @@ class StatsState(StatesGroup):
 
 class BaristaState(StatesGroup):
     """ Меню бариста """
+    menu = State()
+    games_menu = State()
+    posts_menu = State()
     review_menu = State()
     approve_menu = State()
     posts = State()  # отображение всех постов

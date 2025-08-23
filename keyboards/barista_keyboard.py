@@ -8,15 +8,42 @@ from utils.logging_config import bot_logger
 """ Раздел, отвечающий за создание, отображение постов бариста """
 
 
+def barista_menu_kb():
+    """
+    Клавиатура с кнопками Игры и Посты
+    :return: kb
+    """
+    kb = InlineKeyboardBuilder()
+    kb.button(text="Игры",
+              callback_data="games")
+    kb.button(text="Посты",
+              callback_data="posts")
+    kb.adjust(2)
+    kb.row(InlineKeyboardButton(text='⬅️ Назад', callback_data='back'))
+    return kb.as_markup()
+
+
+def barista_game_menu_kb():
+    kb = InlineKeyboardBuilder()
+    kb.button(text="Добавить игру",
+              callback_data="add_game"),
+    kb.button(text="Удалить игру",
+              callback_data="delete_game"),
+    kb.adjust(2)
+    kb.row(InlineKeyboardButton(text='⬅️ Назад', callback_data='back'))
+    return kb.as_markup()
+
+
 def barista_kb():
     """ Кнопки в отделе администрирования """
     kb = InlineKeyboardBuilder()
     kb.button(text="Добавить пост",
               callback_data="add_post")
+    kb.button(text="Посты бариста",
+              callback_data="barista_posts"),
     kb.button(text="Отзывы пользователей",
               callback_data="moderate"),
-    kb.button(text="Посты бариста",
-              callback_data="barista_posts")
+
     kb.adjust(2)
     kb.row(InlineKeyboardButton(text='⬅️ Назад', callback_data='back'))
     return kb.as_markup()

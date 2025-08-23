@@ -2,8 +2,10 @@ from aiogram.fsm.context import FSMContext
 from aiogram.types import CallbackQuery
 
 from database.models_db import Game
+from keyboards.back_keyboard import back_button
 from keyboards.games_keyboard import games_kb, show_games_kb
 from states.games_state import GameMenuState
+from utils.config import bot
 from utils.logging_config import bot_logger
 
 
@@ -56,3 +58,34 @@ async def show_games(call: CallbackQuery, state: FSMContext):
             )
 
         await state.set_state(GameMenuState.past_game_menu)
+
+
+async def show_one_game(call: CallbackQuery, state: FSMContext):
+    """
+    Отображение данных выбранной игры
+    """
+    call_game = call.data.split('_')[1]
+    bot_logger.debug(f'Выбрана игра {call_game}')
+    await state.set_state(GameMenuState.game)
+    try:
+        game = await Game.filter(id=call_game).first()
+        if game:
+            await bot.send_photo(
+                chat_id=call.message.chat.id,
+                photo=game.image,
+                caption=f'Приглашаем вас посетить игру:\n'
+                f'{game.title}.\n'
+                f'{game.description}.\n'
+                f'Дата: {game.date_game}.\n'
+                f'Время: {game.time_game}',
+                reply_markup=back_button()
+                )
+            # Сохраняем message_id в state
+            mess = call.message.message_id
+            await state.update_data(photo_message_id=call.message.message_id)
+            bot_logger.debug(f'сохранил {mess}')
+
+    except Exception as e:
+        bot_logger.error(f'не удалось отправить описание игры: {e}')
+        await call.message.edit_text(text='Произошла ошибка. Попробуйте позже',
+                                     reply_markup=games_kb())

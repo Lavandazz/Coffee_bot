@@ -7,12 +7,15 @@ from handlers.admin.barista_rights_handlers import barista_rights, start_registe
     save_barista_role, baristas_for_delete, delete_barista
 from handlers.admin.get_statistic_handlers import get_statistic, get_period_statistic, day_statistic, \
     first_day_statistic, second_day_statistic
-from handlers.games.game_handlers import show_games_menu, show_games
+from handlers.barista.add_game_handlers import add_game, add_title_game, add_description_game, add_date_game, \
+    add_time_game, approve_game, add_image_game
+from handlers.barista.barista_menu_handler import barista_menu, show_barista_menu_game, show_barista_posts_menu
+from handlers.games.game_handlers import show_games_menu, show_games, show_one_game
 from handlers.help_handlers import help_menu
 from handlers.start_handlers import get_start, on_start
 from handlers.admin.admin_handlers import admin_menu_handler, admin_menu
 
-from handlers.barista.barista_handlers import (approve_review, reject_review, moderate_review, show_barista_btn,
+from handlers.barista.barista_handlers import (approve_review, reject_review, moderate_review,
                                                show_reviews, add_post, add_photo, save_post, generate_phrase,
                                                change_post, save_edited_text, show_barista_posts, barista_post)
 
@@ -21,6 +24,7 @@ from handlers.barista.user_review_handlers import (handle_review_photo, ask_for_
 from handlers.back_handler import back, clear_message
 from handlers.cancel_state_handler import cancel_handler
 from handlers.admin.horoscope_handkers import show_horoscope, send_horoscope, start_schedule_horo
+from states.games_state import AddGameState
 
 from states.menu_states import ReviewStates, PostState, StatsState, BaristaRegistrationState, AdminRegistrationState
 from utils.middleware import RoleMiddleware, StatisticMiddleware
@@ -72,7 +76,9 @@ def setup_dispatcher(dp: Dispatcher):
     dp.callback_query.register(second_day_statistic, StateFilter(StatsState.waiting_second_date))
 
     # панель бариста
-    dp.callback_query.register(show_barista_btn, F.data == "barista")
+    dp.callback_query.register(barista_menu, F.data == 'barista')
+    dp.callback_query.register(show_barista_menu_game, F.data == "games")
+    dp.callback_query.register(show_barista_posts_menu, F.data == "posts")
     dp.callback_query.register(show_barista_posts, F.data == "barista_posts")
     dp.callback_query.register(show_reviews, F.data == "moderate")
     dp.callback_query.register(moderate_review, F.data.startswith("review_"))
@@ -100,9 +106,19 @@ def setup_dispatcher(dp: Dispatcher):
     dp.message.register(handle_review_text, StateFilter(ReviewStates.waiting_for_text))
     dp.callback_query.register(horo_to_clean, F.data == 'stocks')
 
-    #панель игр
-    dp.callback_query.register(show_games_menu, F.data == 'games')
+    # панель игр
+    dp.callback_query.register(show_games_menu, F.data == 'games_all')
     dp.callback_query.register(show_games, F.data.startswith('show_'))
+    dp.callback_query.register(show_one_game, F.data.startswith('game_'))
+
+    # добавление игры
+    dp.callback_query.register(add_game, F.data == 'add_game')
+    dp.message.register(add_title_game, StateFilter(AddGameState.add_title))
+    dp.message.register(add_description_game, StateFilter(AddGameState.add_description))
+    dp.callback_query.register(add_date_game, StateFilter(AddGameState.add_date))
+    dp.callback_query.register(add_time_game, StateFilter(AddGameState.add_time))
+    dp.message.register(add_image_game, StateFilter(AddGameState.add_image))
+    dp.callback_query.register(approve_game, StateFilter(AddGameState.save_game))
 
     dp.callback_query.register(back, F.data == 'back')
     # суперадмин

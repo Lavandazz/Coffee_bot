@@ -9,7 +9,7 @@ async def inline_menu_kb(user_id: int):
     kb.button(text='Поделиться фото', callback_data='share_photo')
     kb.button(text='Поделиться пожеланием', callback_data='share_wish')
     kb.button(text='Кофейный гороскоп', callback_data='horoscope')
-    kb.button(text=f'Мероприятия / Игры', callback_data='games')
+    kb.button(text=f'Мероприятия / Игры', callback_data='games_all')
     kb.adjust(2)
 
     role = await get_role_user(user_id)  # получаем роль юзера

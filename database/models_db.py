@@ -71,15 +71,14 @@ class Statistic(Model):
 
 class Game(Model):
     id = fields.IntField(pk=True)
-    autor_id: fields.ForeignKeyRelation[User] = fields.ForeignKeyField('models.User',
-                                                                       related_name='games',
-                                                                       source_field="user_id")
+    user = fields.ForeignKeyField('models.User', related_name='games')
     date_game = fields.DateField()
     time_game = fields.TimeField()
     title = fields.CharField(max_length=255)
     description = fields.TextField()
     image = fields.CharField(max_length=255)
     status = fields.CharField(max_length=20, default='to be')  # to be | pass | cancel
-    # players = fields.ManyToManyField('models.User',   # связь многие ко многим
-    #                                  related_name='participating_games',  # участвующие в играх
-    #                                  through='user_game_relation')  # название промежуточной таблицы
+    players = fields.ManyToManyField('models.User',   # связь многие ко многим
+                                     related_name='participating_games',  # участвующие в играх
+                                     through='user_game_relation')  # название промежуточной таблицы
+    text = fields.CharField(max_length=255)

@@ -4,14 +4,15 @@ from aiogram import Bot
 from aiogram.exceptions import TelegramBadRequest
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State
-from aiogram.types import CallbackQuery
+from aiogram.types import CallbackQuery, Message
 
 from keyboards.admin_keyboards import admin_btn, admin_kb, admin_stat_kb, admin_rights
-from keyboards.barista_keyboard import review_kb, edit_text_keyboard, barista_posts_kb, barista_kb
+from keyboards.barista_keyboard import review_kb, edit_text_keyboard, barista_posts_kb, barista_kb, barista_menu_kb, \
+    barista_game_menu_kb
 from keyboards.games_keyboard import games_kb
 from keyboards.horoscope_keyboard import zodiac_kb
 from keyboards.menu_keyboard import inline_menu_kb
-from states.games_state import GameMenuState
+from states.games_state import GameMenuState, AddGameState
 from states.menu_states import MenuState, ReviewStates, AdminMenuState, BaristaState, PostState, StatsState, \
     BaristaRegistrationState, AdminRegistrationState
 from utils.get_user import get_role_user
@@ -39,16 +40,26 @@ async def back(call: CallbackQuery, state: FSMContext, bot: Bot, role: str):
         await call.message.edit_text("Выбери свой знак", reply_markup=zodiac_kb())
 
     # переход в главную админ-панель
-    elif (
-            current_state == AdminMenuState.admin.state or
-            current_state == AdminMenuState.barista.state
-    ):
+    elif current_state in {AdminMenuState.admin.state,
+                           AdminMenuState.barista.state,
+                           BaristaState.menu}:
+
         await state.set_state(AdminMenuState.admin_menu)
         await call.message.edit_text("Вы находитесь в админ-панели.",
                                      reply_markup=admin_btn(role=role))
         bot_logger.debug(f'Состояние {current_state} сброшено')
 
-    # переход в меню бариста
+
+    # переход в меню главное бариста с двумя кнопками (посты, игры)
+    elif current_state in {BaristaState.posts_menu, BaristaState.games_menu}:
+        bot_logger.debug(f'статус {current_state}')
+        await state.set_state(BaristaState.menu)
+        await call.message.edit_text(
+            "Вы находитесь в меню бариста...",
+            reply_markup=barista_menu_kb()
+        )
+
+    # переход из постов/игр в посты
     elif current_state in {BaristaState.review_menu.state,
                            BaristaState.posts.state,
                            BaristaState.post.state,
@@ -64,9 +75,9 @@ async def back(call: CallbackQuery, state: FSMContext, bot: Bot, role: str):
                 bot_logger.info(f'Состояние {current_state} очищено')
                 await state.clear()
 
-            await state.set_state(AdminMenuState.barista)
+            await state.set_state(BaristaState.posts_menu)
             await call.message.edit_text(
-                "Вы находитесь в меню бариста",
+                "Вы находитесь в разделе постов",
                 reply_markup=barista_kb()
             )
             bot_logger.debug(f'Перешел назад к состоянию {await state.get_state()}')
@@ -139,6 +150,32 @@ async def back(call: CallbackQuery, state: FSMContext, bot: Bot, role: str):
             text='Возврат в меню выбора игр',
             reply_markup=games_kb()
         )
+    if current_state == GameMenuState.game:
+        # Очищаем state
+        await state.clear()
+        await state.set_state(GameMenuState.main_game_menu)
+
+        await bot.send_message(chat_id=call.from_user.id,
+                               text='Возврат в меню выбора игр',
+                               reply_markup=games_kb())
+
+    #
+    if current_state in (
+        AddGameState.add_title,
+        AddGameState.add_description,
+        AddGameState.add_date,
+        AddGameState.add_time,
+        AddGameState.add_image,
+        AddGameState.save_game
+    ):
+        bot_logger.debug(f'Статус back{await state.get_state()} сбрасываю')
+        await state.clear()
+        await bot.send_message(chat_id=call.from_user.id,
+                               text="Выберите действие",
+                               reply_markup=barista_game_menu_kb())
+        await state.set_state(GameMenuState.main_game_menu)
+
+
 
 
 async def clear_message(call: CallbackQuery, bot: Bot, role: str):
