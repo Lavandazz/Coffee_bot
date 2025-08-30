@@ -36,8 +36,5 @@ bot = Bot(
 # dp = Dispatcher(storage=storage)
 dp = Dispatcher()
 
-# def get_admin_id() -> list[int]:
-#     """ Преобразование строки админов в инт """
-#     return [int(x.strip()) for x in admin_id.split(",") if x.strip().isdigit()]
 
 

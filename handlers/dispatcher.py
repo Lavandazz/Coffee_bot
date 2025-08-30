@@ -6,7 +6,7 @@ from handlers.admin.admin_rights_handlers import show_baristas_to_admin, delete_
 from handlers.admin.barista_rights_handlers import barista_rights, start_register_name_barista, enter_role_barista, \
     save_barista_role, baristas_for_delete, delete_barista
 from handlers.admin.get_statistic_handlers import get_statistic, get_period_statistic, day_statistic, \
-    first_day_statistic, second_day_statistic
+    first_day_statistic, second_day_statistic, prev_month, next_month
 from handlers.barista.add_game_handlers import add_game, add_title_game, add_description_game, add_date_game, \
     add_time_game, approve_game, add_image_game
 from handlers.barista.barista_menu_handler import barista_menu, show_barista_menu_game, show_barista_posts_menu
@@ -70,7 +70,8 @@ def setup_dispatcher(dp: Dispatcher):
 
     # календарь
     dp.callback_query.register(get_period_statistic, F.data.startswith('stat_'))
-
+    dp.callback_query.register(prev_month, F.data == "prev_month")
+    dp.callback_query.register(next_month, F.data == "next_month")
     dp.callback_query.register(day_statistic, StateFilter(StatsState.waiting_date))
     dp.callback_query.register(first_day_statistic, StateFilter(StatsState.waiting_first_date))
     dp.callback_query.register(second_day_statistic, StateFilter(StatsState.waiting_second_date))
@@ -121,6 +122,7 @@ def setup_dispatcher(dp: Dispatcher):
     dp.callback_query.register(approve_game, StateFilter(AddGameState.save_game))
 
     dp.callback_query.register(back, F.data == 'back')
+
     # суперадмин
     dp.callback_query.register(start_schedule_horo, F.data == "start_horo")
     return dp

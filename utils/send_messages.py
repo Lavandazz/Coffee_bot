@@ -2,6 +2,7 @@ import asyncio
 from typing import Optional
 
 from aiogram import Bot
+from aiogram.exceptions import TelegramBadRequest
 
 from database.models_db import User
 from keyboards.barista_keyboard import get_review_keyboard, show_review_message
@@ -27,8 +28,16 @@ class SendMessage:
             for barista in baristas:
                 await asyncio.sleep(0.5)
                 await self._send_notification(barista)
-        except Exception as e:
+        except TelegramBadRequest or Exception as e:
+            # если нет ни одного бариста, рассылка идет по админам
             bot_logger.exception(f"Ошибка при отправке уведомления: {e}")
+            admins = await get_users_from_db("admin")
+            for admin in admins:
+                await asyncio.sleep(0.5)
+                await self._send_notification(admin)
+
+        # except Exception as e:
+        #     bot_logger.exception(f"Ошибка при отправке уведомления: {e}")
 
     async def _send_notification(self, barista):
         bot_logger.info(f"Попытка отправки бариста {barista.get('id')}")

@@ -1,9 +1,8 @@
 import asyncio
-import datetime
-import time
-from datetime import datetime
+from datetime import datetime, date
 
 from aiogram import Bot
+from aiogram.exceptions import TelegramBadRequest
 from aiogram.fsm.context import FSMContext
 from aiogram.types import CallbackQuery, Message
 from tortoise.exceptions import DoesNotExist
@@ -11,18 +10,19 @@ from tortoise.exceptions import DoesNotExist
 from database.models_db import User, Game
 from keyboards.admin_keyboards import yes_or_no_btn
 from keyboards.back_keyboard import back_button
-from keyboards.barista_keyboard import barista_kb
+from keyboards.barista_keyboard import barista_game_menu_kb
 from keyboards.calendar_keyboard import calendar_kb
 from keyboards.hour_keyboard import hour_kb
 from states.games_state import AddGameState, GameMenuState
-from states.menu_states import BaristaState, AdminMenuState
+from states.menu_states import AdminMenuState, BaristaState
 from utils.config import bot
 from utils.custom_calendar import MyCalendar
-from utils.date_formats import from_str_to_date_day
+from utils.date_formats import from_str_to_date_day, date_game_saver
 from utils.get_user import staff_only
 from utils.logging_config import bot_logger
 
 GAME = {}
+NEW_DATE = date.today()
 
 
 @staff_only
@@ -50,11 +50,15 @@ async def add_title_game(message: Message, state: FSMContext, role: str):
 
     await state.update_data(title=message.text.strip())
 
-    bot_logger.debug(f'Название новой игры {message.text.strip()}')
-    await message.answer(
+    sent_message = await message.answer(
         text=f'Отлично! Теперь введите описание игры.\n'
              f'Для отмены введите команду /cancel',
         reply_markup=back_button()
+    )
+    # Сохраняем данные для будущего удаления
+    await state.update_data(
+        bot_message_id=sent_message.message_id,
+        bot_chat_id=message.from_user.id
     )
     await state.set_state(AddGameState.add_description)
 
@@ -65,7 +69,9 @@ async def add_description_game(message: Message, state: FSMContext, role: str):
     Ожидание ввода описания игры и сохранение в state add_description.
     Отправляет календарь на текущий месяц для выбора даты игры
     """
+    global NEW_DATE
 
+    NEW_DATE = message.date
     if not message.text:
         await message.answer("Пожалуйста, отправьте описание игры!", reply_markup=back_button())
         return
@@ -73,14 +79,12 @@ async def add_description_game(message: Message, state: FSMContext, role: str):
     await state.update_data(description=message.text.strip())
     bot_logger.debug(f'Получено описание игры')
 
-    cal_btns_list = MyCalendar.current_date_list(message.date.date())
-    month = MyCalendar.get_month_name(message.date.date())
-
     await message.answer(
         text=f'Отлично! Теперь выберите дату игры.\n'
              f'Для отмены введите команду /cancel',
-        reply_markup=await calendar_kb(cal_btns_list, month)
+        reply_markup=await calendar_kb(NEW_DATE)
     )
+
     await state.set_state(AddGameState.add_date)
 
 
@@ -89,22 +93,50 @@ async def add_date_game(call: CallbackQuery, state: FSMContext, role: str):
     """
     Ожидание ввода даты игры и сохранение в state add_date
     """
+    global NEW_DATE
+    await call_back_menu(call=call, state=state)  # возврат в меню если нажата кнопка Назад
 
-    if not call.message.text:
-        await call.message.edit_text("Нужно выбрать дату игры!", reply_markup=back_button())
-        return
+    if call.data.startswith('day_'):
+        call_date = from_str_to_date_day(call.data)
 
-    call_date = from_str_to_date_day(call.data)
-    await state.update_data(date_game=call_date)
+        try:
+            while not date_game_saver(call_date):
+                cal_btns_list = MyCalendar.current_date_list(call.message.date.date())
+                month = MyCalendar.get_month_name(call.message.date.date())
 
-    bot_logger.debug(f'Получил дату игры {call_date}, тип {type(call_date)}')
-    await call.message.edit_text(
-        text=f'Почти закончили. Осталось ввести время игры.\n'
-             f'Формат ввода: 18.00 или 18:00'
-             f'Для отмены введите команду /cancel',
-        reply_markup=hour_kb()
-    )
-    await state.set_state(AddGameState.add_time)
+                await call.answer(
+                    text=f'❕ Дата игры не может быть раньше текущей даты.\n',
+                    show_alert=False)
+
+                await call.message.edit_text(
+                    text=f'Выберите корректную дату',
+                    reply_markup=await calendar_kb(NEW_DATE)
+                )
+                return
+
+            else:
+                # Если дата корректная, обрабатываем как обычно
+                await state.update_data(date_game=call_date)
+                await state.set_state(AddGameState.add_time)
+                bot_logger.debug(f'Получил дату игры {call_date}, тип {type(call_date)}')
+
+                await call.message.edit_text(
+                    text='Почти закончили. Осталось выбрать время игры.\n',
+                    reply_markup=hour_kb()
+
+                )
+        except TelegramBadRequest as e:
+            if "message is not modified" in str(e).lower():
+                # При повторном нажатии на ту же старую дату
+                await call.answer(
+                    text='❕ Дата игры не может быть раньше текущей даты.',
+                    show_alert=False
+                )
+
+        except Exception as e:
+            bot_logger.error(f"Неожиданная ошибка в add_date_game: {e}")
+
+            await call.answer("Произошла ошибка", show_alert=True)
 
 
 @staff_only
@@ -112,17 +144,29 @@ async def add_time_game(call: CallbackQuery, state: FSMContext, role: str):
     """
     Ожидание ввода времени игры и сохранение в state add_time.
     Преобразовывает полученное время из str в time.
+    Сохраняем отправляемое сообщение в sent_message, айди этого сообщения и чат юзера, чтобы обратиться
+    к этим данным и изменить сообщение отправив новую клавиатуру (при условии нажатия на кнопку Назад).
     """
-    time = call.data.split('_')[1]
-    time_game = datetime.strptime(time, '%H:%M').time()
 
-    await state.update_data(time_game=time_game)
-    await call.message.edit_text(
-        text=f"Последние штрихи 🫶 \n"
-             f"Добавьте изображение нажав на скрепку ниже",
-        reply_markup=back_button()
-    )
     await state.set_state(AddGameState.add_image)
+    if call.data.startswith('time_'):
+        time = call.data.split('_')[1]
+        time_game = datetime.strptime(time, '%H:%M').time()
+
+        await state.update_data(time_game=time_game)
+        sent_message = await call.message.edit_text(
+            text=f"Последние штрихи 🫶 \n"
+                 f"Добавьте изображение нажав на скрепку ниже ⤵️",
+            reply_markup=back_button()
+        )
+        # сохраняем айди сообщения и юзера для дальнейшего изменения при нажатии на кнопку Назад
+        await state.update_data(
+            bot_message_id=sent_message.message_id,
+            bot_chat_id=call.from_user.id
+        )
+
+    else:
+        await call_back_menu(call=call, state=state)  # возврат в меню если нажата кнопка Назад
 
 
 @staff_only
@@ -173,11 +217,11 @@ async def approve_game(call: CallbackQuery, state: FSMContext, role: str):
     Если будет нажата кнопка YES, то перейдет к сохранению в бд.
     NO вернет в меню игр.
     """
-    curr_state = await state.set_state()
+    curr_state = await state.get_state()
     bot_logger.debug(f'текущий статус {curr_state}')
+
     if call.data == 'yes':
         user_id = await User.get(telegram_id=call.from_user.id)
-        print(GAME)
         # Сохраняем игру в БД
         await save_game(
             title=GAME.get('title'),
@@ -187,21 +231,23 @@ async def approve_game(call: CallbackQuery, state: FSMContext, role: str):
             image=GAME.get('image'),
             author_id=user_id.id  # добавляем автора
         )
-        await call.answer(text='✔️ Игра сохранена')
+        # await call.answer(text='✔️ Игра сохранена')
         await call.message.delete()
         await asyncio.sleep(1)
-        await state.clear()
-        await bot.send_message(chat_id=call.from_user.id, text='Возврат в меню', reply_markup=barista_kb())
+        await bot.send_message(
+            chat_id=call.from_user.id,
+            text='✔️ Игра сохранена\nВозврат в меню:',
+            reply_markup=barista_game_menu_kb())
 
     elif call.data == 'no':
-
-        await call.message.edit_text(
+        await call.message.delete()
+        await asyncio.sleep(1)
+        await call.message.answer(
             text='❌Данные не сохранены',
-            reply_markup=back_button()
+            reply_markup=barista_game_menu_kb()
         )
-
     await state.clear()
-    await state.set_state(AdminMenuState.barista)
+    await state.set_state(BaristaState.games_menu)
 
 
 def data_game(title: str, description: str, date: datetime.date, time_game: datetime.time, image: str, author_id: int):
@@ -246,6 +292,23 @@ async def save_game(title: str, description: str,
     except Exception as e:
         bot_logger.error(f"Ошибка: {e}")
         raise
+
+
+async def call_back_menu(call: CallbackQuery, state: FSMContext):
+    """
+    Возврат в меню игр и сброс состояния.
+    Новое состояние присваивается GameMenuState.main_game_menu
+    :param state: GameMenuState.main_game_menu
+    :return: barista_game_menu_kb()
+    """
+    if call.data == "back":
+        await state.clear()
+        await state.set_state(GameMenuState.main_game_menu)
+        await call.message.edit_text(
+            text=f'Возврат в меню игр',
+            reply_markup=barista_game_menu_kb())
+
+        return
 
 
 def make_message(title: str, description: str, date: str, time_game: str):

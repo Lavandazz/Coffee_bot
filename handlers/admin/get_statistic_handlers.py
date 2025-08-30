@@ -15,6 +15,9 @@ from utils.date_formats import from_str_to_date_day
 from utils.get_user import admin_only
 from utils.logging_config import bot_logger
 
+NEW_DATE = date.today()
+END_STAT_DATE = date.today()
+
 
 @admin_only
 async def get_statistic(call: CallbackQuery, state: FSMContext, role: str):
@@ -33,14 +36,13 @@ async def get_period_statistic(call: CallbackQuery, state: FSMContext, role: str
     Отображение календаря зависит от переданного CallbackQuery.
     call.data == 'stat_day' - передается календарь для выбора только за определенный день
     call.data == 'stat_all' - предлагается выбрать начальную дату периода
-
+    Сохраняем дату в global NEW_DATE для того, чтобы построить календарь при пагинации
     """
-    cal_btns_list = MyCalendar.current_date_list(call.message.date.date())
-    month = MyCalendar.get_month_name(call.message.date.date())
-
+    global NEW_DATE
+    NEW_DATE = call.message.date.date()
     if call.data == 'stat_all':
         await call.message.edit_text(
-            text='Выберите начальную дату периода', reply_markup=await calendar_kb(cal_btns_list, month)
+            text='Выберите начальную дату периода', reply_markup=await calendar_kb(NEW_DATE)
         )
 
         await state.set_state(StatsState.waiting_first_date)
@@ -48,11 +50,35 @@ async def get_period_statistic(call: CallbackQuery, state: FSMContext, role: str
 
     if call.data == 'stat_day':
         await call.message.edit_text(
-            text='Выберите дату', reply_markup=await calendar_kb(cal_btns_list, month)
+            text='Выберите дату', reply_markup=await calendar_kb(NEW_DATE)
         )
 
         await state.set_state(StatsState.waiting_date)
         bot_logger.debug(f'Выбор даты: get_period_statistic {await state.get_state()}')
+
+
+@admin_only
+async def prev_month(call: CallbackQuery, role: str):
+    """Пагинация календаря назад"""
+    global NEW_DATE
+    if call.data == 'prev_month':
+        new_date = MyCalendar.prev_month(NEW_DATE)
+        NEW_DATE = new_date
+        await call.message.edit_reply_markup(
+            reply_markup=await calendar_kb(NEW_DATE)
+        )
+
+
+@admin_only
+async def next_month(call: CallbackQuery, role: str):
+    """Пагинация календаря вперед"""
+    global NEW_DATE
+    if call.data == 'next_month':
+        new_date = MyCalendar.next_month(NEW_DATE)
+        NEW_DATE = new_date
+        await call.message.edit_reply_markup(
+            reply_markup=await calendar_kb(NEW_DATE)
+        )
 
 
 @admin_only
@@ -75,9 +101,8 @@ async def day_statistic(call: CallbackQuery, state: FSMContext, role: str):
     bot_logger.debug(f'Получил статистику за день')
     if statistic:
         await call.message.edit_text(
-            text=
-            f'*Зарегистрировано новых пользователей*: `{statistic.new_user}`\n'
-            f'*Просмотров бота за день `{call.data.split("_")[1]}`*: `{statistic.event}`',
+            text=f'*Зарегистрировано новых пользователей*: `{statistic.new_user}`\n'
+                 f'*Просмотров бота за день `{call.data.split("_")[1]}`*: `{statistic.event}`',
             parse_mode=ParseMode.MARKDOWN_V2,
             reply_markup=back_button()
         )
@@ -95,16 +120,16 @@ async def first_day_statistic(call: CallbackQuery, state: FSMContext, role: str)
     Сохранение начальной даты в fitst_date.
     Выбор конечной даты периода для отображения статистики.
     """
-    call_date = from_str_to_date_day(call.data)
-    await state.update_data(first_date=call_date)  # сохраняем данные в сстояние fitst_date
+    global NEW_DATE
 
-    cal_btns_list = MyCalendar.current_date_list(call.message.date.date())
-    month = MyCalendar.get_month_name(call.message.date.date())
+    call_date = from_str_to_date_day(call.data)
+    await state.update_data(first_date=call_date)  # сохраняем начальную дату в состояние fitst_date
+
     bot_logger.debug('жду конечную дату')
     await call.message.edit_text(
         text=f'Вы выбрали {call_date}\n'
              f'Теперь выберите конечную дату периода',
-        reply_markup=await calendar_kb(cal_btns_list, month)
+        reply_markup=await calendar_kb(NEW_DATE)
     )
 
     await state.set_state(StatsState.waiting_second_date)
@@ -121,10 +146,13 @@ async def second_day_statistic(call: CallbackQuery, state: FSMContext, role: str
     """
 
     call_date = from_str_to_date_day(call.data)
+
     await state.update_data(second_date=call_date)
+
     data = await state.get_data()
     first_date = data.get('first_date')
     second_date = data.get('second_date')
+
     period = await get_statistic_from_db(first_date=first_date, second_date=second_date)
     if period:
         statistic = await answer_statistic_from_period(period)
@@ -140,7 +168,7 @@ async def second_day_statistic(call: CallbackQuery, state: FSMContext, role: str
             text=f'Нет данных.',
             reply_markup=back_button()
         )
-    # await state.clear_data()
+        await state.clear()
     await state.set_state(StatsState.answer)
 
 
@@ -156,9 +184,9 @@ async def get_statistic_from_db(first_date: date = None,
     """
     try:
         if day_date:
-            day_statistic = await Statistic.get_or_none(day=day_date)
-            bot_logger.debug(f'day_statistic: {day_statistic}')
-            return day_statistic
+            day_stat = await Statistic.get_or_none(day=day_date)
+            bot_logger.debug(f'day_stat: {day_stat}')
+            return day_stat
         if first_date:
             period_statistic = await Statistic.filter(day__gte=first_date, day__lte=second_date)
             bot_logger.debug(f'period_statistic: {period_statistic}')

@@ -6687,3 +6687,1384 @@ DEBUG    2025-08-23 16:09:52,281 [bot] (menu_keyboard.py).inline_menu_kb(16) П�
 INFO     2025-08-23 16:10:01,429 [bot] (admin_handlers.py).admin_menu_handler(20) Вход в панель админа
 DEBUG    2025-08-23 16:10:02,496 [bot] (back_handler.py).back(50) Состояние AdminMenuState:admin сброшено
 WARNING  2025-08-23 16:11:17,440 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-23 16:11:20,101 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-23 16:11:21,096 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-23 16:11:21,241 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-23 16:11:56,560 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-23 16:11:56,560 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-23 16:11:58,657 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+DEBUG    2025-08-23 16:11:59,750 [bot] (back_handler.py).back(50) Состояние BaristaState:menu сброшено
+INFO     2025-08-23 16:12:00,697 [bot] (admin_handlers.py).admin_menu_handler(20) Вход в панель админа
+DEBUG    2025-08-23 16:12:01,641 [bot] (back_handler.py).back(50) Состояние AdminMenuState:admin сброшено
+INFO     2025-08-23 16:12:05,690 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-23 16:12:07,650 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-23 16:12:08,483 [bot] (back_handler.py).back(55) статус BaristaState:games_menu
+DEBUG    2025-08-23 16:12:09,260 [bot] (back_handler.py).back(50) Состояние BaristaState:menu сброшено
+WARNING  2025-08-23 16:46:16,109 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-08-23 16:46:16,252 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-08-26 14:24:22,630 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-26 14:25:00,609 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-26 14:25:01,612 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-26 14:25:01,906 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-26 14:27:14,810 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-26 14:27:14,810 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+DEBUG    2025-08-26 14:27:19,962 [bot] (game_handlers.py).show_games(31) показываю игры
+DEBUG    2025-08-26 14:27:21,740 [bot] (game_handlers.py).show_one_game(68) Выбрана игра 8
+DEBUG    2025-08-26 14:27:21,826 [bot] (game_handlers.py).show_one_game(86) сохранил 8809
+DEBUG    2025-08-26 14:27:28,098 [bot] (game_handlers.py).show_games(31) показываю игры
+DEBUG    2025-08-26 14:27:45,262 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-26 14:27:45,262 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+DEBUG    2025-08-26 14:27:45,363 [bot] (back_handler.py).back(35) Состояние GameMenuState:main_game_menu сброшено
+INFO     2025-08-26 14:28:14,045 [bot] (send_messages.py)._send_notification(34) Попытка отправки бариста 4
+DEBUG    2025-08-26 14:28:14,144 [bot] (send_messages.py)._send_notification(40) Отправляю сообщение с фоткой
+ERROR    2025-08-26 14:28:14,228 [bot] (send_messages.py).send_message(31) Ошибка при отправке уведомления: Telegram server says - Bad Request: chat not found
+Traceback (most recent call last):
+  File "E:\python\bots\cafe_bot\utils\send_messages.py", line 29, in send_message
+    await self._send_notification(barista)
+  File "E:\python\bots\cafe_bot\utils\send_messages.py", line 41, in _send_notification
+    await self.bot.send_photo(chat_id=barista.get('telegram_id'),
+    ...<2 lines>...
+                              reply_markup=show_review_message(self.review_id))
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 2920, in send_photo
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 478, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 185, in make_request
+    response = self.check_response(
+        bot=bot, method=method, status_code=resp.status, content=raw_result
+    )
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: chat not found
+DEBUG    2025-08-26 14:28:14,338 [bot] (get_user.py).get_role_user(30) Возврат роли: 484385628, admin
+DEBUG    2025-08-26 14:28:14,338 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+WARNING  2025-08-26 14:35:57,259 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-08-26 14:35:57,414 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-08-26 14:36:01,424 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-26 14:36:03,358 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-26 14:36:03,559 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-26 14:36:05,820 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-26 14:36:05,820 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+DEBUG    2025-08-26 14:36:08,296 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-26 14:36:08,296 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+DEBUG    2025-08-26 14:36:08,415 [bot] (back_handler.py).back(35) Состояние MenuState:horoscope_menu сброшено
+INFO     2025-08-26 14:36:15,789 [bot] (send_messages.py)._send_notification(43) Попытка отправки бариста 4
+DEBUG    2025-08-26 14:36:15,790 [bot] (send_messages.py)._send_notification(49) Отправляю сообщение с фоткой
+ERROR    2025-08-26 14:36:15,890 [bot] (send_messages.py).send_message(33) Ошибка при отправке уведомления: Telegram server says - Bad Request: chat not found
+Traceback (most recent call last):
+  File "E:\python\bots\cafe_bot\utils\send_messages.py", line 30, in send_message
+    await self._send_notification(barista)
+  File "E:\python\bots\cafe_bot\utils\send_messages.py", line 50, in _send_notification
+    await self.bot.send_photo(chat_id=barista.get('telegram_id'),
+    ...<2 lines>...
+                              reply_markup=show_review_message(self.review_id))
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 2920, in send_photo
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 478, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 185, in make_request
+    response = self.check_response(
+        bot=bot, method=method, status_code=resp.status, content=raw_result
+    )
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: chat not found
+INFO     2025-08-26 14:36:16,401 [bot] (send_messages.py)._send_notification(43) Попытка отправки бариста 2
+DEBUG    2025-08-26 14:36:16,401 [bot] (send_messages.py)._send_notification(49) Отправляю сообщение с фоткой
+DEBUG    2025-08-26 14:36:16,475 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-26 14:36:16,476 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+WARNING  2025-08-26 14:37:27,231 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-26 14:37:30,181 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-26 14:37:31,014 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-26 14:37:31,187 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-26 14:37:35,092 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-26 14:37:35,093 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+DEBUG    2025-08-26 14:37:37,793 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-26 14:37:37,794 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+DEBUG    2025-08-26 14:37:37,939 [bot] (back_handler.py).back(35) Состояние MenuState:horoscope_menu сброшено
+INFO     2025-08-26 14:37:46,903 [bot] (send_messages.py)._send_notification(43) Попытка отправки бариста 4
+DEBUG    2025-08-26 14:37:46,903 [bot] (send_messages.py)._send_notification(49) Отправляю сообщение с фоткой
+ERROR    2025-08-26 14:37:47,038 [bot] (send_messages.py).send_message(33) Ошибка при отправке уведомления: Telegram server says - Bad Request: chat not found
+Traceback (most recent call last):
+  File "E:\python\bots\cafe_bot\utils\send_messages.py", line 30, in send_message
+    await self._send_notification(barista)
+  File "E:\python\bots\cafe_bot\utils\send_messages.py", line 50, in _send_notification
+    await self.bot.send_photo(chat_id=barista.get('telegram_id'),
+    ...<2 lines>...
+                              reply_markup=show_review_message(self.review_id))
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 2920, in send_photo
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 478, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 185, in make_request
+    response = self.check_response(
+        bot=bot, method=method, status_code=resp.status, content=raw_result
+    )
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: chat not found
+INFO     2025-08-26 14:37:47,560 [bot] (send_messages.py)._send_notification(43) Попытка отправки бариста 2
+DEBUG    2025-08-26 14:37:47,560 [bot] (send_messages.py)._send_notification(49) Отправляю сообщение с фоткой
+DEBUG    2025-08-26 14:37:47,659 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-26 14:37:47,659 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-26 14:39:07,179 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-26 14:39:08,682 [bot] (barista_menu_handler.py).show_barista_posts_menu(35) Бариста - меню постов
+INFO     2025-08-26 14:39:10,611 [bot] (barista_handlers.py).show_reviews(142) отправлю клаву
+INFO     2025-08-26 14:39:10,613 [bot] (barista_keyboard.py).review_kb(101) отправлена клавиатура с отзывами
+DEBUG    2025-08-26 14:39:12,300 [bot] (barista_handlers.py).moderate_review(165) BaristaState:approve_menu
+INFO     2025-08-26 14:39:12,371 [bot] (barista_handlers.py).moderate_review(170) Новый отзыв с фото
+INFO     2025-08-26 14:39:15,054 [bot] (barista_keyboard.py).review_kb(101) отправлена клавиатура с отзывами
+DEBUG    2025-08-26 14:39:20,491 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-26 14:39:20,492 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-26 14:39:23,122 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-26 14:39:24,025 [bot] (barista_menu_handler.py).show_barista_posts_menu(35) Бариста - меню постов
+INFO     2025-08-26 14:39:25,793 [bot] (barista_handlers.py).show_reviews(142) отправлю клаву
+INFO     2025-08-26 14:39:25,795 [bot] (barista_keyboard.py).review_kb(101) отправлена клавиатура с отзывами
+DEBUG    2025-08-26 14:39:26,804 [bot] (barista_handlers.py).moderate_review(165) BaristaState:approve_menu
+INFO     2025-08-26 14:39:26,882 [bot] (barista_handlers.py).moderate_review(170) Новый отзыв с фото
+INFO     2025-08-26 14:39:32,020 [bot] (barista_keyboard.py).review_kb(101) отправлена клавиатура с отзывами
+DEBUG    2025-08-26 14:39:42,419 [bot] (barista_handlers.py).moderate_review(165) BaristaState:approve_menu
+INFO     2025-08-26 14:39:42,564 [bot] (barista_handlers.py).moderate_review(170) Новый отзыв с фото
+INFO     2025-08-26 14:41:00,804 [bot] (barista_keyboard.py).review_kb(101) отправлена клавиатура с отзывами
+DEBUG    2025-08-26 14:41:01,851 [bot] (back_handler.py).back(70) Текущее состояние BaristaState:review_menu
+DEBUG    2025-08-26 14:41:01,929 [bot] (back_handler.py).back(83) Перешел назад к состоянию BaristaState:posts_menu
+DEBUG    2025-08-26 14:41:03,764 [bot] (back_handler.py).back(55) статус BaristaState:posts_menu
+INFO     2025-08-26 14:41:06,269 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-26 14:41:11,107 [bot] (back_handler.py).back(171) Статус backAddGameState:add_title сбрасываю
+INFO     2025-08-26 14:42:32,804 [bot] (cancel_state_handler.py).cancel_handler(18) Состояние ожидания: AddGameState:add_title - отменено
+DEBUG    2025-08-26 14:42:33,109 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-26 14:42:33,109 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-26 14:42:51,350 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-26 14:42:52,598 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-26 14:42:56,323 [bot] (back_handler.py).back(171) Статус backAddGameState:add_title сбрасываю
+DEBUG    2025-08-26 14:43:24,346 [bot] (back_handler.py).back(171) Статус backAddGameState:add_title сбрасываю
+WARNING  2025-08-26 14:48:07,167 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-08-26 14:48:07,314 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-08-26 14:48:10,416 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-26 14:48:11,386 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-26 14:48:11,570 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-26 14:48:18,763 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-26 14:48:18,763 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-26 14:48:24,014 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-26 14:48:24,862 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-26 14:48:27,656 [bot] (back_handler.py).back(171) Статус backAddGameState:add_title сбрасываю
+DEBUG    2025-08-26 14:48:34,922 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-26 14:48:34,922 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+DEBUG    2025-08-26 14:48:35,009 [bot] (back_handler.py).back(35) Состояние GameMenuState:main_game_menu сброшено
+INFO     2025-08-26 14:48:37,165 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-26 14:48:38,345 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-26 14:48:47,204 [bot] (add_game_handlers.py).add_title_game(53) Название новой игры какая-то игра
+DEBUG    2025-08-26 14:48:49,279 [bot] (back_handler.py).back(182) Статус backAddGameState:add_description сбрасываю
+WARNING  2025-08-26 14:54:12,196 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-26 14:54:15,518 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-26 14:54:16,380 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-26 14:54:16,565 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-26 14:54:23,537 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-26 14:54:23,537 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-26 14:54:25,796 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-26 14:54:26,719 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-26 14:54:28,823 [bot] (back_handler.py).back(171) Статус backAddGameState:add_title сбрасываю
+DEBUG    2025-08-26 14:54:35,958 [bot] (add_game_handlers.py).add_title_game(53) Название новой игры rfrf
+DEBUG    2025-08-26 14:54:39,066 [bot] (back_handler.py).back(182) Статус backAddGameState:add_description сбрасываю
+WARNING  2025-08-26 14:55:38,913 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-26 14:55:41,848 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-26 14:55:42,762 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-26 14:55:42,920 [bot] (commands.py).set_commands(20) Установил команды
+WARNING  2025-08-26 14:56:07,602 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-26 14:56:10,616 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-26 14:56:11,488 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-26 14:56:11,694 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-26 14:56:12,185 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-26 14:56:12,185 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-26 14:56:13,951 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-26 14:56:14,554 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-26 14:56:17,021 [bot] (add_game_handlers.py).add_title_game(53) Название новой игры sxdcfvghb
+DEBUG    2025-08-26 14:56:31,483 [bot] (back_handler.py).back(182) Статус backAddGameState:add_description сбрасываю
+WARNING  2025-08-26 14:56:56,165 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-26 14:56:59,080 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-26 14:57:00,096 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-26 14:57:00,298 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-26 14:57:01,875 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-26 14:57:01,875 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-26 14:57:03,868 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-26 14:57:04,613 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-26 14:57:07,783 [bot] (add_game_handlers.py).add_title_game(56) Название новой игры fg v
+DEBUG    2025-08-26 14:57:10,546 [bot] (back_handler.py).back(182) Статус backAddGameState:add_description сбрасываю
+WARNING  2025-08-26 15:00:53,338 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-08-26 15:00:53,487 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-08-26 15:00:56,795 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-26 15:00:57,853 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-26 15:00:58,073 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-26 15:00:59,774 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-26 15:00:59,774 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-26 15:01:01,818 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-26 15:01:02,523 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+WARNING  2025-08-26 15:02:29,546 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-26 15:02:32,343 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-26 15:02:33,215 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-26 15:02:33,386 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-26 15:02:35,983 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-26 15:02:35,984 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-26 15:02:38,732 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-26 15:02:39,441 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-26 15:02:41,141 [bot] (back_handler.py).back(171) Статус backAddGameState:add_title сбрасываю
+DEBUG    2025-08-26 15:02:45,222 [bot] (add_game_handlers.py).add_title_game(56) Название новой игры sdfg
+DEBUG    2025-08-26 15:02:46,664 [bot] (back_handler.py).back(182) Статус backAddGameState:add_description сбрасываю
+WARNING  2025-08-26 15:05:55,555 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-26 15:05:58,680 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-26 15:05:59,557 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-26 15:05:59,719 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-26 15:06:03,336 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-26 15:06:03,337 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-26 15:06:05,137 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-26 15:06:06,506 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-26 15:06:09,631 [bot] (add_game_handlers.py).add_title_game(57) Название новой игры zdxfghj
+DEBUG    2025-08-26 15:06:11,160 [bot] (back_handler.py).back(182) Статус backAddGameState:add_description сбрасываю
+WARNING  2025-08-26 15:06:47,248 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-26 15:06:50,166 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-26 15:06:51,061 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-26 15:06:51,274 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-26 15:06:52,796 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-26 15:06:52,796 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-26 15:06:55,054 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-26 15:06:56,638 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-26 15:06:59,102 [bot] (add_game_handlers.py).add_title_game(58) Название новой игры szrtfgyhu
+DEBUG    2025-08-26 15:07:00,735 [bot] (back_handler.py).back(182) Статус backAddGameState:add_description сбрасываю
+DEBUG    2025-08-26 15:07:28,881 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-26 15:07:28,881 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-26 15:07:31,659 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-26 15:07:32,365 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-26 15:07:38,291 [bot] (add_game_handlers.py).add_title_game(58) Название новой игры zsxdcfvghbnj
+DEBUG    2025-08-26 15:07:45,935 [bot] (back_handler.py).back(182) Статус backAddGameState:add_description сбрасываю
+WARNING  2025-08-26 15:13:53,864 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-08-26 15:13:54,028 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-08-26 15:13:56,922 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-26 15:13:57,854 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-26 15:13:58,075 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-26 15:13:59,907 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-26 15:13:59,907 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-26 15:14:01,857 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-26 15:14:02,644 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-26 15:14:04,961 [bot] (back_handler.py).back(171) Статус backAddGameState:add_title сбрасываю
+DEBUG    2025-08-26 15:14:09,304 [bot] (add_game_handlers.py).add_title_game(58) Название новой игры dxgggggggdhg
+DEBUG    2025-08-26 15:14:10,882 [bot] (back_handler.py).back(182) Статус backAddGameState:add_description сбрасываю
+WARNING  2025-08-26 15:14:36,240 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-26 15:14:39,060 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-26 15:14:40,039 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-26 15:14:40,275 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-26 15:14:41,749 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-26 15:14:41,749 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-26 15:14:45,522 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-26 15:14:46,091 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+WARNING  2025-08-26 15:15:55,554 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-26 15:15:58,456 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-26 15:15:59,502 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-26 15:15:59,690 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-26 15:16:05,149 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-26 15:16:05,150 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-26 15:16:07,322 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-26 15:16:08,051 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-26 15:16:10,197 [bot] (add_game_handlers.py).add_title_game(58) Название новой игры sergdthfy
+DEBUG    2025-08-26 15:16:11,170 [bot] (back_handler.py).back(182) Статус backAddGameState:add_description сбрасываю
+WARNING  2025-08-26 15:28:12,104 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-08-26 15:28:12,326 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-08-26 15:28:15,064 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-26 15:28:16,117 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-26 15:28:16,338 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-26 15:28:29,232 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-26 15:28:29,233 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-26 15:28:33,502 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-26 15:28:34,187 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-26 15:28:36,322 [bot] (back_handler.py).back(171) Статус backAddGameState:add_title сбрасываю
+DEBUG    2025-08-26 15:28:41,216 [bot] (add_game_handlers.py).add_title_game(58) Название новой игры fghjk
+DEBUG    2025-08-26 15:28:43,645 [bot] (back_handler.py).back(182) Статус backAddGameState:add_description сбрасываю
+WARNING  2025-08-26 15:29:05,036 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-26 15:29:07,964 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-26 15:29:08,958 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-26 15:29:09,136 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-26 15:29:10,714 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-26 15:29:10,714 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-26 15:29:15,991 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-26 15:29:16,662 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-26 15:29:18,853 [bot] (add_game_handlers.py).add_title_game(58) Название новой игры ezsxdrgyhj
+DEBUG    2025-08-26 15:29:20,689 [bot] (back_handler.py).back(182) Статус backAddGameState:add_description сбрасываю
+WARNING  2025-08-26 15:31:10,868 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-26 15:31:13,696 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-26 15:31:14,681 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-26 15:31:14,952 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-26 15:31:16,261 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-26 15:31:16,261 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-26 15:31:20,016 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-26 15:31:20,897 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-26 15:31:24,864 [bot] (add_game_handlers.py).add_title_game(58) Название новой игры sdxfchvgyjuik
+DEBUG    2025-08-26 15:31:26,871 [bot] (back_handler.py).back(182) Статус backAddGameState:add_description сбрасываю
+DEBUG    2025-08-26 15:33:37,302 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-26 15:33:37,302 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+DEBUG    2025-08-26 15:33:37,372 [bot] (back_handler.py).back(35) Состояние GameMenuState:main_game_menu сброшено
+DEBUG    2025-08-26 15:35:55,770 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-26 15:35:55,770 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-26 15:35:57,893 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-26 15:35:58,974 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-26 15:36:12,881 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-26 15:36:12,881 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-26 15:36:15,319 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-26 15:36:16,409 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-26 15:36:21,919 [bot] (add_game_handlers.py).add_title_game(58) Название новой игры нарды
+DEBUG    2025-08-26 15:36:37,433 [bot] (add_game_handlers.py).add_description_game(83) Получено описание игры
+INFO     2025-08-26 15:39:00,347 [bot] (cancel_state_handler.py).cancel_handler(18) Состояние ожидания: AddGameState:add_date - отменено
+DEBUG    2025-08-26 15:39:00,659 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-26 15:39:00,659 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-26 15:39:03,742 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-26 15:39:04,606 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-26 15:39:08,434 [bot] (add_game_handlers.py).add_title_game(58) Название новой игры кчепнмгршо
+DEBUG    2025-08-26 15:39:10,640 [bot] (add_game_handlers.py).add_description_game(83) Получено описание игры
+WARNING  2025-08-26 15:40:32,551 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-08-26 15:40:33,073 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-08-26 15:40:35,729 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-26 15:40:36,789 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-26 15:40:36,963 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-26 15:40:38,240 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-26 15:40:38,241 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-26 15:40:58,836 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-26 15:40:59,509 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-26 15:41:03,227 [bot] (add_game_handlers.py).add_description_game(79) Получено описание игры
+WARNING  2025-08-26 15:41:50,500 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-26 15:41:53,467 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-26 15:41:54,436 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-26 15:41:54,584 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-26 15:41:56,011 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-26 15:41:56,011 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-26 15:41:58,050 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-26 15:42:16,154 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-26 15:42:20,181 [bot] (add_game_handlers.py).add_description_game(79) Получено описание игры
+WARNING  2025-08-26 15:44:02,642 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-26 15:44:05,816 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-26 15:44:06,792 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-26 15:44:06,959 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-26 15:44:08,958 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-26 15:44:08,958 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-26 15:44:10,977 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-26 15:44:11,784 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-26 15:44:15,864 [bot] (add_game_handlers.py).add_description_game(79) Получено описание игры
+WARNING  2025-08-26 15:46:18,555 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-26 15:46:23,480 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-26 15:46:24,363 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-26 15:46:24,514 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-26 15:47:22,504 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-26 15:47:22,504 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-26 15:47:24,549 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-26 15:47:25,308 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-26 15:47:29,533 [bot] (add_game_handlers.py).add_description_game(79) Получено описание игры
+WARNING  2025-08-26 15:48:58,406 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-26 15:49:01,609 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-26 15:49:02,503 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-26 15:49:02,799 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-26 15:49:05,365 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-26 15:49:05,365 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-26 15:49:07,672 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-26 15:49:08,876 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-26 15:49:12,733 [bot] (add_game_handlers.py).add_description_game(79) Получено описание игры
+DEBUG    2025-08-26 15:49:52,047 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-26 15:49:52,047 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-26 15:49:53,939 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-26 15:49:54,698 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-26 15:50:04,681 [bot] (back_handler.py).back(181) Статус backAddGameState:add_description сбрасываю
+DEBUG    2025-08-26 15:50:09,995 [bot] (add_game_handlers.py).add_description_game(79) Получено описание игры
+WARNING  2025-08-26 15:50:23,073 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-26 15:50:25,821 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-26 15:50:26,906 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-26 15:50:27,117 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-26 15:50:34,787 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-26 15:50:34,787 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-26 15:50:37,293 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-26 15:50:37,871 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-26 15:50:41,443 [bot] (add_game_handlers.py).add_description_game(79) Получено описание игры
+WARNING  2025-08-26 23:52:28,261 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-08-26 23:52:28,437 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-08-27 14:14:44,253 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-27 14:14:46,278 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-27 14:14:46,492 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-27 14:18:54,669 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-27 14:18:54,669 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-27 14:18:58,271 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-27 14:18:59,350 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-27 14:19:05,513 [bot] (add_game_handlers.py).add_description_game(79) Получено описание игры
+DEBUG    2025-08-27 14:20:00,208 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-27 14:20:00,208 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-27 14:20:02,313 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-27 14:20:02,952 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-27 14:20:04,586 [bot] (back_handler.py).back(170) Статус backAddGameState:add_title сбрасываю
+DEBUG    2025-08-27 14:20:18,904 [bot] (add_game_handlers.py).add_description_game(79) Получено описание игры
+DEBUG    2025-08-27 14:20:20,903 [bot] (add_game_handlers.py).add_date_game(107) Получил дату игры 2025-08-26, тип <class 'datetime.date'>
+WARNING  2025-08-27 14:21:54,051 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-27 14:21:57,086 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-27 14:21:58,046 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-27 14:21:58,199 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-27 14:22:00,076 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-27 14:22:00,076 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-27 14:22:02,308 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-27 14:22:02,915 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-27 14:22:04,782 [bot] (back_handler.py).back(170) Статус backAddGameState:add_title сбрасываю
+DEBUG    2025-08-27 14:22:11,232 [bot] (add_game_handlers.py).add_description_game(79) Получено описание игры
+DEBUG    2025-08-27 14:22:15,461 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-27 14:22:15,461 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+DEBUG    2025-08-27 14:22:15,616 [bot] (back_handler.py).back(35) Состояние GameMenuState:main_game_menu сброшено
+WARNING  2025-08-27 14:22:58,429 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-27 14:23:01,271 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-27 14:23:02,318 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-27 14:23:02,559 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-27 14:23:02,913 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-27 14:23:02,914 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-27 14:23:05,544 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-27 14:23:06,180 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-27 14:23:09,342 [bot] (add_game_handlers.py).add_description_game(79) Получено описание игры
+DEBUG    2025-08-27 14:23:10,738 [bot] (add_game_handlers.py).add_date_game(109) Получил дату игры 2025-08-19, тип <class 'datetime.date'>
+DEBUG    2025-08-27 14:23:14,144 [bot] (back_handler.py).back(170) Статус backAddGameState:add_image сбрасываю
+DEBUG    2025-08-27 14:27:16,692 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-27 14:27:16,693 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-27 14:27:58,498 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-27 14:27:59,248 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-27 14:28:06,020 [bot] (add_game_handlers.py).add_description_game(79) Получено описание игры
+DEBUG    2025-08-27 14:28:07,450 [bot] (add_game_handlers.py).add_date_game(109) Получил дату игры 2025-08-26, тип <class 'datetime.date'>
+DEBUG    2025-08-27 14:28:15,784 [bot] (back_handler.py).back(170) Статус backAddGameState:add_image сбрасываю
+WARNING  2025-08-27 14:28:58,170 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-08-27 14:28:58,315 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-08-27 14:29:01,107 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-27 14:29:01,867 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-27 14:29:02,053 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-27 14:29:03,822 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-27 14:29:03,822 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-27 14:29:06,792 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-27 14:29:07,726 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-27 14:29:14,134 [bot] (add_game_handlers.py).add_description_game(79) Получено описание игры
+DEBUG    2025-08-27 14:29:15,409 [bot] (add_game_handlers.py).add_date_game(109) Получил дату игры 2025-08-30, тип <class 'datetime.date'>
+DEBUG    2025-08-27 14:29:20,251 [bot] (back_handler.py).back(170) Статус backAddGameState:add_image сбрасываю
+DEBUG    2025-08-27 14:29:42,788 [bot] (add_game_handlers.py).add_description_game(79) Получено описание игры
+DEBUG    2025-08-27 14:29:43,933 [bot] (add_game_handlers.py).add_date_game(109) Получил дату игры 2025-08-30, тип <class 'datetime.date'>
+DEBUG    2025-08-27 14:29:53,523 [bot] (add_game_handlers.py).add_image_game(168) Передаю в сохранение time_game 20:00:00, date_game 2025-08-30
+DEBUG    2025-08-27 14:29:59,542 [bot] (add_game_handlers.py).approve_game(195) текущий статус None
+DEBUG    2025-08-27 14:37:35,654 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-27 14:37:35,654 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-27 14:37:38,032 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-27 14:37:38,951 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+WARNING  2025-08-27 14:37:47,796 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-27 14:37:50,574 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-27 14:37:51,562 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-27 14:37:51,721 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-27 14:37:54,076 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-27 14:37:54,076 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-27 14:37:56,698 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-27 14:37:57,487 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-27 14:37:59,823 [bot] (back_handler.py).back(170) Статус backAddGameState:add_title сбрасываю
+DEBUG    2025-08-27 14:38:07,385 [bot] (add_game_handlers.py).add_description_game(79) Получено описание игры
+INFO     2025-08-27 14:39:18,497 [bot] (cancel_state_handler.py).cancel_handler(18) Состояние ожидания: AddGameState:add_description - отменено
+DEBUG    2025-08-27 14:39:18,811 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-27 14:39:18,812 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+WARNING  2025-08-27 14:43:14,776 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-08-27 14:43:14,918 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-08-27 14:43:17,592 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-27 14:43:18,490 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-27 14:43:18,659 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-27 14:43:23,211 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-27 14:43:23,211 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-27 14:43:25,922 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-27 14:43:26,747 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-27 14:43:31,453 [bot] (add_game_handlers.py).add_description_game(79) Получено описание игры
+DEBUG    2025-08-27 14:43:35,398 [bot] (add_game_handlers.py).add_date_game(102) Получил дату игры None, тип <class 'NoneType'>
+DEBUG    2025-08-27 14:43:59,468 [bot] (add_game_handlers.py).add_description_game(79) Получено описание игры
+DEBUG    2025-08-27 14:44:00,964 [bot] (add_game_handlers.py).add_date_game(102) Получил дату игры 2025-08-30, тип <class 'datetime.date'>
+WARNING  2025-08-27 14:45:16,653 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-27 14:45:19,115 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-27 14:45:19,903 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-27 14:45:20,056 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-27 14:45:24,242 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-27 14:45:24,242 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-27 14:45:26,456 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-27 14:45:27,051 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-27 14:45:30,741 [bot] (add_game_handlers.py).add_description_game(79) Получено описание игры
+DEBUG    2025-08-27 14:45:32,297 [bot] (add_game_handlers.py).add_date_game(102) Получил дату игры None, тип <class 'NoneType'>
+WARNING  2025-08-27 14:46:32,846 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-27 14:46:35,621 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-27 14:46:36,419 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-27 14:46:36,599 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-27 14:46:37,841 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-27 14:46:37,841 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-27 14:46:39,633 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-27 14:46:40,181 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-27 14:46:43,983 [bot] (add_game_handlers.py).add_description_game(79) Получено описание игры
+DEBUG    2025-08-27 14:46:46,900 [bot] (add_game_handlers.py).add_date_game(102) Получил дату игры None, тип <class 'NoneType'>
+DEBUG    2025-08-27 14:47:21,134 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-27 14:47:21,135 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+WARNING  2025-08-27 14:47:24,032 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-27 14:47:26,728 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-27 14:47:27,501 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-27 14:47:27,648 [bot] (commands.py).set_commands(20) Установил команды
+INFO     2025-08-27 14:47:28,888 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-27 14:47:29,831 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-27 14:47:35,027 [bot] (add_game_handlers.py).add_description_game(79) Получено описание игры
+DEBUG    2025-08-27 14:47:36,345 [bot] (add_game_handlers.py).add_date_game(102) Получил дату игры None, тип <class 'NoneType'>
+WARNING  2025-08-27 14:49:39,990 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-27 14:49:43,081 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-27 14:49:43,940 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-27 14:49:44,106 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-27 14:49:50,702 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-27 14:49:50,703 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-27 14:49:53,099 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-27 14:49:53,783 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-27 14:49:57,964 [bot] (add_game_handlers.py).add_description_game(79) Получено описание игры
+DEBUG    2025-08-27 14:49:59,088 [bot] (add_game_handlers.py).add_date_game(102) Получил дату игры 2025-08-30, тип <class 'datetime.date'>
+WARNING  2025-08-27 14:51:14,919 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-27 14:51:17,842 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-27 14:51:18,643 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-27 14:51:18,883 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-27 14:51:21,190 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-27 14:51:21,191 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-27 14:51:23,385 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-27 14:51:24,091 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-27 14:51:28,314 [bot] (add_game_handlers.py).add_description_game(79) Получено описание игры
+DEBUG    2025-08-27 14:51:29,323 [bot] (add_game_handlers.py).add_date_game(102) Получил дату игры 2025-08-30, тип <class 'datetime.date'>
+DEBUG    2025-08-27 14:52:08,982 [bot] (add_game_handlers.py).add_description_game(79) Получено описание игры
+DEBUG    2025-08-27 14:52:10,025 [bot] (add_game_handlers.py).add_date_game(102) Получил дату игры 2025-08-30, тип <class 'datetime.date'>
+WARNING  2025-08-27 14:56:21,421 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-08-27 14:56:21,564 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-08-27 14:56:24,276 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-27 14:56:25,182 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-27 14:56:25,381 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-27 14:58:11,692 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-27 14:58:11,692 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-27 14:58:13,379 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-27 14:58:14,050 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-27 14:58:26,253 [bot] (add_game_handlers.py).add_description_game(79) Получено описание игры
+DEBUG    2025-08-27 14:58:42,715 [bot] (add_game_handlers.py).add_description_game(79) Получено описание игры
+WARNING  2025-08-27 14:59:16,352 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-27 14:59:19,224 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-27 14:59:20,049 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-27 14:59:20,213 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-27 14:59:38,782 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-27 14:59:38,782 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-27 14:59:40,657 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-27 14:59:41,265 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-27 14:59:43,894 [bot] (back_handler.py).back(170) Статус backAddGameState:add_title сбрасываю
+DEBUG    2025-08-27 14:59:50,654 [bot] (add_game_handlers.py).add_description_game(79) Получено описание игры
+DEBUG    2025-08-27 14:59:52,389 [bot] (add_game_handlers.py).add_date_game(103) Получил дату игры 2025-08-30, тип <class 'datetime.date'>
+WARNING  2025-08-27 15:01:40,021 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-27 15:01:42,811 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-27 15:01:43,636 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-27 15:01:43,868 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-27 15:01:50,520 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-27 15:01:50,520 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-27 15:01:52,834 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-27 15:01:53,527 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-27 15:01:57,703 [bot] (add_game_handlers.py).add_description_game(79) Получено описание игры
+DEBUG    2025-08-27 15:01:59,615 [bot] (add_game_handlers.py).add_date_game(103) Получил дату игры 2025-08-30, тип <class 'datetime.date'>
+DEBUG    2025-08-27 15:02:04,144 [bot] (back_handler.py).back(170) Статус backAddGameState:add_image сбрасываю
+DEBUG    2025-08-27 15:02:08,968 [bot] (add_game_handlers.py).add_description_game(79) Получено описание игры
+DEBUG    2025-08-27 15:02:18,073 [bot] (add_game_handlers.py).add_description_game(79) Получено описание игры
+DEBUG    2025-08-27 15:02:19,405 [bot] (add_game_handlers.py).add_date_game(103) Получил дату игры 2025-08-30, тип <class 'datetime.date'>
+WARNING  2025-08-27 15:02:49,914 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-27 15:02:52,588 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-27 15:02:53,384 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-27 15:02:53,589 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-27 15:02:58,032 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-27 15:02:58,032 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-27 15:03:00,433 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+DEBUG    2025-08-27 15:03:01,345 [bot] (back_handler.py).back(50) Состояние BaristaState:menu сброшено
+INFO     2025-08-27 15:03:02,107 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-27 15:03:02,665 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-27 15:03:12,211 [bot] (add_game_handlers.py).add_description_game(79) Получено описание игры
+DEBUG    2025-08-27 15:03:13,420 [bot] (add_game_handlers.py).add_date_game(103) Получил дату игры 2025-08-30, тип <class 'datetime.date'>
+WARNING  2025-08-27 15:05:01,810 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-27 15:05:04,516 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-27 15:05:05,330 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-27 15:05:05,486 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-27 15:05:09,897 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-27 15:05:09,897 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-27 15:05:11,987 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-27 15:05:12,815 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-27 15:05:18,014 [bot] (add_game_handlers.py).add_description_game(79) Получено описание игры
+DEBUG    2025-08-27 15:05:19,679 [bot] (add_game_handlers.py).add_date_game(103) Получил дату игры 2025-08-29, тип <class 'datetime.date'>
+DEBUG    2025-08-27 15:05:52,103 [bot] (back_handler.py).back(182) Статус backAddGameState:add_image сбрасываю
+WARNING  2025-08-27 15:06:24,083 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-27 15:06:26,958 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-27 15:06:27,879 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-27 15:06:28,049 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-27 15:06:30,800 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-27 15:06:30,800 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-27 15:06:36,007 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-27 15:06:37,012 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-27 15:06:40,858 [bot] (add_game_handlers.py).add_description_game(79) Получено описание игры
+DEBUG    2025-08-27 15:06:42,342 [bot] (add_game_handlers.py).add_date_game(103) Получил дату игры 2025-08-30, тип <class 'datetime.date'>
+DEBUG    2025-08-27 15:06:47,221 [bot] (back_handler.py).back(182) Статус backAddGameState:add_image сбрасываю
+WARNING  2025-08-27 15:09:23,960 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-08-27 15:09:24,103 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-08-27 15:09:26,749 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-27 15:09:27,716 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-27 15:09:27,943 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-27 15:09:31,817 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-27 15:09:31,817 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-27 15:09:33,661 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-27 15:09:34,448 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-27 15:09:38,859 [bot] (add_game_handlers.py).add_description_game(79) Получено описание игры
+DEBUG    2025-08-27 15:09:45,368 [bot] (add_game_handlers.py).add_description_game(79) Получено описание игры
+DEBUG    2025-08-27 15:09:46,927 [bot] (add_game_handlers.py).add_date_game(103) Получил дату игры 2025-08-29, тип <class 'datetime.date'>
+DEBUG    2025-08-27 15:09:50,923 [bot] (back_handler.py).back(182) Статус backAddGameState:add_image сбрасываю
+DEBUG    2025-08-27 15:12:52,510 [bot] (add_game_handlers.py).add_description_game(79) Получено описание игры
+DEBUG    2025-08-27 15:12:54,891 [bot] (add_game_handlers.py).add_date_game(103) Получил дату игры 2025-08-30, тип <class 'datetime.date'>
+DEBUG    2025-08-27 15:13:02,577 [bot] (add_game_handlers.py).add_image_game(164) Передаю в сохранение time_game 19:00:00, date_game 2025-08-30
+DEBUG    2025-08-27 15:13:05,651 [bot] (add_game_handlers.py).approve_game(191) текущий статус None
+WARNING  2025-08-27 15:15:11,199 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-27 15:15:14,113 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-27 15:15:14,942 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-27 15:15:15,116 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-27 15:15:21,532 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-27 15:15:21,532 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-27 15:15:23,301 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-27 15:15:23,875 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-27 15:15:33,838 [bot] (add_game_handlers.py).add_description_game(79) Получено описание игры
+DEBUG    2025-08-27 15:15:36,039 [bot] (add_game_handlers.py).add_date_game(103) Получил дату игры 2025-08-30, тип <class 'datetime.date'>
+DEBUG    2025-08-27 15:15:41,605 [bot] (add_game_handlers.py).add_image_game(167) Передаю в сохранение time_game 20:00:00, date_game 2025-08-30
+DEBUG    2025-08-27 15:15:43,281 [bot] (add_game_handlers.py).approve_game(194) текущий статус None
+DEBUG    2025-08-27 15:15:43,281 [bot] (add_game_handlers.py).save_game(239) Начинается сохранение игры
+DEBUG    2025-08-27 15:15:43,281 [bot] (add_game_handlers.py).save_game(240) author_id: 2, title: Хоккей, description: трус не играет в хоккей, date: 20:00:00, time_game: 20:00:00
+DEBUG    2025-08-27 15:15:43,282 [bot] (add_game_handlers.py).save_game(245) author = <User>, author_id = 2, author_tele = 484385628
+image = AgACAgIAAxkBAAIjyGiu9k6YiqjQIjgNz6BYnsrA04LuAAJb9DEb7zB4Sba2I5xSUuUiAQADAgADeQADNgQ
+INFO     2025-08-27 15:15:43,309 [bot] (add_game_handlers.py).save_game(259) Игра 'Хоккей' создана пользователем 2
+WARNING  2025-08-27 15:16:59,566 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-27 15:17:02,186 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-27 15:17:02,978 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-27 15:17:03,155 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-27 15:17:08,256 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-27 15:17:08,256 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+DEBUG    2025-08-27 15:17:10,919 [bot] (game_handlers.py).show_games(31) показываю игры
+DEBUG    2025-08-27 15:17:12,576 [bot] (game_handlers.py).show_one_game(68) Выбрана игра 9
+DEBUG    2025-08-27 15:17:12,711 [bot] (game_handlers.py).show_one_game(86) сохранил 9174
+DEBUG    2025-08-27 15:17:19,244 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-27 15:17:19,244 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+DEBUG    2025-08-27 15:17:19,495 [bot] (back_handler.py).back(35) Состояние GameMenuState:main_game_menu сброшено
+INFO     2025-08-27 15:17:21,841 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-27 15:17:22,576 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-27 15:17:27,542 [bot] (add_game_handlers.py).add_description_game(79) Получено описание игры
+DEBUG    2025-08-27 15:17:28,582 [bot] (add_game_handlers.py).add_date_game(103) Получил дату игры 2025-08-30, тип <class 'datetime.date'>
+DEBUG    2025-08-27 15:17:33,732 [bot] (add_game_handlers.py).add_image_game(167) Передаю в сохранение time_game 20:00:00, date_game 2025-08-30
+DEBUG    2025-08-27 15:17:35,625 [bot] (add_game_handlers.py).approve_game(194) текущий статус AddGameState:save_game
+DEBUG    2025-08-27 15:31:28,720 [bot] (add_game_handlers.py).approve_game(194) текущий статус AddGameState:save_game
+DEBUG    2025-08-27 15:31:28,721 [bot] (add_game_handlers.py).save_game(240) Начинается сохранение игры
+DEBUG    2025-08-27 15:31:28,721 [bot] (add_game_handlers.py).save_game(241) author_id: 2, title: ESTBzsermke, description: rybzsetm, date: 20:00:00, time_game: 20:00:00
+DEBUG    2025-08-27 15:31:28,722 [bot] (add_game_handlers.py).save_game(246) author = <User>, author_id = 2, author_tele = 484385628
+image = AgACAgIAAxkBAAIj3Wiu914ouQTi3kAvdL--GzrTXMsgAAJo9DEb7zB4SRS-XDmHr4NYAQADAgADeQADNgQ
+INFO     2025-08-27 15:31:28,726 [bot] (add_game_handlers.py).save_game(260) Игра 'ESTBzsermke' создана пользователем 2
+WARNING  2025-08-27 15:32:57,140 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-08-27 15:32:57,310 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-08-27 15:32:59,893 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-27 15:33:00,807 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-27 15:33:00,989 [bot] (commands.py).set_commands(20) Установил команды
+WARNING  2025-08-27 15:33:08,804 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-27 15:33:11,455 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-27 15:33:12,365 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-27 15:33:12,524 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-27 15:33:13,739 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-27 15:33:13,739 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-27 15:33:16,084 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-27 15:33:16,845 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-27 15:33:20,699 [bot] (add_game_handlers.py).add_description_game(79) Получено описание игры
+DEBUG    2025-08-27 15:33:22,316 [bot] (add_game_handlers.py).add_date_game(103) Получил дату игры 2025-08-30, тип <class 'datetime.date'>
+DEBUG    2025-08-27 15:33:30,127 [bot] (add_game_handlers.py).add_image_game(167) Передаю в сохранение time_game 20:00:00, date_game 2025-08-30
+DEBUG    2025-08-27 15:33:31,743 [bot] (add_game_handlers.py).approve_game(194) текущий статус AddGameState:save_game
+WARNING  2025-08-27 15:34:14,965 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-27 15:34:18,044 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-27 15:34:18,968 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-27 15:34:19,183 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-27 15:34:28,542 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-27 15:34:28,542 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-27 15:34:30,602 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-27 15:34:31,253 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-27 15:34:34,781 [bot] (add_game_handlers.py).add_description_game(79) Получено описание игры
+DEBUG    2025-08-27 15:34:35,860 [bot] (add_game_handlers.py).add_date_game(103) Получил дату игры 2025-08-30, тип <class 'datetime.date'>
+DEBUG    2025-08-27 15:34:43,569 [bot] (add_game_handlers.py).add_image_game(167) Передаю в сохранение time_game 20:30:00, date_game 2025-08-30
+DEBUG    2025-08-27 15:34:45,473 [bot] (add_game_handlers.py).approve_game(194) текущий статус AddGameState:save_game
+DEBUG    2025-08-27 15:35:41,154 [bot] (back_handler.py).back(181) Статус backAddGameState:add_description сбрасываю
+DEBUG    2025-08-27 15:35:45,494 [bot] (add_game_handlers.py).add_description_game(79) Получено описание игры
+WARNING  2025-08-27 15:37:32,675 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-27 15:37:36,550 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-27 15:37:37,732 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-27 15:37:37,892 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-27 15:37:48,558 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-27 15:37:48,559 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-27 15:37:50,829 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-27 15:37:51,728 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-27 15:37:59,034 [bot] (add_game_handlers.py).add_description_game(77) Получено описание игры
+DEBUG    2025-08-27 15:38:00,741 [bot] (add_game_handlers.py).add_date_game(101) Получил дату игры 2025-08-29, тип <class 'datetime.date'>
+DEBUG    2025-08-27 15:38:08,143 [bot] (add_game_handlers.py).add_image_game(162) Передаю в сохранение time_game 20:00:00, date_game 2025-08-29
+DEBUG    2025-08-27 15:38:16,171 [bot] (add_game_handlers.py).approve_game(189) текущий статус AddGameState:save_game
+DEBUG    2025-08-27 15:38:22,054 [bot] (add_game_handlers.py).add_description_game(77) Получено описание игры
+DEBUG    2025-08-27 15:38:23,201 [bot] (add_game_handlers.py).add_date_game(101) Получил дату игры 2025-08-29, тип <class 'datetime.date'>
+DEBUG    2025-08-27 15:38:29,424 [bot] (add_game_handlers.py).add_image_game(162) Передаю в сохранение time_game 20:00:00, date_game 2025-08-29
+DEBUG    2025-08-27 15:38:38,496 [bot] (add_game_handlers.py).approve_game(189) текущий статус AddGameState:save_game
+DEBUG    2025-08-27 15:40:25,117 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-27 15:40:25,117 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+DEBUG    2025-08-27 15:40:52,550 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-27 15:40:52,550 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+DEBUG    2025-08-27 15:40:52,656 [bot] (back_handler.py).back(35) Состояние MenuState:help_menu сброшено
+DEBUG    2025-08-27 15:41:00,330 [bot] (game_handlers.py).show_games(31) показываю игры
+WARNING  2025-08-27 15:48:23,117 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-08-27 15:48:23,279 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-08-27 15:48:25,642 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-27 15:48:26,540 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-27 15:48:26,725 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-27 15:48:29,095 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-27 15:48:29,096 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-27 15:48:30,743 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-27 15:48:31,343 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-27 15:48:35,370 [bot] (add_game_handlers.py).add_description_game(77) Получено описание игры
+WARNING  2025-08-27 15:49:31,718 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-27 15:49:34,293 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-27 15:49:35,164 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-27 15:49:35,348 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-27 15:49:37,922 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-27 15:49:37,923 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-27 15:49:39,800 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-27 15:49:40,464 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-27 15:49:44,465 [bot] (add_game_handlers.py).add_description_game(77) Получено описание игры
+WARNING  2025-08-27 15:51:22,543 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-27 15:51:25,386 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-27 15:51:26,243 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-27 15:51:26,406 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-27 15:51:27,900 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-27 15:51:27,900 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-27 15:51:29,587 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-27 15:51:30,220 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-27 15:51:33,397 [bot] (add_game_handlers.py).add_description_game(77) Получено описание игры
+DEBUG    2025-08-27 15:51:55,618 [bot] (add_game_handlers.py).add_date_game(112) Получил дату игры 2025-08-31, тип <class 'datetime.date'>
+DEBUG    2025-08-27 15:52:07,673 [bot] (add_game_handlers.py).add_description_game(77) Получено описание игры
+DEBUG    2025-08-27 15:52:16,192 [bot] (add_game_handlers.py).add_date_game(112) Получил дату игры 2025-08-29, тип <class 'datetime.date'>
+DEBUG    2025-08-27 15:52:26,228 [bot] (add_game_handlers.py).add_description_game(77) Получено описание игры
+DEBUG    2025-08-27 15:52:41,551 [bot] (add_game_handlers.py).add_date_game(112) Получил дату игры 2025-08-28, тип <class 'datetime.date'>
+WARNING  2025-08-27 15:53:51,571 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-27 15:53:54,142 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-27 15:53:55,033 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-27 15:53:55,204 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-27 15:53:57,390 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-27 15:53:57,390 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-27 15:53:59,810 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-27 15:54:00,551 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-27 15:54:03,923 [bot] (add_game_handlers.py).add_description_game(78) Получено описание игры
+DEBUG    2025-08-27 15:54:21,844 [bot] (back_handler.py).back(181) Статус backAddGameState:add_image сбрасываю
+WARNING  2025-08-27 15:54:45,348 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-27 15:54:48,108 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-27 15:54:48,945 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-27 15:54:49,108 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-27 15:54:50,179 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-27 15:54:50,180 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-27 15:54:51,950 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-27 15:54:52,509 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-27 15:54:55,605 [bot] (add_game_handlers.py).add_description_game(78) Получено описание игры
+DEBUG    2025-08-27 15:55:04,273 [bot] (back_handler.py).back(181) Статус backAddGameState:add_image сбрасываю
+WARNING  2025-08-27 16:22:24,002 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-08-27 16:22:24,191 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-08-28 14:27:52,490 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-28 14:27:54,778 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-28 14:27:55,023 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-28 14:29:29,190 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-28 14:29:29,190 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-28 14:29:32,389 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-28 14:29:33,103 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-28 14:29:37,168 [bot] (add_game_handlers.py).add_description_game(78) Получено описание игры
+WARNING  2025-08-28 14:30:07,877 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-28 14:30:11,003 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-28 14:30:11,945 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-28 14:30:12,121 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-28 14:30:17,343 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-28 14:30:17,343 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-28 14:30:19,807 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-28 14:30:20,412 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-28 14:30:24,611 [bot] (add_game_handlers.py).add_description_game(78) Получено описание игры
+WARNING  2025-08-28 14:31:44,737 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-28 14:31:47,521 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-28 14:31:48,447 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-28 14:31:48,616 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-28 14:31:59,417 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-28 14:31:59,417 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-28 14:32:01,993 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-28 14:32:02,912 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-28 14:32:07,598 [bot] (add_game_handlers.py).add_description_game(78) Получено описание игры
+WARNING  2025-08-28 14:32:43,769 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-28 14:32:46,557 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-28 14:32:47,410 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-28 14:32:47,645 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-28 14:32:49,556 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-28 14:32:49,556 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-28 14:32:51,603 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-28 14:32:52,262 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-28 14:32:56,326 [bot] (add_game_handlers.py).add_description_game(78) Получено описание игры
+DEBUG    2025-08-28 14:34:51,664 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-28 14:34:51,664 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+WARNING  2025-08-28 14:34:57,257 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-28 14:39:36,758 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-28 14:39:37,649 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-28 14:39:38,004 [bot] (commands.py).set_commands(20) Установил команды
+WARNING  2025-08-28 14:42:16,823 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-28 14:42:19,640 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-28 14:42:20,454 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-28 14:42:20,614 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-28 14:42:24,877 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-28 14:42:24,877 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-28 14:42:26,951 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-28 14:42:27,501 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-28 14:42:31,838 [bot] (add_game_handlers.py).add_description_game(78) Получено описание игры
+WARNING  2025-08-28 14:43:38,824 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-28 14:43:41,738 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-28 14:43:42,610 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-28 14:43:42,892 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-28 14:43:47,018 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-28 14:43:47,018 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-28 14:43:49,042 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-28 14:43:49,629 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-28 14:43:53,366 [bot] (add_game_handlers.py).add_description_game(78) Получено описание игры
+ERROR    2025-08-28 14:43:58,033 [bot] (add_game_handlers.py).add_date_game(130) Неожиданная ошибка в add_date_game: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+ERROR    2025-08-28 14:44:03,828 [bot] (add_game_handlers.py).add_date_game(130) Неожиданная ошибка в add_date_game: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+ERROR    2025-08-28 14:44:09,041 [bot] (add_game_handlers.py).add_date_game(130) Неожиданная ошибка в add_date_game: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEBUG    2025-08-28 14:44:11,998 [bot] (add_game_handlers.py).add_date_game(121) Получил дату игры 2025-08-30, тип <class 'datetime.date'>
+WARNING  2025-08-28 14:45:16,337 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-28 14:45:18,987 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-28 14:45:19,809 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-28 14:45:19,979 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-28 14:45:23,539 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-28 14:45:23,539 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-28 14:45:26,363 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-28 14:45:27,274 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-28 14:45:31,341 [bot] (add_game_handlers.py).add_description_game(78) Получено описание игры
+DEBUG    2025-08-28 14:46:26,610 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-28 14:46:26,610 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+DEBUG    2025-08-28 14:46:26,674 [bot] (back_handler.py).back(35) Состояние GameMenuState:main_game_menu сброшено
+INFO     2025-08-28 14:48:35,319 [bot] (admin_handlers.py).admin_menu_handler(20) Вход в панель админа
+DEBUG    2025-08-28 14:48:36,191 [bot] (get_statistic_handlers.py).get_statistic(23) State AdminMenuState:admin
+DEBUG    2025-08-28 14:48:40,135 [bot] (get_statistic_handlers.py).get_period_statistic(47) Выбор начальной даты периода: get_period_statistic StatsState:waiting_first_date
+DEBUG    2025-08-28 14:48:41,955 [bot] (get_statistic_handlers.py).first_day_statistic(103) жду конечную дату
+DEBUG    2025-08-28 14:48:49,328 [bot] (get_statistic_handlers.py).get_period_statistic(55) Выбор даты: get_period_statistic StatsState:waiting_date
+DEBUG    2025-08-28 14:48:50,249 [bot] (get_statistic_handlers.py).day_statistic(75) Получил статистику за день
+DEBUG    2025-08-28 14:48:52,641 [bot] (get_statistic_handlers.py).get_period_statistic(55) Выбор даты: get_period_statistic StatsState:waiting_date
+WARNING  2025-08-28 15:03:56,202 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-08-28 15:03:56,367 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-08-28 15:03:59,011 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-28 15:03:59,785 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-28 15:04:00,134 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-28 15:04:07,106 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-28 15:04:07,107 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-28 15:04:09,196 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+DEBUG    2025-08-28 15:04:10,907 [bot] (back_handler.py).back(50) Состояние BaristaState:menu сброшено
+INFO     2025-08-28 15:04:11,726 [bot] (admin_handlers.py).admin_menu_handler(20) Вход в панель админа
+DEBUG    2025-08-28 15:04:12,594 [bot] (get_statistic_handlers.py).get_statistic(23) State AdminMenuState:admin
+DEBUG    2025-08-28 15:04:13,910 [bot] (get_statistic_handlers.py).get_period_statistic(55) Выбор даты: get_period_statistic StatsState:waiting_date
+DEBUG    2025-08-28 15:04:39,284 [bot] (get_statistic_handlers.py).get_statistic_from_db(160) day_statistic: <Statistic>
+DEBUG    2025-08-28 15:04:39,284 [bot] (get_statistic_handlers.py).day_statistic(75) Получил статистику за день
+DEBUG    2025-08-28 15:04:43,224 [bot] (get_statistic_handlers.py).get_period_statistic(55) Выбор даты: get_period_statistic StatsState:waiting_date
+WARNING  2025-08-28 15:32:18,307 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-08-28 15:32:18,464 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-08-28 15:32:21,252 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-28 15:32:22,062 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-28 15:32:22,378 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-28 15:32:24,710 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-28 15:32:24,711 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-28 15:32:27,688 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+DEBUG    2025-08-28 15:32:28,605 [bot] (back_handler.py).back(50) Состояние BaristaState:menu сброшено
+INFO     2025-08-28 15:32:29,514 [bot] (admin_handlers.py).admin_menu_handler(20) Вход в панель админа
+DEBUG    2025-08-28 15:32:31,967 [bot] (get_statistic_handlers.py).get_statistic(23) State AdminMenuState:admin
+DEBUG    2025-08-28 15:32:33,246 [bot] (get_statistic_handlers.py).get_period_statistic(55) Выбор даты: get_period_statistic StatsState:waiting_date
+DEBUG    2025-08-28 15:32:38,728 [bot] (get_statistic_handlers.py).get_statistic_from_db(180) day_statistic: None
+DEBUG    2025-08-28 15:32:38,728 [bot] (get_statistic_handlers.py).day_statistic(95) Получил статистику за день
+DEBUG    2025-08-28 15:32:42,362 [bot] (get_statistic_handlers.py).get_period_statistic(55) Выбор даты: get_period_statistic StatsState:waiting_date
+DEBUG    2025-08-28 15:32:45,897 [bot] (get_statistic_handlers.py).day_statistic(95) Получил статистику за день
+DEBUG    2025-08-28 15:32:49,121 [bot] (get_statistic_handlers.py).get_period_statistic(47) Выбор начальной даты периода: get_period_statistic StatsState:waiting_first_date
+DEBUG    2025-08-28 15:33:09,132 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-28 15:33:09,132 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-28 15:33:12,540 [bot] (admin_handlers.py).admin_menu_handler(20) Вход в панель админа
+DEBUG    2025-08-28 15:33:15,761 [bot] (get_statistic_handlers.py).get_statistic(23) State AdminMenuState:admin
+DEBUG    2025-08-28 15:33:16,837 [bot] (get_statistic_handlers.py).get_period_statistic(47) Выбор начальной даты периода: get_period_statistic StatsState:waiting_first_date
+DEBUG    2025-08-28 15:33:25,485 [bot] (get_statistic_handlers.py).first_day_statistic(123) жду конечную дату
+DEBUG    2025-08-28 15:34:34,318 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-28 15:34:34,318 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-28 15:34:35,901 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+DEBUG    2025-08-28 15:34:36,764 [bot] (back_handler.py).back(50) Состояние BaristaState:menu сброшено
+INFO     2025-08-28 15:34:37,177 [bot] (admin_handlers.py).admin_menu_handler(20) Вход в панель админа
+DEBUG    2025-08-28 15:34:38,538 [bot] (get_statistic_handlers.py).get_statistic(23) State AdminMenuState:admin
+DEBUG    2025-08-28 15:34:42,610 [bot] (get_statistic_handlers.py).get_period_statistic(55) Выбор даты: get_period_statistic StatsState:waiting_date
+DEBUG    2025-08-28 15:34:53,761 [bot] (get_statistic_handlers.py).day_statistic(95) Получил статистику за день
+DEBUG    2025-08-28 15:35:18,658 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-28 15:35:18,658 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-28 15:35:20,803 [bot] (admin_handlers.py).admin_menu_handler(20) Вход в панель админа
+DEBUG    2025-08-28 15:35:21,481 [bot] (get_statistic_handlers.py).get_statistic(23) State AdminMenuState:admin
+DEBUG    2025-08-28 15:35:22,457 [bot] (get_statistic_handlers.py).get_period_statistic(55) Выбор даты: get_period_statistic StatsState:waiting_date
+DEBUG    2025-08-28 15:35:23,554 [bot] (get_statistic_handlers.py).get_statistic_from_db(180) day_statistic: None
+DEBUG    2025-08-28 15:35:23,554 [bot] (get_statistic_handlers.py).day_statistic(95) Получил статистику за день
+DEBUG    2025-08-28 15:35:26,282 [bot] (get_statistic_handlers.py).get_period_statistic(55) Выбор даты: get_period_statistic StatsState:waiting_date
+DEBUG    2025-08-28 15:35:30,878 [bot] (get_statistic_handlers.py).day_statistic(95) Получил статистику за день
+DEBUG    2025-08-28 15:35:33,769 [bot] (get_statistic_handlers.py).get_period_statistic(55) Выбор даты: get_period_statistic StatsState:waiting_date
+DEBUG    2025-08-28 15:35:36,664 [bot] (get_statistic_handlers.py).day_statistic(95) Получил статистику за день
+DEBUG    2025-08-28 15:35:55,402 [bot] (get_statistic_handlers.py).get_period_statistic(55) Выбор даты: get_period_statistic StatsState:waiting_date
+WARNING  2025-08-28 18:50:02,874 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-08-28 18:50:03,049 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-08-29 13:34:05,451 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-29 13:34:07,709 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-29 13:34:08,002 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-29 13:34:14,133 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-29 13:34:14,133 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-29 13:34:16,614 [bot] (admin_handlers.py).admin_menu_handler(20) Вход в панель админа
+DEBUG    2025-08-29 13:34:17,541 [bot] (get_statistic_handlers.py).get_statistic(23) State AdminMenuState:admin
+DEBUG    2025-08-29 13:34:18,766 [bot] (get_statistic_handlers.py).get_period_statistic(55) Выбор даты: get_period_statistic StatsState:waiting_date
+DEBUG    2025-08-29 13:34:27,895 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-29 13:34:27,896 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-29 13:34:29,813 [bot] (admin_handlers.py).admin_menu_handler(20) Вход в панель админа
+DEBUG    2025-08-29 13:34:30,731 [bot] (get_statistic_handlers.py).get_statistic(23) State AdminMenuState:admin
+DEBUG    2025-08-29 13:34:31,787 [bot] (get_statistic_handlers.py).get_period_statistic(55) Выбор даты: get_period_statistic StatsState:waiting_date
+WARNING  2025-08-29 13:35:23,574 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-29 13:35:26,570 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-29 13:35:27,577 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-29 13:35:27,829 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-29 13:35:31,047 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-29 13:35:31,047 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-29 13:35:32,993 [bot] (admin_handlers.py).admin_menu_handler(20) Вход в панель админа
+DEBUG    2025-08-29 13:35:33,788 [bot] (get_statistic_handlers.py).get_statistic(23) State AdminMenuState:admin
+DEBUG    2025-08-29 13:35:34,823 [bot] (get_statistic_handlers.py).get_period_statistic(55) Выбор даты: get_period_statistic StatsState:waiting_date
+WARNING  2025-08-29 13:38:20,139 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-29 13:38:24,337 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-29 13:38:26,158 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-29 13:38:26,328 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-29 13:39:36,392 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-29 13:39:36,393 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-29 13:39:38,846 [bot] (admin_handlers.py).admin_menu_handler(20) Вход в панель админа
+DEBUG    2025-08-29 13:39:39,638 [bot] (get_statistic_handlers.py).get_statistic(23) State AdminMenuState:admin
+DEBUG    2025-08-29 13:39:40,842 [bot] (get_statistic_handlers.py).get_period_statistic(55) Выбор даты: get_period_statistic StatsState:waiting_date
+WARNING  2025-08-29 13:39:51,617 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-29 13:39:56,178 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-29 13:39:58,898 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-29 13:39:59,146 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-29 13:40:09,423 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-29 13:40:09,423 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-29 13:40:11,502 [bot] (admin_handlers.py).admin_menu_handler(20) Вход в панель админа
+DEBUG    2025-08-29 13:40:13,274 [bot] (get_statistic_handlers.py).get_statistic(23) State AdminMenuState:admin
+DEBUG    2025-08-29 13:40:14,432 [bot] (get_statistic_handlers.py).get_period_statistic(55) Выбор даты: get_period_statistic StatsState:waiting_date
+WARNING  2025-08-29 14:09:00,395 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-08-29 14:09:00,562 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-08-29 14:09:03,931 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-29 14:09:05,427 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-29 14:09:05,608 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-29 14:09:13,098 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-29 14:09:13,098 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-29 14:09:15,164 [bot] (admin_handlers.py).admin_menu_handler(20) Вход в панель админа
+DEBUG    2025-08-29 14:09:16,258 [bot] (get_statistic_handlers.py).get_statistic(23) State AdminMenuState:admin
+DEBUG    2025-08-29 14:09:17,440 [bot] (get_statistic_handlers.py).get_period_statistic(53) Выбор даты: get_period_statistic StatsState:waiting_date
+WARNING  2025-08-29 14:10:29,448 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-29 14:10:32,355 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-29 14:10:33,261 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-29 14:10:33,443 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-29 14:10:34,896 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-29 14:10:34,897 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-29 14:10:37,148 [bot] (admin_handlers.py).admin_menu_handler(20) Вход в панель админа
+DEBUG    2025-08-29 14:10:38,211 [bot] (get_statistic_handlers.py).get_statistic(23) State AdminMenuState:admin
+DEBUG    2025-08-29 14:10:39,500 [bot] (get_statistic_handlers.py).get_period_statistic(54) Выбор даты: get_period_statistic StatsState:waiting_date
+WARNING  2025-08-29 14:19:14,410 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-08-29 14:19:14,558 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-08-29 14:19:17,326 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-29 14:19:18,178 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-29 14:19:18,356 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-29 14:19:20,068 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-29 14:19:20,068 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-29 14:19:22,082 [bot] (admin_handlers.py).admin_menu_handler(20) Вход в панель админа
+DEBUG    2025-08-29 14:19:22,910 [bot] (get_statistic_handlers.py).get_statistic(24) State AdminMenuState:admin
+DEBUG    2025-08-29 14:19:23,848 [bot] (get_statistic_handlers.py).get_period_statistic(56) Выбор даты: get_period_statistic StatsState:waiting_date
+DEBUG    2025-08-29 14:29:03,688 [bot] (get_statistic_handlers.py).get_statistic_from_db(188) day_statistic: None
+DEBUG    2025-08-29 14:29:03,688 [bot] (get_statistic_handlers.py).day_statistic(103) Получил статистику за день
+DEBUG    2025-08-29 14:29:12,745 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-29 14:29:12,746 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-29 14:29:14,944 [bot] (admin_handlers.py).admin_menu_handler(20) Вход в панель админа
+DEBUG    2025-08-29 14:29:15,677 [bot] (get_statistic_handlers.py).get_statistic(24) State AdminMenuState:admin
+DEBUG    2025-08-29 14:29:16,863 [bot] (get_statistic_handlers.py).get_period_statistic(56) Выбор даты: get_period_statistic StatsState:waiting_date
+DEBUG    2025-08-29 14:29:21,860 [bot] (get_statistic_handlers.py).get_statistic_from_db(188) day_statistic: None
+DEBUG    2025-08-29 14:29:21,860 [bot] (get_statistic_handlers.py).day_statistic(103) Получил статистику за день
+DEBUG    2025-08-29 14:29:24,459 [bot] (get_statistic_handlers.py).get_period_statistic(56) Выбор даты: get_period_statistic StatsState:waiting_date
+WARNING  2025-08-29 16:35:14,180 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-08-29 16:35:14,326 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-08-30 14:50:49,715 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-30 14:50:52,043 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-30 14:50:52,242 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-30 14:50:59,024 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-30 14:50:59,024 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+WARNING  2025-08-30 15:02:04,429 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-08-30 15:02:04,577 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-08-30 15:02:07,300 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-30 15:02:08,112 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-30 15:02:08,332 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-30 15:02:24,622 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-30 15:02:24,622 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-30 15:02:29,389 [bot] (admin_handlers.py).admin_menu_handler(20) Вход в панель админа
+DEBUG    2025-08-30 15:02:30,139 [bot] (get_statistic_handlers.py).get_statistic(24) State AdminMenuState:admin
+DEBUG    2025-08-30 15:02:31,024 [bot] (get_statistic_handlers.py).get_period_statistic(56) Выбор даты: get_period_statistic StatsState:waiting_date
+DEBUG    2025-08-30 15:02:32,485 [bot] (get_statistic_handlers.py).get_statistic_from_db(188) day_statistic: <Statistic>
+DEBUG    2025-08-30 15:02:32,485 [bot] (get_statistic_handlers.py).day_statistic(103) Получил статистику за день
+DEBUG    2025-08-30 15:02:35,552 [bot] (get_statistic_handlers.py).get_period_statistic(56) Выбор даты: get_period_statistic StatsState:waiting_date
+DEBUG    2025-08-30 15:02:36,991 [bot] (get_statistic_handlers.py).get_statistic_from_db(188) day_statistic: <Statistic>
+DEBUG    2025-08-30 15:02:36,991 [bot] (get_statistic_handlers.py).day_statistic(103) Получил статистику за день
+DEBUG    2025-08-30 15:02:43,332 [bot] (get_statistic_handlers.py).get_period_statistic(48) Выбор начальной даты периода: get_period_statistic StatsState:waiting_first_date
+DEBUG    2025-08-30 15:02:44,516 [bot] (get_statistic_handlers.py).first_day_statistic(131) жду конечную дату
+DEBUG    2025-08-30 15:05:00,491 [bot] (get_statistic_handlers.py).first_day_statistic(131) жду конечную дату
+WARNING  2025-08-30 15:07:21,209 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-30 15:07:24,145 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-30 15:07:24,933 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-30 15:07:25,097 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-30 15:07:29,724 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-30 15:07:29,724 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-30 15:07:32,683 [bot] (admin_handlers.py).admin_menu_handler(20) Вход в панель админа
+DEBUG    2025-08-30 15:07:33,479 [bot] (get_statistic_handlers.py).get_statistic(25) State AdminMenuState:admin
+DEBUG    2025-08-30 15:07:34,428 [bot] (get_statistic_handlers.py).get_period_statistic(57) Выбор даты: get_period_statistic StatsState:waiting_date
+WARNING  2025-08-30 15:10:44,263 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-30 15:10:46,840 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-30 15:10:47,739 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-30 15:10:47,905 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-30 15:10:49,040 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-30 15:10:49,040 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-30 15:10:50,804 [bot] (admin_handlers.py).admin_menu_handler(20) Вход в панель админа
+DEBUG    2025-08-30 15:10:51,476 [bot] (get_statistic_handlers.py).get_statistic(25) State AdminMenuState:admin
+DEBUG    2025-08-30 15:10:52,364 [bot] (get_statistic_handlers.py).get_period_statistic(57) Выбор даты: get_period_statistic StatsState:waiting_date
+WARNING  2025-08-30 15:11:58,505 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-30 15:12:00,950 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-30 15:12:08,832 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-30 15:12:09,658 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-30 15:12:09,960 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-30 15:12:12,721 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-30 15:12:12,722 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-30 15:12:15,566 [bot] (admin_handlers.py).admin_menu_handler(20) Вход в панель админа
+DEBUG    2025-08-30 15:12:16,285 [bot] (get_statistic_handlers.py).get_statistic(25) State AdminMenuState:admin
+DEBUG    2025-08-30 15:12:17,222 [bot] (get_statistic_handlers.py).get_period_statistic(57) Выбор даты: get_period_statistic StatsState:waiting_date
+DEBUG    2025-08-30 15:12:18,409 [bot] (get_statistic_handlers.py).get_statistic_from_db(193) day_statistic: None
+DEBUG    2025-08-30 15:12:18,410 [bot] (get_statistic_handlers.py).day_statistic(104) Получил статистику за день
+DEBUG    2025-08-30 15:12:27,672 [bot] (get_statistic_handlers.py).get_period_statistic(49) Выбор начальной даты периода: get_period_statistic StatsState:waiting_first_date
+DEBUG    2025-08-30 15:12:30,156 [bot] (get_statistic_handlers.py).first_day_statistic(134) жду конечную дату
+DEBUG    2025-08-30 15:12:35,146 [bot] (get_statistic_handlers.py).get_statistic_from_db(197) period_statistic: [<Statistic: 11>, <Statistic: 9>, <Statistic: 15>, <Statistic: 13>, <Statistic: 17>, <Statistic: 16>, <Statistic: 10>, <Statistic: 24>, <Statistic: 14>, <Statistic: 22>, <Statistic: 12>, <Statistic: 18>, <Statistic: 23>, <Statistic: 19>, <Statistic: 21>, <Statistic: 20>]
+DEBUG    2025-08-30 15:12:42,822 [bot] (get_statistic_handlers.py).get_period_statistic(49) Выбор начальной даты периода: get_period_statistic StatsState:waiting_first_date
+DEBUG    2025-08-30 15:12:44,469 [bot] (get_statistic_handlers.py).first_day_statistic(134) жду конечную дату
+DEBUG    2025-08-30 15:12:46,791 [bot] (get_statistic_handlers.py).get_statistic_from_db(197) period_statistic: [<Statistic: 17>, <Statistic: 22>, <Statistic: 24>, <Statistic: 18>, <Statistic: 23>, <Statistic: 19>, <Statistic: 21>, <Statistic: 20>]
+DEBUG    2025-08-30 15:12:51,996 [bot] (back_handler.py).back(129) Новый статус AdminMenuState:statistic_menu
+WARNING  2025-08-30 15:13:53,427 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-08-30 15:13:53,568 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-08-30 15:13:55,963 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-30 15:13:56,761 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-30 15:13:56,959 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-30 15:13:58,944 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-30 15:13:58,944 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-30 15:14:00,270 [bot] (admin_handlers.py).admin_menu_handler(20) Вход в панель админа
+DEBUG    2025-08-30 15:14:01,029 [bot] (get_statistic_handlers.py).get_statistic(25) State AdminMenuState:admin
+DEBUG    2025-08-30 15:14:02,435 [bot] (get_statistic_handlers.py).get_period_statistic(49) Выбор начальной даты периода: get_period_statistic StatsState:waiting_first_date
+DEBUG    2025-08-30 15:14:02,993 [bot] (get_statistic_handlers.py).first_day_statistic(134) жду конечную дату
+DEBUG    2025-08-30 15:14:07,118 [bot] (get_statistic_handlers.py).get_statistic_from_db(195) period_statistic: []
+DEBUG    2025-08-30 15:14:28,496 [bot] (get_statistic_handlers.py).get_period_statistic(57) Выбор даты: get_period_statistic StatsState:waiting_date
+DEBUG    2025-08-30 15:14:32,371 [bot] (get_statistic_handlers.py).get_statistic_from_db(191) day_statistic: <Statistic>
+DEBUG    2025-08-30 15:14:32,372 [bot] (get_statistic_handlers.py).day_statistic(104) Получил статистику за день
+DEBUG    2025-08-30 15:14:43,046 [bot] (back_handler.py).back(129) Новый статус AdminMenuState:statistic_menu
+DEBUG    2025-08-30 15:14:52,270 [bot] (back_handler.py).back(129) Новый статус AdminMenuState:rights
+DEBUG    2025-08-30 15:14:53,498 [bot] (back_handler.py).back(50) Состояние AdminMenuState:admin сброшено
+DEBUG    2025-08-30 15:14:55,099 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-30 15:14:55,099 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+DEBUG    2025-08-30 15:14:55,241 [bot] (back_handler.py).back(35) Состояние AdminMenuState:admin_menu сброшено
+DEBUG    2025-08-30 15:14:58,340 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-30 15:14:58,340 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+DEBUG    2025-08-30 15:14:58,445 [bot] (back_handler.py).back(35) Состояние AdminMenuState:admin_menu сброшено
+INFO     2025-08-30 15:18:37,766 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-30 15:18:38,989 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-30 15:18:46,842 [bot] (add_game_handlers.py).add_description_game(78) Получено описание игры
+WARNING  2025-08-30 15:22:39,800 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-30 15:22:42,512 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-30 15:22:43,283 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-30 15:22:43,437 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-30 15:22:45,471 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-30 15:22:45,471 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-30 15:22:47,893 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-30 15:22:48,605 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+WARNING  2025-08-30 15:23:25,685 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-30 15:23:28,325 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-30 15:23:29,121 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-30 15:23:29,266 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-30 15:23:30,242 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-30 15:23:30,242 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-30 15:23:32,190 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-30 15:23:32,767 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+WARNING  2025-08-30 15:25:31,755 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-08-30 15:25:31,906 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-08-30 15:25:34,580 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-30 15:25:35,380 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-30 15:25:35,544 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-30 15:25:37,224 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-30 15:25:37,224 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-30 15:25:38,688 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-30 15:25:39,572 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-30 15:25:42,175 [bot] (add_game_handlers.py).add_description_game(82) Получено описание игры
+DEBUG    2025-08-30 15:25:49,766 [bot] (add_game_handlers.py).add_date_game(123) Получил дату игры 2025-08-31, тип <class 'datetime.date'>
+DEBUG    2025-08-30 15:26:05,087 [bot] (add_game_handlers.py).add_image_game(196) Передаю в сохранение time_game 19:00:00, date_game 2025-08-31
+DEBUG    2025-08-30 15:26:08,989 [bot] (add_game_handlers.py).approve_game(223) текущий статус AddGameState:save_game
+DEBUG    2025-08-30 15:26:08,990 [bot] (add_game_handlers.py).save_game(272) Начинается сохранение игры
+DEBUG    2025-08-30 15:26:08,990 [bot] (add_game_handlers.py).save_game(273) author_id: 2, title: rdftgyhui, description: sedrftgyhuijk, date: 19:00:00, time_game: 19:00:00
+DEBUG    2025-08-30 15:26:08,991 [bot] (add_game_handlers.py).save_game(278) author = <User>, author_id = 2, author_tele = 484385628
+image = AgACAgIAAxkBAAIk2Giy7d85IpRsQVRm3cKcmS1bSW-KAAI6-zEb3cCYSVJhHrV6P_6aAQADAgADeQADNgQ
+INFO     2025-08-30 15:26:08,998 [bot] (add_game_handlers.py).save_game(292) Игра 'rdftgyhui' создана пользователем 2
+WARNING  2025-08-30 15:28:04,605 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-30 15:28:07,350 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-30 15:28:08,155 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-30 15:28:08,324 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-30 15:28:09,840 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-30 15:28:09,841 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-30 15:28:11,524 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-30 15:28:12,036 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-30 15:28:15,140 [bot] (add_game_handlers.py).add_description_game(82) Получено описание игры
+DEBUG    2025-08-30 15:28:16,162 [bot] (add_game_handlers.py).add_date_game(123) Получил дату игры 2025-09-02, тип <class 'datetime.date'>
+DEBUG    2025-08-30 15:28:21,741 [bot] (add_game_handlers.py).add_image_game(196) Передаю в сохранение time_game 20:00:00, date_game 2025-09-02
+DEBUG    2025-08-30 15:28:22,974 [bot] (add_game_handlers.py).approve_game(223) текущий статус AddGameState:save_game
+DEBUG    2025-08-30 15:28:22,974 [bot] (add_game_handlers.py).save_game(272) Начинается сохранение игры
+DEBUG    2025-08-30 15:28:22,975 [bot] (add_game_handlers.py).save_game(273) author_id: 2, title: dfygu', description: awsedrftgyui, date: 20:00:00, time_game: 20:00:00
+DEBUG    2025-08-30 15:28:22,975 [bot] (add_game_handlers.py).save_game(278) author = <User>, author_id = 2, author_tele = 484385628
+image = AgACAgIAAxkBAAIk4miy7mhagwqb6Y4FcXha1et2AlJAAAI--zEb3cCYSdaV_DW7F5NRAQADAgADeQADNgQ
+INFO     2025-08-30 15:28:22,980 [bot] (add_game_handlers.py).save_game(292) Игра 'dfygu'' создана пользователем 2
+DEBUG    2025-08-30 15:28:26,325 [bot] (add_game_handlers.py).approve_game(223) текущий статус AddGameState:save_game
+DEBUG    2025-08-30 15:29:29,539 [bot] (add_game_handlers.py).approve_game(223) текущий статус AddGameState:save_game
+WARNING  2025-08-30 15:30:40,991 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-30 15:30:44,061 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-30 15:30:44,889 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-30 15:30:45,122 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-30 15:30:46,365 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-30 15:30:46,365 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-30 15:30:47,799 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-30 15:30:48,533 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-30 15:30:52,093 [bot] (add_game_handlers.py).add_description_game(82) Получено описание игры
+DEBUG    2025-08-30 15:30:57,912 [bot] (add_game_handlers.py).add_date_game(123) Получил дату игры 2025-09-05, тип <class 'datetime.date'>
+DEBUG    2025-08-30 15:31:07,677 [bot] (add_game_handlers.py).add_image_game(196) Передаю в сохранение time_game 17:00:00, date_game 2025-09-05
+DEBUG    2025-08-30 15:31:16,283 [bot] (add_game_handlers.py).approve_game(223) текущий статус AddGameState:save_game
+DEBUG    2025-08-30 15:31:16,284 [bot] (add_game_handlers.py).save_game(272) Начинается сохранение игры
+DEBUG    2025-08-30 15:31:16,284 [bot] (add_game_handlers.py).save_game(273) author_id: 2, title: cfi, description: gkhu, date: 17:00:00, time_game: 17:00:00
+DEBUG    2025-08-30 15:31:16,286 [bot] (add_game_handlers.py).save_game(278) author = <User>, author_id = 2, author_tele = 484385628
+image = AgACAgIAAxkBAAIk7Giy7w6xQpl2fHpowAmEcoUnlyvnAAJA-zEb3cCYScCgfkaOMe4rAQADAgADeQADNgQ
+INFO     2025-08-30 15:31:16,293 [bot] (add_game_handlers.py).save_game(292) Игра 'cfi' создана пользователем 2
+DEBUG    2025-08-30 15:31:24,278 [bot] (add_game_handlers.py).approve_game(223) текущий статус AddGameState:save_game
+WARNING  2025-08-30 15:32:20,466 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-30 15:32:23,262 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-30 15:32:24,063 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-30 15:32:24,409 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-30 15:32:26,133 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-30 15:32:26,133 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-30 15:32:27,760 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-30 15:32:28,388 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-30 15:32:33,348 [bot] (add_game_handlers.py).add_description_game(82) Получено описание игры
+DEBUG    2025-08-30 15:32:36,005 [bot] (add_game_handlers.py).add_date_game(123) Получил дату игры 2025-08-31, тип <class 'datetime.date'>
+DEBUG    2025-08-30 15:32:43,679 [bot] (add_game_handlers.py).add_image_game(196) Передаю в сохранение time_game 17:30:00, date_game 2025-08-31
+DEBUG    2025-08-30 15:32:45,573 [bot] (add_game_handlers.py).approve_game(223) текущий статус AddGameState:save_game
+DEBUG    2025-08-30 15:32:45,574 [bot] (add_game_handlers.py).save_game(272) Начинается сохранение игры
+DEBUG    2025-08-30 15:32:45,574 [bot] (add_game_handlers.py).save_game(273) author_id: 2, title: drdgzrs, description: xdhth, date: 17:30:00, time_game: 17:30:00
+DEBUG    2025-08-30 15:32:45,575 [bot] (add_game_handlers.py).save_game(278) author = <User>, author_id = 2, author_tele = 484385628
+image = AgACAgIAAxkBAAIk9miy726DTOhOOWF5vEdFaflFi6x9AAJC-zEb3cCYSeKaWzZyiHqTAQADAgADeQADNgQ
+INFO     2025-08-30 15:32:45,579 [bot] (add_game_handlers.py).save_game(292) Игра 'drdgzrs' создана пользователем 2
+WARNING  2025-08-30 15:34:03,923 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-30 15:34:06,517 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-30 15:34:07,451 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-30 15:34:07,730 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-30 15:34:09,040 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-30 15:34:09,040 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-30 15:34:11,255 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-30 15:34:11,883 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-30 15:34:15,323 [bot] (add_game_handlers.py).add_description_game(82) Получено описание игры
+DEBUG    2025-08-30 15:34:16,591 [bot] (add_game_handlers.py).add_date_game(123) Получил дату игры 2025-09-02, тип <class 'datetime.date'>
+DEBUG    2025-08-30 15:34:22,558 [bot] (add_game_handlers.py).add_image_game(196) Передаю в сохранение time_game 17:00:00, date_game 2025-09-02
+DEBUG    2025-08-30 15:34:23,896 [bot] (add_game_handlers.py).approve_game(223) текущий статус AddGameState:save_game
+DEBUG    2025-08-30 15:34:23,896 [bot] (add_game_handlers.py).save_game(272) Начинается сохранение игры
+DEBUG    2025-08-30 15:34:23,897 [bot] (add_game_handlers.py).save_game(273) author_id: 2, title: aesr, description: hjkhbuk, date: 17:00:00, time_game: 17:00:00
+DEBUG    2025-08-30 15:34:23,897 [bot] (add_game_handlers.py).save_game(278) author = <User>, author_id = 2, author_tele = 484385628
+image = AgACAgIAAxkBAAIk_2iy79GHMjl16YwPk3Ga-xVT5UL6AAJD-zEb3cCYScsqkYn-jdYNAQADAgADeQADNgQ
+INFO     2025-08-30 15:34:23,902 [bot] (add_game_handlers.py).save_game(292) Игра 'aesr' создана пользователем 2
+WARNING  2025-08-30 15:35:48,832 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-08-30 15:35:48,983 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-08-30 15:35:51,613 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-30 15:35:52,562 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-30 15:35:52,722 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-30 15:36:04,843 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-30 15:36:04,843 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-30 15:36:10,615 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-30 15:36:11,245 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-30 15:36:14,731 [bot] (add_game_handlers.py).add_description_game(82) Получено описание игры
+DEBUG    2025-08-30 15:36:16,823 [bot] (add_game_handlers.py).add_date_game(123) Получил дату игры 2025-09-07, тип <class 'datetime.date'>
+DEBUG    2025-08-30 15:36:22,720 [bot] (add_game_handlers.py).add_image_game(196) Передаю в сохранение time_game 20:00:00, date_game 2025-09-07
+DEBUG    2025-08-30 15:36:24,111 [bot] (add_game_handlers.py).approve_game(223) текущий статус AddGameState:save_game
+DEBUG    2025-08-30 15:36:27,132 [bot] (back_handler.py).back(50) Состояние AdminMenuState:barista сброшено
+INFO     2025-08-30 15:36:34,368 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-30 15:37:33,532 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+WARNING  2025-08-30 15:38:04,914 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-30 15:38:07,789 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-30 15:38:08,614 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-30 15:38:08,772 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-30 15:38:10,776 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-30 15:38:10,776 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-30 15:38:17,759 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-30 15:38:18,285 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-30 15:38:22,961 [bot] (add_game_handlers.py).add_description_game(82) Получено описание игры
+DEBUG    2025-08-30 15:38:25,879 [bot] (add_game_handlers.py).add_date_game(123) Получил дату игры 2025-09-02, тип <class 'datetime.date'>
+DEBUG    2025-08-30 15:38:33,201 [bot] (add_game_handlers.py).add_image_game(196) Передаю в сохранение time_game 19:00:00, date_game 2025-09-02
+DEBUG    2025-08-30 15:38:34,397 [bot] (add_game_handlers.py).approve_game(223) текущий статус AddGameState:save_game
+DEBUG    2025-08-30 15:38:34,398 [bot] (add_game_handlers.py).save_game(271) Начинается сохранение игры
+DEBUG    2025-08-30 15:38:34,398 [bot] (add_game_handlers.py).save_game(272) author_id: 2, title: zrnyeyxn, description: ftunftmcutf, date: 19:00:00, time_game: 19:00:00
+DEBUG    2025-08-30 15:38:34,399 [bot] (add_game_handlers.py).save_game(277) author = <User>, author_id = 2, author_tele = 484385628
+image = AgACAgIAAxkBAAIlE2iy8MyeEbvkI2mdgzBRWBspaQWBAAI--zEb3cCYSdaV_DW7F5NRAQADAgADeQADNgQ
+INFO     2025-08-30 15:38:34,403 [bot] (add_game_handlers.py).save_game(291) Игра 'zrnyeyxn' создана пользователем 2
+DEBUG    2025-08-30 15:38:39,032 [bot] (back_handler.py).back(55) статус BaristaState:games_menu
+DEBUG    2025-08-30 15:38:53,551 [bot] (back_handler.py).back(50) Состояние BaristaState:menu сброшено
+INFO     2025-08-30 15:38:55,066 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-30 15:38:55,643 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-30 15:40:03,566 [bot] (add_game_handlers.py).add_description_game(82) Получено описание игры
+DEBUG    2025-08-30 15:40:04,735 [bot] (add_game_handlers.py).add_date_game(123) Получил дату игры 2025-09-03, тип <class 'datetime.date'>
+DEBUG    2025-08-30 15:40:10,288 [bot] (add_game_handlers.py).add_image_game(196) Передаю в сохранение time_game 17:00:00, date_game 2025-09-03
+DEBUG    2025-08-30 15:40:11,715 [bot] (add_game_handlers.py).approve_game(223) текущий статус AddGameState:save_game
+DEBUG    2025-08-30 15:40:11,715 [bot] (add_game_handlers.py).save_game(271) Начинается сохранение игры
+DEBUG    2025-08-30 15:40:11,715 [bot] (add_game_handlers.py).save_game(272) author_id: 2, title: AVEZwsl, description: etbzskz, date: 17:00:00, time_game: 17:00:00
+DEBUG    2025-08-30 15:40:11,716 [bot] (add_game_handlers.py).save_game(277) author = <User>, author_id = 2, author_tele = 484385628
+image = AgACAgIAAxkBAAIlGmiy8S04Q_WX-LOaUBI7vYO6FWrEAAJA-zEb3cCYScCgfkaOMe4rAQADAgADeQADNgQ
+INFO     2025-08-30 15:40:11,717 [bot] (add_game_handlers.py).save_game(291) Игра 'AVEZwsl' создана пользователем 2
+DEBUG    2025-08-30 15:40:20,246 [bot] (back_handler.py).back(55) статус BaristaState:games_menu
+DEBUG    2025-08-30 15:44:09,111 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-30 15:44:09,111 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-30 15:44:12,864 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-30 15:44:13,454 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-30 15:44:17,394 [bot] (add_game_handlers.py).add_description_game(82) Получено описание игры
+DEBUG    2025-08-30 15:44:20,412 [bot] (add_game_handlers.py).add_date_game(123) Получил дату игры 2025-10-03, тип <class 'datetime.date'>
+DEBUG    2025-08-30 15:46:44,166 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-30 15:46:44,167 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+DEBUG    2025-08-30 15:46:44,228 [bot] (back_handler.py).back(35) Состояние GameMenuState:main_game_menu сброшено
+INFO     2025-08-30 15:46:46,672 [bot] (admin_handlers.py).admin_menu_handler(20) Вход в панель админа
+DEBUG    2025-08-30 15:46:47,591 [bot] (get_statistic_handlers.py).get_statistic(25) State AdminMenuState:admin
+DEBUG    2025-08-30 15:46:49,242 [bot] (get_statistic_handlers.py).get_period_statistic(56) Выбор даты: get_period_statistic StatsState:waiting_date
+DEBUG    2025-08-30 15:46:56,224 [bot] (get_statistic_handlers.py).get_statistic_from_db(186) day_statistic: <Statistic>
+DEBUG    2025-08-30 15:46:56,224 [bot] (get_statistic_handlers.py).day_statistic(101) Получил статистику за день
+DEBUG    2025-08-30 15:48:06,418 [bot] (get_statistic_handlers.py).get_period_statistic(56) Выбор даты: get_period_statistic StatsState:waiting_date
+DEBUG    2025-08-30 15:48:08,256 [bot] (get_statistic_handlers.py).day_statistic(101) Получил статистику за день
+DEBUG    2025-08-30 15:48:47,674 [bot] (get_statistic_handlers.py).get_period_statistic(56) Выбор даты: get_period_statistic StatsState:waiting_date
+WARNING  2025-08-30 15:51:13,283 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-08-30 15:51:13,439 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-08-30 15:51:15,947 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-30 15:51:16,731 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-30 15:51:16,898 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-30 15:51:18,111 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-30 15:51:18,112 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-30 15:51:20,258 [bot] (admin_handlers.py).admin_menu_handler(20) Вход в панель админа
+DEBUG    2025-08-30 15:51:21,091 [bot] (get_statistic_handlers.py).get_statistic(26) State AdminMenuState:admin
+DEBUG    2025-08-30 15:51:22,046 [bot] (get_statistic_handlers.py).get_period_statistic(57) Выбор даты: get_period_statistic StatsState:waiting_date
+DEBUG    2025-08-30 15:51:30,297 [bot] (get_statistic_handlers.py).get_statistic_from_db(189) day_statistic: <Statistic>
+DEBUG    2025-08-30 15:51:30,298 [bot] (get_statistic_handlers.py).day_statistic(101) Получил статистику за день
+DEBUG    2025-08-30 15:51:38,042 [bot] (back_handler.py).back(130) Новый статус AdminMenuState:statistic_menu
+DEBUG    2025-08-30 15:51:49,359 [bot] (get_statistic_handlers.py).get_statistic(26) State AdminMenuState:admin
+DEBUG    2025-08-30 15:51:51,270 [bot] (back_handler.py).back(130) Новый статус AdminMenuState:statistic_menu
+DEBUG    2025-08-30 15:51:53,011 [bot] (get_statistic_handlers.py).get_statistic(26) State AdminMenuState:admin
+WARNING  2025-08-30 15:52:04,439 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-30 15:52:06,929 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-30 15:52:07,762 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-30 15:52:08,055 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-30 15:52:10,733 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-30 15:52:10,733 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-30 15:52:12,650 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+DEBUG    2025-08-30 15:52:14,189 [bot] (back_handler.py).back(51) Состояние BaristaState:menu сброшено
+INFO     2025-08-30 15:52:14,819 [bot] (admin_handlers.py).admin_menu_handler(20) Вход в панель админа
+DEBUG    2025-08-30 15:52:15,758 [bot] (get_statistic_handlers.py).get_statistic(26) State AdminMenuState:admin
+DEBUG    2025-08-30 15:52:16,804 [bot] (get_statistic_handlers.py).get_period_statistic(57) Выбор даты: get_period_statistic StatsState:waiting_date
+DEBUG    2025-08-30 15:52:17,876 [bot] (get_statistic_handlers.py).day_statistic(101) Получил статистику за день
+DEBUG    2025-08-30 15:52:22,807 [bot] (back_handler.py).back(130) Новый статус AdminMenuState:statistic_menu
+DEBUG    2025-08-30 15:52:25,140 [bot] (get_statistic_handlers.py).get_statistic(26) State AdminMenuState:admin
+DEBUG    2025-08-30 15:52:26,599 [bot] (get_statistic_handlers.py).get_period_statistic(49) Выбор начальной даты периода: get_period_statistic StatsState:waiting_first_date
+DEBUG    2025-08-30 15:52:27,373 [bot] (get_statistic_handlers.py).first_day_statistic(129) жду конечную дату
+DEBUG    2025-08-30 15:52:28,266 [bot] (get_statistic_handlers.py).get_statistic_from_db(193) period_statistic: [<Statistic: 22>, <Statistic: 24>, <Statistic: 23>, <Statistic: 21>]
+DEBUG    2025-08-30 15:52:37,450 [bot] (back_handler.py).back(130) Новый статус AdminMenuState:statistic_menu
+DEBUG    2025-08-30 15:52:40,855 [bot] (get_statistic_handlers.py).get_statistic(26) State AdminMenuState:admin
+WARNING  2025-08-30 15:53:13,596 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-30 15:53:16,126 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-30 15:53:16,917 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-30 15:53:17,073 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-30 15:53:18,568 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-30 15:53:18,569 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-30 15:53:20,711 [bot] (admin_handlers.py).admin_menu_handler(20) Вход в панель админа
+DEBUG    2025-08-30 15:53:21,373 [bot] (get_statistic_handlers.py).get_statistic(26) State AdminMenuState:admin
+DEBUG    2025-08-30 15:53:22,457 [bot] (get_statistic_handlers.py).get_period_statistic(57) Выбор даты: get_period_statistic StatsState:waiting_date
+DEBUG    2025-08-30 15:53:23,087 [bot] (get_statistic_handlers.py).get_statistic_from_db(189) day_statistic: <Statistic>
+DEBUG    2025-08-30 15:53:23,087 [bot] (get_statistic_handlers.py).day_statistic(101) Получил статистику за день
+DEBUG    2025-08-30 15:53:27,359 [bot] (back_handler.py).back(131) Новый статус StatsState:answer
+DEBUG    2025-08-30 15:53:29,805 [bot] (get_statistic_handlers.py).get_statistic(26) State AdminMenuState:admin
+DEBUG    2025-08-30 15:53:31,151 [bot] (get_statistic_handlers.py).get_period_statistic(57) Выбор даты: get_period_statistic StatsState:waiting_date
+DEBUG    2025-08-30 15:53:32,221 [bot] (get_statistic_handlers.py).get_statistic_from_db(189) day_statistic: None
+DEBUG    2025-08-30 15:53:32,221 [bot] (get_statistic_handlers.py).day_statistic(101) Получил статистику за день
+DEBUG    2025-08-30 15:53:34,398 [bot] (back_handler.py).back(131) Новый статус StatsState:answer
+DEBUG    2025-08-30 15:53:43,296 [bot] (get_statistic_handlers.py).get_statistic(26) State AdminMenuState:admin
+WARNING  2025-08-30 15:54:09,823 [bot] (main.py).start_bot(23) Бот закрыт
+INFO     2025-08-30 15:54:12,716 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-30 15:54:13,603 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-30 15:54:13,790 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-30 15:54:15,528 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-30 15:54:15,529 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-30 15:54:16,954 [bot] (admin_handlers.py).admin_menu_handler(20) Вход в панель админа
+DEBUG    2025-08-30 15:54:17,641 [bot] (get_statistic_handlers.py).get_statistic(26) State AdminMenuState:admin
+DEBUG    2025-08-30 15:54:18,987 [bot] (get_statistic_handlers.py).get_period_statistic(49) Выбор начальной даты периода: get_period_statistic StatsState:waiting_first_date
+DEBUG    2025-08-30 15:54:19,733 [bot] (get_statistic_handlers.py).first_day_statistic(129) жду конечную дату
+DEBUG    2025-08-30 15:54:23,673 [bot] (get_statistic_handlers.py).get_statistic_from_db(193) period_statistic: [<Statistic: 24>, <Statistic: 22>, <Statistic: 23>, <Statistic: 21>]
+DEBUG    2025-08-30 15:54:30,470 [bot] (back_handler.py).back(131) Новый статус AdminMenuState:statistic_menu
+WARNING  2025-08-30 16:01:38,680 [bot] (main.py).start_bot(23) Бот закрыт
+WARNING  2025-08-30 16:01:38,828 [bot] (main.py).<module>(45) Помощник завершены
+INFO     2025-08-30 16:01:41,670 [bot] (logging_config.py)._setup_handlers(50) Логирование для 'bot' настроено успешно.
+INFO     2025-08-30 16:01:42,642 [bot] (start_handlers.py).seed_admin(25) Проверка: seed_admin вызвана
+INFO     2025-08-30 16:01:42,886 [bot] (commands.py).set_commands(20) Установил команды
+DEBUG    2025-08-30 16:01:48,326 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-30 16:01:48,326 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-30 16:01:50,222 [bot] (barista_menu_handler.py).barista_menu(13) Вход в панель бариста
+INFO     2025-08-30 16:01:50,989 [bot] (barista_menu_handler.py).show_barista_menu_game(24) Бариста - меню игр
+DEBUG    2025-08-30 16:01:53,578 [bot] (back_handler.py).back(23) Начало обработки back. Текущее состояние: AddGameState:add_title
+INFO     2025-08-30 16:01:53,652 [bot] (back_handler.py).back(134) Очистка и переход AddGameState:add_title → GameMenuState:main_game_menu
+DEBUG    2025-08-30 16:01:55,704 [bot] (admin_rights_handlers.py).delete_admin(97) функция удаления админа
+ERROR    2025-08-30 16:01:55,704 [bot] (admin_rights_handlers.py).delete_admin(108) Ошибка изменения роли админа invalid literal for int() with base 10: 'game'
+DEBUG    2025-08-30 16:01:56,467 [bot] (back_handler.py).back(23) Начало обработки back. Текущее состояние: GameMenuState:main_game_menu
+DEBUG    2025-08-30 16:01:56,468 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-30 16:01:56,468 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-30 16:01:56,590 [bot] (back_handler.py).back(34) Сброшено состояние GameMenuState:main_game_menu → главное меню
+WARNING  2025-08-30 16:02:00,201 [bot] (horoscope_handkers.py).send_horoscope(48) Гороскопа для Дева нет в базе 2025-08-30. Использована мокбаза
+DEBUG    2025-08-30 16:02:02,462 [bot] (back_handler.py).back(23) Начало обработки back. Текущее состояние: MenuState:zodiac_menu
+INFO     2025-08-30 16:02:02,547 [bot] (back_handler.py).back(40) Переход MenuState:zodiac_menu → <State 'MenuState:horoscope_menu'>
+DEBUG    2025-08-30 16:02:03,179 [bot] (back_handler.py).back(23) Начало обработки back. Текущее состояние: MenuState:horoscope_menu
+DEBUG    2025-08-30 16:02:03,181 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-30 16:02:03,181 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-30 16:02:03,250 [bot] (back_handler.py).back(34) Сброшено состояние MenuState:horoscope_menu → главное меню
+DEBUG    2025-08-30 16:02:05,672 [bot] (back_handler.py).back(23) Начало обработки back. Текущее состояние: GameMenuState:main_game_menu
+DEBUG    2025-08-30 16:02:05,673 [bot] (get_user.py).get_role_user(34) Возврат роли: 484385628, admin
+DEBUG    2025-08-30 16:02:05,673 [bot] (menu_keyboard.py).inline_menu_kb(16) Передаю inline_menu_kb. Роль юзера: admin
+INFO     2025-08-30 16:02:05,745 [bot] (back_handler.py).back(34) Сброшено состояние GameMenuState:main_game_menu → главное меню
+INFO     2025-08-30 16:02:08,174 [bot] (admin_handlers.py).admin_menu_handler(20) Вход в панель админа
+DEBUG    2025-08-30 16:02:08,888 [bot] (get_statistic_handlers.py).get_statistic(26) State AdminMenuState:admin
+DEBUG    2025-08-30 16:02:09,906 [bot] (get_statistic_handlers.py).get_period_statistic(57) Выбор даты: get_period_statistic StatsState:waiting_date
+DEBUG    2025-08-30 16:02:10,583 [bot] (get_statistic_handlers.py).get_statistic_from_db(189) day_statistic: None
+DEBUG    2025-08-30 16:02:10,583 [bot] (get_statistic_handlers.py).day_statistic(101) Получил статистику за день
+DEBUG    2025-08-30 16:02:11,267 [bot] (back_handler.py).back(23) Начало обработки back. Текущее состояние: StatsState:answer
+INFO     2025-08-30 16:02:11,369 [bot] (back_handler.py).back(94) Переход StatsState:answer → AdminMenuState:statistic_menu
+DEBUG    2025-08-30 16:02:15,415 [bot] (back_handler.py).back(23) Начало обработки back. Текущее состояние: AdminMenuState:statistic_menu
+INFO     2025-08-30 16:02:15,485 [bot] (back_handler.py).back(101) Переход AdminMenuState:statistic_menu → AdminMenuState:admin
+DEBUG    2025-08-30 16:02:19,108 [bot] (back_handler.py).back(23) Начало обработки back. Текущее состояние: AdminMenuState:rights
+INFO     2025-08-30 16:02:19,181 [bot] (back_handler.py).back(101) Переход AdminMenuState:rights → AdminMenuState:admin
+DEBUG    2025-08-30 16:02:21,731 [bot] (get_statistic_handlers.py).get_statistic(26) State AdminMenuState:admin
+DEBUG    2025-08-30 16:02:22,724 [bot] (get_statistic_handlers.py).get_period_statistic(49) Выбор начальной даты периода: get_period_statistic StatsState:waiting_first_date
+DEBUG    2025-08-30 16:02:23,696 [bot] (get_statistic_handlers.py).first_day_statistic(129) жду конечную дату
+DEBUG    2025-08-30 16:02:25,028 [bot] (get_statistic_handlers.py).get_statistic_from_db(193) period_statistic: [<Statistic: 17>, <Statistic: 16>, <Statistic: 22>, <Statistic: 24>, <Statistic: 18>, <Statistic: 23>, <Statistic: 19>, <Statistic: 21>, <Statistic: 20>]
+DEBUG    2025-08-30 16:02:26,490 [bot] (back_handler.py).back(23) Начало обработки back. Текущее состояние: StatsState:answer
+INFO     2025-08-30 16:02:26,597 [bot] (back_handler.py).back(94) Переход StatsState:answer → AdminMenuState:statistic_menu
+DEBUG    2025-08-30 16:02:27,565 [bot] (back_handler.py).back(23) Начало обработки back. Текущее состояние: AdminMenuState:statistic_menu
+INFO     2025-08-30 16:02:27,635 [bot] (back_handler.py).back(101) Переход AdminMenuState:statistic_menu → AdminMenuState:admin
+WARNING  2025-08-30 16:04:02,008 [bot] (main.py).start_bot(23) Бот закрыт

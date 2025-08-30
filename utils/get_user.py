@@ -18,7 +18,11 @@ async def is_admin(user_id) -> bool:
 
 
 async def get_users_from_db(user_role) -> list[dict]:
-    """ Список словарей юзеров по ролям """
+    """
+    Функция для отображения списка юзеров, отфильтрованных по ролям. Например, админы или бариста.
+    :param user_role: admin, barista, user
+    :return: list[dict]
+    """
     users = await User.filter(role=user_role).values('id', 'username', 'telegram_id', 'role')
     return users
 

@@ -15,7 +15,7 @@ from utils.middleware import RoleMiddleware
 
 async def on_start(bot: Bot):
     """ Отправка сообщения о старте супер-админу """
-    await bot.send_message(chat_id=SUPERADMIN, text='Я запустил CoffeeBot')
+    await bot.send_message(chat_id=SUPERADMIN, text='Я запустил CoffeeBot, /start')
 
 
 async def seed_admin():

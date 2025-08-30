@@ -4,39 +4,60 @@ from typing import List
 from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 
+from utils.custom_calendar import MyCalendar
 
-async def calendar_kb(days: List[date], month: str) -> InlineKeyboardMarkup:
+
+async def calendar_kb(calendar_day: date) -> InlineKeyboardMarkup:
     """
     Создаёт inline-клавиатуру календаря.
 
-    В верхней строке находятся кнопки навигации по месяцам:
-    [⬅️] [Название месяца] [➡️]
-
-    Далее располагаются кнопки с днями месяца (по 7 в строке).
-    Внизу отдельной строкой добавляется кнопка "❌ Выход".
-
-    :param days: Список объектов datetime.date, представляющих дни месяца.
-                 Порядок элементов определяет порядок отображения кнопок.
-    :param month: Название месяца для отображения в шапке (например, "Август 2025").
-    :return: Объект InlineKeyboardMarkup с разметкой календаря.
+    :param calendar_day: Дата, для которой отображается календарь
+    :return: Объект InlineKeyboardMarkup с разметкой календаря
     """
-    # Билдер для дней — добавляем только дни и выравниваем в ряды по 7
-    days_builder = InlineKeyboardBuilder()
-    for d in days:
-        days_builder.button(
-            text=d.strftime('%d'),
-            callback_data=f"day_{d.strftime('%d.%m.%Y')}"
-        )
-    days_builder.adjust(7)  # разбиваем ряды по 7
+    calendar_obj = MyCalendar(calendar_day)
+    days = MyCalendar.current_date_list(calendar_day)
+    month_name = MyCalendar.get_month_name(calendar_day)
 
-    # Финальный билдер — сначала шапка (навигация), затем прикрепляем дни, затем выход
+    # Билдер для дней
+    days_builder = InlineKeyboardBuilder()
+
+    # Добавляем заголовки дней недели
+    week_days = ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"]
+    for day_name in week_days:
+        days_builder.button(text=day_name, callback_data="ignore")
+
+    # Добавляем кнопки с днями
+    for d in days:
+        if d.month == calendar_day.month:
+            # Дни текущего месяца
+            days_builder.button(
+                text=d.strftime('%d'),
+                callback_data=f"day_{d.strftime('%d.%m.%Y')}"
+            )
+        else:
+            # Дни других месяцев (бледные)
+            days_builder.button(
+                text=f"·{d.strftime('%d')}·",
+                callback_data=f"day_{d.strftime('%d.%m.%Y')}"
+            )
+
+    # Разбиваем на ряды: 7 дней в неделе
+    days_builder.adjust(7, *[7] * 6)  # 1 ряд заголовков + 6 рядов дней
+
+    # Финальный билдер
     kb = InlineKeyboardBuilder()
+
+    # Шапка с навигацией
     kb.row(
         InlineKeyboardButton(text='⬅️', callback_data='prev_month'),
-        InlineKeyboardButton(text=month, callback_data='month'),
+        InlineKeyboardButton(text=month_name, callback_data='current_month'),
         InlineKeyboardButton(text='➡️', callback_data='next_month'),
     )
-    kb.attach(days_builder)  # вставляем уже отрегулированные ряды с днями
+
+    # Прикрепляем дни
+    kb.attach(days_builder)
+
+    # Кнопка выхода
     kb.row(InlineKeyboardButton(text='❌ Выход', callback_data='back'))
 
     return kb.as_markup()

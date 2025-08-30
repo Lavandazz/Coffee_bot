@@ -210,7 +210,6 @@ async def approve_review(call: CallbackQuery, bot: Bot, role: str, state: FSMCon
     await bot.send_message(chat_id=telegram_id, text='Ваш отзыв одобрен')
 
 
-
 @staff_only
 async def reject_review(call: CallbackQuery, bot: Bot, role: str, state: FSMContext):
     """ Отклонение отзыва """

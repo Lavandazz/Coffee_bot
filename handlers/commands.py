@@ -8,9 +8,9 @@ async def set_commands(bot: Bot, user_id: int = None):
     """ Создание кнопок """
     commands = [
         BotCommand(command='start',
-                   description='Запуск бота')
-        # BotCommand(command='help',
-        #            description='Помощь')
+                   description='Запуск бота'),
+        BotCommand(command='help',
+                   description='Помощь')
     ]
 
 
