@@ -1,6 +1,6 @@
 import asyncio
 import random
-from openai import OpenAI
+from openai import OpenAI, RateLimitError
 from utils.config import API_KEY
 from utils.logging_config import horo_logger, help_ai_logger
 
@@ -198,23 +198,33 @@ class AiAssistent:
         return cls._client
 
     @classmethod
-    def get_completion(cls, system_prompt: str, user_prompt: str) -> str:
+    def get_completion(cls, system_prompt: str, user_prompt: str, max_retries: int = 5) -> str:
         """ Получаем готовый текст кофейного предсказания """
-        try:
-            help_ai_logger.info('Генерирую ответ')
-            completion = cls.client().chat.completions.create(
-                extra_headers={
-                    "HTTP-Referer": "https://t.me/fragrant_coffee_bot",
-                    "X-Title": "CoffeeBot"
-                },
-                extra_body={},
-                model="deepseek/deepseek-r1-0528:free",
-                messages=[
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": user_prompt},
-                ]
-            )
-            help_ai_logger.info('Получил ответ')
-            return completion.choices[0].message.content
-        except Exception as ex:
-            help_ai_logger.exception(ex)
+        # подсчитываем число неудачных попыток из-за RateLimitError
+        retry_count = 0
+
+        while retry_count <= max_retries:
+            try:
+                help_ai_logger.info(f'Генерирую ответ (попытка {retry_count + 1})')
+                completion = cls.client().chat.completions.create(
+                    extra_headers={
+                        "HTTP-Referer": "https://t.me/fragrant_coffee_bot",
+                        "X-Title": "CoffeeBot"
+                    },
+                    model="deepseek/deepseek-r1-0528:free",
+                    messages=[
+                        {"role": "system", "content": system_prompt},
+                        {"role": "user", "content": user_prompt},
+                    ]
+                )
+                help_ai_logger.info('Получил ответ')
+                return completion.choices[0].message.content
+
+            except RateLimitError as e:
+                retry_count += 1
+                if retry_count > max_retries:
+                    help_ai_logger.error(f"Превышено максимальное количество попыток генерации({max_retries})")
+                    raise
+
+            except Exception as ex:
+                help_ai_logger.exception(f'Ошибка в AiAssistent: {ex}')

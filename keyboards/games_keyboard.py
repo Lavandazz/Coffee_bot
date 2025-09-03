@@ -33,3 +33,15 @@ async def show_games_kb(games: List[Game]):
     kb.row(InlineKeyboardButton(text='⬅️ Назад', callback_data='back'))
     return kb.as_markup()
 
+
+def game_registration_kb(game_id, status=None):
+    """
+    Меню записи на игру
+    :return: InlineKeyboardMarkup
+    """
+    kb = InlineKeyboardBuilder()
+    if status == "new":
+        kb.button(text='🎮 Записаться на игру', callback_data=f'register_for_game_{game_id}')
+    kb.button(text='⬅️ Назад', callback_data='back')
+    kb.adjust(2)  # Располагаем кнопки в один столбец
+    return kb.as_markup()

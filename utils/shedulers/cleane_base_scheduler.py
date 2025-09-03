@@ -34,6 +34,7 @@ async def horo_to_clean(bot: Bot):
     # находим все даты меньше вчерашней и удаляем их
     try:
         old_horoscopes = await Horoscope.filter(date__lt=current_date).count()
+
         await bot.send_message(chat_id=admin_id, text=f'Очистка дат гороскопа: удалено {old_horoscopes} строк гороскопа')
         # await call.message.answer(text=f'удалено {old_horoscopes} трок гороскопа')
     except Exception as e:

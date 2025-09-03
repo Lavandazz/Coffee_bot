@@ -2,6 +2,7 @@ from datetime import date
 from typing import List
 
 from aiogram.enums import ParseMode
+from aiogram.exceptions import TelegramBadRequest
 from aiogram.fsm.context import FSMContext
 from aiogram.types import CallbackQuery
 
@@ -85,11 +86,17 @@ async def next_month(call: CallbackQuery, role: str):
 async def day_statistic(call: CallbackQuery, state: FSMContext, role: str):
     """
     Сохранение даты в состояние day_date из CallbackQuery.
-    Ответ по статистике из бд за определенный день
+    Ответ по статистике из бд за определенный день.
+    Если статистики за выбранный день нет, будет показано окно ошибки и предложено выбрать другой день.
     :param call:
     :param state: answer
     :param role: admin
     """
+    global NEW_DATE
+    if call.data == "back":
+        await call.message.edit_text(text='Возврат в статистику', reply_markup=admin_stat_kb())
+        return
+
     call_date = from_str_to_date_day(call.data)
     await state.update_data(day_date=call_date)
 
@@ -98,20 +105,40 @@ async def day_statistic(call: CallbackQuery, state: FSMContext, role: str):
 
     statistic = await get_statistic_from_db(day_date=day)
 
-    bot_logger.debug(f'Получил статистику за день')
-    if statistic:
-        await call.message.edit_text(
-            text=f'*Зарегистрировано новых пользователей*: `{statistic.new_user}`\n'
-                 f'*Просмотров бота за день `{call.data.split("_")[1]}`*: `{statistic.event}`',
-            parse_mode=ParseMode.MARKDOWN_V2,
-            reply_markup=back_button()
-        )
-    else:
-        await call.message.edit_text(
-            text=f'Не удалось получить данные, либо их нет.',
-            reply_markup=back_button()
-        )
-    await state.set_state(StatsState.answer)
+    try:
+        if not statistic:
+            bot_logger.debug(f'Нет статистики за день')
+            await call.answer(
+                text=f'Не удалось получить данные, либо их нет.\n'
+                     f'Попробуйте другую дату',
+                show_alert=True)
+
+            await call.message.edit_text(
+                text=f'Выберите корректную дату',
+                reply_markup=await calendar_kb(NEW_DATE)
+            )
+            return
+
+        else:
+            await state.set_state(StatsState.answer)
+            bot_logger.debug(f'Получил статистику за день')
+            await call.message.edit_text(
+                text=f'*Зарегистрировано новых пользователей*: `{statistic.new_user}`\n'
+                     f'*Просмотров бота за день `{call.data.split("_")[1]}`*: `{statistic.event}`',
+                parse_mode=ParseMode.MARKDOWN_V2,
+                reply_markup=back_button()
+            )
+
+    except TelegramBadRequest as e:
+        bot_logger.warning(f'Попытка получить статистику: {e}')
+        if "message is not modified" in str(e).lower():
+            # При повторном нажатии на ту же старую дату
+            await call.answer(
+                text=f'Не удалось получить данные, либо их нет.\n'
+                     f'Попробуйте другую дату',
+                show_alert=True)
+    except Exception as e:
+        bot_logger.warning(e)
 
 
 @admin_only

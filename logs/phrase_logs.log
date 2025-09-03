@@ -306,3 +306,205 @@ INFO     2025-08-30 15:52:06,930 [help_ai] (logging_config.py)._setup_handlers(5
 INFO     2025-08-30 15:53:16,127 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
 INFO     2025-08-30 15:54:12,717 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
 INFO     2025-08-30 16:01:41,671 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-30 16:04:04,846 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-30 16:55:11,018 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-30 16:57:02,806 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-30 16:57:35,007 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-30 16:59:37,897 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-30 17:01:47,709 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-30 17:02:18,412 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-30 17:04:16,238 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-30 17:05:10,680 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 12:36:33,284 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 12:38:48,201 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 12:40:30,873 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 12:40:38,731 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 12:48:39,271 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 12:50:48,179 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 12:53:40,980 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 12:54:05,737 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 12:54:36,252 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 12:56:19,572 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 13:04:29,358 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 13:05:07,761 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 13:06:11,463 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 14:12:25,378 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 14:15:08,420 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 14:16:25,127 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 14:17:04,951 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 14:20:51,048 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 14:24:35,778 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 14:26:33,696 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 14:27:18,416 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 14:29:50,487 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 14:31:32,473 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 14:32:45,507 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 14:33:29,280 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 14:37:04,336 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 14:37:57,635 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 14:41:35,498 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 14:43:33,319 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 14:49:44,988 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 14:51:32,750 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 14:52:17,925 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 14:53:38,567 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 14:55:42,207 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 14:56:20,921 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 14:57:00,234 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 14:58:02,993 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 14:58:36,274 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 15:04:28,676 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 15:08:35,546 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 15:12:02,309 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 15:13:03,937 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 15:14:00,632 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 15:15:04,867 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 15:16:00,122 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 15:17:39,031 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 15:19:11,411 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 15:22:34,240 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 15:24:16,066 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 15:25:07,415 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 15:27:39,740 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 15:30:46,710 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 15:40:30,285 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 15:48:26,068 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 15:50:48,900 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 15:51:36,317 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 15:52:42,698 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 15:56:31,289 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 15:57:50,070 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-08-31 15:59:46,988 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-01 15:02:39,519 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-01 17:57:29,455 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-01 17:58:08,073 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-01 18:00:31,715 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-01 18:01:36,280 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-01 18:01:47,363 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-01 18:06:25,771 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-01 18:08:45,477 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-02 10:38:35,839 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-02 10:39:48,391 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-02 10:48:57,664 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-02 10:49:43,496 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-02 10:51:05,835 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-02 10:51:41,994 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-02 10:53:01,964 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-02 10:53:34,648 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-02 10:54:08,629 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-02 10:54:35,578 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-02 11:04:14,823 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-02 11:07:30,854 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-02 11:10:04,779 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-02 11:11:11,885 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-02 11:12:25,662 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-02 11:14:11,306 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-02 11:14:40,823 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-02 11:29:16,836 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-02 11:30:13,994 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-02 11:41:41,597 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-02 11:42:22,618 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-02 11:44:44,536 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-02 11:45:01,482 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-02 11:45:36,561 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-02 11:45:56,331 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-02 14:08:06,625 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-02 14:13:09,625 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-02 14:19:11,314 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-02 14:22:04,738 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-02 14:27:10,388 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-02 14:28:19,024 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-02 14:31:42,607 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-02 14:32:37,562 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-02 14:35:07,934 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-02 14:42:24,440 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-02 14:43:19,681 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-02 15:00:35,766 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-02 15:01:39,050 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-02 15:03:39,599 [help_ai] (ai_generator.py).get_completion(204) Генерирую ответ
+INFO     2025-09-02 15:05:08,556 [help_ai] (ai_generator.py).get_completion(217) Получил ответ
+INFO     2025-09-02 15:06:18,846 [help_ai] (ai_generator.py).get_completion(204) Генерирую ответ
+INFO     2025-09-02 15:07:26,931 [help_ai] (ai_generator.py).get_completion(217) Получил ответ
+INFO     2025-09-02 15:08:37,158 [help_ai] (ai_generator.py).get_completion(204) Генерирую ответ
+ERROR    2025-09-02 15:08:41,062 [help_ai] (ai_generator.py).get_completion(220) Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'deepseek/deepseek-r1-0528:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations', 'provider_name': 'Chutes'}}, 'user_id': 'user_2ygFhLcWcnI9f3CVb7V84nHOp2h'}
+Traceback (most recent call last):
+  File "E:\python\bots\cafe_bot\utils\ai_generator.py", line 205, in get_completion
+    completion = cls.client().chat.completions.create(
+        extra_headers={
+    ...<8 lines>...
+        ]
+    )
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\openai\_utils\_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 925, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/chat/completions",
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<43 lines>...
+        stream_cls=Stream[ChatCompletionChunk],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\openai\_base_client.py", line 1249, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\openai\_base_client.py", line 1037, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'deepseek/deepseek-r1-0528:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations', 'provider_name': 'Chutes'}}, 'user_id': 'user_2ygFhLcWcnI9f3CVb7V84nHOp2h'}
+INFO     2025-09-03 10:15:51,579 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-03 10:16:59,752 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-03 10:17:17,318 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-03 10:19:05,271 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-03 10:19:18,451 [help_ai] (ai_generator.py).get_completion(204) Генерирую ответ
+INFO     2025-09-03 10:20:22,993 [help_ai] (ai_generator.py).get_completion(217) Получил ответ
+INFO     2025-09-03 10:22:13,142 [help_ai] (ai_generator.py).get_completion(204) Генерирую ответ
+ERROR    2025-09-03 10:22:17,193 [help_ai] (ai_generator.py).get_completion(220) Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'deepseek/deepseek-r1-0528:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations', 'provider_name': 'Chutes'}}, 'user_id': 'user_2ygFhLcWcnI9f3CVb7V84nHOp2h'}
+Traceback (most recent call last):
+  File "E:\python\bots\cafe_bot\utils\ai_generator.py", line 205, in get_completion
+    completion = cls.client().chat.completions.create(
+        extra_headers={
+    ...<8 lines>...
+        ]
+    )
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\openai\_utils\_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 925, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/chat/completions",
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<43 lines>...
+        stream_cls=Stream[ChatCompletionChunk],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\openai\_base_client.py", line 1249, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\python\bots\cafe_bot\venv\Lib\site-packages\openai\_base_client.py", line 1037, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'deepseek/deepseek-r1-0528:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations', 'provider_name': 'Chutes'}}, 'user_id': 'user_2ygFhLcWcnI9f3CVb7V84nHOp2h'}
+INFO     2025-09-03 10:23:57,486 [help_ai] (ai_generator.py).get_completion(204) Генерирую ответ
+INFO     2025-09-03 10:24:49,754 [help_ai] (ai_generator.py).get_completion(217) Получил ответ
+INFO     2025-09-03 10:26:40,145 [help_ai] (ai_generator.py).get_completion(204) Генерирую ответ
+INFO     2025-09-03 10:27:28,318 [help_ai] (ai_generator.py).get_completion(217) Получил ответ
+INFO     2025-09-03 10:29:18,473 [help_ai] (ai_generator.py).get_completion(204) Генерирую ответ
+INFO     2025-09-03 10:30:03,655 [help_ai] (ai_generator.py).get_completion(217) Получил ответ
+INFO     2025-09-03 10:31:53,858 [help_ai] (ai_generator.py).get_completion(204) Генерирую ответ
+INFO     2025-09-03 10:33:01,883 [help_ai] (ai_generator.py).get_completion(217) Получил ответ
+INFO     2025-09-03 10:34:52,050 [help_ai] (ai_generator.py).get_completion(204) Генерирую ответ
+INFO     2025-09-03 10:35:47,915 [help_ai] (ai_generator.py).get_completion(217) Получил ответ
+INFO     2025-09-03 10:37:38,058 [help_ai] (ai_generator.py).get_completion(204) Генерирую ответ
+INFO     2025-09-03 10:38:47,434 [help_ai] (ai_generator.py).get_completion(217) Получил ответ
+INFO     2025-09-03 10:40:37,626 [help_ai] (ai_generator.py).get_completion(204) Генерирую ответ
+INFO     2025-09-03 10:41:31,130 [help_ai] (ai_generator.py).get_completion(217) Получил ответ
+INFO     2025-09-03 10:52:17,640 [help_ai] (logging_config.py)._setup_handlers(50) Логирование для 'help_ai' настроено успешно.
+INFO     2025-09-03 10:52:49,771 [help_ai] (ai_generator.py).get_completion(208) Генерирую ответ (попытка 1)
+INFO     2025-09-03 10:53:48,886 [help_ai] (ai_generator.py).get_completion(220) Получил ответ
+INFO     2025-09-03 10:57:55,585 [help_ai] (ai_generator.py).get_completion(208) Генерирую ответ (попытка 1)
+INFO     2025-09-03 10:59:07,586 [help_ai] (ai_generator.py).get_completion(220) Получил ответ
+INFO     2025-09-03 11:01:23,294 [help_ai] (ai_generator.py).get_completion(208) Генерирую ответ (попытка 1)
+INFO     2025-09-03 11:02:18,636 [help_ai] (ai_generator.py).get_completion(220) Получил ответ
+INFO     2025-09-03 11:04:40,866 [help_ai] (ai_generator.py).get_completion(208) Генерирую ответ (попытка 1)
+INFO     2025-09-03 11:05:44,110 [help_ai] (ai_generator.py).get_completion(220) Получил ответ

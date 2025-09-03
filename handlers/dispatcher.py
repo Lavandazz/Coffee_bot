@@ -10,7 +10,8 @@ from handlers.admin.get_statistic_handlers import get_statistic, get_period_stat
 from handlers.barista.add_game_handlers import add_game, add_title_game, add_description_game, add_date_game, \
     add_time_game, approve_game, add_image_game
 from handlers.barista.barista_menu_handler import barista_menu, show_barista_menu_game, show_barista_posts_menu
-from handlers.games.game_handlers import show_games_menu, show_games, show_one_game
+from handlers.games.game_handlers import show_games_menu, show_games, show_one_game, registration_user_game, \
+    show_old_games
 from handlers.help_handlers import help_menu
 from handlers.start_handlers import get_start, on_start
 from handlers.admin.admin_handlers import admin_menu_handler, admin_menu
@@ -23,7 +24,7 @@ from handlers.barista.user_review_handlers import (handle_review_photo, ask_for_
                                                    handle_review_text)
 from handlers.back_handler import back, clear_message
 from handlers.cancel_state_handler import cancel_handler
-from handlers.admin.horoscope_handkers import show_horoscope, send_horoscope, start_schedule_horo
+from handlers.horoscope_handkers import show_horoscope, send_horoscope, start_schedule_horo
 from states.games_state import AddGameState
 
 from states.menu_states import ReviewStates, PostState, StatsState, BaristaRegistrationState, AdminRegistrationState
@@ -109,8 +110,10 @@ def setup_dispatcher(dp: Dispatcher):
 
     # панель игр
     dp.callback_query.register(show_games_menu, F.data == 'games_all')
-    dp.callback_query.register(show_games, F.data.startswith('show_'))
+    dp.callback_query.register(show_games, F.data == 'show_upcoming_games')
+    dp.callback_query.register(show_old_games, F.data == 'show_passed_games')
     dp.callback_query.register(show_one_game, F.data.startswith('game_'))
+    dp.callback_query.register(registration_user_game,  F.data.startswith('register_for_game_'))
 
     # добавление игры
     dp.callback_query.register(add_game, F.data == 'add_game')

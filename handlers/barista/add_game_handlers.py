@@ -101,9 +101,6 @@ async def add_date_game(call: CallbackQuery, state: FSMContext, role: str):
 
         try:
             while not date_game_saver(call_date):
-                cal_btns_list = MyCalendar.current_date_list(call.message.date.date())
-                month = MyCalendar.get_month_name(call.message.date.date())
-
                 await call.answer(
                     text=f'❕ Дата игры не может быть раньше текущей даты.\n',
                     show_alert=False)

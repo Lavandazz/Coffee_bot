@@ -3,10 +3,9 @@ from aiogram.exceptions import TelegramBadRequest
 from aiogram.fsm.context import FSMContext
 from aiogram.types import CallbackQuery
 
-from keyboards.admin_keyboards import admin_btn, admin_kb, admin_rights
+from keyboards.admin_keyboards import admin_btn, admin_kb, admin_rights, admin_stat_kb
 from keyboards.barista_keyboard import review_kb, edit_text_keyboard, barista_kb, barista_menu_kb, \
     barista_game_menu_kb
-from keyboards.calendar_keyboard import calendar_kb
 from keyboards.games_keyboard import games_kb
 from keyboards.horoscope_keyboard import zodiac_kb
 from keyboards.menu_keyboard import inline_menu_kb
@@ -36,9 +35,9 @@ async def back(call: CallbackQuery, state: FSMContext, bot: Bot, role: str):
                              ReviewStates.waiting_for_text.state, AdminMenuState.admin_menu.state,
                              MenuState.help_menu.state, GameMenuState.main_game_menu}:
 
-            await state.set_state(MenuState.main_menu)
             await call.message.edit_text("Главное меню", reply_markup=await inline_menu_kb(call.from_user.id))
             await state.clear()
+            await state.set_state(MenuState.main_menu)
             bot_logger.info(f'Сброшено состояние {current_state} → главное меню')
 
         # переход в пользовательское в меню знаков зодиака
@@ -96,9 +95,11 @@ async def back(call: CallbackQuery, state: FSMContext, bot: Bot, role: str):
         # возврат в статистику
         elif current_state in {StatsState.waiting_date, StatsState.waiting_first_date,
                                StatsState.waiting_second_date, StatsState.answer}:
+            await state.clear()
             await state.set_state(AdminMenuState.statistic_menu)
             new_state = await state.get_state()
-            await call.message.edit_text(text='Возврат в статистику', reply_markup=await calendar_kb(call.message.date))
+            await call.message.edit_text(text='Возврат в статистику', reply_markup=admin_stat_kb())
+            # await calendar_kb(call.message.date)
             bot_logger.info(f'Переход {current_state} → {new_state}')
 
         # возврат в админ меню
@@ -126,14 +127,25 @@ async def back(call: CallbackQuery, state: FSMContext, bot: Bot, role: str):
             await call.message.edit_text(text='Возврат в меню выбора игр', reply_markup=games_kb())
             bot_logger.info(f'Переход {current_state} → {new_state}')
 
+        # возврат к меню выбора игр из описания игры
         elif current_state == GameMenuState.game:
-            await state.clear()
-            await state.set_state(GameMenuState.main_game_menu)
+            await call.message.delete()  # при удалении сообщения показывается предыдущее сообщение с клавиатурой
+
+            # если data = new, то устанавливаем состояние "предстоящие игры"
+            # иначе считаем что состояние "прошедшие игры"
+            data = await state.get_data()
+            if data.get("type_game") == "new":
+                await state.set_state(GameMenuState.upcoming_game_menu)
+            else:
+                await state.set_state(GameMenuState.past_game_menu)
+            # очищаем data
+            await state.set_data({})
+
             new_state = await state.get_state()
-            await bot.send_message(chat_id=call.from_user.id, text='Возврат в меню выбора игр', reply_markup=games_kb())
+
             bot_logger.info(f'Очистка и переход {current_state} → {new_state}')
 
-        # Добавление игры (обработка CallbackQuery)
+        # Добавление игры
         elif current_state in {AddGameState.add_title, AddGameState.save_game}:
             await state.clear()
             await state.set_state(GameMenuState.main_game_menu)

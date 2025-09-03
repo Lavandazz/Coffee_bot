@@ -1,8 +1,9 @@
 import asyncio
 import datetime
+import random
 
 from aiogram import Bot
-from asyncpg import UniqueViolationError
+from openai import RateLimitError
 from tortoise.exceptions import IntegrityError
 
 from database.models_db import Horoscope
@@ -17,13 +18,21 @@ zodiacs_set = set()
 
 async def start_generate_all_horoscopes(bot: Bot, date: datetime):
     """ Генерация всех гороскопов """
-    zodiacs = ["Лев", "Телец", "Водолей"]
-    # for zodiac in zodiac_signs:
-    for zodiac in zodiacs:
+    # zodiacs = ["Водолей", "Козерог", "Стрелец", "Козерог", "Рыбы"]
+    for i, zodiac in enumerate(zodiac_signs):
+    # for i, zodiac in enumerate(zodiacs):
         await generate_horoscope(zodiac, int(date.month), int(date.year), bot)
         await bot.send_message(chat_id=SUPERADMIN, text=f'Генерирую гороскоп для знака {zodiac}')
         horo_logger.debug(f'SUPERADMIN: {SUPERADMIN}, Генерирую гороскоп для знака {zodiac}')
-        await asyncio.sleep(60)
+
+        # Увеличиваем задержку между знаками
+        delay = 120 + random.uniform(0, 30)  # 2-2.5 минуты
+        if i % 3 == 0:  # каждые 3 знака делаем большую паузу
+            delay += 100  # дополнительная задержка
+        await asyncio.sleep(delay)
+
+    horo_logger.info(f'Генерация всех знаков завершена: {zodiacs_set}')
+    await send_notification(bot)
 
 
 async def generate_horoscope(zodiac: str, month: int, year: int, bot: Bot):
@@ -51,11 +60,14 @@ async def generate_horoscope(zodiac: str, month: int, year: int, bot: Bot):
         await asyncio.sleep(10)
         await horoscope_transformation_text(zodiac, horoscope, month, year, bot)
 
-        await send_notification(bot)
+    except RateLimitError:
+        horo_logger.error(f"Не удалось сгенерировать гороскоп для {zodiac} из-за лимитов API")
+        await bot.send_message(
+            chat_id=SUPERADMIN,
+            text=f"❌ Ошибка 429 при генерации гороскопа для {zodiac}"
+        )
     except Exception as ex:
         horo_logger.exception(f'Ошибка получения гороскопа для {zodiac} - {ex}')
-    except UniqueViolationError as unic_ex:
-        horo_logger.exception(f'Дублируется дата гороскопа. Ключ есть: {zodiac} - {unic_ex}')
 
 
 async def horoscope_transformation_text(zodiac: str, monthly_horoscope: str, month: int, year: int, bot: Bot):
@@ -71,6 +83,7 @@ async def horoscope_transformation_text(zodiac: str, monthly_horoscope: str, mon
             # фильтруем даты из гороскопа
             date = date.split('.')[0]  # ''.join(filter(str.isdigit, day_part))
             horo_logger.debug(f'daily_horoscope для {zodiac} - {date} - {len(daily_horoscope)}')
+
             if date.isdigit():
                 day = datetime.date(year, month, int(date))
                 horo_logger.debug(f'day {zodiac} - {day} ')
@@ -80,7 +93,7 @@ async def horoscope_transformation_text(zodiac: str, monthly_horoscope: str, mon
 
                     horoscopes[day] = daily_horoscope.strip()
                 except ValueError:
-                    horo_logger.warning(f'Что-то с текстом знака - {zodiac}, {ValueError}')
+                    horo_logger.warning(f'Ошибка с текстом знака - {zodiac}, {ValueError}')
                     continue
 
 
@@ -109,4 +122,4 @@ async def send_notification(bot: Bot):
     try:
         await bot.send_message(SUPERADMIN, text=f'Сохранил гороскопы для {zodiacs_set}')
     except Exception as ex:
-        horo_logger.warning(f'Что-то со списком гороскопов, {ex}')
+        horo_logger.warning(f'Ошибка со списком гороскопов, {ex}')

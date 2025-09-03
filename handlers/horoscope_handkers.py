@@ -46,6 +46,7 @@ async def send_horoscope(call: CallbackQuery, state: FSMContext):
             await call.message.edit_text(f'Гороскоп на сегодня:\n{horoscope.get("text")}',
                                          reply_markup=back_button())
             bot_logger.warning(f'Гороскопа для {zodiac} нет в базе {call_date}. Использована мокбаза')
+
     except Exception as e:
         await call.message.answer("Произошла ошибка, попробуйте позже")
         bot_logger.info(f'Ощибка в отправке гороскопа для {zodiac}, error: {e}')
