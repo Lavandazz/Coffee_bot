@@ -13,9 +13,9 @@ async def generate_phrase():
         phrase = await asyncio.to_thread(
             AiAssistent.get_completion,
             system_prompt,
-            user_prompt, 5
+            user_prompt
         )
-        print('Получен ответ от ИИ', phrase)
+
         return phrase
     except Exception as ex:
         help_ai_logger.exception(f'Ошибка получения фразы для бариста - {ex}')

@@ -53,7 +53,7 @@ async def generate_horoscope(zodiac: str, month: int, year: int, bot: Bot):
         horoscope = await asyncio.to_thread(
             AiAssistent.get_completion,
             system_prompt,
-            user_prompt, 5
+            user_prompt
         )
         horo_logger.debug(f'получен гороскоп длинной : {len(horoscope)}')
         if not horoscope:

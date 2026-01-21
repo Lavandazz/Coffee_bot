@@ -15,7 +15,7 @@ async def generate_ai_greeting():
         phrase = await asyncio.to_thread(
             AiAssistent.get_completion,
             system_prompt,
-            user_prompt, 5
+            user_prompt
         )
         help_ai_logger.info("Ответ для бариста получен")
         return phrase
