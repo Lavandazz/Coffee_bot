@@ -6,12 +6,13 @@ from handlers.barista.channel_handlers import publish_post_to_channel, forward_r
 from keyboards.back_keyboard import back_button
 from keyboards.barista_keyboard import (get_review_keyboard, review_kb, get_post_keyboard,
                                         edit_text_keyboard, barista_posts_kb, barista_kb)
-from states.menu_states import AdminMenuState, BaristaState, PostState
+from states.menu_states import BaristaState, PostState
 from database.models_db import Review, AdminPost, User
-from utils.ai_generator import generate_ai_greeting
 
-from utils.get_user import is_admin, staff_only
-from utils.logging_config import bot_logger
+
+from helpers.get_user import is_admin, staff_only
+from config.logging_config import bot_logger
+from utils.ai.generator_ai import generate_ai_greeting
 
 
 @staff_only
@@ -110,7 +111,7 @@ async def save_post(call: CallbackQuery, state: FSMContext, bot: Bot, role: str)
     await state.set_state(PostState.save_post)
     # сохранение в бд
     post_id = await to_save(photo_file_id, text, call.from_user.id)
-    print(f'post_id  {post_id}')
+
     await call.answer(text='Публикую пост')
     # публикация поста в канал
     await publish_post_to_channel(bot=bot, photo_id=photo_file_id, text=text, post_id=post_id)

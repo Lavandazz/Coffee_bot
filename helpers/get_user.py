@@ -5,7 +5,7 @@ from aiogram.types import CallbackQuery, Message
 from tortoise.exceptions import DoesNotExist
 
 from database.models_db import User
-from utils.logging_config import bot_logger
+from config.logging_config import bot_logger
 
 
 async def is_admin(user_id) -> bool:

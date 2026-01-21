@@ -11,6 +11,7 @@ venv/
 __pycache__/
 .dockerignore
 
+logs
 my_test.py
 for_test_cod.py
 two.py

@@ -1,6 +1,9 @@
 from aiogram import Dispatcher, F
 from aiogram.filters import Command, StateFilter
 
+from config.config import redis_client
+from config.middleware import RoleMiddleware, StatisticMiddleware
+
 from handlers.admin.admin_rights_handlers import show_baristas_to_admin, delete_admin, save_role_admin, approve_admin, \
     show_admins_for_delete
 from handlers.admin.barista_rights_handlers import barista_rights, start_register_name_barista, enter_role_barista, \
@@ -28,9 +31,8 @@ from handlers.horoscope_handkers import show_horoscope, send_horoscope, start_sc
 from states.games_state import AddGameState
 
 from states.menu_states import ReviewStates, PostState, StatsState, BaristaRegistrationState, AdminRegistrationState
-from utils.middleware import RoleMiddleware, StatisticMiddleware
+
 from utils.shedulers.cleane_base_scheduler import horo_to_clean
-from utils.config import redis_client
 
 
 def setup_dispatcher(dp: Dispatcher):

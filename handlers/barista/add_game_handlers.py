@@ -7,6 +7,7 @@ from aiogram.fsm.context import FSMContext
 from aiogram.types import CallbackQuery, Message
 from tortoise.exceptions import DoesNotExist
 
+from config.config import bot
 from database.models_db import User, Game
 from keyboards.admin_keyboards import yes_or_no_btn
 from keyboards.back_keyboard import back_button
@@ -14,12 +15,10 @@ from keyboards.barista_keyboard import barista_game_menu_kb
 from keyboards.calendar_keyboard import calendar_kb
 from keyboards.hour_keyboard import hour_kb
 from states.games_state import AddGameState, GameMenuState
-from states.menu_states import AdminMenuState, BaristaState
-from utils.config import bot
-from utils.custom_calendar import MyCalendar
-from utils.date_formats import from_str_to_date_day, date_game_saver
-from utils.get_user import staff_only
-from utils.logging_config import bot_logger
+from states.menu_states import BaristaState
+from helpers.date_formats import from_str_to_date_day, date_game_saver
+from helpers.get_user import staff_only
+from config.logging_config import bot_logger
 
 GAME = {}
 NEW_DATE = date.today()

@@ -1,7 +1,7 @@
 from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from aiogram.utils.keyboard import InlineKeyboardBuilder
-from utils.get_user import get_role_user
-from utils.logging_config import bot_logger
+from helpers.get_user import get_role_user
+from config.logging_config import bot_logger
 
 
 async def inline_menu_kb(user_id: int):

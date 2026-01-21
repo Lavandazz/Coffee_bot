@@ -1,7 +1,8 @@
 import asyncio
 
-from utils.ai_generator import BaristaPrompt, AiAssistent
-from utils.logging_config import help_ai_logger
+from utils.ai.ai_assistent import AiAssistent
+from utils.ai.prompts import BaristaPrompt
+from config.logging_config import help_ai_logger
 
 
 async def generate_phrase():
@@ -12,7 +13,7 @@ async def generate_phrase():
         phrase = await asyncio.to_thread(
             AiAssistent.get_completion,
             system_prompt,
-            user_prompt
+            user_prompt, 5
         )
         print('Получен ответ от ИИ', phrase)
         return phrase

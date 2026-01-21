@@ -1,13 +1,15 @@
 import os
 
 from aiogram.fsm.storage.redis import RedisStorage
+
 from redis.asyncio import Redis
 from aiogram.client.default import DefaultBotProperties
 from aiogram.client.session.aiohttp import AiohttpSession
-from dotenv import load_dotenv
 from aiogram import Bot, Dispatcher
 
-from .settings_env import env_file
+
+# Импортируем путь к env файлу с загруженным окружением
+from .settings_env import env_path
 
 
 # Переменные окружения
@@ -17,7 +19,6 @@ API_KEY = os.getenv("OPENROUTER_API_KEY")
 SUPERADMIN = int(admin_id.replace(',', ''))
 CHANNEL = os.getenv("CHANNEL_NAME")
 CHANNEL_ID = os.getenv("CHANNEL_ID")
-
 
 redis_client = Redis(host=os.getenv("REDIS_HOST"),
                      port=int(os.getenv("REDIS_PORT")),
@@ -35,6 +36,3 @@ bot = Bot(
 )
 # dp = Dispatcher(storage=storage)
 dp = Dispatcher()
-
-
-

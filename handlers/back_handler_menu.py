@@ -2,7 +2,7 @@ from aiogram.fsm.context import FSMContext
 from aiogram.types import CallbackQuery
 
 from states.constants import TRANSITION_MAP
-from utils.logging_config import bot_logger
+from config.logging_config import bot_logger
 
 
 class BackHandler:

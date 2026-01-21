@@ -1,14 +1,4 @@
-import locale
-from datetime import datetime
-
-from aiogram.fsm.context import FSMContext
-from aiogram.types import CallbackQuery
 # from aiogrаыam_dialog import DialogManager, Window, Dialog, StartMode
-from aiogram_dialog.widgets.kbd import Calendar, CalendarConfig
-from aiogram_dialog.widgets.text import Const
-
-from states.calendar_states import MyCalendar
-from utils.get_user import admin_only
 
 # locale.setlocale(locale.LC_TIME, 'Russian_Russia.1251')
 

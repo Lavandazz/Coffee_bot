@@ -13,7 +13,7 @@ from states.games_state import GameMenuState, AddGameState
 from states.menu_states import MenuState, ReviewStates, AdminMenuState, BaristaState, PostState, StatsState, \
     BaristaRegistrationState, AdminRegistrationState
 
-from utils.logging_config import bot_logger
+from config.logging_config import bot_logger
 
 
 async def back(call: CallbackQuery, state: FSMContext, bot: Bot, role: str):

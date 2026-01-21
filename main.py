@@ -1,12 +1,15 @@
 import asyncio
+from config.config import bot, dp
+
 from handlers.commands import set_commands
 from handlers.dispatcher import setup_dispatcher
 from handlers.start_handlers import seed_admin
-from utils.config import dp, bot
+
 from database.create_db import init_db, close_db
+
 from utils.shedulers.cleane_base_scheduler import scheduler_clean_horoscope
 from utils.shedulers.horo_scheduler import scheduler_horoscope
-from utils.logging_config import bot_logger
+from config.logging_config import bot_logger
 
 
 async def start_bot(user_id: int = None):
@@ -34,7 +37,6 @@ async def main():
         await start_bot()
     finally:
         await close_db()  # Закроем БД после завершения всех задач
-
 
 
 if __name__ == '__main__':

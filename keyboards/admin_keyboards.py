@@ -4,8 +4,7 @@ from aiogram.types import InlineKeyboardButton
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 
 from database.models_db import User
-from utils.config import SUPERADMIN
-from utils.logging_config import bot_logger
+from config.config import SUPERADMIN
 
 
 def admin_btn(role: str):

@@ -1,6 +1,4 @@
 import os
-from utils.settings_env import env_file
-
 
 # настройка подключения к бд через TORTOISE
 DATABASE_URL = (

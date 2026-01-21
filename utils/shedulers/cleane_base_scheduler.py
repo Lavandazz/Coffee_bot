@@ -1,13 +1,13 @@
-from utils.config import admin_id
+
 
 from aiogram import Bot
-from aiogram.types import CallbackQuery
 from pytz import timezone
 from datetime import datetime, date
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
+from config.config import admin_id
 from database.models_db import Horoscope
-from utils.logging_config import scheduler_logger
+from config.logging_config import scheduler_logger
 
 
 def get_first_day_next_month() -> date:

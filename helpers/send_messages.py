@@ -5,9 +5,9 @@ from aiogram import Bot
 from aiogram.exceptions import TelegramBadRequest
 
 from database.models_db import User
-from keyboards.barista_keyboard import get_review_keyboard, show_review_message
-from utils.get_user import get_users_from_db
-from utils.logging_config import bot_logger
+from keyboards.barista_keyboard import show_review_message
+from helpers.get_user import get_users_from_db
+from config.logging_config import bot_logger
 from dataclasses import dataclass
 
 

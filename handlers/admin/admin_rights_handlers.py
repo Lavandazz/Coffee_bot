@@ -5,8 +5,8 @@ from database.models_db import User
 from keyboards.admin_keyboards import all_baristas_or_admins_kb, yes_or_no_btn, admin_rights
 from keyboards.back_keyboard import back_button
 from states.menu_states import AdminRegistrationState, AdminMenuState
-from utils.get_user import admin_only
-from utils.logging_config import bot_logger
+from helpers.get_user import admin_only
+from config.logging_config import bot_logger
 
 
 @admin_only

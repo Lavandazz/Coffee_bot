@@ -1,7 +1,7 @@
 from aiogram import Bot
-from aiogram.types import BotCommand, BotCommandScopeDefault, BotCommandScopeChat
+from aiogram.types import BotCommand, BotCommandScopeDefault
 
-from utils.logging_config import bot_logger
+from config.logging_config import bot_logger
 
 
 async def set_commands(bot: Bot, user_id: int = None):

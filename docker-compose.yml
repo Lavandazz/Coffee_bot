@@ -31,7 +31,7 @@ services:  # Определяем контейнеры
 
 # для работы локально, закомментить все db
 
-  coffee_db:  # имя сервиса как в .env DATABASE_HOST=coffee_db
+  coffee_db:  # имя сервиса как в .env
     image: postgres:15
     container_name: postgres_container_coffee
     env_file:  # Файл с переменными окружения

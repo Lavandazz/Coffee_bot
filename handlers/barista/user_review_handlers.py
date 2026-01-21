@@ -1,18 +1,14 @@
-import asyncio
 from aiogram import Bot
 from aiogram.fsm.context import FSMContext
 from aiogram.types import Message, CallbackQuery
 
 from database.models_db import Review, User
-from keyboards.barista_keyboard import get_review_keyboard
 from keyboards.back_keyboard import back_button
 from keyboards.menu_keyboard import inline_menu_kb
 
 from states.menu_states import ReviewStates
-from utils.get_user import get_users_from_db
 
-from utils.logging_config import bot_logger
-from utils.send_messages import SendMessage
+from helpers.send_messages import SendMessage
 
 
 async def ask_for_photo(call: CallbackQuery, state: FSMContext):

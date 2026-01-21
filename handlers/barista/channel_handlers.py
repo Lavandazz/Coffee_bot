@@ -1,8 +1,10 @@
 from aiogram import Bot
 
+from config.config import CHANNEL
+from config.logging_config import bot_logger
 from database.models_db import AdminPost
-from utils.config import CHANNEL
-from utils.logging_config import bot_logger
+
+
 
 
 async def publish_post_to_channel(bot: Bot, photo_id: str, text: str, post_id):

@@ -6,7 +6,7 @@ from database.models_db import Horoscope
 from keyboards.back_keyboard import back_button
 from keyboards.horoscope_keyboard import zodiac_kb
 from states.menu_states import MenuState
-from utils.logging_config import bot_logger
+from config.logging_config import bot_logger
 from utils.shedulers.horo_scheduler import generate_call_horo
 
 

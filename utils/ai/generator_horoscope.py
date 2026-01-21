@@ -6,11 +6,13 @@ from aiogram import Bot
 from openai import RateLimitError
 from tortoise.exceptions import IntegrityError
 
+from config.config import SUPERADMIN
 from database.models_db import Horoscope
 from database.zodiac_signs import zodiac_signs
-from utils.ai_generator import Prompt, AiAssistent
-from utils.config import SUPERADMIN
-from utils.logging_config import horo_logger
+from utils.ai.ai_assistent import AiAssistent
+from utils.ai.prompts import Prompt
+
+from config.logging_config import horo_logger
 
 
 zodiacs_set = set()
@@ -51,7 +53,7 @@ async def generate_horoscope(zodiac: str, month: int, year: int, bot: Bot):
         horoscope = await asyncio.to_thread(
             AiAssistent.get_completion,
             system_prompt,
-            user_prompt
+            user_prompt, 5
         )
         horo_logger.debug(f'получен гороскоп длинной : {len(horoscope)}')
         if not horoscope:

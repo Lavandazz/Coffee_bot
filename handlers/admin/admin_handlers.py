@@ -3,8 +3,8 @@ from aiogram.types import CallbackQuery
 
 from keyboards.admin_keyboards import admin_btn, admin_kb
 from states.menu_states import AdminMenuState
-from utils.get_user import admin_only, staff_only
-from utils.logging_config import bot_logger
+from helpers.get_user import admin_only, staff_only
+from config.logging_config import bot_logger
 
 
 @staff_only

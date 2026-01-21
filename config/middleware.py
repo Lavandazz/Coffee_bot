@@ -4,10 +4,8 @@ from aiogram import BaseMiddleware
 from typing import Callable, Dict, Any
 from datetime import date, datetime
 
-from tortoise.exceptions import DoesNotExist
-
 from database.models_db import User, Statistic
-from utils.logging_config import bot_logger
+from config.logging_config import bot_logger
 
 
 class RoleMiddleware(BaseMiddleware):

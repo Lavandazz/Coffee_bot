@@ -1,7 +1,5 @@
 import calendar
 from datetime import date, timedelta
-from utils.logging_config import bot_logger
-
 
 month_names = {
                 1: "январь", 2: "февраль", 3: "март",

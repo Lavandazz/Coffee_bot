@@ -2,7 +2,7 @@ from aiogram.types import InlineKeyboardButton
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 
 from database.models_db import Review, AdminPost
-from utils.logging_config import bot_logger
+from config.logging_config import bot_logger
 
 
 """ Раздел, отвечающий за создание, отображение постов бариста """

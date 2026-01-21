@@ -1,12 +1,11 @@
 from aiogram.fsm.context import FSMContext
 from aiogram.types import CallbackQuery
 
+from config.config import bot
 from database.models_db import Game, User
-from keyboards.back_keyboard import back_button
 from keyboards.games_keyboard import games_kb, show_games_kb, game_registration_kb
 from states.games_state import GameMenuState
-from utils.config import bot
-from utils.logging_config import bot_logger
+from config.logging_config import bot_logger
 
 
 async def show_games_menu(call: CallbackQuery, state: FSMContext):
@@ -31,7 +30,7 @@ async def show_games(call: CallbackQuery, state: FSMContext):
     к этому сообщению и изменить его.
     """
     if call.data == "show_upcoming_games":
-        games = await Game.filter(status='to be').all()
+        games = await Game.filter(date_game__gt=call.message.date).all()
         if games:
             await call.message.edit_text(
                 text='Какую игру выберешь ты?',

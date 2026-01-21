@@ -1,12 +1,12 @@
 from aiogram import Bot
 from aiogram.types import CallbackQuery
 from pytz import timezone
-from datetime import datetime, date
+from datetime import datetime
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
-from utils.config import SUPERADMIN, bot
-from utils.generator_horoscope import start_generate_all_horoscopes
-from utils.logging_config import scheduler_logger
+from config.config import bot
+from utils.ai.generator_horoscope import start_generate_all_horoscopes
+from config.logging_config import scheduler_logger
 from utils.shedulers.cleane_base_scheduler import get_first_day_next_month
 
 
@@ -24,7 +24,6 @@ async def generate_call_horo(call: CallbackQuery):
 async def generate_horo(bot: Bot):
     """ Вызов генерации гороскопа для шедулера"""
     now_date = datetime.now().date()
-    print(f"Тип bot: {type(bot)}")
     await start_generate_all_horoscopes(bot, now_date)
     # await bot.send_message(chat_id=SUPERADMIN, text='Начал генерацию гороскопа в тестовом режиме')
 

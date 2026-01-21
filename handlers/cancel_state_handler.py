@@ -1,12 +1,10 @@
 import asyncio
-import logging
-import time
 from aiogram import Bot
 from aiogram.fsm.context import FSMContext
-from aiogram.types import Message, ReplyKeyboardRemove
+from aiogram.types import Message
 
 from keyboards.menu_keyboard import inline_menu_kb
-from utils.logging_config import bot_logger
+from config.logging_config import bot_logger
 
 
 async def cancel_handler(message: Message, bot: Bot, state: FSMContext):

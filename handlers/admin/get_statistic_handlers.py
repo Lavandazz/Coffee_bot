@@ -12,9 +12,9 @@ from keyboards.back_keyboard import back_button
 from keyboards.calendar_keyboard import calendar_kb
 from states.menu_states import StatsState, AdminMenuState
 from utils.custom_calendar import MyCalendar
-from utils.date_formats import from_str_to_date_day
-from utils.get_user import admin_only
-from utils.logging_config import bot_logger
+from helpers.date_formats import from_str_to_date_day
+from helpers.get_user import admin_only
+from config.logging_config import bot_logger
 
 NEW_DATE = date.today()
 END_STAT_DATE = date.today()
