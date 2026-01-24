@@ -1,12 +1,12 @@
-import os
+from config.settings_env import settings
 
 # настройка подключения к бд через TORTOISE
 DATABASE_URL = (
-    f"postgres://{os.getenv('DATABASE_USER')}:"
-    f"{os.getenv('DATABASE_PASSWORD')}@"
-    f"{os.getenv('DATABASE_HOST')}:"
-    f"{int(os.getenv('DATABASE_PORT'))}/"
-    f"{os.getenv('DATABASE_NAME')}"
+    f"postgres://{settings.DATABASE_USER}:"
+    f"{settings.DATABASE_PASSWORD}@"
+    f"{settings.DATABASE_HOST}:"
+    f"{settings.DATABASE_PORT}/"
+    f"{settings.DATABASE_NAME}"
 )
 
 TORTOISE_ORM = {

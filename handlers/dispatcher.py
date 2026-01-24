@@ -1,8 +1,8 @@
 from aiogram import Dispatcher, F
 from aiogram.filters import Command, StateFilter
 
-from config.config import redis_client
 from config.middleware import RoleMiddleware, StatisticMiddleware
+from config.settings_redis import redis_client
 
 from handlers.admin.admin_rights_handlers import show_baristas_to_admin, delete_admin, save_role_admin, approve_admin, \
     show_admins_for_delete
